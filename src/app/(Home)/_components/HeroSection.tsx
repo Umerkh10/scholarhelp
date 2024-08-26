@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import React from 'react'
-import PhoneInput from './PhoneInput'
 
 const HeroSection = () => {
   return (
@@ -16,7 +15,7 @@ const HeroSection = () => {
           <div className='pt-5 font-extrabold text-black text-lg'>Get a Text Back in 5 Minutes!</div>
           <div className='bg-white rounded-lg h-28 mt-3'>
             <div className='flex items-center justify-center translate-y-5 rounded-lg py-2  border-[2px] border-gray-600  w-[35vw] outline-none ml-8'>
-              <PhoneInput/>
+         
               <button className='bg-orange-600 text-white px-3 py-3 rounded-lg'>Text me a Free Quote</button>
             </div>
           </div>
