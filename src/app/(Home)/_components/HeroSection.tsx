@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className='pt-5 font-extrabold text-black text-lg'>Get a Text Back in 5 Minutes!</div>
           <form action="">
           <div className='bg-white rounded-lg lg:h-24 py-4 px-2 mt-3'>
-          <div className='flex items-center justify-center lg:translate-y-4 rounded-lg py-1 border-[2px] border-gray-600 w-full md:w-[420px] outline-none md:ml-8'>
+          <div className='flex items-center justify-center  rounded-lg py-1 border-[2px] border-gray-600 w-full md:w-[420px] outline-none md:ml-8'>
           <input className='outline-none py-3 px-3 ' type="tel" name='phone' placeholder='enter number' />
           <button type='submit' className='hidden md:block bg-orange-600 text-white px-3 py-2 rounded-lg md:px-6 md:py-3'>Get A Free Quote</button>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import HeroSection from './_components/HeroSection'
 import Rating from './_components/Rating'
+import Academic from './_components/Academic'
 
 const Page = () => {
   return (
@@ -8,6 +9,7 @@ const Page = () => {
 
       <HeroSection />
       <Rating />
+      <Academic/>
     </>
   )
 }
