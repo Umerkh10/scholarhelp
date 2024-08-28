@@ -1,3 +1,4 @@
+import { Star } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
 
@@ -29,7 +30,69 @@ const Rating = () => {
                 </div>
                 
             </div>
-            <div className='h-10 bg-purple-500'></div>
+
+                 <div className=' p-7'>
+                <div className='flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4'>
+                <div className='flex items-center border-[4px]  w-full sm:w-[380px] border-black px-3 py-2 rounded-lg group hover:bg-yellow-400 transition ease-in delay-150 duration-150 cursor-pointer hover:scale-105'>
+                    <Image className='group-hover:rotate-180 transition ease-in delay-150 duration-150' src="/imgs/google.png" width={50} height={100} alt='confidential'></Image>
+                    <div className='flex flex-col ml-2'>
+                    <div className=' font-semibold  '>Google Reviews</div>
+                    <div className='flex items-center'>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                    </div>
+                    </div>
+                </div>
+                <div className='flex items-center border-[4px] w-full sm:w-[380px] border-black px-3 py-2 rounded-lg group hover:bg-yellow-400 transition ease-in delay-150 duration-150 cursor-pointer hover:scale-105'>
+                    <Image className='group-hover:rotate-180 transition ease-in delay-150 duration-150' src="/imgs/trust-pilot.png" width={50} height={100} alt='confidential'></Image>
+                    <div className='flex flex-col ml-2'>
+                    <div className=' font-semibold  '>Trust Pilot</div>
+                    <div className='flex items-center'>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div className='flex flex-col md:flex-row items-center mt-4 space-y-3 md:space-y-0 md:space-x-4'>
+                <div className='flex items-center border-[4px] w-full sm:w-[380px] border-black px-3 py-2 rounded-lg group hover:bg-yellow-400 transition ease-in delay-150 duration-150 cursor-pointer hover:scale-105'>
+                    <Image className='group-hover:rotate-180 transition ease-in delay-150 duration-150' src="/imgs/site-jabber.png" width={50} height={100} alt='confidential'></Image>
+                    <div className='flex flex-col ml-2'>
+                    <div className=' font-semibold  '>Site Jabber</div>
+                    <div className='flex items-center'>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                    </div>
+                    </div>
+                </div>
+                <div className='flex items-center border-[4px] w-full sm:w-[380px] border-black px-3 py-2 rounded-lg group hover:bg-yellow-400 transition ease-in delay-150 duration-150 cursor-pointer hover:scale-105'>
+                    <Image className='group-hover:rotate-180 transition ease-in delay-150 duration-150' src="/imgs/reviews.io.png" width={50} height={100} alt='confidential'></Image>
+                  <div className='flex flex-col ml-2'>
+                    <div className=' font-semibold  '>Reviews.io</div>
+                    <div className='flex items-center'>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                        <Star className='stroke-black fill-yellow-500'/>
+                    </div>
+                    </div>
+                    
+                </div>
+                
+                </div>
+                
+            </div>
         </div>
     </div>
   )
