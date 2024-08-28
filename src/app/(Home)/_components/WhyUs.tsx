@@ -68,7 +68,7 @@ const WhyUs = () => {
                         </div>
                         <div className='group-hover:text-gray-200 text-[20px] font-bold pt-4'>Elite Subject Specialists</div>
                         <div className='pt-3 text-base font-medium group-hover:text-gray-200'>
-                        Scholarly Help comprises multiple teams of native experts with deep knowledge in their respective subject areas. They possess a strong command of the English language, allowing them to create error-free, high-quality content.</div>
+                        Scholarly Help comprises multiple teams of native experts with deep knowledge in their respective subject areas. They possess a strong command of the English language, allowing them to create error-free high-quality content.</div>
                    
                     </div>
                 </div>
@@ -87,7 +87,7 @@ const WhyUs = () => {
                             <div className='font-extrabold text-7xl opacity-10 group-hover:opacity-100 transition ease-in duration-200 delay-100 group-hover:text-yellow-500'>03</div>
                         </div>
                         <div className='group-hover:text-gray-200 text-[20px] font-bold pt-4'>Deliver Superior Content</div>
-                        <div className='pt-3 text-base font-medium group-hover:text-gray-200'>Our team of academic experts is dedicated to delivering high-quality content to meet all your needs. We handle your online tasks, such as classes, assignments, homework, exams, discussions, and essays, following your instructions to achieve top grades.</div>
+                        <div className='pt-3 text-base font-medium group-hover:text-gray-200'>Our team of academic experts is dedicated to delivering high-quality content to meet all your needs. We handle your online tasks, such as classes, assignments, homework, exams discussions and essays following your instructions to achieve top grades.</div>
                    
                     </div>
                 </div>
@@ -107,7 +107,7 @@ const WhyUs = () => {
                         </div>
                         <div className='group-hover:text-gray-200 text-[20px] font-bold pt-4'>Live Chat Support Hours</div>
                         <div className='pt-3 text-base font-medium group-hover:text-gray-200'>
-                        We're here to provide you with the best experience, offering 24/7 live chat support to address your questions anytime, day or night. Whether it's the middle of the night or the weekend, feel free to reach out to us for assistance.</div>
+                        We are here to provide you with the best experience, offering 24/7 live chat support to address your questions anytime, day or night. Whether it is the middle of the night or the weekend, feel free to reach out to us for assistance.</div>
                    
                     </div>
                 </div>
