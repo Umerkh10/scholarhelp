@@ -1,13 +1,14 @@
 import React from 'react'
 import HeroSection from './_components/HeroSection'
-import Navbar from './_components/Navbar'
+import Rating from './_components/Rating'
 
 const Page = () => {
   return (
     <>
 
-        <HeroSection/>
-        </>
+      <HeroSection />
+      <Rating />
+    </>
   )
 }
 
