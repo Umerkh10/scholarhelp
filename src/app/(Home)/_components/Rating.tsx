@@ -57,7 +57,7 @@ export default Rating
 
 const Card = ({image, title, isStar }: { image:string, title: string, isStar: boolean }) => {
     return (
-        <div  data-aos="fade-up" className="w-full sm:w-[380px] rounded-3xl bg-gradient-to-b from-blue-300 to-pink-300 p-1 dark:from-blue-800 dark:to-purple-800">
+        <div  data-aos="fade-up" className="w-full sm:w-[380px] rounded-3xl bg-gradient-to-b p-1 from-blue-800 to-purple-800">
             <div className="rounded-[calc(1.5rem-5px)] bg-white p-3 dark:bg-gray-900">
                 <div className="flex items-center gap-4">
                     <img className="h-12 w-12 rounded-full" src={image} alt="" />

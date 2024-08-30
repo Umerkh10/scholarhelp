@@ -1,133 +1,110 @@
-"use client"
-import Aos from 'aos';
-import Image from 'next/image'
-import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer';
+"use client";
+import Aos from "aos";
+import Image from "next/image";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
-function Academic() {
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-    });
-
-    useEffect(() => {
-        Aos.init({
-            duration: 800,
-            offset: 100,
-        });
-    }, [inView]);
+const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
+  const { ref } = useInView({ triggerOnce: false, threshold: 0.1 });
 
   return (
-    <div className='mx-auto max-w-screen-xl mt-10'>
-        <div className=' text-3xl md:text-5xl text-center text-violet-950 font-extrabold'>We are your partners in Academic Success!</div>
-        <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-10 mx-auto'>
+    <div ref={ref} data-aos={animation} className="group p-4">
+      <div className="flex flex-col items-center border-[5px] border-transparent bg-indigo-400 md:h-[370px] w-full rounded-lg px-4 py-5 group-hover:scale-105 group-hover:border-yellow-400 group-hover:bg-indigo-700 group-hover:shadow-xl transition-transform duration-200 ease-in">
+        <div className="flex items-center justify-center bg-yellow-500 rounded-full h-24 w-24">
+          <Image src={imageSrc} width={60} height={60} alt={title} />
+        </div>
+        <div className="flex flex-col mt-4">
+          <div className="text-lg sm:text-xl text-white font-semibold">{title}</div>
+          <div className="text-zinc-200 font-medium">{description}</div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-            <div ref={ref} data-aos="flip-left" className='group  p-4'>
-                <div className='flex items-center gap-3'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700  group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400   md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'><Image src="/imgs/webinar.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Online Class</div>
-                        <div className=' text-zinc-200 font-medium '>Stuck with extensive daily tasks of your online classes, Fret Not, we are here for you to complete your online classes with perfect Grades!</div>
-                    </div>
-                </div>
-                </div>
-                </div>
+function Academic() {
+  useEffect(() => {
+    Aos.init({ duration: 800, offset: 100 });
+  }, []);
 
-                <div ref={ref} data-aos="flip-right" className='group p-4'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'><Image src="/imgs/online-exam.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Online Exam Help</div>
-                        <div className=' text-zinc-200 font-medium '>Want to Ace your online exams without taking any stress, Taking My Online Classes Help tutors are at your service with Guaranteed best results in your online exams.</div>
-                    </div>
-                </div>
-                </div>
-            
-           
-            <div ref={ref} data-aos="flip-left" className=' group p-4'>
-                <div className='flex items-center gap-3'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'>
-                    <Image src="/imgs/online-homework.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Online Homework Help</div>
-                        <div className=' text-zinc-200 font-medium '>Online homeworks can be very tricky and mind-exhausting at all times, but with Taking My Online Classes Help Reliable & Affordable service of online homework assistance everything becomes smooth and easy.</div>
-                    </div>
-                </div>
-                </div>
-                </div>
-                
-                <div ref={ref} data-aos="flip-right" className='group p-4'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'>
-                    <Image src="/imgs/essay.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Essay Writing Services</div>
-                        <div className=' text-zinc-200 font-medium '>Wanting to write a compelling & plagiarism free essay, trust our credible tutors with excellent essay writing services with in due date delivery.</div>
-                    </div>
-                </div>
-                </div>
+  const services = [
+    {
+      imageSrc: "/imgs/webinar.png",
+      title: "Online Class",
+      description:
+        "Stuck with extensive daily tasks of your online classes? Fret not, we are here to help you complete your online classes with perfect grades!",
+      animation: "flip-left",
+    },
+    {
+      imageSrc: "/imgs/online-exam.png",
+      title: "Online Exam Help",
+      description:
+        "Want to ace your online exams without stress? Our tutors are at your service with guaranteed best results in your online exams.",
+      animation: "flip-right",
+    },
+    {
+      imageSrc: "/imgs/online-homework.png",
+      title: "Online Homework Help",
+      description:
+        "Online homework can be tricky and exhausting, but our reliable and affordable service makes it smooth and easy.",
+      animation: "flip-left",
+    },
+    {
+      imageSrc: "/imgs/essay.png",
+      title: "Essay Writing Services",
+      description:
+        "Want a compelling, plagiarism-free essay? Trust our credible tutors for excellent essay writing services with timely delivery.",
+      animation: "flip-right",
+    },
 
-                <div ref={ref} data-aos="flip-left" className='group p-4'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'>
-                    <Image src="/imgs/assignment.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Assignment Help</div>
-                        <div className=' text-zinc-200 font-medium '>Are you finding it difficult to complete your assignment questions correctly and on time? Worry not, Taking My Online Classes Help offers 24/7 homework aid with reliable client support at your service.</div>
-                    </div>
-                </div>
-                </div>
+    {
+      imageSrc: "/imgs/assignment.png",
+      title: "Assignment Help",
+      description:
+        "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
+      animation: "flip-left",
+    },
+    {
+        imageSrc: "/imgs/assignment.png",
+        title: "Assignment Help",
+        description:
+          "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
+        animation: "flip-right",
+      },
+      {
+        imageSrc: "/imgs/assignment.png",
+        title: "Assignment Help",
+        description:
+          "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
+        animation: "flip-left",
+      },
+      {
+        imageSrc: "/imgs/assignment.png",
+        title: "Assignment Help",
+        description:
+          "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
+        animation: "flip-right",
+      },
+    
+  ];
 
-                <div ref={ref} data-aos="flip-right" className='group p-4'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'>
-                    <Image src="/imgs/assignment.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Assignment Help</div>
-                        <div className=' text-zinc-200 font-medium '>Are you finding it difficult to complete your assignment questions correctly and on time? Worry not, Taking My Online Classes Help offers 24/7 homework aid with reliable client support at your service.</div>
-                    </div>
-                </div>
-                </div>
-
-                <div ref={ref} data-aos="flip-left" className='group p-4'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'>
-                    <Image src="/imgs/assignment.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Assignment Help</div>
-                        <div className=' text-zinc-200 font-medium '>Are you finding it difficult to complete your assignment questions correctly and on time? Worry not, Taking My Online Classes Help offers 24/7 homework aid with reliable client support at your service.</div>
-                    </div>
-                </div>
-                </div>
-
-                <div ref={ref} data-aos="flip-right" className='group p-4'>
-                <div className=' flex-col items-center border-[5px] 
-                group-hover:border-yellow-400  group-hover:bg-indigo-700 group-hover:scale-105 group-hover:shadow-xl transition ease-in delay-200 duration-200 bg-indigo-400  md:h-[370px] w-full rounded-lg px-4 py-5 '>
-                    <div className='rounded-full bg-yellow-500 h-24 w-24 flex items-center justify-center'>
-                    <Image src="/imgs/assignment.png" width={60} height={60} alt='onlineclass'></Image></div>
-                    <div className='flex flex-col mt-4'>
-                        <div className='text-lg sm:text-xl text-white font-semibold '>Assignment Help</div>
-                        <div className=' text-zinc-200 font-medium '>Are you finding it difficult to complete your assignment questions correctly and on time? Worry not, Taking My Online Classes Help offers 24/7 homework aid with reliable client support at your service.</div>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-            <div ref={ref} data-aos="flip-up" className='flex justify-center items-center mt-10 lg:mt-5 '>
-            <button className='bg-indigo-400 px-4 py-4 rounded-lg  border-[4px] border-yellow-500 hover:bg-indigo-700 transition ease-in delay-200 duration-200 text-white font-medium text-lg'>Place Your Order Today</button>
-            </div>
-         </div>
-   
-  )
+  return (
+    <div className="mx-auto max-w-screen-xl mt-10">
+      <div className="text-3xl md:text-5xl text-center text-violet-950 font-extrabold">
+        We are your partners in Academic Success!
+      </div>
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-10 mx-auto">
+        {services.map((service, index) => (
+          <ServiceCard key={index} {...service} />
+        ))}
+      </div>
+      <div className="flex justify-center items-center mt-10 lg:mt-5">
+        <button className="bg-indigo-400 px-4 py-4 rounded-lg border-[4px] border-yellow-500 hover:bg-indigo-700 transition ease-in duration-200 text-white font-medium text-lg">
+          Place Your Order Today
+        </button>
+      </div>
+    </div>
+  );
 }
 
-export default Academic
+export default Academic;
