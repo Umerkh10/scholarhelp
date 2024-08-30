@@ -16,6 +16,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { ThemeSwitch } from "@/components/ui/ThemeSwitch"
 
 const services = [
   {
@@ -39,7 +40,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <header className="fixed z-50 shadow-xl shadow-zinc-200 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed z-50 dark:shadow-sm shadow-xl shadow-zinc-200 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex justify-center h-14 items-center">
         <div className="md:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
@@ -100,6 +101,11 @@ export default function Navbar() {
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
+              
+              <NavigationMenuItem>
+                <ThemeSwitch/>
+              </NavigationMenuItem>
+
             </NavigationMenuList>
           </NavigationMenu>
         </div>

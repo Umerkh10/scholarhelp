@@ -82,7 +82,7 @@ const TrustReview = () => {
 
   return (
     <div className='mx-auto max-w-screen-xl mt-10' ref={ref} data-aos="zoom-in">
-      <div className='font-extrabold text-3xl md:text-5xl text-indigo-950 text-center'>
+      <div className='font-extrabold text-3xl md:text-5xl dark:text-zinc-100 text-indigo-950 text-center'>
         What Students Think of Us
       </div>
       <div className='flex justify-center items-center mt-5'>
@@ -99,7 +99,7 @@ const TrustReview = () => {
           <ReviewCard key={index} name={review.name} text={review.text} />
         ))}
       </div>
-      
+
     </div>
   );
 }

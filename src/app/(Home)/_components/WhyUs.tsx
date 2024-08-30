@@ -91,7 +91,7 @@ const WhyUs = () => {
 
   return (
     <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
-      <div className='text-center text-2xl md:text-5xl font-bold text-violet-950'>The Benefits of Taking My Online Classes</div>
+      <div className='text-center text-2xl md:text-5xl font-bold dark:text-zinc-100 text-violet-950'>The Benefits of Taking My Online Classes</div>
       <Swiper
         loop={true}
         spaceBetween={20}

@@ -42,7 +42,7 @@ const Faq = () => {
     
   return (
     <div className='mx-auto max-w-screen-xl mt-10'>
-        <div className='text-center text-3xl lg:text-5xl font-extrabold text-indigo-950 '>Frequently Asked Questions
+        <div className='text-center text-3xl lg:text-5xl font-extrabold dark:text-zinc-100 text-indigo-950 '>Frequently Asked Questions
         </div>
 
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-5'>
