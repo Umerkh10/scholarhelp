@@ -1,27 +1,13 @@
-"use client"
-import React, { useEffect } from 'react'
-
+import React from 'react'
 import 'aos/dist/aos.css';
-import { useInView } from 'react-intersection-observer';
-import Aos from 'aos';
+
 
 const HeroSection = () => {
-  
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-});
 
-useEffect(() => {
-    Aos.init({
-        duration: 800,
-        offset: 100,
-    });
-}, [inView]);
   return (
    
     <div className=' border-b-2  border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-indigo-100 via-violet-100 to-zinc-100 '>
-      <div className=' mx-auto max-w-screen-xl ' data-aos="fade-down">
+      <div className=' mx-auto max-w-screen-xl ' >
         <div className='py-20 px-5 md:py-28'>
           <div className='md:text-center text-violet-950 text-xl sm:text-3xl font-extrabold '>Hire Expert</div>
           <div className='md:text-center text-violet-950 text-3xl sm:text-5xl font-extrabold'>Academic Writers</div>

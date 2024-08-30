@@ -5,6 +5,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useInView } from 'react-intersection-observer'
 import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 
 const Footer = () => {
   const { ref, inView } = useInView({
