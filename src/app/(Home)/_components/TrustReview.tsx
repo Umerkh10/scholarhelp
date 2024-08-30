@@ -124,7 +124,7 @@ const TrustReview = () => {
                     <div><Image src={'/imgs/tp-rating.png'} width={130} height={60} alt='rating'></Image></div>
                 </div>
                 </div>
-                <div className='p-2 font-medium text-sm '>I've had a great experience with Taking My Classes Online. The team is professional, responsive, really helpful and truly dedicated to helping students succeed.</div>
+                <div className='p-2 font-medium text-sm '>Ive had a great experience with Taking My Classes Online. The team is professional, responsive, really helpful and truly dedicated to helping students succeed.</div>
                 <div className='border-b-2 border-gray-300 translate-y-2 w-full'></div>
 
                 <div className="flex items-center p-2 mt-3">
