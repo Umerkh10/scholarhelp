@@ -1,9 +1,23 @@
+"use client"
+import Aos from 'aos';
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
 
 const TrustReview = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            offset: 100,
+        });
+    }, [inView]);
   return (
-    <div className='mx-auto max-w-screen-xl mt-10 '>
+    <div className='mx-auto max-w-screen-xl mt-10 ' ref={ref} data-aos="zoom-in">
         <div className='font-extrabold text-3xl md:text-5xl text-indigo-950 text-center '>What Students Think of Us
          </div>
          <div className='flex justify-center items-center mt-5'>

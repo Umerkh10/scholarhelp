@@ -1,11 +1,25 @@
+"use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import Aos from 'aos';
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
 
 
 function WorkFlow() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+});
+
+useEffect(() => {
+    Aos.init({
+        duration: 800,
+        offset: 100,
+    });
+}, [inView]);
   return (
-    <div className='mx-auto max-w-screen-xl mt-10'>
+    <div ref={ref} data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
       <div className='text-center text-3xl md:text-5xl font-extrabold text-violet-950'>Workflow Process We Follow</div>
 
         <div className='  mt-8'>
@@ -19,12 +33,12 @@ function WorkFlow() {
 
         <TabsContent value="1">
           <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div className=''>
+            <div ref={ref} data-aos="flip-down" className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow-1.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div className=''>
+            <div ref={ref} data-aos="flip-up" className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold text-indigo-900 '>Make Your Order:</div>
               </div>
@@ -38,12 +52,12 @@ function WorkFlow() {
 
         <TabsContent value="2">
            <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div className=''>
+            <div ref={ref} data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow-2.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div className=''>
+            <div ref={ref} data-aos="flip-up"  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold text-indigo-900 '>Confirm and Pay:</div>
               </div>
@@ -57,12 +71,12 @@ function WorkFlow() {
 
         <TabsContent value="3">
              <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div className=''>
+            <div ref={ref} data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow-3.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div className=''>
+            <div ref={ref} data-aos="flip-up"  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold text-indigo-900 '>Expert Work Underway:</div>
               </div>
@@ -77,12 +91,12 @@ function WorkFlow() {
 
         <TabsContent value="4">
         <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div className=''>
+            <div ref={ref} data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow-4.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div className=''>
+            <div ref={ref} data-aos="flip-up"  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold text-indigo-900 '>Punctual Delivery:</div>
               </div>

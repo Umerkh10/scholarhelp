@@ -1,17 +1,30 @@
 "use client"
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';     
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Star } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos';
 
 const Sample = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+    });
+
+    useEffect(() => {
+        Aos.init({
+            duration: 800,
+            offset: 100,
+        });
+    }, [inView]);
   return (
     <div className='mt-10'>
- <div className=' py-56'  style={{ backgroundImage: "url('/imgs/samplebg-1.webp')", backgroundSize: 'cover',backgroundPosition: 'center',}}>
+ <div ref={ref} data-aos="zoom-in-up" className=' py-56'  style={{ backgroundImage: "url('/imgs/samplebg-1.webp')", backgroundSize: 'cover',backgroundPosition: 'center',}}>
   <div className='mx-auto max-w-screen-xl'>
-    <div className='-translate-y-10 text-3xl md:text-5xl text-center font-extrabold text-white'>Our Samples</div>
+    <div className='-translate-y-10 text-3xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
 
   <Swiper
         loop={true}
@@ -38,7 +51,7 @@ const Sample = () => {
 
     >
         <SwiperSlide>
-            <div className='group mt-5'>
+            <div ref={ref} data-aos="flip-up" className='group mt-5'>
                 <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px]  bg-indigo-500 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
                     <div className='relative z-10'>
                         <div className='flex items-center'>
@@ -73,7 +86,7 @@ const Sample = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className='group mt-5'>
+        <div className='group mt-5' ref={ref} data-aos="flip-down">
                 <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px]  bg-indigo-500 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
                     <div className='relative z-10'>
                         <div className='flex items-center'>
@@ -108,7 +121,7 @@ const Sample = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className='group mt-5'>
+        <div className='group mt-5' ref={ref} data-aos="flip-up">
                 <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px]  bg-indigo-500 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
                     <div className='relative z-10'>
                         <div className='flex items-center'>
@@ -143,7 +156,7 @@ const Sample = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className='group mt-5'>
+        <div className='group mt-5' ref={ref} data-aos="flip-down">
                 <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px]  bg-indigo-500 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
                     <div className='relative z-10'>
                         <div className='flex items-center'>
@@ -178,7 +191,7 @@ const Sample = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className='group mt-5'>
+        <div className='group mt-5' ref={ref} data-aos="flip-up">
                 <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px]  bg-indigo-500 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
                     <div className='relative z-10'>
                         <div className='flex items-center'>
@@ -213,7 +226,7 @@ const Sample = () => {
         </SwiperSlide>
 
         <SwiperSlide>
-        <div className='group mt-5'>
+        <div className='group mt-5' ref={ref} data-aos="flip-down">
                 <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px]  bg-indigo-500 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
                     <div className='relative z-10'>
                         <div className='flex items-center'>
