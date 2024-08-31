@@ -35,7 +35,7 @@ useEffect(() => {
           <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div ref={ref} data-aos="flip-down" className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow-1.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image src={"/imgs/workflow.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div ref={ref} data-aos="flip-up" className=''>
@@ -54,7 +54,7 @@ useEffect(() => {
            <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div ref={ref} data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow-2.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image src={"/imgs/workflow_2.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div ref={ref} data-aos="flip-up"  className=''>
@@ -73,7 +73,7 @@ useEffect(() => {
              <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div ref={ref} data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow-3.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image src={"/imgs/workflow_3.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div ref={ref} data-aos="flip-up"  className=''>
@@ -93,7 +93,7 @@ useEffect(() => {
         <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div ref={ref} data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow-4.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image src={"/imgs/workflow_4.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div ref={ref} data-aos="flip-up"  className=''>

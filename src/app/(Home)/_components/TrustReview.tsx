@@ -42,7 +42,7 @@ const reviews = [
 
 const ReviewCard = ({ name, text }:{name:string,text:string}) => (
   <div className='group'>
-    <div className='w-full lg:h-[275px] rounded-xl border-[2px] scale-95 group-hover:scale-100 group-hover:shadow-xl transition ease-in duration-200 delay-200 '>
+    <div className='w-full bg-muted/50 lg:h-[275px] rounded-xl border-[2px] scale-95 group-hover:scale-100 group-hover:shadow-xl transition ease-in duration-200 delay-200 '>
       <div className="flex items-center p-2 mt-3">
         <div className="flex items-center bg-white rounded-full w-12 h-12 overflow-hidden">
           <Image className="object-cover blur-sm" src={'/imgs/tp-rating-1.png'} alt="rating" width={44} height={64} />
@@ -53,7 +53,7 @@ const ReviewCard = ({ name, text }:{name:string,text:string}) => (
         </div>
       </div>
       <div className='p-2 font-medium text-sm'>{text}</div>
-      <div className='border-b-2 border-gray-300 translate-y-2 w-full'></div>
+      <div className='border-b-2 border-muted translate-y-2 w-full'></div>
       <div className="flex items-center p-2 mt-3">
         <div className="flex items-center bg-white rounded-full w-12 h-12 overflow-hidden">
           <Image className="object-cover" src={'/imgs/scholarly-help-logo.png'} alt="rating" width={44} height={64} />

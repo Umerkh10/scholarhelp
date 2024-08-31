@@ -6,15 +6,7 @@ import { Menu, Phone, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle,} from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeSwitch } from "@/components/ui/ThemeSwitch"
 
@@ -40,7 +32,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <header className="fixed z-50 dark:shadow-sm shadow-xl shadow-zinc-200 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed z-50 dark:shadow-zinc-950 shadow-lg shadow-zinc-100 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex justify-center h-14 items-center">
         <div className="md:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
@@ -81,15 +73,15 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="hover:text-blue-600">Tools</div>
+                  <div className="hover:text-blue-600">Contact Us</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/contact" legacyBehavior passHref>
+                <Link href="#" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="hover:text-blue-600">Blogs</div>
+                  <div className="hover:text-blue-600">About Us</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -113,9 +105,9 @@ export default function Navbar() {
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className="px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              className=" px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
             >
-              <Menu className="h-5 w-5" />
+              <Menu className="h-5 w-5 " />
               <span className="sr-only">Toggle Menu</span>
             </Button>
           </SheetTrigger>
@@ -128,14 +120,17 @@ export default function Navbar() {
                 <MobileLink href="/" onOpenChange={setIsOpen}>
                   Home
                 </MobileLink>
-                <MobileLink href="/services" onOpenChange={setIsOpen}>
-                  Services
+                <MobileLink href="#"  onOpenChange={setIsOpen}>
+                 Service
                 </MobileLink>
                 <MobileLink href="/about" onOpenChange={setIsOpen}>
                   About
                 </MobileLink>
                 <MobileLink href="/contact" onOpenChange={setIsOpen}>
                   Contact
+                </MobileLink>
+                <MobileLink href="#" >
+                  <ThemeSwitch/>
                 </MobileLink>
               </div>
             </div>
@@ -174,7 +169,7 @@ ListItem.displayName = "ListItem"
 
 interface MobileLinkProps extends React.PropsWithChildren {
   href: string
-  onOpenChange?: (open: boolean) => void
+  onOpenChange?: (open: any) => void
   className?: string
 }
 

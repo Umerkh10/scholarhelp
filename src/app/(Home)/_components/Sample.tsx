@@ -26,7 +26,7 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
         <div className='text-gray-200 text-xl font-medium pt-2'>Document Type: {docType}</div>
         <div className='text-gray-200 text-xl font-medium pt-2'>Reference Style: {refStyle}</div>
         <div className='flex justify-center items-center mt-5'>
-          <button className='bg-yellow-500 w-full py-4 rounded-lg font-medium text-lg hover:bg-white hover:-translate-y-3 transition ease-in duration-200 delay-200 border-[3px] border-black'>
+          <button className='bg-yellow-500 w-full py-4 rounded-lg font-medium text-lg text-zinc-800 hover:bg-white hover:-translate-y-3 transition ease-in duration-200 delay-200 border-[3px] border-black'>
             View Sample
           </button>
         </div>

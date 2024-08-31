@@ -47,8 +47,8 @@ const Faq = () => {
 
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-5'>
         <div ref={ref} data-aos="zoom-in-down" className=''>
-                <div  className='flex items-center justify-center'>
-                    <Image priority className='rounded-2xl' src="/imgs/faq-section-1.webp" width={600} height={600} alt='about-faq-bg'></Image>
+                <div  className='flex items-center justify-center pb-24'>
+                    <Image priority className=' rounded-2xl' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg'></Image>
                 </div>
             </div>
 
