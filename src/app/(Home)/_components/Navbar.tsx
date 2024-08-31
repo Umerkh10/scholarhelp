@@ -2,13 +2,14 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, Phone, X } from "lucide-react"
+import { Menu, Phone, PhoneCall, PhoneIcon, PhoneIncoming, X } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle,} from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeSwitch } from "@/components/ui/ThemeSwitch"
+import Image from "next/image"
 
 const services = [
   {
@@ -32,11 +33,12 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
 
   return (
-    <header className="fixed z-50 dark:shadow-zinc-950 shadow-lg shadow-zinc-100 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed z-50  w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex justify-center h-14 items-center">
         <div className="md:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
-            <span className="hidden font-bold sm:inline-block">Taking My Classes Online</span>
+            <span className="hidden font-bold lg:inline-block">Taking My Classes Online</span>
+            <Image className="lg:hidden inline-block" src={'/imgs/scholarly-help-logo.png'} width={50} height={50} alt="logo"></Image>
           </Link>
           <NavigationMenu>
             <NavigationMenuList >
@@ -64,13 +66,6 @@ export default function Navbar() {
                 </NavigationMenuContent>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <Link href="/about" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="hover:text-blue-600">Samples</div>
-                  </NavigationMenuLink>
-                </Link>
-              </NavigationMenuItem>
-              <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <div className="hover:text-blue-600">Contact Us</div>
@@ -79,7 +74,7 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="#" legacyBehavior passHref>
+                <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                   <div className="hover:text-blue-600">About Us</div>
                   </NavigationMenuLink>
@@ -89,7 +84,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="flex items-center text-blue-700"> <Phone className="stroke-blue-700 fill-blue-700 mr-2"/> 1-716-708-1869 </div>
+                    <div className="flex items-center "> <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2"/> 1-716-708-1869 </div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
