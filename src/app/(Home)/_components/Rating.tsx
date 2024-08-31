@@ -60,7 +60,7 @@ const Card = ({image, title, isStar }: { image:string, title: string, isStar: bo
         <div  data-aos="fade-up" className="w-full sm:w-[380px] rounded-3xl bg-gradient-to-b p-1 from-blue-800 to-purple-800">
             <div className="rounded-[calc(1.5rem-5px)] bg-white p-3 dark:bg-gray-900">
                 <div className="flex items-center gap-4">
-                    <img className="h-12 w-12 rounded-full" src={image} alt="" />
+                    <Image className="rounded-full" src={image} width={50} height={50} alt="rating" />
                     <div>
                         <h3 className="text-lg font-medium text-gray-700 dark:text-white">{title}</h3>
 

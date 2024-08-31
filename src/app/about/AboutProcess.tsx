@@ -16,7 +16,7 @@ function AboutProcess() {
         });
     }, []);
   return (
-    <div className='mx-auto max-w-screen-xl' ref={ref} data-aos="zoom-in">
+    <div className='mx-auto max-w-screen-xl' ref={ref} data-aos='zoom-in'>
         
         <div className='grid lg:grid-cols-2 grid-cols-1 py-10 px-5 gap-3'>
             <div className=''ref={ref} data-aos="flip-up">
@@ -27,7 +27,7 @@ function AboutProcess() {
             <div className=''ref={ref} data-aos="flip-down">
             <div className='text-3xl lg:text-5xl font-extrabold  '>A Minimal Storyline</div>
             <div className='pt-4 font-medium text-muted-foreground'>
-            Great things often come unexpectedly; they emerge naturally! Taking My Classes Online is a unique journey of an academic expert evolving into a trusted platform. As the name suggests, "Taking My Classes Online" is a hub for those seeking online academic assistance. 
+            Great things often come unexpectedly; they emerge naturally! Taking My Classes Online is a unique journey of an academic expert evolving into a trusted platform. As the name suggests, Taking My Classes Online is a hub for those seeking online academic assistance. 
             </div>
 
             <div className='flex items-center gap-2 mt-4'>
