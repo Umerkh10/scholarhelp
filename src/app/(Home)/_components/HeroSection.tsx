@@ -6,10 +6,10 @@ import { useTheme } from 'next-themes';
 
 
 const HeroSection = () => {
-const {theme}=useTheme()
+
   return (
    
-<div className={`${theme === 'light' ? 'm-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100' : ' -z-10 m-h-[500px] w-full [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] '}`}>
+<div className='m-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:-z-10 dark:m-h-[500px] dark:w-full dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
       <div className=' mx-auto max-w-screen-xl ' >
         <div className='py-20 px-5 md:py-44'>
           <div className='md:text-center dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold '>Hire Expert</div>
