@@ -1,9 +1,6 @@
-"use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import Aos from 'aos';
 import Image from 'next/image'
-import React, { useEffect } from 'react'
-import { useInView } from 'react-intersection-observer';
+import React from 'react'
 
 
 function WorkFlow() {
