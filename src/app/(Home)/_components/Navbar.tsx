@@ -97,13 +97,14 @@ export default function Navbar() {
           </NavigationMenu>
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
+          <div className="text-center font-bold sm:hidden ">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className=" px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              className=" ml-auto px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
             >
-              <Menu className="h-5 w-5 " />
-              <span className="sr-only">Toggle Menu</span>
+              <Menu className="h-5 w-5  " />
+              <span className="sr-only">Toggle Menu </span>
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
