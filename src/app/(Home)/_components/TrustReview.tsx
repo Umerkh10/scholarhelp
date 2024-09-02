@@ -60,7 +60,7 @@ const ReviewCard = ({ name, text }:{name:string,text:string}) => (
         </div>
         <div className='flex-col ml-4'>
           <div className='text-[16px] font-bold'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
-          <div className='text-gray-500 font-medium text-sm'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}.org</div>
+          <div className='text-gray-500 font-medium text-sm'>takingmyclassesonline.com</div>
         </div>
       </div>
     </div>
