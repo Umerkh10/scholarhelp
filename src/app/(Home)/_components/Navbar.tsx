@@ -37,7 +37,7 @@ export default function Navbar() {
       <div className="container flex justify-center h-14 items-center">
         <div className="md:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
-            <span className="hidden font-bold lg:inline-block">Taking My Classes Online</span>
+            <span className="hidden font-bold lg:inline-block">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
             <Image className="lg:hidden inline-block" src={'/imgs/scholarly-help-logo.png'} width={50} height={50} alt="logo"></Image>
           </Link>
           <NavigationMenu>
@@ -108,7 +108,7 @@ export default function Navbar() {
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
             <MobileLink href="/" className="flex items-center" onOpenChange={setIsOpen}>
-              <span className="font-bold">Taking My Classes Online</span>
+              <span className="font-bold">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
             </MobileLink>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
               <div className="flex flex-col space-y-3">
