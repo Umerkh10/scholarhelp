@@ -85,9 +85,11 @@ const WhyUs = () => {
   useEffect(() => {
     Aos.init({
       duration: 800,
+      disable: "mobile",
       offset: 100,
     });
   }, [inView]);
+  
 
   return (
     <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>

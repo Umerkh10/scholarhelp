@@ -1,23 +1,12 @@
 "use client"
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {  SwordsIcon } from 'lucide-react';
-import { useInView } from 'react-intersection-observer';
-import Aos from 'aos';
+
 
 const Faq = () => {
 
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-    });
 
-    useEffect(() => {
-        Aos.init({
-            duration: 800,
-            offset: 100,
-        });
-    }, [inView]);
 
     const [openIndex, setOpenIndex] = useState(null);
     const [sOpen,setIsOpen] = useState(false)
@@ -46,7 +35,7 @@ const Faq = () => {
         </div>
 
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-5'>
-        <div ref={ref} data-aos="zoom-in-down" className=''>
+        <div  data-aos="zoom-in-down" className=''>
                 <div  className='flex items-center justify-center pb-24'>
                     <Image priority className=' rounded-2xl' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg'></Image>
                 </div>
@@ -55,7 +44,7 @@ const Faq = () => {
             <div className=''>
 
             {questions.map((item, index) => (
-                <div ref={ref} data-aos="flip-down" className="md:pt-6 pt-8 "  key={index}>
+                <div  data-aos="flip-down" className="md:pt-6 pt-8 "  key={index}>
                     <div 
                         className="cursor-pointer py-6 px-4 rounded rounded-tr-[20px] rounded-tl-[20px] text-lg md:text-xl font-bold flex justify-between group bg-gradient-to-r from-yellow-600 to-indigo-700 text-white transition ease-in duration-150 delay-100 "
                         onClick={() => toggleAccordion(index) }  >

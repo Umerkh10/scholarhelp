@@ -1,6 +1,5 @@
 "use client"
 import React from 'react'
-import 'aos/dist/aos.css';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
 

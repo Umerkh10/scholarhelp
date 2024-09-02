@@ -1,12 +1,11 @@
 "use client"
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Star } from 'lucide-react';
-import { useInView } from 'react-intersection-observer';
-import Aos from 'aos';
+
 
 const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyle, animation }:any) => (
   <div className='group mt-5' data-aos={animation}>
@@ -44,17 +43,7 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
 );
 
 const Sample = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
 
-  useEffect(() => {
-    Aos.init({
-      duration: 800,
-      offset: 100,
-    });
-  }, [inView]);
 
   const slides = [
     { imageSrc: '/imgs/pdf.png', title: 'Research Project', subject: 'Biology', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'APA', animation: 'flip-up' },
@@ -71,7 +60,7 @@ const Sample = () => {
 
   return (
     <div className='mt-10'>
-      <div ref={ref} data-aos="zoom-in-up" className='py-56' style={{ backgroundImage: "url('/imgs/samplebg-1.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div  data-aos="zoom-in-up" className='py-56' style={{ backgroundImage: "url('/imgs/samplebg-1.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className='mx-auto max-w-screen-xl'>
           <div className='-translate-y-10 text-3xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
 

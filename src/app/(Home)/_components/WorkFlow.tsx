@@ -7,19 +7,9 @@ import { useInView } from 'react-intersection-observer';
 
 
 function WorkFlow() {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-});
 
-useEffect(() => {
-    Aos.init({
-        duration: 800,
-        offset: 100,
-    });
-}, [inView]);
   return (
-    <div ref={ref} data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
+    <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
       <div className='text-center text-3xl md:text-5xl font-extrabold dark:text-zinc-100 text-violet-950'>Workflow Process We Follow</div>
 
         <div className='  mt-8'>
@@ -33,12 +23,12 @@ useEffect(() => {
 
         <TabsContent value="1">
           <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div ref={ref} data-aos="flip-down" className=''>
+            <div  data-aos="flip-down" className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div ref={ref} data-aos="flip-up" className=''>
+            <div  data-aos="flip-up" className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Make Your Order:</div>
               </div>
@@ -52,12 +42,12 @@ useEffect(() => {
 
         <TabsContent value="2">
            <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div ref={ref} data-aos="flip-down"  className=''>
+            <div  data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow_2.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div ref={ref} data-aos="flip-up"  className=''>
+            <div  data-aos="flip-up"  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Confirm and Pay:</div>
               </div>
@@ -71,12 +61,12 @@ useEffect(() => {
 
         <TabsContent value="3">
              <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div ref={ref} data-aos="flip-down"  className=''>
+            <div  data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow_3.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div ref={ref} data-aos="flip-up"  className=''>
+            <div  data-aos="flip-up"  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Expert Work Underway:</div>
               </div>
@@ -91,12 +81,12 @@ useEffect(() => {
 
         <TabsContent value="4">
         <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div ref={ref} data-aos="flip-down"  className=''>
+            <div  data-aos="flip-down"  className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow_4.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div ref={ref} data-aos="flip-up"  className=''>
+            <div  data-aos="flip-up"  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Punctual Delivery:</div>
               </div>

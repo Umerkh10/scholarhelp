@@ -68,20 +68,10 @@ const ReviewCard = ({ name, text }:{name:string,text:string}) => (
 );
 
 const TrustReview = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
 
-  useEffect(() => {
-    Aos.init({
-      duration: 800,
-      offset: 100,
-    });
-  }, [inView]);
 
   return (
-    <div className='mx-auto max-w-screen-xl mt-10' ref={ref} data-aos="zoom-in">
+    <div className='mx-auto max-w-screen-xl mt-10'  data-aos="zoom-in">
       <div className='font-extrabold text-3xl md:text-5xl dark:text-zinc-100 text-indigo-950 text-center'>
         What Students Think of Us
       </div>

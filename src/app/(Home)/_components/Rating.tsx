@@ -1,23 +1,8 @@
-"use client"
-import Aos from 'aos';
 import { Star } from 'lucide-react'
 import Image from 'next/image'
-import { useInView } from 'react-intersection-observer';
-import React, { useEffect } from 'react'
+import React from 'react'
 
 const Rating = () => {
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-    });
-
-    useEffect(() => {
-        Aos.init({
-            duration: 800,
-            offset: 100,
-        });
-    }, [inView]);
-
 
     return (
         <div className='pt-10'>

@@ -1,14 +1,11 @@
-"use client";
-import Aos from "aos";
 import Image from "next/image";
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import React  from "react";
 
 const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
-  const { ref } = useInView({ triggerOnce: false, threshold: 0.1 });
+  
 
   return (
-    <div ref={ref} data-aos={animation} className="group p-4">
+    <div  data-aos={animation} className="group p-4">
       <div className="flex flex-col items-center border-[5px] border-transparent bg-gradient-to-b from-indigo-800 via-zinc-800 to-violet-800 md:h-[370px] w-full rounded-lg px-4 py-5 group-hover:scale-105 group-hover:border-amber-400  group-hover:shadow-xl transition-transform duration-200 ease-in">
 
         <div className="flex items-center justify-center bg-yellow-400 rounded-full h-24 w-24">
@@ -24,9 +21,7 @@ const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
 };
 
 function Academic() {
-  useEffect(() => {
-    Aos.init({ duration: 800, offset: 100 });
-  }, []);
+
 
   const services = [
     {
