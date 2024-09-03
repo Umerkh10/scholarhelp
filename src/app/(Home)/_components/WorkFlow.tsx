@@ -40,7 +40,7 @@ function WorkFlow() {
           <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div   className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image loading='eager' src={"/imgs/workflow.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div   className=''>
@@ -59,7 +59,7 @@ function WorkFlow() {
            <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div    className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow_2.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image loading='eager' src={"/imgs/workflow_2.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div    className=''>
@@ -78,7 +78,7 @@ function WorkFlow() {
              <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div    className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow_3.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image loading='eager' src={"/imgs/workflow_3.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div    className=''>
@@ -98,7 +98,7 @@ function WorkFlow() {
         <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div    className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow_4.webp"} width={600} height={400} alt='workflow'></Image>
+                <Image loading='eager' src={"/imgs/workflow_4.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div    className=''>
