@@ -1,20 +1,22 @@
 "use client"
 import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './FormTab';
+import { BookOpenText, Pencil, PencilRuler } from 'lucide-react';
 
 
 function BannerForm() {
   return (
-    <div style={{backgroundImage:"url('/imgs/bg-form.webp')",backgroundSize:'cover',backgroundPosition:'center'}} className=" py-7 bg-muted rounded-lg ">
+    <div style={{backgroundImage:"url('/imgs/form_bg.webp')",backgroundSize:'cover',backgroundPosition:'top-center',
+       backgroundBlendMode:'overlay', backgroundColor:'#00000054' }} className=" py-7 bg-muted rounded-lg ">
     <div className='text-center font-bold text-2xl py-3 text-zinc-100 '>Get Instant Help From Our Experts</div>
     <Tabs defaultValue='1'>
       <TabsList>
-        <TabsTrigger value='1'>Writing</TabsTrigger>
-        <TabsTrigger value='2'>Rewriting</TabsTrigger>
-        <TabsTrigger value='3'>Editing</TabsTrigger>
+        <TabsTrigger value='1'>Writing <Pencil className='pl-1'/> </TabsTrigger>
+        <TabsTrigger value='2'>Rewriting <BookOpenText className='ml-2'/> </TabsTrigger>
+        <TabsTrigger value='3'>Editing <PencilRuler className='pl-1'/> </TabsTrigger>
       </TabsList>
       <TabsContent value='1'>
-      <div className='grid lg:grid-cols-5 grid-cols-2 gap-2 mt-4 p-5'>
+      <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-2 mt-4 p-5'>
       <div className=' '>
         <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Name' name='name' />
         </div>
@@ -22,6 +24,11 @@ function BannerForm() {
 
       <div className=' '>
         <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="email" placeholder='Enter Email' name='email' />
+        </div>
+      </div>
+
+      <div className=' '>
+        <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Phone Number ' name='phone' />
         </div>
       </div>
 
@@ -53,10 +60,6 @@ function BannerForm() {
         </div>
       </div>
 
-      <div className=' '>
-        <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Topic ' name='topic' />
-        </div>
-      </div>
 
       </div>
       <div className='flex justify-center items-center mt-3'>
@@ -65,7 +68,7 @@ function BannerForm() {
       </TabsContent>
 
       <TabsContent value='2'>
-      <div className='grid lg:grid-cols-5 grid-cols-2 gap-2 mt-4 p-5'>
+      <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-2 mt-4 p-5'>
       <div className=' '>
         <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Name' name='name' />
         </div>
@@ -73,6 +76,11 @@ function BannerForm() {
 
       <div className=' '>
         <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="email" placeholder='Enter Email' name='email' />
+        </div>
+      </div>
+
+      <div className=' '>
+        <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Phone Number ' name='phone' />
         </div>
       </div>
 
@@ -104,10 +112,6 @@ function BannerForm() {
         </div>
       </div>
 
-      <div className=' '>
-        <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Topic ' name='topic' />
-        </div>
-      </div>
 
       </div>
       <div className='flex justify-center items-center mt-3'>
@@ -116,7 +120,7 @@ function BannerForm() {
       </TabsContent>
       
       <TabsContent value='3'>
-      <div className='grid lg:grid-cols-5 grid-cols-2 gap-2 mt-4 p-5'>
+      <div className='grid lg:grid-cols-5 md:grid-cols-2 grid-cols-1 gap-2 mt-4 p-5'>
       <div className=' '>
         <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Name' name='name' />
         </div>
@@ -124,6 +128,11 @@ function BannerForm() {
 
       <div className=' '>
         <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="email" placeholder='Enter Email' name='email' />
+        </div>
+      </div>
+
+      <div className=' '>
+        <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Phone Number ' name='phone' />
         </div>
       </div>
 
@@ -155,10 +164,6 @@ function BannerForm() {
         </div>
       </div>
 
-      <div className=' '>
-        <div className='rounded-lg border-[2px] border-zinc-700 '><input className='rounded-lg w-full py-3 px-2 outline-none' type="text" placeholder='Enter Topic ' name='topic' />
-        </div>
-      </div>
 
       </div>
       <div className='flex justify-center items-center mt-3'>
