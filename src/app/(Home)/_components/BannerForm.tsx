@@ -13,9 +13,9 @@ function BannerForm() {
           setActiveButton(buttonName);
         };
   return (
-    <div  className=" pb-16 bg-muted shadow-xl rounded-xl lg:w-[480px] ">
-        <div className='flex justify-center items-center lg:-translate-y-4  -translate-x-4  -translate-y-4'>
-        <div className=' w-1/2 shadow-xl rounded rounded-tl-2xl rounded-br-2xl bg-yellow-500 py-3 '>
+    <div  className=" pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] ">
+        <div className='flex justify-center items-center lg:-translate-y-4    -translate-y-4'>
+        <div className=' w-1/2 shadow-2xl rounded rounded-tl-2xl rounded-br-2xl bg-indigo-600 py-3 '>
             <div className='text-center font-medium text-zinc-100  '>Upto 40%  Discount</div>
         </div>
         </div>
