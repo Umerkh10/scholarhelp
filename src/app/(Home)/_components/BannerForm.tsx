@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 function BannerForm() {
 
         // State to track which button is clicked
-        const [activeButton, setActiveButton] = useState<string | null>(null);
+        const [activeButton, setActiveButton] = useState<string | null>('writing');
       
         // Handler to set the clicked button as active
         const handleClick = (buttonName: string) => {
@@ -14,12 +14,12 @@ function BannerForm() {
         };
   return (
     <div  className="pb-16 bg-muted shadow-xl rounded-xl lg:w-[480px] ">
-        <div className=' lg:-translate-y-5 lg:-translate-x-7 -translate-x-4  -translate-y-4'>
-        <div className='md:w-24 w-20 h-20 md:h-24 shadow-lg rounded-full bg-yellow-500 flex justify-center items-center'>
-            <div className='text-center font-medium text-zinc-100 text-xs md:text-sm'>Upto <br /> 40% <br /> Discount</div>
+        <div className=' lg:-translate-y-7 lg:-translate-x-7 -translate-x-4  -translate-y-4'>
+        <div className=' w-20 h-20  shadow-lg rounded-full bg-yellow-500 flex justify-center items-center'>
+            <div className='text-center font-medium text-zinc-100 text-xs '>Upto <br /> 40% <br /> Discount</div>
         </div>
         </div>
-    <div className='text-center font-bold text-xl md:text-2xl  px-3  '>Get Instant Help From Our Experts</div>
+    <div className='text-center font-bold text-xl md:text-2xl -mt-6 px-3  '>Get Instant Help From Our Experts</div>
     <div className='flex justify-center items-center mt-3'>
     <button
         className={`px-5 py-3 transition ease-in duration-200 delay-200 border-[2px]  rounded rounded-tl-lg rounded-bl-lg ${
