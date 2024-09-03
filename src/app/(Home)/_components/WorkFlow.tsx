@@ -1,16 +1,34 @@
+"use client"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 function WorkFlow() {
+  const [activeTab, setActiveTab] = useState("1"); 
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveTab((prevTab) => {
+        const nextTab:any = {
+          "1": "2",
+          "2": "3",
+          "3": "4",
+          "4": "1",
+        };
+        return nextTab[prevTab]; 
+      });
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
       <div className='text-center text-3xl md:text-5xl font-extrabold dark:text-zinc-100 text-violet-950'>Workflow Process We Follow</div>
 
         <div className='  mt-8'>
-            <Tabs defaultValue="1" >
+            <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab}>
         <TabsList>
           <TabsTrigger value="1">1</TabsTrigger>
           <TabsTrigger value="2">2</TabsTrigger>
