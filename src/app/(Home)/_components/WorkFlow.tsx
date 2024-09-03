@@ -20,12 +20,12 @@ function WorkFlow() {
 
         <TabsContent value="1">
           <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div  data-aos="flip-down" className=''>
+            <div   className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div  data-aos="flip-up" className=''>
+            <div   className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Make Your Order:</div>
               </div>
@@ -39,12 +39,12 @@ function WorkFlow() {
 
         <TabsContent value="2">
            <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div  data-aos="flip-down"  className=''>
+            <div    className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow_2.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div  data-aos="flip-up"  className=''>
+            <div    className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Confirm and Pay:</div>
               </div>
@@ -58,12 +58,12 @@ function WorkFlow() {
 
         <TabsContent value="3">
              <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div  data-aos="flip-down"  className=''>
+            <div    className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow_3.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div  data-aos="flip-up"  className=''>
+            <div    className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Expert Work Underway:</div>
               </div>
@@ -78,12 +78,12 @@ function WorkFlow() {
 
         <TabsContent value="4">
         <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div  data-aos="flip-down"  className=''>
+            <div    className=''>
               <div className='flex justify-center items-center'>
                 <Image src={"/imgs/workflow_4.webp"} width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div  data-aos="flip-up"  className=''>
+            <div    className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
                 <div className='text-2xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Punctual Delivery:</div>
               </div>
