@@ -6,7 +6,7 @@ import { BookOpenText, Pencil, PencilRuler } from 'lucide-react';
 
 function BannerForm() {
   return (
-    <div style={{backgroundImage:"url('/imgs/form_bg.webp')",backgroundSize:'cover',backgroundPosition:'top-center',
+    <div style={{backgroundImage:"url('/imgs/form.webp')",backgroundPosition:'center',
        backgroundBlendMode:'overlay', backgroundColor:'#00000054' }} className=" py-7 bg-muted rounded-lg ">
     <div className='text-center font-bold text-2xl py-3 text-zinc-100 '>Get Instant Help From Our Experts</div>
     <Tabs defaultValue='1'>
