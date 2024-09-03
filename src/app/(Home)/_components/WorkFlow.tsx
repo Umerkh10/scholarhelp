@@ -18,7 +18,7 @@ function WorkFlow() {
         };
         return nextTab[prevTab]; 
       });
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, []);

@@ -9,16 +9,16 @@ const HeroSection = () => {
   return (
 
     <div className='m-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:-z-10 dark:m-h-[500px] dark:w-full dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
-      <div className=' mx-auto max-w-screen-xl py-5 ' >
-        <div className='py-20 px-5 md:pt-44'>
-          <div className='text-center dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold '>Hire Expert</div>
-          <div className='text-center dark:text-zinc-100 text-zinc-900 text-3xl sm:text-5xl font-extrabold'>Academic Writers</div>
-          <div className='text-center dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold pt-2 '>To Elevate Your Grades!</div>
-          <div className='max-w-screen-md mx-auto text-center  pt-4 font-medium dark:text-zinc-100 text-zinc-900 sm:text-lg '>
+      <div className='grid lg:grid-cols-2 grid-cols-1  mx-auto max-w-screen-xl py-10 ' >
+        <div className='py-20 px-5 md:pt-40'>
+          <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold '>Hire Expert</div>
+          <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-3xl sm:text-5xl font-extrabold'>Academic Writers</div>
+          <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold pt-2 '>To Elevate Your Grades!</div>
+          <div className='max-w-screen-md mx-auto text-center lg:text-left pt-4 font-medium dark:text-zinc-100 text-zinc-900 sm:text-lg '>
             Your trusted source for high-quality academic writing services. We provide expert support for essays, research papers, online classes, and exam preparation to help you achieve top grades. Reach your academic goals with us!
           </div>
 
-          <div className='flex flex-col md:flex-row justify-center items-center mt-5'>
+          <div className='flex flex-col md:flex-row  items-center mt-5'>
             <div className='flex justify-center items-center border-[2px] border-zinc-400 bg-zinc-100
             transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl  m-2'>
               <Image src={"/imgs/order.png"} width={35} height={35} alt='whatsapp' />
@@ -31,10 +31,14 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-        <BannerForm/>
-      
-
+        
+      <div className='pb-5 px-5 md:pt-24'>
+      <BannerForm/>
       </div>
+
+    </div>
+
+
     </div>
   )
 }
