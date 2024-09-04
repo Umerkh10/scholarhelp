@@ -21,8 +21,10 @@ function BannerForm() {
           setWordCount((prevCount) => (prevCount > 0 ? prevCount - 250 : 0));
         };
 
+        const options: number[] = Array.from({ length: 50 }, (_, i) => i + 1);
+
   return (
-    <div  className=" pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-violet-900 to-zinc-900 ">
+    <div  className="lg:ml-16 pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-violet-900 to-zinc-900 ">
         <div className='flex justify-center items-center lg:-translate-y-4    -translate-y-4'>
         <div className=' w-1/2 shadow-2xl rounded rounded-tl-2xl rounded-br-2xl bg-indigo-600 py-3 '>
             <div className='text-center font-medium text-zinc-100  '>Upto 40%  Discount</div>
@@ -131,6 +133,18 @@ function BannerForm() {
             </div>
         </div>
 
+        <div className='pt-2 w-full px-3'>
+        <select
+          className="rounded-lg border-[2px] w-full py-3 px-3 outline-none" name="question" required>
+          <option value="">Select Questions</option>
+          {options.map((number) => (
+            <option key={number} value={`${number} Questions`}>
+              {number} Questions
+            </option>
+          ))}
+    </select>
+        </div>
+
         <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
             <div className=''>
             <div className='flex items-center gap-4 bg-muted dark:bg-zinc-900 rounded-lg border-[2px] w-full py-1 px-3 outline-none' >
@@ -145,7 +159,7 @@ function BannerForm() {
             </div>
 
         </div>
-        
+
         <div className='flex justify-center items-center mt-5'>
             <button className='px-5 py-3 rounded-xl bg-indigo-600 text-white hover:shadow-xl hover:scale-105
             transition ease-in duration-200 delay-200'>Get A Free Quote</button>
