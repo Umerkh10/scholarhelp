@@ -1,14 +1,31 @@
 "use client"
 import React, { useEffect } from 'react'
 import HeroSection from './_components/HeroSection'
-import Rating from './_components/Rating'
-import Academic from './_components/Academic'
-import WhyUs from './_components/WhyUs'
-import ImageReviews from './_components/ImageReviews'
-import WorkFlow from './_components/WorkFlow'
-import Sample from './_components/Sample'
-import TrustReview from './_components/TrustReview'
-import Faq from './_components/Faq'
+import dynamic from 'next/dynamic';
+const Rating = dynamic(() => import('./_components/Rating'), {
+  ssr: false,
+});
+const Academic = dynamic(() => import('./_components/Academic'), {
+  ssr: false,
+});
+const WhyUs = dynamic(() => import('./_components/WhyUs'), {
+  ssr: false,
+});
+const ImageReviews = dynamic(() => import('./_components/ImageReviews'), {
+  ssr: false,
+});
+const WorkFlow = dynamic(() => import('./_components/WorkFlow'), {
+  ssr: false,
+});
+const Sample = dynamic(() => import('./_components/Sample'), {
+  ssr: false,
+});
+const TrustReview = dynamic(() => import('./_components/TrustReview'), {
+  ssr: false,
+});
+const Faq = dynamic(() => import('./_components/Faq'), {
+  ssr: false,
+});
 import { useInView } from 'react-intersection-observer'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
