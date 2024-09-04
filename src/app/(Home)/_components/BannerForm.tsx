@@ -5,13 +5,13 @@ import React, { useState } from 'react'
 
 
 function BannerForm() {
-  // State to track which button is clicked
+
   const [activeButton, setActiveButton] = useState<string | null>('writing');
   const handleClick = (buttonName: string) => {
     setActiveButton(buttonName);
   };
 
-  const [wordCount, setWordCount] = useState<number>(250); // Initial word count
+  const [wordCount, setWordCount] = useState<number>(250); 
 
   const handleIncrement = () => {
     setWordCount((prevCount) => prevCount + 250);
@@ -188,7 +188,7 @@ function BannerForm() {
         <div className=''>
           <div className='flex items-center gap-4 bg-muted dark:bg-zinc-900 rounded-lg border-[2px] w-full py-1 px-3 outline-none' >
             <button onClick={handleDecrement} style={{ padding: '5px 10px' }}>-</button>
-            <span>{wordCount} Words</span>
+            <span className='text-sm lg:text-base'>{wordCount} Words</span>
             <button onClick={handleIncrement} style={{ padding: '5px 10px' }}>+</button>
           </div>
         </div>
