@@ -50,13 +50,13 @@ function BannerForm() {
     <div className="lg:ml-28 pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-purple-950 via-violet-950 to-zinc-950 ">
       <div className='flex justify-center items-center lg:-translate-y-4    -translate-y-4'>
         <div className=' w-1/2 shadow-2xl rounded rounded-tl-2xl rounded-br-2xl bg-indigo-600 py-3 '>
-          <div className='text-center font-medium text-zinc-100  '>Upto 40%  Discount</div>
+          <div className='text-center font-medium text-zinc-100 text-sm md:text-base  '>Upto 40%  Discount</div>
         </div>
       </div>
-      <div className='text-center font-bold text-xl md:text-2xl mt-2 px-3  '>Get Instant Help From Our Experts</div>
+      <div className='text-center font-bold text-lg md:text-2xl mt-2 px-3  '>Get Instant Help From Our Experts</div>
       <div className='flex justify-center items-center mt-3'>
         <button
-          className={`px-5 py-3 transition ease-in duration-200 delay-200 border-[2px]  rounded rounded-tl-lg rounded-bl-lg ${activeButton === 'writing'
+          className={`px-5 py-3 md:text-base text-sm transition ease-in duration-200 delay-200 border-[2px] rounded rounded-tl-lg rounded-bl-lg ${activeButton === 'writing'
               ? 'bg-blue-600 text-white'
               : ' bg-zinc-200 text-zinc-800'
             }`}
@@ -65,7 +65,7 @@ function BannerForm() {
           Writing
         </button>
         <button
-          className={`px-5 py-3 transition ease-in duration-200 delay-200 border-[2px] ${activeButton === 'rewriting'
+          className={`px-5 py-3 md:text-base text-sm transition ease-in duration-200 delay-200 border-[2px] ${activeButton === 'rewriting'
               ? 'bg-blue-600 text-white'
               : 'bg-zinc-200 text-zinc-800'
             }`}
@@ -74,7 +74,7 @@ function BannerForm() {
           Rewriting
         </button>
         <button
-          className={`px-5 py-3 transition ease-in duration-200 delay-200 border-[2px]  rounded rounded-tr-lg rounded-br-lg  ${activeButton === 'editing'
+          className={`px-5 py-3 md:text-base text-sm transition ease-in duration-200 delay-200 border-[2px]  rounded rounded-tr-lg rounded-br-lg  ${activeButton === 'editing'
               ? 'bg-blue-600 text-white'
               : 'bg-zinc-200 text-zinc-800'
             }`}
@@ -92,7 +92,6 @@ function BannerForm() {
       </div>
 
       <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
-        {/* Service Select */}
         <div className={`col-span-${showSubject ? '1' : '2'}`}>
           <select
             className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'
@@ -113,7 +112,6 @@ function BannerForm() {
           </select>
         </div>
 
-        {/* Subject Select (conditionally rendered) */}
         {showSubject && (
           <div>
             <select
@@ -165,7 +163,7 @@ function BannerForm() {
           </div>
         )}
       </div>
-      {/* Questions Select (conditionally rendered) */}
+
       {showQuestions && (
         <div className=' w-full pt-2 px-3 '>
           <select
@@ -200,7 +198,7 @@ function BannerForm() {
       </div>
 
       <div className='flex justify-center items-center mt-5'>
-        <button className='px-5 py-3 rounded-xl bg-indigo-600 text-white hover:shadow-xl hover:scale-105
+        <button className='lg:text-base text-sm px-5 py-3 rounded-xl bg-indigo-600 text-white hover:shadow-xl hover:scale-105
             transition ease-in duration-200 delay-200'>Get A Free Quote</button>
       </div>
 
