@@ -100,7 +100,7 @@ function BannerForm() {
             required
             onChange={handleServiceChange}
           >
-            <option disabled value="option">Services</option>
+            <option  value="option">Services</option>
             <option value="Assignment/ Coursework">Assignment/ Coursework</option>
             <option value="Essay">Essay</option>
             <option value="Dissertation / Thesis / Proposal">Dissertation / Thesis / Proposal</option>
