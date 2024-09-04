@@ -1,3 +1,4 @@
+import Icon from '@/lib/icon'
 import { Star } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
@@ -50,11 +51,13 @@ const Card = ({image, title, isStar }: { image:string, title: string, isStar: bo
                         <h3 className="text-lg font-medium text-gray-700 dark:text-white">{title}</h3>
 
                         {isStar ?
-                        <span className="flex text-sm tracking-wide text-gray-600 dark:text-gray-400"><Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' /></span>: ''}
+                        <span className="flex text-sm tracking-wide text-gray-600 dark:text-gray-400">
+                            <Icon name='star' className='stroke-black fill-yellow-500'/>
+                            <Icon name='star' className='stroke-black fill-yellow-500'/>
+                            <Icon name='star' className='stroke-black fill-yellow-500'/>
+                            <Icon name='star' className='stroke-black fill-yellow-500'/>
+                            <Icon name='star' className='stroke-black fill-yellow-500'/>
+                            </span>: ''}
                     </div>
                 </div>
             </div>

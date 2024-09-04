@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import Link from "next/link"
-import { Menu, Phone, PhoneCall, PhoneIcon, PhoneIncoming, X } from "lucide-react"
+import { Menu, PhoneCall, } from "lucide-react"
 
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
@@ -10,6 +10,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMen
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeSwitch } from "@/components/ui/ThemeSwitch"
 import Image from "next/image"
+import Icon from "@/lib/icon"
 
 const services = [
   {
@@ -84,7 +85,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="flex items-center "> <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2"/> 1-716-708-1869 </div>
+                    <div className="flex items-center "> <Icon name="phone-call" className="stroke-blue-500 fill-blue-500 mr-2" /> 1-716-708-1869 </div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
