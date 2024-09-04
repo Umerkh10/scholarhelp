@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className='grid lg:grid-cols-2 grid-cols-1  mx-auto max-w-screen-xl py-10 ' >
         <div className='py-20 px-5 md:pt-40'>
           <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold '>Hire Expert</div>
-          <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-3xl sm:text-5xl font-extrabold'>Academic Writers</div>
+          <div className='text-center py-1 lg:text-left dark:text-zinc-100 text-zinc-900 text-3xl sm:text-5xl font-extrabold'>Academic Writers</div>
           <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold pt-2 '>To Elevate Your Grades!</div>
           <div className='max-w-screen-md mx-auto text-center lg:text-left pt-4 font-medium dark:text-zinc-100 text-zinc-900 sm:text-lg '>
             Your trusted source for high-quality academic writing services. We provide expert support for essays, research papers, online classes, and exam preparation to help you achieve top grades. Reach your academic goals with us!

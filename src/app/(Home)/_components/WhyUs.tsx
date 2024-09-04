@@ -60,7 +60,7 @@ const slideData = [
 
 const Slide = ({ title, description, image, index, ref }:any) => (
   <div className='group mt-5' ref={ref} data-aos={index % 2 === 0 ? "flip-left" : "flip-right"}>
-    <div className='relative scale-95 group-hover:scale-100 group-hover:border-yellow-400 border-[5px] group-hover:bg-indigo-900 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[350px] w-full rounded-xl p-4 overflow-hidden'>
+    <div className='relative scale-95 group-hover:scale-100 group-hover:border-yellow-400 border-[5px] group-hover:bg-indigo-900 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[360px] w-full rounded-xl p-4 overflow-hidden'>
       <div style={{ backgroundImage: "url('/imgs/bg-why-us.webp')", backgroundPosition: 'center', backgroundSize: 'cover', transition: 'transform 0.5s ease-in-out' }} className='absolute inset-0 transform translate-y-full group-hover:translate-y-0'></div>
       <div className='relative z-10'>
         <div className='flex justify-between'>

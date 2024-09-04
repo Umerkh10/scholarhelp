@@ -47,7 +47,7 @@ function BannerForm() {
   };
 
   return (
-    <div className="lg:ml-16 pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-purple-950 via-violet-950 to-zinc-950 ">
+    <div className="lg:ml-28 pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-purple-950 via-violet-950 to-zinc-950 ">
       <div className='flex justify-center items-center lg:-translate-y-4    -translate-y-4'>
         <div className=' w-1/2 shadow-2xl rounded rounded-tl-2xl rounded-br-2xl bg-indigo-600 py-3 '>
           <div className='text-center font-medium text-zinc-100  '>Upto 40%  Discount</div>
@@ -186,7 +186,7 @@ function BannerForm() {
 
       <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
         <div className=''>
-          <div className='flex items-center gap-4 bg-muted dark:bg-zinc-900 rounded-lg border-[2px] w-full py-1 px-3 outline-none' >
+          <div className='flex justify-center items-center gap-2 bg-muted dark:bg-zinc-900 rounded-lg border-[2px] w-full py-[6px] px-3 outline-none' >
             <button onClick={handleDecrement} style={{ padding: '5px 10px' }}>-</button>
             <span className='text-sm lg:text-base'>{wordCount} Words</span>
             <button onClick={handleIncrement} style={{ padding: '5px 10px' }}>+</button>
