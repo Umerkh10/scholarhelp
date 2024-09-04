@@ -13,8 +13,8 @@ const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
           <Image src={imageSrc} width={60} height={60} alt={title} />
         </div>
         <div className="flex flex-col mt-4">
-          <div className="text-lg sm:text-xl text-white font-semibold">{title}</div>
-          <div className="text-zinc-200 font-medium">{description}</div>
+          <div className="text-base sm:text-xl text-white font-semibold">{title}</div>
+          <div className="text-zinc-200 font-medium lg:text-base text-sm ">{description}</div>
         </div>
       </div>
     </div>

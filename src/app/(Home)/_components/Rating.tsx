@@ -47,7 +47,7 @@ const Card = ({image, title, isStar }: { image:string, title: string, isStar: bo
                 <div className="flex items-center gap-4">
                     <Image className="rounded-full" src={image} width={50} height={50} alt="rating" />
                     <div>
-                        <h3 className="text-lg font-medium text-gray-700 dark:text-white">{title}</h3>
+                        <div className="md:text-lg text-sm font-medium text-gray-700 dark:text-white">{title}</div>
 
                         {isStar ?
                         <span className="flex text-sm tracking-wide text-gray-600 dark:text-gray-400"><Star className='stroke-black fill-yellow-500' />

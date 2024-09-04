@@ -67,10 +67,10 @@ const Slide = ({ title, description, image, index, ref }:any) => (
           <div className='bg-slate-300 group-hover:bg-zinc-300 transition ease-in duration-200 delay-100 border rounded-full h-24 w-24 flex justify-center items-center'>
             <Image className='group-hover:-rotate-45 transition ease-in duration-200 delay-100' src={image} width={64} height={64} alt='icon' />
           </div>
-          <div className='font-extrabold text-7xl opacity-10 group-hover:opacity-100 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>{index.toString().padStart(2, '0')}</div>
+          <div className='font-extrabold text-5xl md:text-7xl opacity-10 group-hover:opacity-100 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>{index.toString().padStart(2, '0')}</div>
         </div>
-        <div className='group-hover:text-gray-200 text-[20px] font-bold pt-4'>{title}</div>
-        <div className='pt-3 text-base font-medium group-hover:text-gray-200'>{description}</div>
+        <div className='group-hover:text-gray-200 text-base md:text-[20px] font-bold pt-4'>{title}</div>
+        <div className='pt-3 md:text-base text-sm font-medium group-hover:text-gray-200'>{description}</div>
       </div>
     </div>
   </div>
