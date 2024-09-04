@@ -1,4 +1,4 @@
-import Icon from '@/lib/icon'
+import { Facebook, Instagram, LinkedinIcon, Phone } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -48,12 +48,11 @@ const Footer = () => {
 
           <div className='p-4'>
             <div className='font-bold text-xl'>Contact Info</div>
-            <div className="flex items-center mt-4 text-indigo-7900">
-              <Icon name='phone' className='stroke-indigo-700 fill-indigo-700 font-medium mr-2 text-muted-foreground'/> 1-716-708-1869 </div>
+            <div className="flex items-center mt-4 text-indigo-7900"> <Phone className="stroke-indigo-700 fill-indigo-700 font-medium mr-2 text-muted-foreground"/> 1-716-708-1869 </div>
             <div className='flex items-center gap-3 mt-2 text-muted-foreground'>
-              <Icon name='instagram' className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150'/>
-              <Icon name='facebook' className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150'/>
-              <Icon name='linkedin' className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150'/>
+              <Instagram className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150' />
+              <Facebook className='hover:text-white transition ease-in duration-200 delay-150'/>
+              <LinkedinIcon className='hover:text-white transition ease-in duration-200 delay-150'/>
             </div>
             <div className='flex items-center mt-2'>
               <Image className='m-1' src={'/imgs/americanExpressIcon.webp'} width={30} height={30} alt='social'></Image>

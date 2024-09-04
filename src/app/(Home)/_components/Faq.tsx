@@ -2,7 +2,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react'
 import {  SwordsIcon } from 'lucide-react';
-import Icon from '@/lib/icon';
 
 
 const Faq = () => {
@@ -50,7 +49,7 @@ const Faq = () => {
                         className="cursor-pointer py-6 px-4 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group bg-gradient-to-r from-yellow-600 to-indigo-700 text-white transition ease-in duration-150 delay-100 "
                         onClick={() => toggleAccordion(index) }  >
                         {item.question}
-                        <Icon name='swords' className=' group-hover:rotate-180 group-hover:stroke-gray-100 transition ease-in duration-200 delay-100'/>
+                        <SwordsIcon className='  group-hover:rotate-180 group-hover:stroke-gray-100 transition ease-in duration-200 delay-100 '/>
                     </div>
                     {openIndex === index && (
                         <div className="  py-4 px-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm bg-gradient-to-r from-yellow-600 to-indigo-900 text-white italic ">

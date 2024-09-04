@@ -5,7 +5,6 @@ import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Star } from 'lucide-react';
-import Icon from '@/lib/icon';
 
 
 const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyle, animation }:any) => (
@@ -35,7 +34,8 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
           <div className='text-lg font-medium text-white'>Rating</div>
           <div className='flex items-center ml-3'>
             {[...Array(5)].map((_, i) => (
-              <Icon  key={i} name='star' className='stroke-yellow-400 fill-yellow-400'/>
+              <Star key={i} className='stroke-yellow-400 fill-yellow-400' />
+              
             ))}
           </div>
         </div>
