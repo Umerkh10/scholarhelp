@@ -18,8 +18,7 @@ function AboutNumbers() {
     }, []);
   return (
 <div className='mt-10 relative'>
-  <div
-  ref={ref} data-aos="zoom-in"
+  <div data-aos="zoom-in"
     style={{
       backgroundImage: "url('/about_us/about_us_number.webp')",
       backgroundPosition: 'center',
@@ -29,20 +28,20 @@ function AboutNumbers() {
     <div className='absolute inset-0 bg-indigo-950 opacity-70 z-10'></div>
     <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-4 p-10 mx-auto max-w-screen-xl relative z-20'ref={ref}>
       <div className=''ref={ref} data-aos="flip-down">
-        <div className='text-center text-white font-extrabold text-4xl md:text-6xl'>{inView ? <CountUp end={125} duration={2.75} /> : '0'} +</div>
-        <div className='text-center text-white font-extrabold text-2xl'>Clients</div>
+        <div className='text-center text-white font-extrabold text-3xl md:text-6xl'>{inView ? <CountUp end={125} duration={2.75} /> : '0'} +</div>
+        <div className='text-center text-white font-extrabold text-xl md:text-2xl'>Clients</div>
       </div>
       <div className=''ref={ref} data-aos="flip-up">
-      <div className='text-center text-white font-extrabold text-4xl md:text-6xl'>{inView ? <CountUp end={200} duration={2.75} /> : '0'} +</div>
-      <div className='text-center text-white font-extrabold text-2xl'>Optimized Websites</div>
+      <div className='text-center text-white font-extrabold text-3xl md:text-6xl'>{inView ? <CountUp end={200} duration={2.75} /> : '0'} +</div>
+      <div className='text-center text-white font-extrabold text-xl md:text-2xl'>Optimized Websites</div>
       </div>
       <div className=''ref={ref} data-aos="flip-down">
-      <div className='text-center text-white font-extrabold text-4xl md:text-6xl'>{inView ? <CountUp end={90} duration={2.75} /> : '0'}% </div>
-      <div className='text-center text-white font-extrabold text-2xl'>Client Satisfaction</div>
+      <div className='text-center text-white font-extrabold text-3xl md:text-6xl'>{inView ? <CountUp end={90} duration={2.75} /> : '0'}% </div>
+      <div className='text-center text-white font-extrabold text-xl md:text-2xl'>Client Satisfaction</div>
       </div>
       <div className=''ref={ref} data-aos="flip-up">
-      <div className='text-center text-white font-extrabold text-4xl md:text-6xl'>{inView ? <CountUp end={10} duration={2.75} /> : '0'}+</div>
-      <div className='text-center text-white font-extrabold text-2xl'>Years Of Service</div>
+      <div className='text-center text-white font-extrabold text-3xl md:text-6xl'>{inView ? <CountUp end={10} duration={2.75} /> : '0'}+</div>
+      <div className='text-center text-white font-extrabold text-xl md:text-2xl'>Years Of Service</div>
       </div>
     </div>
   </div>

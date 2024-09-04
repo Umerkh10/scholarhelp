@@ -25,30 +25,30 @@ function AboutProcess() {
                 </div>
             </div>
             <div className=''ref={ref} data-aos="flip-down">
-            <div className='text-3xl lg:text-5xl font-extrabold  '>A Minimal Storyline</div>
-            <div className='pt-4 font-medium text-muted-foreground'>
+            <div className='text-2xl lg:text-5xl font-extrabold  '>A Minimal Storyline</div>
+            <div className='pt-4 font-medium text-muted-foreground md:text-base text-sm '>
             Great things often come unexpectedly; they emerge naturally! {process.env.NEXT_PUBLIC_WEBSITE_NAME} is a unique journey of an academic expert evolving into a trusted platform. As the name suggests, {process.env.NEXT_PUBLIC_WEBSITE_NAME} is a hub for those seeking online academic assistance. 
             </div>
 
             <div className='flex items-center gap-2 mt-4'>
                 <Image src={'/about_us/strategy-development.png'} width={60} height={60} alt='strategy'></Image>
                 <div className='flex flex-col ml-3'>
-                <div className='text-lg'>Developing a Strategic Plan</div>
-                <div className='text-muted-foreground'>We develop your academic strategy for online marketing by analyzing past webmaster analytics and SEO records.</div>
+                <div className='lg:text-lg text-base font-medium'>Developing a Strategic Plan</div>
+                <div className='text-muted-foreground md:text-base text-sm'>We develop your academic strategy for online marketing by analyzing past webmaster analytics and SEO records.</div>
                 </div>
             </div>
             <div className='flex items-center gap-2 mt-4'>
                 <Image src={'/about_us/execution.png'} width={60} height={60} alt='strategy'></Image>
                 <div className='flex flex-col ml-3'>
-                <div className='text-lg'>Action Plan</div>
-                <div className='text-muted-foreground'>The most effective practices and strategies are applied to ensure successful outcomes for your current digital marketing campaign.</div>
+                <div className='lg:text-lg text-base font-medium'>Action Plan</div>
+                <div className='text-muted-foreground md:text-base text-sm'>The most effective practices and strategies are applied to ensure successful outcomes for your current digital marketing campaign.</div>
                 </div>
             </div>
             <div className='flex items-center gap-2 mt-4'>
                 <Image src={'/about_us/analysis.png'} width={60} height={60} alt='strategy'></Image>
                 <div className='flex flex-col ml-3'>
-                <div className='text-lg'>Data Analysis</div>
-                <div className='text-muted-foreground'>Reveal Every Detail in Detail!</div>
+                <div className='lg:text-lg text-base font-medium'>Data Analysis</div>
+                <div className='text-muted-foreground md:text-base text-sm'>Reveal Every Detail in Detail!</div>
                 </div>
             </div>
 

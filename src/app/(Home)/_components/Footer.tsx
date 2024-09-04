@@ -37,7 +37,7 @@ const Footer = () => {
 
           
           <div className='p-4'>
-            <div className='font-bold text-lg md:text-xl'>Legal Info</div>
+            <div className='font-bold text-lg md:text-xl+'>Legal Info</div>
             <ul className='mt-3 text-muted-foreground md:text-base text-sm'>
               <li className='font-medium  hover:text-zinc-800 dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/terms"} >Terms & Conditions</Link> </li>
               <li className='font-medium  hover:text-zinc-800 dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/privacy"} >Privacy Policy</Link> </li>
