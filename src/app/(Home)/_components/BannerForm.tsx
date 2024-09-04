@@ -1,17 +1,26 @@
 "use client"
+import { DatePickerDemo } from '@/components/ui/datepicker';
 import React, { useState } from 'react'
 
 
 
 function BannerForm() {
-
         // State to track which button is clicked
         const [activeButton, setActiveButton] = useState<string | null>('writing');
-      
-        // Handler to set the clicked button as active
         const handleClick = (buttonName: string) => {
           setActiveButton(buttonName);
         };
+
+        const [wordCount, setWordCount] = useState<number>(250); // Initial word count
+
+        const handleIncrement = () => {
+          setWordCount((prevCount) => prevCount + 250);
+        };
+      
+        const handleDecrement = () => {
+          setWordCount((prevCount) => (prevCount > 0 ? prevCount - 250 : 0));
+        };
+
   return (
     <div  className=" pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-violet-900 to-zinc-900 ">
         <div className='flex justify-center items-center lg:-translate-y-4    -translate-y-4'>
@@ -62,46 +71,81 @@ function BannerForm() {
 
         <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
             <div className=''>
-            <select className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'  name="selection" required>
+            <select className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'  name="service" required>
                         <option value="option">Assignment/ Coursework</option>
-                        <option value="Flutter">Flutter</option>
-                        <option value="React Native">React Native</option>
-                        <option value="Swift">Swift</option>
-                        <option value="Java">Java</option>
-                        <option value="Python">Python</option>
+                        <option value="Essay">Essay</option>
+                        <option value="Dissertation / Thesis / Proposal">Dissertation / Thesis / Proposal</option>
+                        <option value="Question And Answers">Question And Answers</option>
+                        <option value="SOP">SOP</option>
+                        <option value="Editing / Proofreading">Editing / Proofreading</option>
+                        <option value="PPT">PPT</option>
+                        <option value="Resume / CV">Resume / CV</option>
+                        <option value="Others / Custom Orders">Others / Custom Orders</option>
                     </select>
             
             </div>
 
             <div className=''>
-            <select className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'  name="selection" required>
+            <select className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'  name="subject" required>
                         <option value="option">Subject</option>
-                        <option value="Flutter">Flutter</option>
-                        <option value="React Native">React Native</option>
-                        <option value="Swift">Swift</option>
-                        <option value="Java">Java</option>
-                        <option value="Python">Python</option>
+                        <option value="Hospitality">Hospitality</option>
+                        <option value="Management">Management</option>
+                        <option value="Project Cost Management">Project Cost Management</option>
+                        <option value="Law">Law</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Auditing">Auditing</option>
+                        <option value="Research Methodology">Research Methodology</option>
+                        <option value="Economics - Theory">Economics - Theory</option>
+                        <option value="Economics - Calculation">Economics - Calculation</option>
+                        <option value="Arts and Humanities">Arts and Humanities</option>
+                        <option value="Psychology">Psychology</option>
+                        <option value="Health & Social Care">Health & Social Care</option>
+                        <option value="Nursing">Nursing</option>
+                        <option value="Medical">Medical</option>
+                        <option value="Pharmacy">Pharmacy</option>
+                        <option value="Physiology">Physiology</option>
+                        <option value="Travel & Tourism">Travel & Tourism</option>
+                        <option value="Biotechnology">Biotechnology</option>
+                        <option value="Biology">Biology</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Mathematics">Mathematics</option>
+                        <option value="Programming / Coding">Programming / Coding</option>
+                        <option value="Statistics">Statistics</option>
+                        <option value="ANOVA">ANOVA</option>
+                        <option value="SPSS">SPSS</option>
+                        <option value="NVIVO">NVIVO</option>
+                        <option value="SAS">SAS</option>
+                        <option value="Eviews">Eviews</option>
+                        <option value="Accounts">Accounts</option>
+                        <option value="Education">Education</option>
+                        <option value="Architecture">Architecture</option>
+                        <option value="Geology">Geology</option>
+                        <option value="English Literature">English Literature</option>
+                        <option value="Mechanics">Mechanics</option>
+                        <option value="Chemistry">Chemistry</option>
+                        <option value="Physics">Physics</option>
+                        <option value="Science">Science</option>
+                        <option value="Engineering">Engineering</option>
                     </select>
             </div>
         </div>
 
         <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
             <div className=''>
-            <select className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'  name="selection" required>
-                        <option value="option">Page Words</option>
-                        <option value="Flutter">Flutter</option>
-                        <option value="React Native">React Native</option>
-                        <option value="Swift">Swift</option>
-                        <option value="Java">Java</option>
-                        <option value="Python">Python</option>
-                    </select>
-            
+            <div className='flex items-center gap-4 bg-muted dark:bg-zinc-900 rounded-lg border-[2px] w-full py-1 px-3 outline-none' >
+            <button onClick={handleDecrement} style={{ padding: '5px 10px' }}>-</button>
+            <span>{wordCount} Words</span>
+            <button onClick={handleIncrement} style={{ padding: '5px 10px' }}>+</button>
+          </div>    
             </div>
 
             <div className=''>
-            <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none' placeholder='deadline'  name="deadline" required/>
+            <DatePickerDemo />
             </div>
+
         </div>
+        
         <div className='flex justify-center items-center mt-5'>
             <button className='px-5 py-3 rounded-xl bg-indigo-600 text-white hover:shadow-xl hover:scale-105
             transition ease-in duration-200 delay-200'>Get A Free Quote</button>
