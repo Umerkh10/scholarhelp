@@ -58,7 +58,7 @@ const ReviewCard = ({ name, text }:{name:string,text:string}) => (
         </div>
         <div className='flex-col ml-4'>
           <div className='text-[16px] font-bold'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
-          <div className='text-gray-500 font-medium text-sm'>takingmyclassesonline.com</div>
+          <div className='text-gray-500 font-medium text-sm'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}.com</div>
         </div>
       </div>
     </div>
@@ -69,7 +69,7 @@ const TrustReview = () => {
 
 
   return (
-    <div className='mx-auto max-w-screen-xl p-4 mt-10'  data-aos="zoom-in">
+    <div className='mx-auto max-w-screen-xl p-4 md:p-0 mt-10'  data-aos="zoom-in">
       <div className='font-extrabold text-xl md:text-5xl dark:text-zinc-100 text-indigo-950 text-center'>
         What Students Think of Us
       </div>
