@@ -1,5 +1,4 @@
 "use client"
-
 import * as React from "react"
 import Link from "next/link"
 import { Menu, PhoneCall, } from "lucide-react"
@@ -83,7 +82,8 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="flex items-center "> <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2"/> 1-716-708-1869 </div>
+                    <div className="flex items-center ">
+                   <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2"/> 1-716-708-1869 </div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>

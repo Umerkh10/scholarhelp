@@ -32,9 +32,9 @@ const HeroSection = () => {
           </div>
         </div>
         
-      {/* <div className='pb-5 px-5 md:pt-24'>
+      <div className='pb-5 px-5 md:pt-24'>
       <BannerForm/>
-      </div> */}
+      </div>
 
     </div>
 
