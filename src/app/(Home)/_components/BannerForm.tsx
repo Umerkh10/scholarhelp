@@ -93,10 +93,7 @@ function BannerForm() {
         <div className={`col-span-${showSubject ? '1' : '2'}`}>
           <select
             className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base'
-            name="service"
-            required
-            onChange={handleServiceChange}
-          >
+            name="service" required onChange={handleServiceChange} aria-label='service'>
             <option  value="option">Services</option>
             <option value="Assignment/ Coursework">Assignment/ Coursework</option>
             <option value="Essay">Essay</option>
@@ -114,9 +111,7 @@ function BannerForm() {
           <div>
             <select
               className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base'
-              name="subject"
-              required
-            >
+              name="subject" required aria-label='subject'>
               <option disabled value="option">Subject</option>
               <option value="Hospitality">Hospitality</option>
               <option value="Management">Management</option>
@@ -166,9 +161,7 @@ function BannerForm() {
         <div className=' w-full pt-2 px-3 '>
           <select
             className="rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base"
-            name="question"
-            required
-          >
+            name="question" required aria-label='question'>
             <option value="">Select Questions</option>
             {options.map((number) => (
               <option key={number} value={`${number} Questions`}>

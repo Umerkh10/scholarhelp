@@ -60,7 +60,7 @@ const Sample = () => {
     <div className='mt-10'>
       <div  data-aos="zoom-in-up" className='py-56' style={{ backgroundImage: "url('/imgs/samplebg-1.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className='mx-auto max-w-screen-xl'>
-          <div className='-translate-y-10 text-3xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
+          <div className='-translate-y-10 text-2xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
 
           <Swiper
             loop={true}
