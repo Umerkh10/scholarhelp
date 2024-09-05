@@ -36,7 +36,7 @@ const Faq = () => {
 
         <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-5'>
         <div  data-aos="zoom-in-down" className=''>
-                <div  className='flex items-center justify-center sm:pb-24'>
+                <div  className='flex items-center justify-center sm:pb-12'>
                     <Image loading='eager' className=' rounded-2xl' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg'></Image>
                 </div>
             </div>

@@ -49,13 +49,9 @@ const Sample = () => {
 
   const slides = [
     { imageSrc: '/imgs/pdf.png', title: 'Research Project', subject: 'Biology', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'APA', animation: 'flip-up' },
-    
     { imageSrc: '/imgs/excel.png', title: 'Numerical Project', subject: 'Business', pages: '5', level: 'Masters', docType: 'Excel', refStyle: 'None', animation: 'flip-down' },
-    
     { imageSrc: '/imgs/word.png', title: 'Case Study', subject: 'Economics', pages: '8', level: 'Masters', docType: 'Word', refStyle: 'MLA', animation: 'flip-up' },
-
     { imageSrc: '/imgs/excel.png', title: 'Numerical Project', subject: 'Business', pages: '5', level: 'Masters', docType: 'Excel', refStyle: 'None', animation: 'flip-down' },
-
     { imageSrc: '/imgs/pdf.png', title: 'Research Project', subject: 'Biology', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'APA', animation: 'flip-up' },
     { imageSrc: '/imgs/word.png', title: 'Case Study', subject: 'Economics', pages: '8', level: 'Masters', docType: 'Word', refStyle: 'MLA', animation: 'flip-up' },
   ];

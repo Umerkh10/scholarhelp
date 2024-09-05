@@ -32,7 +32,6 @@ function BannerForm() {
     const value = e.target.value;
     setSelectedService(value);
 
-    // Show subject for certain services including "Question And Answers"
     setShowSubject([
       'Assignment/ Coursework',
       'Essay',
@@ -42,7 +41,6 @@ function BannerForm() {
       'Question And Answers'
     ].includes(value));
 
-    // Show questions only for "Question And Answers"
     setShowQuestions(value === 'Question And Answers');
   };
 

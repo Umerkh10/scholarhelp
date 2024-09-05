@@ -1,9 +1,7 @@
-"use client"
-import Aos from 'aos';
 import Image from 'next/image';
-import React, { useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
-import 'aos/dist/aos.css';
+import React from 'react';
+
+
 
 const reviews = [
   {

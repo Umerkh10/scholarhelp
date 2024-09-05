@@ -51,8 +51,8 @@ const Footer = () => {
             <div className="flex items-center mt-4 text-indigo-7900"> <Phone className="stroke-indigo-700 fill-indigo-700 font-medium mr-2 text-muted-foreground"/> 1-716-708-1869 </div>
             <div className='flex items-center gap-3 mt-2 text-muted-foreground'>
               <Instagram className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150' />
-              <Facebook className='hover:text-white transition ease-in duration-200 delay-150'/>
-              <LinkedinIcon className='hover:text-white transition ease-in duration-200 delay-150'/>
+              <Facebook className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150'/>
+              <LinkedinIcon className='hover:text-zinc-800 dark:hover:text-white transition ease-in duration-200 delay-150'/>
             </div>
             <div className='flex items-center mt-2'>
               <Image className='m-1' src={'/imgs/americanExpressIcon.webp'} width={30} height={30} alt='social'></Image>

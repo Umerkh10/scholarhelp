@@ -1,11 +1,10 @@
 "use client"
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
-import { useInView } from 'react-intersection-observer';
-import Aos from 'aos';
+
 
 const slideData = [
   {
@@ -77,20 +76,6 @@ const Slide = ({ title, description, image, index, ref }:any) => (
 );
 
 const WhyUs = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
-
-  useEffect(() => {
-    Aos.init({
-      duration: 800,
-      disable: "mobile",
-      offset: 100,
-    });
-  }, [inView]);
-  
-
   return (
     <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
       <div className='text-center text-2xl md:text-5xl font-bold dark:text-zinc-100 text-violet-950'>The Benefits of {process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
@@ -108,7 +93,7 @@ const WhyUs = () => {
       >
         {slideData.map((slide, index) => (
           <SwiperSlide key={slide.id}>
-            <Slide {...slide} index={slide.id} ref={ref} />
+            <Slide {...slide} index={slide.id}  />
           </SwiperSlide>
         ))}
       </Swiper>
