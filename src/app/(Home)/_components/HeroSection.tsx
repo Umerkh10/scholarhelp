@@ -22,12 +22,12 @@ const HeroSection = () => {
             <div className='flex justify-center items-center border-[2px] border-zinc-400 bg-zinc-100
             transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl  m-2'>
               <Image src={"/imgs/order.png"} width={35} height={35} alt='whatsapp' />
-              <button className='font-medium ml-2 text-zinc-800'>Order Now</button>
+              <button className='font-medium ml-2 text-zinc-800 md:text-base text-sm '>Order Now</button>
             </div>
             <div className='flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800
             transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2'>
               <Image src={"/imgs/whatsapp.png"} width={25} height={25} alt='whatsapp' />
-              <button className='font-medium ml-2 text-background'>Chat On Whatsapp</button>
+              <button className='font-medium ml-2 text-background md:text-base text-sm'>Chat On Whatsapp</button>
             </div>
           </div>
         </div>

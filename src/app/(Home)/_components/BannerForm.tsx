@@ -85,16 +85,16 @@ function BannerForm() {
       </div>
 
       <div className='pt-4 w-full px-3'>
-        <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none' type="email" name='email' placeholder='Enter Your Email' />
+        <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base' type="email" name='email' placeholder='Enter Your Email' />
       </div>
       <div className='pt-2 w-full px-3'>
-        <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none' type="tel" name='phone' placeholder='Enter Your Phone Number' />
+        <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base' type="tel" name='phone' placeholder='Enter Your Phone Number' />
       </div>
 
       <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
         <div className={`col-span-${showSubject ? '1' : '2'}`}>
           <select
-            className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'
+            className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base'
             name="service"
             required
             onChange={handleServiceChange}
@@ -115,7 +115,7 @@ function BannerForm() {
         {showSubject && (
           <div>
             <select
-              className='rounded-lg border-[2px] w-full py-3 px-3 outline-none'
+              className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base'
               name="subject"
               required
             >
@@ -167,7 +167,7 @@ function BannerForm() {
       {showQuestions && (
         <div className=' w-full pt-2 px-3 '>
           <select
-            className="rounded-lg border-[2px] w-full py-3 px-3 outline-none"
+            className="rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base"
             name="question"
             required
           >
