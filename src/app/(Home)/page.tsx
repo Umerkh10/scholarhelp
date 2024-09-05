@@ -7,7 +7,6 @@ import WhyUs from './_components/WhyUs'
 import ImageReviews from './_components/ImageReviews'
 import WorkFlow from './_components/WorkFlow'
 import Sample from './_components/Sample'
-import TrustReview from './_components/TrustReview'
 import Faq from './_components/Faq'
 import { useInView } from 'react-intersection-observer'
 import Aos from 'aos'
@@ -36,7 +35,7 @@ const Page = () => {
       <ImageReviews/>
       <WorkFlow/>
       <Sample/>
-      <TrustReview/>
+      {/* <TrustReview/> */}
       <Faq/>
       </div>
   )
