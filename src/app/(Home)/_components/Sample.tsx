@@ -58,7 +58,7 @@ const Sample = () => {
 
   return (
     <div className='mt-10'>
-      <div  data-aos="zoom-in-up" className='py-56' style={{ backgroundImage: "url('/imgs/samplebg-1.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div  data-aos="zoom-in-up" className='py-56' style={{ backgroundImage: "url('/imgs/sample_section.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className='mx-auto max-w-screen-xl'>
           <div className='-translate-y-10 text-2xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
 
