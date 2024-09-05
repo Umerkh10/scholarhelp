@@ -69,13 +69,13 @@ const TrustReview = () => {
 
 
   return (
-    <div className='mx-auto max-w-screen-xl mt-10'  data-aos="zoom-in">
-      <div className='font-extrabold text-3xl md:text-5xl dark:text-zinc-100 text-indigo-950 text-center'>
+    <div className='mx-auto max-w-screen-xl p-4 mt-10'  data-aos="zoom-in">
+      <div className='font-extrabold text-xl md:text-5xl dark:text-zinc-100 text-indigo-950 text-center'>
         What Students Think of Us
       </div>
       <div className='flex justify-center items-center mt-5'>
         <Image className='-translate-y-1' src={'/imgs/trust-pilot.png'} width={40} height={60} alt='trust'></Image>
-        <div className='text-xl sm:text-3xl font-bold ml-2'>TrustPilot</div>
+        <div className='text-lg sm:text-3xl font-bold ml-2'>TrustPilot</div>
         <Image className='ml-3' src={'/imgs/tp-rating.png'} width={130} height={60} alt='trust'></Image>
       </div>
       <div className='text-center mt-2 text-gray-500 font-medium'>
