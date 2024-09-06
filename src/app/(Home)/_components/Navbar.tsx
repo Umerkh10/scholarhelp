@@ -11,17 +11,27 @@ import Image from "next/image"
 
 const services = [
   {
-    title: "Web Development",
+    title: "Online Class",
     href: "/services/web-development",
     description: "Create stunning and functional websites tailored to your needs.",
   },
   {
-    title: "Mobile App Development",
+    title: "Online Exam Help",
     href: "/services/mobile-app-development",
     description: "Build powerful mobile applications for iOS and Android platforms.",
   },
   {
-    title: "UI/UX Design",
+    title: "Online Homework",
+    href: "/services/ui-ux-design",
+    description: "Design intuitive and visually appealing user interfaces and experiences.",
+  },
+  {
+    title: "Essay Writing Services",
+    href: "/services/ui-ux-design",
+    description: "Design intuitive and visually appealing user interfaces and experiences.",
+  },
+  {
+    title: "Assignment Help",
     href: "/services/ui-ux-design",
     description: "Design intuitive and visually appealing user interfaces and experiences.",
   },

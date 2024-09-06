@@ -34,9 +34,9 @@ const Faq = () => {
         <div className='text-center text-3xl lg:text-5xl font-extrabold dark:text-zinc-100 text-indigo-950 '>Frequently Asked Questions
         </div>
 
-        <div className='grid lg:grid-cols-2 grid-cols-1 gap-4 p-5'>
+        <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
         <div  data-aos="zoom-in-down" className=''>
-                <div  className='flex items-center justify-center sm:pb-12'>
+                <div  className='flex items-center justify-center sm:pb-8'>
                     <Image loading='eager' className=' rounded-2xl' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg'></Image>
                 </div>
             </div>
