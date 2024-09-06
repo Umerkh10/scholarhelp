@@ -45,9 +45,9 @@ function WorkFlow() {
             </div>
             <div   className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Make Your Order:</div>
+                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Make Your Order:</div>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-base-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>You can submit your order details through our online form, WhatsApp, live chat, or email.</div>
+              <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>You can submit your order details through our online form, WhatsApp, live chat, or email.</div>
               <div className='flex justify-start items-center group mt-5'>
                 <button className='group-hover:text-black transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400 px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
@@ -64,9 +64,9 @@ function WorkFlow() {
             </div>
             <div    className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Confirm and Pay:</div>
+                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Confirm and Pay:</div>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-base font-medium dark:text-zinc-100 text-indigo-900'>Make an advance payment to confirm and start your order.</div>
+              <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Make an advance payment to confirm and start your order.</div>
               <div className='flex justify-start items-center group mt-5'>
                 <button className='group-hover:text-black transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
@@ -83,9 +83,9 @@ function WorkFlow() {
             </div>
             <div    className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Expert Work Underway:</div>
+                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Expert Work Underway:</div>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-base font-medium dark:text-zinc-100 text-indigo-900'>
+              <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
               Our skilled tutors begin working on your order right away.</div>
               <div className='flex justify-start items-center group mt-5'>
                 <button className='group-hover:text-black transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
@@ -103,10 +103,10 @@ function WorkFlow() {
             </div>
             <div  className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-xl md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Punctual Delivery:</div>
+                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Punctual Delivery:</div>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-base font-medium dark:text-zinc-100 text-indigo-900'>
-              You can submit your order details through our online form, WhatsApp, live chat, or email.</div>
+              <div className='mt-2 md:mt-5  md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
+              Experience on-time delivery, every time. We value your time and ensure your projects arrive punctually.</div>
               <div className='flex justify-start items-center group mt-5'>
                 <button className='group-hover:text-zinc-900 transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
