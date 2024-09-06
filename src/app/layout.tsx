@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "./(Home)/_components/Navbar";
 import Footer from "./(Home)/_components/Footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { WebVitals } from "./web-vital";
 
 
 const inter = Montserrat({ subsets: ["latin"] });
@@ -37,7 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <WebVitals/>
+
       <ThemeProvider
             attribute="class"
             defaultTheme="light"
