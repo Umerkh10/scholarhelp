@@ -8,6 +8,7 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMen
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeSwitch } from "@/components/ui/ThemeSwitch"
 import Image from "next/image"
+import SearchBar from "./SearchBar"
 
 const services = [
   {
@@ -120,8 +121,8 @@ export default function Navbar() {
             <MobileLink href="/" className="flex items-center" onOpenChange={setIsOpen}>
               <span className="font-bold">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
             </MobileLink>
-            <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-6">
-              <div className="flex flex-col space-y-3">
+            <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-3">
+              <div className="flex flex-col space-y-3 overflow-scroll ">
                 <MobileLink href="/" onOpenChange={setIsOpen}>
                   Home
                 </MobileLink>
@@ -136,6 +137,9 @@ export default function Navbar() {
                 </MobileLink>
                 <MobileLink href="#" >
                   <ThemeSwitch/>
+                </MobileLink>
+                <MobileLink href="#" >
+                  <SearchBar/>
                 </MobileLink>
               </div>
             </div>
