@@ -1,15 +1,14 @@
 "use client"
-import dynamic from 'next/dynamic';
 import React, { useEffect } from 'react'
 import HeroSection from './_components/HeroSection'
-const Rating = dynamic(() => import('./_components/Rating'));
-const Academic = dynamic(() => import('./_components/Academic'));
-const WhyUs = dynamic(() => import('./_components/WhyUs'));
-const ImageReviews = dynamic(() => import('./_components/ImageReviews'));
-const WorkFlow = dynamic(() => import('./_components/WorkFlow'));
-const Sample = dynamic(() => import('./_components/Sample'));
-const TrustReview = dynamic(() => import('./_components/TrustReview'));
-const Faq = dynamic(() => import('./_components/Faq'));
+import Rating from './_components/Rating'
+import Academic from './_components/Academic'
+import WhyUs from './_components/WhyUs'
+import ImageReviews from './_components/ImageReviews'
+import WorkFlow from './_components/WorkFlow'
+import Sample from './_components/Sample'
+import TrustReview from './_components/TrustReview'
+import Faq from './_components/Faq'
 import { useInView } from 'react-intersection-observer'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
