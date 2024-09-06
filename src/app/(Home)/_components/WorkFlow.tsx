@@ -81,9 +81,10 @@ function WorkFlow() {
                 <Image src={"/imgs/workflow_3.webp"} loading='lazy' width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div    className=''>
+            <div className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Expert Work Underway:</div>
+              <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>
+              Expert Work Underway:</div>
               </div>
               <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
               Our skilled tutors begin working on your order right away.</div>
@@ -108,7 +109,7 @@ function WorkFlow() {
               <div className='mt-2 md:mt-5  md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
               Experience on-time delivery, every time. We value your time and ensure your projects arrive punctually.</div>
               <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-zinc-900 transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
+                <button className='group-hover:text-zinc-900 text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
             </div>
           </div>
