@@ -7,7 +7,7 @@ const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
   return (
     <div  data-aos={animation} className="group p-4">
       <div className="flex flex-col items-center border-[5px] border-transparent
-       bg-gradient-to-t from-violet-400 to-indigo-400 dark:bg-gradient-to-b dark:from-indigo-800 dark:via-zinc-800 dark:to-violet-800 md:h-[370px] w-full rounded-lg px-4 py-5 group-hover:scale-105 group-hover:border-y-yellow-400  group-hover:shadow-xl transition-transform duration-200 ease-in">
+       bg-gradient-to-t from-violet-400 to-indigo-400 dark:bg-gradient-to-b dark:from-indigo-800 dark:via-zinc-800 dark:to-violet-800 md:h-[370px] w-full rounded-lg px-4 py-5 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:border-y-yellow-400  group-hover:shadow-xl transition-transform duration-200 ease-in">
 
         <div className="flex items-center justify-center bg-yellow-400 rounded-full h-24 w-24">
           <Image src={imageSrc} width={60} height={60} alt={title} />
