@@ -31,7 +31,7 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
           </button>
         </div>
         <div className='flex items-center justify-center mt-5'>
-          <div className='text-lg font-medium text-white'>Rating</div>
+          <div className='md:text-lg font-medium text-white'>Rating</div>
           <div className='flex items-center ml-3'>
             {[...Array(5)].map((_, i) => (
               <Star key={i} className='stroke-yellow-400 fill-yellow-400' />
@@ -60,7 +60,7 @@ const Sample = () => {
     <div className='mt-10'>
       <div  data-aos="zoom-in-up" className='py-56' style={{ backgroundImage: "url('/imgs/sample_section.webp')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className='mx-auto max-w-screen-xl'>
-          <div className='-translate-y-10 text-2xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
+          <div className='-translate-y-10 text-xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
 
           <Swiper
             loop={true}

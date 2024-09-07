@@ -109,7 +109,7 @@ function WorkFlow() {
               <div className='mt-2 md:mt-5  md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
               Experience on-time delivery, every time. We value your time and ensure your projects arrive punctually.</div>
               <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-zinc-900 text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
+                <button className='group-hover:text-zinc-900 text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
             </div>
           </div>
