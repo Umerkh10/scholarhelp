@@ -9,7 +9,7 @@ import { Star } from 'lucide-react';
 
 const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyle, animation }:any) => (
   <div className='group mt-5' data-aos={animation}>
-    <div className='relative scale-95 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px] bg-gradient-to-t from-violet-400 to-indigo-400
+    <div className='relative  md:scale-95 scale-90 group-hover:scale-95 md:group-hover:scale-100 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px] bg-gradient-to-t from-violet-400 to-indigo-400
        dark:bg-gradient-to-b dark:from-indigo-800 dark:via-zinc-800 dark:to-violet-800 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
       <div className='relative z-10'>
         <div className='flex items-center'>

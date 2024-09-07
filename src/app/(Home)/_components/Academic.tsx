@@ -90,7 +90,7 @@ function Academic() {
       <div className="text-xl md:text-5xl text-center dark:text-zinc-100 text-violet-950 font-extrabold">
         We are your partners in Academic Success!
       </div>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-10 mx-auto">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-5 lg:mt-10 mx-auto">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
