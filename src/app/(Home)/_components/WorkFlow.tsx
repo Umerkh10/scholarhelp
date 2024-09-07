@@ -49,7 +49,7 @@ function WorkFlow() {
               </div>
               <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>You can submit your order details through our online form, WhatsApp, live chat, or email.</div>
               <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-black text-sm md:text-base  transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400 px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
+                <button className='group-hover:text-black text-sm md:text-base  transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400 px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
             </div>
           </div>
@@ -68,7 +68,7 @@ function WorkFlow() {
               </div>
               <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Make an advance payment to confirm and start your order.</div>
               <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-black text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
+                <button className='group-hover:text-black text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@ function WorkFlow() {
               <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
               Our skilled tutors begin working on your order right away.</div>
               <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-black text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
+                <button className='group-hover:text-black text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
               </div>
             </div>
           </div>
