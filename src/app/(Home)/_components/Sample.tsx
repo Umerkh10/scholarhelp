@@ -16,15 +16,15 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
           <div className='bg-slate-300 group-hover:bg-zinc-300 transition ease-in duration-200 delay-100 border rounded-full h-20 w-20 flex justify-center items-center'>
             <Image src={imageSrc} width={50} height={50} alt='result' />
           </div>
-          <div className='text-white font-extrabold text-xl ml-5 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>
+          <div className='text-white font-extrabold text-lg lg:text-xl ml-5 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>
             {title}
           </div>
         </div>
-        <div className='text-gray-200 md:text-xl font-medium pt-2'>Subject: {subject}</div>
-        <div className='text-gray-200 md:text-xl font-medium pt-2'>Number Of Pages: {pages}</div>
-        <div className='text-gray-200 md:text-xl font-medium pt-2'>Academic Level: {level}</div>
-        <div className='text-gray-200 md:text-xl font-medium pt-2'>Document Type: {docType}</div>
-        <div className='text-gray-200 md:text-xl font-medium pt-2'>Reference Style: {refStyle}</div>
+        <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Subject: {subject}</div>
+        <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Number Of Pages: {pages}</div>
+        <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Academic Level: {level}</div>
+        <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Document Type: {docType}</div>
+        <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Reference Style: {refStyle}</div>
         <div className='flex justify-center items-center mt-5'>
           <button className='bg-amber-400 w-full py-4 rounded-lg font-medium md:text-lg text-zinc-800 hover:bg-white hover:-translate-y-3 transition ease-in duration-200 delay-200 border-[3px] border-black'>
             View Sample
