@@ -14,7 +14,7 @@ const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
         </div>
         <div className="flex flex-col mt-4">
           <div className="text-base sm:text-xl text-white font-semibold">{title}</div>
-          <div className="text-zinc-200 font-medium lg:text-base text-sm ">{description}</div>
+          <div className="text-zinc-200 font-medium lg:text-base text-xs ">{description}</div>
         </div>
       </div>
     </div>
@@ -87,7 +87,7 @@ function Academic() {
 
   return (
     <div className="mx-auto max-w-screen-xl mt-10">
-      <div className="text-2xl md:text-5xl text-center dark:text-zinc-100 text-violet-950 font-extrabold">
+      <div className="text-xl md:text-5xl text-center dark:text-zinc-100 text-violet-950 font-extrabold">
         We are your partners in Academic Success!
       </div>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-10 mx-auto">
