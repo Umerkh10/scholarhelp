@@ -15,7 +15,7 @@ const HeroSection = () => {
           <div className='text-center py-1 lg:text-left dark:text-zinc-100 text-zinc-900 text-3xl sm:text-5xl font-extrabold'>Academic Writers</div>
           <div className='text-center lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-3xl font-extrabold '>To Elevate Your Grades!</div>
           <div className='max-w-screen-md mx-auto text-center lg:text-left pt-4 font-medium dark:text-zinc-100 text-zinc-900 text-sm sm:text-lg '>
-            Your trusted source for high-quality academic writing services. We provide expert support for essays, research papers, online classes, and exam preparation to help you achieve top grades. Reach your academic goals with us!
+            Your trusted source for high-quality academic writing services. We provide expert support for essays, research papers, online classes, and exam preparation to help you achieve top grades.
           </div>
 
           <div className='flex flex-col md:flex-row  items-center mt-5'>
