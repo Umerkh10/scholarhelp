@@ -13,8 +13,7 @@ function WorkFlow() {
         const nextTab:any = {
           "1": "2",
           "2": "3",
-          "3": "4",
-          "4": "1",
+          "3": "1",
         };
         return nextTab[prevTab]; 
       });
@@ -25,7 +24,10 @@ function WorkFlow() {
 
   return (
     <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
-      <div className='text-center text-xl md:text-5xl font-extrabold dark:text-zinc-100 text-violet-950'>Workflow Process We Follow</div>
+      <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'> How Does Take My Online Class Service Work?</h2>
+      <h3 className='text-center text-lg md:text-2xl font-extrabold dark:text-zinc-100 text-violet-950'>
+      Just One Click Away to Get Frictionless Online Classes
+      </h3>
 
         <div className='  mt-8'>
             <Tabs defaultValue={activeTab} value={activeTab} onValueChange={setActiveTab}>
@@ -33,24 +35,20 @@ function WorkFlow() {
           <TabsTrigger value="1">1</TabsTrigger>
           <TabsTrigger value="2">2</TabsTrigger>
           <TabsTrigger value="3">3</TabsTrigger>
-          <TabsTrigger value="4">4</TabsTrigger>
         </TabsList>
 
         <TabsContent value="1">
           <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div   className=''>
               <div className='flex justify-center items-center'>
-                <Image  src={"/imgs/workflow.webp"} loading='lazy' width={600} height={400} alt='workflow'></Image>
+                <Image  src={"/imgs/workflow.webp"} loading='eager' width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div   className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Make Your Order:</div>
+                <h4 className='text-lg md:text-2xl font-bold dark:text-zinc-100 text-indigo-900 '>Place Your Order</h4>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>You can submit your order details through our online form, WhatsApp, live chat, or email.</div>
-              <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-black text-sm md:text-base  transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400 px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
-              </div>
+              <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Provide complete details about your classes and specify your requirements by filling out the order form.</p>
             </div>
           </div>
         </TabsContent>
@@ -59,17 +57,14 @@ function WorkFlow() {
            <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div    className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow_2.webp"} loading='lazy' width={600} height={400} alt='workflow'></Image>
+                <Image src={"/imgs/workflow_2.webp"} loading='eager' width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
-            <div    className=''>
+            <div className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Confirm and Pay:</div>
+              <h4 className='text-lg md:text-2xl font-bold dark:text-zinc-100 text-indigo-900 '>Make a Prepayment</h4>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Make an advance payment to confirm and start your order.</div>
-              <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-black text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
-              </div>
+              <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Complete a payment procedure so that our online instructor can start working.</p>
             </div>
           </div>
           </TabsContent>
@@ -78,42 +73,21 @@ function WorkFlow() {
              <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
             <div    className=''>
               <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow_3.webp"} loading='lazy' width={600} height={400} alt='workflow'></Image>
+                <Image src={"/imgs/workflow_4.webp"} loading='eager' width={600} height={400} alt='workflow'></Image>
               </div>
             </div>
             <div className=''>
               <div className='flex justify-start items-center mt-5 lg:mt-20'>
-              <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>
-              Expert Work Underway:</div>
+              <h4 className='text-lg md:text-2xl font-bold dark:text-zinc-100 text-indigo-900 '>
+              Ace Your Exam</h4>
               </div>
-              <div className='mt-2 md:mt-5 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
-              Our skilled tutors begin working on your order right away.</div>
-              <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-black text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
-              </div>
+              <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
+              As an expert assigned to you relevant to your requirements, you will be notified by email.</p>
+         
             </div>
           </div>
           </TabsContent>
 
-        <TabsContent value="4">
-        <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-            <div    className=''>
-              <div className='flex justify-center items-center'>
-                <Image src={"/imgs/workflow_4.webp"} loading='lazy' width={600} height={400} alt='workflow'></Image>
-              </div>
-            </div>
-            <div  className=''>
-              <div className='flex justify-start items-center mt-5 lg:mt-20'>
-                <div className='text-lg md:text-4xl font-bold dark:text-zinc-100 text-indigo-900 '>Punctual Delivery:</div>
-              </div>
-              <div className='mt-2 md:mt-5  md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
-              Experience on-time delivery, every time. We value your time and ensure your projects arrive punctually.</div>
-              <div className='flex justify-start items-center group mt-5'>
-                <button className='group-hover:text-zinc-900 text-sm md:text-base transition ease-in delay-200 duration-200 border-[2px] border-yellow-600 md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:shadow-xl group-hover:opacity-90 bg-yellow-400  px-4 py-4 rounded-lg font-bold'>Place Your Order</button>
-              </div>
-            </div>
-          </div>
-        </TabsContent>
 
       </Tabs>
       </div>
