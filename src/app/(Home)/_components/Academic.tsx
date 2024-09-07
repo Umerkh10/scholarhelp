@@ -96,7 +96,7 @@ function Academic() {
         ))}
       </div>
       <div className="flex justify-center items-center mt-10 lg:mt-5">
-        <button className="bg-gradient-to-r from-indigo-500  to-violet-500 dark:bg-gradient-to-r dark:from-indigo-800 dark:via-zinc-800 dark:to-violet-800 px-4 py-4 rounded-lg border-[4px] border-amber-400 hover:scale-105 hover:shadow-xl transition ease-in duration-200 text-white font-medium text-lg">
+        <button className="bg-gradient-to-r from-indigo-500  to-violet-500 dark:bg-gradient-to-r dark:from-indigo-800 dark:via-zinc-800 dark:to-violet-800 px-4 py-4 rounded-lg border-[4px] border-amber-400 md:scale-100 scale-90 hover:scale-95 md:hover:scale-105 hover:shadow-xl transition ease-in duration-200 text-white font-medium text-lg">
           Place Your Order Today
         </button>
       </div>

@@ -59,14 +59,14 @@ const slideData = [
 
 const Slide = ({ title, description, image, index, ref }:any) => (
   <div className='group mt-5' ref={ref} data-aos={index % 2 === 0 ? "flip-left" : "flip-right"}>
-    <div className='relative scale-95 group-hover:scale-100 group-hover:border-yellow-400 border-[5px] group-hover:bg-indigo-900 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[360px] w-full rounded-xl p-4 overflow-hidden'>
+    <div className='relative md:scale-100 scale-90 group-hover:scale-95 md:group-hover:scale-105 group-hover:border-yellow-400 border-[5px] group-hover:bg-indigo-900 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[360px] w-full rounded-xl p-4 overflow-hidden'>
       <div style={{ backgroundImage: "url('/imgs/bg-why.webp')", backgroundPosition: 'center', backgroundSize: 'cover', transition: 'transform 0.5s ease-in-out' }} className='absolute inset-0 transform translate-y-full group-hover:translate-y-0'></div>
       <div className='relative z-10'>
         <div className='flex justify-between'>
           <div className='bg-slate-300 group-hover:bg-zinc-300 transition ease-in duration-200 delay-100 border rounded-full h-24 w-24 flex justify-center items-center'>
             <Image className='group-hover:-rotate-45 transition ease-in duration-200 delay-100' src={image} width={64} height={64} alt='icon' />
           </div>
-          <div className='font-extrabold text-5xl md:text-7xl opacity-10 group-hover:opacity-100 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>{index.toString().padStart(2, '0')}</div>
+          <div className='font-extrabold text-4xl md:text-7xl opacity-10 group-hover:opacity-100 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>{index.toString().padStart(2, '0')}</div>
         </div>
         <div className='group-hover:text-gray-200 text-base md:text-[20px] font-bold pt-4'>{title}</div>
         <div className='pt-3 md:text-base text-sm font-medium group-hover:text-gray-200'>{description}</div>
@@ -78,7 +78,7 @@ const Slide = ({ title, description, image, index, ref }:any) => (
 const WhyUs = () => {
   return (
     <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
-      <div className='text-center text-2xl md:text-5xl font-bold dark:text-zinc-100 text-violet-950'>The Benefits of {process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
+      <div className='text-center text-xl md:text-5xl font-bold dark:text-zinc-100 text-violet-950'>The Benefits of {process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
       <Swiper
         loop={true}
         spaceBetween={20}
