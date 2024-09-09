@@ -15,17 +15,17 @@ export const HeroSection = () => {
           <h2 className='text-center py-1 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-bold'>Taking My Affordable Classes Online Guarantee You the Academic Distinction</h2>
           <div className='flex flex-col lg:flex-row items-center gap-4 mt-2'>
             <div className='flex items-center gap-1'>
-            <Image src={'/imgs/instructor.png'} width={70} height={70} alt='instructor'></Image>
+            <Image src={'/imgs/instructor.png'} width={64} height={64} alt='instructor'></Image>
           <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>950+ PhD Instructor</h3>
           <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
           </div>
             <div className='flex items-center gap-1'>
-            <Image src={'/imgs/record.png'} width={70} height={70} alt='record'></Image>
+            <Image src={'/imgs/record.png'} width={64} height={64} alt='record'></Image>
           <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Proven Track Record</h3>
           <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
           </div>
             <div className='flex items-center gap-1'>
-            <Image src={'/imgs/affordable.png'} width={70} height={70} alt='phd'></Image>
+            <Image src={'/imgs/affordable.png'} width={64} height={64} alt='phd'></Image>
           <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Affordable Packages</h3>
           <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
           </div>
