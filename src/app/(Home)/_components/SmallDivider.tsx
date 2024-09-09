@@ -5,10 +5,10 @@ import Image from 'next/image'
 function SmallDivider() {
   return (
     <div className='mt-5'>
-        <div className='bg-gradient-to-r from-purple-800 via-indigo-700 to-zinc-800 py-12 '>
+        <div data-aos='zoom-in' className='bg-gradient-to-r from-purple-800 via-indigo-700 to-zinc-800 py-12 '>
             <div className='mx-auto max-w-screen-xl'>
                 <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
-                    <div className=' '>
+                    <div  className=' '>
                         <h2 className='font-extrabold md:text-3xl text-2xl text-zinc-100'>Need Urgent Help </h2>
                         <h3 className='font-extrabold md:text-2xl text-xl text-zinc-100'>Contact us </h3>
                     </div>
