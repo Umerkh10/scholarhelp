@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Poppins} from "next/font/google";
+import { Montserrat} from "next/font/google";
 import "./globals.css";
 import Navbar from "./(Home)/_components/Navbar";
 import Footer from "./(Home)/_components/Footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
 
-const inter = Poppins({
+const inter = Montserrat({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });

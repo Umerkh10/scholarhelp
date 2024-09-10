@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 
@@ -72,6 +73,10 @@ const TrustReview = () => {
         {reviews.map((review, index) => (
           <ReviewCard key={index} name={review.name} text={review.text} />
         ))}
+      </div>
+
+      <div className='flex justify-center items-center'>
+         <div className='py-3 px-5 bg-gradient-to-r from-violet-600 to bg-indigo-600 text-zinc-100 hover:scale-105 transition ease-in duration-200 delay-200 rounded-lg shadow-xl'><Link href='/Reviews'>More Reviews </Link></div>
       </div>
 
     </div>

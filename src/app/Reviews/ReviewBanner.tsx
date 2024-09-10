@@ -5,11 +5,11 @@ import React, { useState } from 'react'
 
 function ReviewBanner() {
     const [reviews, setReviews] = useState([
-        { rating: 5, count: 90 },
-        { rating: 4, count: 50 },
+        { rating: 5, count: 100 },
+        { rating: 4, count: 40 },
         { rating: 3, count: 20 },
         { rating: 2, count: 10 },
-        { rating: 1, count: 5 },
+        { rating: 1, count: 2 },
       ])
       const totalReviews = reviews.reduce((acc, review) => acc + review.count, 0)
   return (
@@ -28,7 +28,7 @@ function ReviewBanner() {
       <div className="p-6 md:p-10 grid gap-4">
         <h2 className="text-xl md:text-4xl font-bold  ">Our Client Reviews</h2>
         <p className=' font-medium md:text-base text-sm '>See what our clients are saying about us – their satisfaction speaks for itself!
-        Read real reviews from those who've experienced our exceptional service.</p>
+        Read real reviews from those who have experienced our exceptional service.</p>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-0.5">
             <StarIcon className="w-5 h-5 fill-primary" />
@@ -46,12 +46,13 @@ function ReviewBanner() {
           {reviews.map((review, index) => (
             <div key={index} className="flex items-center gap-4">
               <div className="flex items-center gap-2">
-                {[...Array(review.rating)].map((_, i) => (
-                  <StarIcon className="w-4 h-4 fill-primary" />
-                ))}
-                {[...Array(5 - review.rating)].map((_, i) => (
-                  <StarIcon className="w-4 h-4 fill-muted stroke-muted-foreground" />
-                ))}
+                {[...Array(review.rating)].map((_, index) => (
+                <StarIcon key={index} className="w-4 h-4 fill-primary" />
+              ))}
+             {[...Array(5 - review.rating)].map((_, index) => (
+                <StarIcon key={index} className="w-4 h-4 fill-muted stroke-muted-foreground" />
+              ))}
+
               </div>
               <div className="flex-1 h-4 bg-muted rounded-full overflow-hidden">
                 <div
