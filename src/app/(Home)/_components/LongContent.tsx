@@ -4,9 +4,15 @@ import React, { useState } from 'react'
 import Divider from './Divider'
 
 function LongContent() {
-    const [showmore,SetShowMore] = useState(false)
+    const [showMore, setShowMore] = useState(false);
 
-  
+    const handleButtonClick = () => {
+        if (showMore) {
+          // Scroll to the top of the page
+          window.scrollTo({  top: 2700, behavior: 'smooth' });
+        }
+        setShowMore(!showMore);
+      };
 
     return (
         <>
@@ -22,17 +28,20 @@ function LongContent() {
                         Why Choose takingmyclassesonline.com to Take My Online Classes? </h2>
                     <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>While deciding,  takingmyclassesonline.com will surely be a perfect decision as it stands for creativity and trustworthiness. The core of our staff is based on experts who are well-versed in the applied field and committed to helping you achieve your targeted goals. With takingmyclassesonline.com, we allow you to appreciate that your academic issues take preferences over other tasks. Consequently, our online classes relieve your stress and give you piece of mind and other engagements. We offer a regular and proper schedule and design your lesson system so your classes are engaging and finished on according to the appropriate schedule. </p>
 
-                    {showmore ? 
-                    <DynamicContent1/>:<></>}
+                    {showMore ? <DynamicContent1 /> : null}
                     
                 </div>
 
-                {showmore ? 
-                    <DynamicContent2/>:<></>}
+                {showMore ? <DynamicContent2 /> : null}
             </div>
         
         <div className='flex justify-center items-center mt-3'>
-         <button className='px-5 py-2 rounded-xl bg-orange-500 font-medium text-zinc-100' onClick={()=>SetShowMore(!showmore)}>{showmore===true?"Read less":"Read More"} </button>
+        <button
+          className='px-5 py-2 rounded-xl bg-orange-500 font-medium text-zinc-100'
+          onClick={handleButtonClick}
+        >
+          {showMore ? 'Read less' : 'Read More'}
+        </button>
          </div>
  
         

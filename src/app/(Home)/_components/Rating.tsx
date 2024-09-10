@@ -6,7 +6,7 @@ const Rating = () => {
 
     return (
         <div className='pt-10'>
-            <div className='text-2xl md:text-5xl font-extrabold text-center dark:text-zinc-100 text-violet-950'>Our Reviews</div>
+            <div className='text-2xl md:text-5xl font-extrabold text-center dark:text-zinc-100 text-violet-950'>Our Excellence</div>
             <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl'>
                 <div data-aos="fade-up" className=' p-7'>
                     <div className='flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4'>

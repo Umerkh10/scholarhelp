@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { CtaButtons } from './HeroSection'
+import {CtaChat } from './HeroSection'
 
 function AboutContent() {
   return (
@@ -18,7 +18,7 @@ function AboutContent() {
       </div>
       <p className='mt-2 md:mt-4 md:text-base text-sm font-medium text-muted-foreground'>
         Overall, securing high grades at the academic level is a dream of every passionate learner. However, this achievement requires high effort and qualified instructors, and also you have to search with ‘pay someone to take my class.’ Here, at takingmyclassesonline.com, we offer you highly expert mentors’ online assistance for the enhancement of your academic skills. Furthermore, our service is user-friendly, and it is really customized to provide you with a complete solution. Hence, utilizing our unique and quality service benefits you in accelerating your learning. Significantly, engaging with our online expert will give you peace of mind and satisfy you regarding your learning approach as well as they will guide you about your entire course, syllabus, assignment and exams.  Lastly, joining us leads you to secure your dream grades.</p>
-        <CtaButtons/>
+        <CtaChat/>
     </div>
   </div>
   </div>

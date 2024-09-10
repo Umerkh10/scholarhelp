@@ -14,16 +14,13 @@ function FormContent() {
 
             <div  data-aos="flip-down" className="md:pt-6 pt-8 "  >
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
-                Explore Your Unique Learning Dimension through Our Exclusive Online Tutors 
-                    <ChevronDown className=' rotate-180'/>
-                </h2>
+                Explore Your Unique Learning Dimension through Our Exclusive Online Tutors  </h2>
             
                     <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                     takingmyclassesonline.com is the leading online platform for you to hire an online class instructor. Somehow, you might be bored of taking online classes and wondering about ‘need help with my online class’. So, then, we are here to help you out. We are on a mission to help students with their academics so they can easily continue their learning journey.
                     </p>
                     <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
-                    Can I Pay Someone to Take My Classes Online
-                    <ChevronDown className=' rotate-180'/> </h2>
+                    Can I Pay Someone to Take My Classes Online</h2>
                     <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                     If you are searching for  Pay Someone to Take My Classes Online, so you are at the right place to get online class services to score high in your exam. Literally, concerning our expert makes you eligible to reach the distinctions. Moreover, our experts are highly qualified, skilled, and well aware of modern teaching techniques. Also, their experience in this field innovates their teaching methodology as well as they are very committed and sincere in their prophetic profession. So, it is your decision whether you want to achieve your success or not. In reality, you are one step away from filling out the order form and taking your exam.
                     Pay someone to take my class? is not a simple question as it requires extensive research to find the best online service for this job. By hiring our online instructor, you will lead your academic journey and get the distinction.

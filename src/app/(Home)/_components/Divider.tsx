@@ -1,5 +1,5 @@
 import React from 'react'
-import { CtaButtons } from './HeroSection'
+import { CtaChat } from './HeroSection'
 
 
 function Divider() {
@@ -13,7 +13,7 @@ function Divider() {
                     
                 </div>
                 <div className='flex justify-center'>
-                <CtaButtons/>
+                <CtaChat/>
                 </div>
             </div>
         </div>

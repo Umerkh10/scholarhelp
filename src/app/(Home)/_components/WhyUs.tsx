@@ -9,39 +9,39 @@ import { Autoplay, Navigation } from 'swiper/modules';
 const slideData = [
   {
     id: 1,
-    title: '100% Plagiarism-Free',
-    description: `${process.env.NEXT_PUBLIC_WEBSITE_NAME} Help delivers content that is completely free from plagiarism. Our team specializes in thesis writing, ensuring you can trust their expertise to create authentic, plagiarism-free work for you.`,
-    image: '/imgs/original.png',
-  },
-  {
-    id: 2,
-    title: 'Ph.D Professional Experts',
-    description: `${process.env.NEXT_PUBLIC_WEBSITE_NAME} Help comprises multiple teams of native experts with deep knowledge in their respective subject areas. They possess a strong command of the English language, allowing them to create error-free high-quality content.`,
+    title: 'PhD Online Instructor',
+    description: `Hire qualified and experienced online instructors to get assistance with your online exam help and achieve success throughout your academic career.`,
     image: '/imgs/elite.png',
   },
   {
-    id: 3,
-    title: 'On-Time Delivery',
-    description: `We offer solutions to help you manage your online class tasks efficiently. We respect your deadlines and ensure your work is delivered on time. Say goodbye to concerns about missing deadlines and let ${process.env.NEXT_PUBLIC_WEBSITE_NAME} Help handle everything for you.`,
+    id: 2,
+    title: 'Provent Track record',
+    description: `Thousands of students have achieved distinction in their exams through our online class services. Our proven track record will easily convince you to hire our services.`,
     image: '/imgs/result-1.png',
   },
   {
-    id: 4,
-    title: 'Pocket-Friendly',
-    description: `We offer a flexible pricing strategy that caters to everyone’s needs. Our prices depend on factors such as academic level, required services, chosen subject experts, and deadlines. Don’t stress about the cost if you’re working with a tight budget.`,
+    id: 3,
+    title: 'User-Friendly',
+    description: `We prioritize our customers and their needs. Therefore, we have designed our service effectively, making it user-friendly and customized.`,
     image: '/imgs/budget.png',
   },
   {
-    id: 5,
-    title: '24/7 Support',
-    description: `We are here to provide you with the best experience, offering 24/7 live chat support to address your questions anytime, day or night. Whether it is the middle of the night or the weekend, feel free to reach out to us for assistance.`,
+    id: 4,
+    title: 'Engaging Lecturer',
+    description: `Our online instructors are aligned with modern teaching methodologies and lesson study methods. Their expertise leads their lectures to engage students.`,
     image: '/imgs/live-chat.png',
   },
   {
-    id: 6,
-    title: 'Ensure Privacy',
-    description: `${process.env.NEXT_PUBLIC_WEBSITE_NAME} Help is committed to protecting your privacy. We only request an email and contact number, which are optional. Rest assured, any information provided is kept confidential and is only accessible to authorized personnel.`,
+    id: 5,
+    title: 'Competitive Package',
+    description: `Enjoy our 50% off on your first order, as well as we announce seasonal offers for the leaners. However, our cheap service will save you money.`,
     image: '/imgs/confidential-folder.png',
+  },
+  {
+    id: 6,
+    title: 'Flexible Schedule',
+    description: `Are you looking for a flexible online class schedule? To get started, just fill out the order form, complete the payment method, and choose a suitable schedule.`,
+    image: '/imgs/original.png',
   },
 
 ];
@@ -67,7 +67,7 @@ const Slide = ({ title, description, image, index, ref }:any) => (
 const WhyUs = () => {
   return (
     <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
-      <div className='text-center text-xl md:text-5xl font-bold dark:text-zinc-100 text-violet-950'>Key points for Selling</div>
+      <h2 className='text-center text-xl md:text-4xl font-bold dark:text-zinc-100 text-violet-950'> Why Choose US </h2>
       <Swiper
         loop={true}
         spaceBetween={20}
