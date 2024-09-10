@@ -19,7 +19,8 @@ function ReviewBanner() {
     <div className=" overflow-hidden grid md:grid-cols-2 items-center mx-auto max-w-screen-xl py-10">
       <div className=" ">
         <Image
-          src="/imgs/reviews-concept-landing-page.png"
+          src="/imgs/reviews_bg.webp"
+          loading='eager'
           alt="Product Image"
           width={800}
           height={600}
