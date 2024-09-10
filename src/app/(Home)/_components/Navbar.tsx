@@ -91,7 +91,15 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <Link href="/contact" legacyBehavior passHref>
+                <Link href="/Reviews" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <div className="hover:text-blue-600">Reviews</div>
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
+                <Link href="#" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     <div className="flex items-center ">
                    <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2"/> 1-716-708-1869 </div>

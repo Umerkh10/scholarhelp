@@ -66,14 +66,7 @@ const TrustReview = () => {
       <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 text-center'>
       What Our Satisfied Customers Say About Us
       </h2>
-      {/* <div className='flex justify-center items-center mt-5'>
-        <Image className='-translate-y-1' src={'/imgs/trust-pilot.png'} width={40} height={60} alt='trust'></Image>
-        <div className='text-lg sm:text-3xl font-bold ml-2'>TrustPilot</div>
-        <Image className='ml-3' src={'/imgs/tp-rating.png'} width={130} height={60} alt='trust'></Image>
-      </div>
-      <div className='text-center mt-2 text-gray-500 font-medium'>
-        Trusted by 1,000+ Students with a 4.7/5 Rating
-      </div> */}
+
 
       <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5'>
         {reviews.map((review, index) => (
