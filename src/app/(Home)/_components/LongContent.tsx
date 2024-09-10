@@ -48,7 +48,7 @@ export default LongContent
 function DynamicContent2() {
   return (
     <>
-    <div data-aos='flip-down' className='mx-auto max-w-screen-xl mt-5'>
+    <div className='mx-auto max-w-screen-xl mt-5'>
     <div className='p-5'>
         <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
             Why do students often say do my online class? </h2>
@@ -107,7 +107,7 @@ function DynamicContent1() {
   return (
     <>
  
-    <div data-aos='flip-down'> 
+    <div > 
         <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>The Evaluation of Online Classes System Over Education System </h2>
     <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Today’s world is moving towards virtual opportunities. With the advent of AI, technology, and better internet connections worldwide, taking online classes has become common. You can enrol in an online class anywhere. If you write on Google ‘do my exam online’, you will find a number of services. You only need a laptop and an internet connection to access the classes. Moreover, we now witness virtual universities offering online courses instead of virtual classes. Lastly, this evaluation signifies the value of online classes.  </p>
 
