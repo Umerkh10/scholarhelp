@@ -59,7 +59,7 @@ export default function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger><div className="hover:text-blue-600">Services</div></NavigationMenuTrigger>
+                <NavigationMenuTrigger><Link href='/Service' className="hover:text-blue-600">Services</Link></NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] hover:text-blue-700">
                     {services.map((service) => (
@@ -134,7 +134,7 @@ export default function Navbar() {
                 <MobileLink href="/" onOpenChange={setIsOpen}>
                   Home
                 </MobileLink>
-                <MobileLink href="#"  onOpenChange={setIsOpen}>
+                <MobileLink href="/Service"  onOpenChange={setIsOpen}>
                  Service
                 </MobileLink>
                 <MobileLink href="/about" onOpenChange={setIsOpen}>
@@ -142,6 +142,9 @@ export default function Navbar() {
                 </MobileLink>
                 <MobileLink href="/contact" onOpenChange={setIsOpen}>
                   Contact
+                </MobileLink>
+                <MobileLink href="/Reviews" onOpenChange={setIsOpen}>
+                  Reviews
                 </MobileLink>
                 <MobileLink href="#" >
                   <ThemeSwitch/>

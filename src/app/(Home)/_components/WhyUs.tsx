@@ -23,7 +23,7 @@ const slideData = [
     id: 3,
     title: 'User-Friendly',
     description: `We prioritize our customers and their needs. Therefore, we have designed our service effectively, making it user-friendly and customized.`,
-    image: '/imgs/budget.png',
+    image: '/imgs/user-friendly.png',
   },
   {
     id: 4,
@@ -35,13 +35,13 @@ const slideData = [
     id: 5,
     title: 'Competitive Package',
     description: `Enjoy our 50% off on your first order, as well as we announce seasonal offers for the leaners. However, our cheap service will save you money.`,
-    image: '/imgs/confidential-folder.png',
+    image: '/imgs/competitive.png',
   },
   {
     id: 6,
     title: 'Flexible Schedule',
     description: `Are you looking for a flexible online class schedule? To get started, just fill out the order form, complete the payment method, and choose a suitable schedule.`,
-    image: '/imgs/original.png',
+    image: '/imgs/on-time.png',
   },
 
 ];
