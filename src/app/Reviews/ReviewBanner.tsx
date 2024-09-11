@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 function ReviewBanner() {
     const [reviews, setReviews] = useState([
         { rating: 5, count: 100 },
-        { rating: 4, count: 40 },
+        { rating: 4, count: 50 },
         { rating: 3, count: 20 },
         { rating: 2, count: 10 },
         { rating: 1, count: 2 },
