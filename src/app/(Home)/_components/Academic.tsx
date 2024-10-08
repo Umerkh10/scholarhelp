@@ -27,61 +27,32 @@ function Academic() {
   const services = [
     {
       imageSrc: "/imgs/webinar.png",
-      title: "Online Class",
+      title: "Take My Exam",
       description:
-        "Stuck with extensive daily tasks of your online classes? Fret not, we are here to help you complete your online classes with perfect grades!",
+        "Overwhelmed with the daily tasks of your online courses? Dont worry! We are here to help you ace your online classes and secure top grades effortlessly!",
       animation: "flip-left",
     },
     {
       imageSrc: "/imgs/online-exam.png",
-      title: "Online Exam Help",
-      description:
-        "Want to ace your online exams without stress? Our tutors are at your service with guaranteed best results in your online exams.",
+      title: "Take My GRE Exam",
+      description:"Looking to excel in your GRE exam without the hassle? Our expert tutors are here to help, ensuring top results in your GRE exam",
       animation: "flip-right",
     },
     {
       imageSrc: "/imgs/online-homework.png",
-      title: "Online Homework Help",
+      title: "Take GMAT Online Exam",
       description:
-        "Online homework can be tricky and exhausting, but our reliable and affordable service makes it smooth and easy.",
+        "Taking the GMAT online can be challenging and tiring, but our dependable and affordable service ensures a smooth and stress-free experience.",
       animation: "flip-left",
     },
     {
       imageSrc: "/imgs/essay.png",
-      title: "Essay Writing Services",
-      description:
-        "Want a compelling, plagiarism-free essay? Trust our credible tutors for excellent essay writing services with timely delivery.",
+      title: "Take LSAT Online Exam",
+      description:"Looking for a reliable way to ace your LSAT online exam? Trust our expert tutors for top notch assistance and timely results",
       animation: "flip-right",
     },
 
-    {
-      imageSrc: "/imgs/assignment.png",
-      title: "Assignment Help",
-      description:
-        "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
-      animation: "flip-left",
-    },
-    {
-        imageSrc: "/imgs/assignment.png",
-        title: "Assignment Help",
-        description:
-          "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
-        animation: "flip-right",
-      },
-      {
-        imageSrc: "/imgs/assignment.png",
-        title: "Assignment Help",
-        description:
-          "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
-        animation: "flip-left",
-      },
-      {
-        imageSrc: "/imgs/assignment.png",
-        title: "Assignment Help",
-        description:
-          "Struggling to complete assignments correctly and on time? Our 24/7 homework aid with reliable client support is here for you.",
-        animation: "flip-right",
-      },
+
     
   ];
 
