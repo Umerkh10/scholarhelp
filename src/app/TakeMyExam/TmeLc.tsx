@@ -16,7 +16,7 @@ function TmeLc() {
                 </p>
                 <h3 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">Secure Good grades with our Online Exam help</h3>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Getting good grades is the most important consideration for every student. However, preparing for examinations can be difficult. You can pay someone to do my online exam with us! Not only you’ll be able to get expert advice but we also help you to attain higher grades.  So If you're searching for “Pay someone to take my  online classes" then you’re on the right track. Our Experts ensure that you pass the examinations and also help you to achieve exceptional results.
+                Getting good grades is the most important consideration for every student. However, preparing for examinations can be difficult. You can pay someone to do my online exam with us! Not only you’ll be able to get expert advice but we also help you to attain higher grades.  So If youre searching for “Pay someone to take my  online classes then you’re on the right track. Our Experts ensure that you pass the examinations and also help you to achieve exceptional results.
 
                 </p>
             </div>

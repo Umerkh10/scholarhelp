@@ -18,7 +18,7 @@ central-learning lectures are scheduled as per student need as they don’t feel
         <div data-aos='flip-left' className='group'>
             <div className='h-[300px] border-[4px] border-muted-foreground rounded-tr-[50px] scale-90 group-hover:scale-95 lg:scale-95 lg:group-hover:scale-100 group-hover:rounded-tl-[50px] group-hover:rounded-br-[50px] group-hover:rounded group-hover:shadow-2xl transition ease-in duration-200 delay-200  rounded-bl-[50px] bg-gradient-to-t from-violet-500 via-purple-200 to-zinc-100 dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] '>
                 <h3 className='pt-10 text-center font-bold text-lg md:text-2xl'>24/7 Support</h3>
-                <p className='py-4 px-2 text-center font-medium text-sm md:text-base  '>We prioritize our students and value their time for us. That's why we offer 24/7 support, ensuring they can focus on their education without added stress.</p>
+                <p className='py-4 px-2 text-center font-medium text-sm md:text-base  '>We prioritize our students and value their time for us. Thats why we offer 24/7 support, ensuring they can focus on their education without added stress.</p>
             </div>
         </div>
 

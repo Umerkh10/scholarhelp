@@ -19,7 +19,7 @@ function LSATLongContent2() {
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='p-5'>
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950'>Take My Online Classes: An Ultimate Solution To Your Academic Stress </h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Today's learners have diverse options for their academic journey, allowing them to educate themselves and learn something new every day. Every student has their own priorities to manage, while also struggling to find solutions to academic challenges. ‘Take My Classes Online’ has your back! You no longer have to worry, as we take care of your academic stress with our top-notch services and incredible support.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Todays learners have diverse options for their academic journey, allowing them to educate themselves and learn something new every day. Every student has their own priorities to manage, while also struggling to find solutions to academic challenges. ‘Take My Classes Online’ has your back! You no longer have to worry, as we take care of your academic stress with our top-notch services and incredible support.</p>
 
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
@@ -67,7 +67,7 @@ function DynamicContent2() {
                     <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Online lectures can be boring sometimes. However, Our experts use different methodologies to help the students to be engaged in some activities regarding their subject so that they feel refreshed every day. Utilize “take my teas for me” services and get desired results. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
-                    Priorities Lesson Tasks while Delivering According to the Students' Approach</h3>
+                    Priorities Lesson Tasks while Delivering According to the Students Approach</h3>
 
                     <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>All of our experts use different methodologies for teaching to make lectures interesting while ensuring that each student has grasped what is being taught. Care is taken for students who cannot find solutions to their learning problems. Join us, as we support all our students by providing them with exceptional lectures that lead to success and let us help you take your HESI exam with confidence. </p>
 

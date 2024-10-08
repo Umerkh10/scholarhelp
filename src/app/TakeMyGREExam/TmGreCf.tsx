@@ -8,7 +8,7 @@ function TmGreCf() {
         <div data-aos='flip-right' className='group'>
             <div className='h-[300px] border-[4px] border-muted-foreground rounded-tl-[50px] scale-90 group-hover:scale-95 lg:scale-95 lg:group-hover:scale-100 group-hover:rounded-tr-[50px] group-hover:rounded-bl-[50px] group-hover:rounded group-hover:shadow-2xl transition ease-in duration-200 delay-200  rounded-br-[50px] bg-gradient-to-t from-violet-500 via-purple-200 to-zinc-100 dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)] '>
                 <h3 className='pt-10 text-center font-bold text-lg md:text-2xl'> Student-Centered Learning.</h3>
-                <p className='py-4 px-2 text-center font-medium  text-sm md:text-base '>Our aim is to help every student with our expert guidance. We manage schedules according to the student's needs as they won’t feel any burden for their studies. So join us and uplift your learning style and learn new skills every time.</p>
+                <p className='py-4 px-2 text-center font-medium  text-sm md:text-base '>Our aim is to help every student with our expert guidance. We manage schedules according to the students needs as they won’t feel any burden for their studies. So join us and uplift your learning style and learn new skills every time.</p>
             </div>
         </div>
 

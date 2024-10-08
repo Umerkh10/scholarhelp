@@ -54,8 +54,8 @@ export default function Navbar() {
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] hover:text-blue-700">
                     {services.map((service) => (
-                      <ListItem >
-                        <Link className="hover:text-blue-500 font-medium text-zinc-900 dark:text-zinc-100" href={service.href}>{service.title}</Link>
+                      <ListItem key={service.title}>
+                        <Link href={service.href}>{service.title}</Link>
                       </ListItem>
                     ))}
                   </ul>

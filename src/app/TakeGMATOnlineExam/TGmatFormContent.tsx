@@ -17,7 +17,7 @@ function TGmatFormContent() {
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
                 Hire an Expert And Take Your GMAT Online and Develop Learning Skills</h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Wondering where to take the GMAT Exam? You're in the right place. Our expert instructors are here to help you with their advice and help you to do your exams and achieve remarkable results through their knowledge and experience. Our Website has highly certified teachers which are known for their tactics and expertise in different exam formats, Which not only helps the student to secure good grades but also helps them to accomplish their goals and help them throughout their academic journey. You can find your GMAT score through the official website
+                Wondering where to take the GMAT Exam? Youre in the right place. Our expert instructors are here to help you with their advice and help you to do your exams and achieve remarkable results through their knowledge and experience. Our Website has highly certified teachers which are known for their tactics and expertise in different exam formats, Which not only helps the student to secure good grades but also helps them to accomplish their goals and help them throughout their academic journey. You can find your GMAT score through the official website
                 </p>
 
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
