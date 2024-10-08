@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Menu, PhoneCall, } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem,NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle,} from "@/components/ui/navigation-menu"
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle, } from "@/components/ui/navigation-menu"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { ThemeSwitch } from "@/components/ui/ThemeSwitch"
 import Image from "next/image"
@@ -12,31 +12,22 @@ import SearchBar from "./SearchBar"
 
 const services = [
   {
-    title: "Online Class",
-    href: "/services/web-development",
-    description: "Create stunning and functional websites tailored to your needs.",
+    title: "Take My Exam",
+    href: "/TakeMyExam",
   },
   {
-    title: "Online Exam Help",
-    href: "/services/mobile-app-development",
-    description: "Build powerful mobile applications for iOS and Android platforms.",
+    title: "Take My GRE Exam",
+    href: "/TakeMyGREExam",
   },
   {
-    title: "Online Homework",
-    href: "/services/ui-ux-design",
-    description: "Design intuitive and visually appealing user interfaces and experiences.",
+    title: "Take GMAT Online Exam",
+    href: "/TakeGMATOnlineExam",
   },
   {
-    title: "Essay Writing Services",
-    href: "/services/ui-ux-design",
-    description: "Design intuitive and visually appealing user interfaces and experiences.",
+    title: "Take LSAT Exam Online",
+    href: "/TakeLSATExam",
   },
-  {
-    title: "Assignment Help",
-    href: "/services/ui-ux-design",
-    description: "Design intuitive and visually appealing user interfaces and experiences.",
-  },
-]
+];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false)
@@ -54,7 +45,7 @@ export default function Navbar() {
               <NavigationMenuItem >
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="hover:text-blue-600">Home</div>
+                    <div className="hover:text-blue-600">Home</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -63,12 +54,8 @@ export default function Navbar() {
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] hover:text-blue-700">
                     {services.map((service) => (
-                      <ListItem
-                        key={service.title}
-                        title={service.title}
-                        href={service.href}
-                      >
-                        {service.description}
+                      <ListItem >
+                        <Link className="hover:text-blue-500 font-medium text-zinc-900 dark:text-zinc-100" href={service.href}>{service.title}</Link>
                       </ListItem>
                     ))}
                   </ul>
@@ -77,7 +64,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="hover:text-blue-600">Contact Us</div>
+                    <div className="hover:text-blue-600">Contact Us</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -85,7 +72,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="hover:text-blue-600">About Us</div>
+                    <div className="hover:text-blue-600">About Us</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -93,7 +80,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/Reviews" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  <div className="hover:text-blue-600">Reviews</div>
+                    <div className="hover:text-blue-600">Reviews</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -102,13 +89,13 @@ export default function Navbar() {
                 <Link href="#" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     <div className="flex items-center ">
-                   <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2"/> 1-716-708-1869 </div>
+                      <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2" /> 1-716-708-1869 </div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
-              
+
               <NavigationMenuItem>
-                <ThemeSwitch/>
+                <ThemeSwitch />
               </NavigationMenuItem>
 
             </NavigationMenuList>
@@ -134,8 +121,8 @@ export default function Navbar() {
                 <MobileLink href="/" onOpenChange={setIsOpen}>
                   Home
                 </MobileLink>
-                <MobileLink href="/Service"  onOpenChange={setIsOpen}>
-                 Service
+                <MobileLink href="/Service" onOpenChange={setIsOpen}>
+                  Service
                 </MobileLink>
                 <MobileLink href="/about" onOpenChange={setIsOpen}>
                   About
@@ -147,10 +134,10 @@ export default function Navbar() {
                   Reviews
                 </MobileLink>
                 <MobileLink href="#" >
-                  <ThemeSwitch/>
+                  <ThemeSwitch />
                 </MobileLink>
                 <MobileLink href="#" >
-                  <SearchBar/>
+                  <SearchBar />
                 </MobileLink>
               </div>
             </div>

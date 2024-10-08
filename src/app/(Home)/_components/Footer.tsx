@@ -26,11 +26,10 @@ const Footer = () => {
           <div className='p-4'>
             <div className='font-bold text-lg md:text-xl'>Services</div>
             <ul className='md:mt-3 mt-1  '>
-              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"#"} >Online Class</Link> </li>
-              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"#"} >Online Exam</Link> </li>
-              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"#"} >Online Homework</Link> </li>
-              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"#"} >Online Assignment</Link> </li>
-              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"#"} >Essay Writing</Link> </li>
+              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeMyExam"} >Take My Exam</Link> </li>
+              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeMyGREExam"} >Take My GRE Exam</Link> </li>
+              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeGMATOnlineExam"} >Take GMAT Online Exam</Link> </li>
+              <li className='font-medium   mt-1 md:text-base text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeLSATExam"} >Take LSAT Exam Online</Link> </li>
             
             </ul>
           </div>
