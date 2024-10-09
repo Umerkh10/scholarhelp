@@ -11,25 +11,25 @@ const slideData = [
       id: 1,
       title: 'Proficiency and Experience',
       description: `Hiring our expert instructor to take your GMAT Online will result in great success and help you to increase your critical thinking and enhance your educational credibility that provides help and support in your academic life.`,
-      image: '/imgs/elite.png',
+      image: '/imgs/gmat-points-1.png',
     },
     {
       id: 2,
       title: 'Improved Learning Skills',
       description: `You don’t need to worry about how to take the GMAT online with excellent marks! Our experts are well-versed in diverse fields which can get you more benefits at a very reasonable price. Get your chance to hire one of our finest instructors to take your GMAT Online and make your result sheet more remarkable. `,
-      image: '/imgs/result-1.png',
+      image: '/imgs/gmat-points-2.png',
     },
     {
       id: 3,
       title: ' Achieve Better Scores',
       description: `Now Secure higher marks in the GMAT test online with us! Another Reason to hire instructors from our site is that we provide the best assessment and help students with every queries and clear doubts so that they feel relaxed and confident.`,
-      image: '/imgs/budget.png',
+      image: '/imgs/gmat-points-3.png',
     },
     {
       id: 4,
       title: 'Affordable Package',
       description: `We value our students more than anything. Takingmyclassesonline.com prioritizes the student community to help them in their academic journey as well as to accomplish their life goals. We are not here to assist you one or two times. Our service helps students take your GMAT Online and helps them throughout their educational career with such a nominal cost which differentiate us from others.`,
-      image: '/imgs/confidential-folder.png',
+      image: '/imgs/gmat-points-4.png',
     },
 
   ];

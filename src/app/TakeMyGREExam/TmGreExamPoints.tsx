@@ -10,25 +10,25 @@ const slideData = [
       id: 1,
       title: 'Expert Insights and Experience',
       description: `Paying someone to take my GRE test can be tough, But not with us. Our experts are prominent in their goal to give the students their ideal help to grow them in their educational platform. They are well versed in different exam formats, making them the ideal choice for your exam support. With our mentors you are no longer asking for “How do I take the GRE test`,
-      image: '/imgs/elite.png',
+      image: '/imgs/gre-points-1.png',
     },
     {
       id: 2,
       title: 'Advanced Learning',
       description: `Getting exceptional outcomes and remarkable results that will increase your educational credibility and enhance your critical thinking which lead you to be an expert in your desired field. So paying someone to take my exam will be beneficial unless you ensure that the service is reliable and trustworthy, and it aligns with your ethical standards and academic integrity.`,
-      image: '/imgs/result-1.png',
+      image: '/imgs/gre-points-2.png',
     },
     {
       id: 3,
       title: 'Economical Packages',
       description: `Many students are struggling to find the How do I take GRE home test assistance. With our prominent priority, we help hundreds of students in their educational journey so that they reach the new levels of their life. Hiring our expert instructors, you’re accessible for 24/7 services which help you to clear your doubts anytime you want.`,
-      image: '/imgs/budget.png',
+      image: '/imgs/gre-points-3.png',
     },
     {
       id: 4,
       title: 'Customized Plans',
       description: `You can now select the instructor as per your need and get huge benefits with our services. With the most affordable plans in town you can more in a less. So make your move now and let us make your future bright and let you enjoy higher grades and marks `,
-      image: '/imgs/confidential-folder.png',
+      image: '/imgs/gre-points-4.png',
     },
 
   ];

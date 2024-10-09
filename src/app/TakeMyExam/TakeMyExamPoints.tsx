@@ -12,25 +12,25 @@ const slideData = [
       id: 1,
       title: 'Personalized Learning Support',
       description: `Boost your learning potential by selecting one of the best online test tutors to work with. Checkout our instructor as they are the best option for you since they have a lot of experience with many kinds of tests format. With the assistance of our dedicated professionals, we offered you 24/7 online exam help support to clear your doubts. Take GRE test online and ace your exam with our expert support.`,
-      image: '/imgs/elite.png',
+      image: '/imgs/tme-points-1.png',
     },
     {
       id: 2,
       title: 'Improved Learning Skills',
       description: `Getting remarkable outcomes and upscaling the legitimacy of your education are two more reasons to work with our professionals. So get this chance on an LSAT practice exam, obtain assistance from our professionals for your assignments and achieve better grades on tests. So Can I hire someone to do my exam for me not only assists you with good marks but can also ensure higher success. So the “Take My Exam” service will surely give you some benefits.`,
-      image: '/imgs/result-1.png',
+      image: '/imgs/tme-points-2.png',
     },
     {
       id: 3,
       title: 'Reasonable Packages',
       description: `Are you looking for “where I can hire someone to take my exam”?Look no further! ‘Taking My Classes Online’ has experienced instructors and mentors which provide efficient support to the student at a nominal price. We offer our services at reasonable costs so you may gain benefits from them and keep progressing in your educational growth.`,
-      image: '/imgs/budget.png',
+      image: '/imgs/tme-points-3.png',
     },
     {
       id: 4,
       title: 'Personalized Packages',
       description: `Checkout our plans and customize them according to your needs. We place a high value on your privacy, protecting your personal information so you may focus on your studies without any burden. Your information is protected by our secure payment method, giving you a secure experience for all of your academic help needs. `,
-      image: '/imgs/confidential-folder.png',
+      image: '/imgs/tme-points-4.png',
     },
 
   ];

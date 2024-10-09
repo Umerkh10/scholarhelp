@@ -23,7 +23,7 @@ function TmGreExamLC() {
 
         <div data-aos="zoom-in-down" className=''>
             <div className='flex items-center justify-center mt-5'>
-                <Image className='rounded-xl' loading='eager' src={'/imgs/service_lc.webp'} width={800} height={800} alt='servicelc' ></Image>
+                <Image className='rounded-xl' loading='eager' src={'/imgs/gre-test-1.webp'} width={800} height={800} alt='servicelc' ></Image>
             </div>
         </div>
 

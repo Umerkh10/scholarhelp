@@ -10,25 +10,25 @@ const slideData = [
       id: 1,
       title: 'Proficiency and Experience',
       description: `Takemyclassesonline.com have the best skillful and experienced instructors which not only help you with their learning capability but also provide you with some benefits with their life experience.`,
-      image: '/imgs/elite.png',
+      image: '/imgs/gmat-points-1.png',
     },
     {
       id: 2,
       title: 'Improved Learning ',
       description: `There is no such bad thing if you’re seeking guidance from an online source. It will gain you some profit and help you to make your learning skills more efficient and better. Hire expert instructors from our site and take such advantage of their guidance.`,
-      image: '/imgs/result-1.png',
+      image: '/imgs/tme-points-2.png',
     },
     {
       id: 3,
       title: '  Prioritize Your Privacy ',
       description: `Hiring experts from our website will be beneficial for you in every case. While securing your data is one of the most important commitments to our student community, No one can avail their personal information by any chance.`,
-      image: '/imgs/confidential-folder.png',
+      image: '/imgs/tme-points-3.png',
     },
     {
       id: 4,
       title: 'Affordable Package',
       description: `How to study for the LSAT exam with no resources will be tough until you hire someone to help you in your learning journey. ‘Take My Classes Online’ takes this responsibility and helps you with their affordable packages so you shouldn't have to look anymore.`,
-      image: '/imgs/budget.png',
+      image: '/imgs/gre-points-4.png',
     },
 
   ];
