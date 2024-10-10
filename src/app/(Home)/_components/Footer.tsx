@@ -30,6 +30,12 @@ const Footer = () => {
               <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeMyGREExam"} >Take My GRE Exam</Link> </li>
               <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeGMATOnlineExam"} >Take GMAT Online Exam</Link> </li>
               <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/TakeLSATExam"} >Take LSAT Exam Online</Link> </li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={'/ToeflExamOnline'}>Toefl Exam Online</Link> </li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={'/TakemyTeasExam'}>Take my Teas Exam For me</Link></li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={'/HesiExam'}>Hesi Exam</Link></li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={'/TakeMyGED'}>Take My GED For Me</Link></li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={'/PteAcademicOnline'}>PTE Academic Online</Link></li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={'/PaySomeoneToTakeClass'}>Pay Someone To Take My Class</Link></li>
             
             </ul>
           </div>

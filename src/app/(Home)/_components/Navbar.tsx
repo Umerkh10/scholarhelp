@@ -27,6 +27,30 @@ const services = [
     title: "Take LSAT Exam Online",
     href: "/TakeLSATExam",
   },
+  {
+    title: "Toefl Exam Online",
+    href: "/ToeflExamOnline",
+  },
+  {
+    title: "Take my Teas Exam For me",
+    href: "/TakemyTeasExam",
+  },
+  {
+    title: "Hesi Exam",
+    href: "/HesiExam",
+  },
+  {
+    title: "Take My GED For Me",
+    href: "/TakeMyGED",
+  },
+  {
+    title: "PTE Academic Online",
+    href: "/PteAcademicOnline",
+  },
+  {
+    title: "Pay Someone To Take My Class",
+    href: "/PaySomeoneToTakeClass",
+  },
 ];
 
 export default function Navbar() {
@@ -50,7 +74,7 @@ export default function Navbar() {
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger><Link href='/Service' className="hover:text-blue-600">Services</Link></NavigationMenuTrigger>
+                <NavigationMenuTrigger><Link href='#' className="hover:text-blue-600">Services</Link></NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {services.map((service) => (
@@ -121,8 +145,8 @@ export default function Navbar() {
                 <MobileLink href="/" onOpenChange={setIsOpen}>
                   Home
                 </MobileLink>
-                <MobileLink href="/Service" onOpenChange={setIsOpen}>
-                  Service
+                <MobileLink href="#" onOpenChange={setIsOpen}>
+                  Services
                 </MobileLink>
                 <MobileLink href="/about" onOpenChange={setIsOpen}>
                   About

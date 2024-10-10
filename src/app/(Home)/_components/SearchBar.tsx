@@ -18,6 +18,12 @@ function SearchBar() {
       <Link href={'/TakeGMATOnlineExam'}>Take GMAT Online Exam</Link>
       </CommandItem>
       <CommandItem><Link href={'/TakeLSATExam'}>Take LSAT Exam Online</Link></CommandItem>
+      <CommandItem><Link href={'/ToeflExamOnline'}>Toefl Exam Online</Link></CommandItem>
+      <CommandItem><Link href={'/TakemyTeasExam'}>Take my Teas Exam For me</Link></CommandItem>
+      <CommandItem><Link href={'/HesiExam'}>Hesi Exam</Link></CommandItem>
+      <CommandItem><Link href={'/TakeMyGED'}>Take My GED For Me</Link></CommandItem>
+      <CommandItem><Link href={'/PteAcademicOnline'}>PTE Academic Online</Link></CommandItem>
+      <CommandItem><Link href={'/PaySomeoneToTakeClass'}>Pay Someone To Take My Class</Link></CommandItem>
     </CommandGroup>
   </CommandList>
 </Command>
