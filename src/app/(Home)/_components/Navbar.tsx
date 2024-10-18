@@ -13,43 +13,43 @@ import SearchBar from "./SearchBar"
 const services = [
   {
     title: "Take My Exam",
-    href: "/TakeMyExam",
+    href: "/take-my-exam",
   },
   {
     title: "Take My GRE Exam",
-    href: "/TakeMyGREExam",
+    href: "/take-my-gre-exam",
   },
   {
     title: "Take GMAT Online Exam",
-    href: "/TakeGMATOnlineExam",
+    href: "/take-gmat-online-exam",
   },
   {
     title: "Take LSAT Exam Online",
-    href: "/TakeLSATExam",
+    href: "/lsat-exam-prep",
   },
   {
     title: "Toefl Exam Online",
-    href: "/ToeflExamOnline",
+    href: "/toefl-exam-online",
   },
   {
     title: "Take my Teas Exam For me",
-    href: "/TakemyTeasExam",
+    href: "/take-my-teas-exam-for-me",
   },
   {
     title: "Hesi Exam",
-    href: "/HesiExam",
+    href: "/hesi-exam",
   },
   {
     title: "Take My GED For Me",
-    href: "/TakeMyGED",
+    href: "/take-my-ged-for-me",
   },
   {
     title: "PTE Academic Online",
-    href: "/PteAcademicOnline",
+    href: "/pte-academic-online",
   },
   {
     title: "Pay Someone To Take My Class",
-    href: "/PaySomeoneToTakeClass",
+    href: "/pay-someone-to-take-my-class",
   },
 ];
 

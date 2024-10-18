@@ -55,7 +55,7 @@ const slideData = [
 function ToeflPoints() {
   return (
     <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
-    <h2 className='text-center text-xl md:text-[33px] font-extrabold dark:text-zinc-100 text-zinc-900'>Benefits Of Hiring From Takemyclassesonline </h2>
+    <h2 className='text-center text-xl md:text-[33px] font-extrabold dark:text-zinc-100 text-zinc-900'>Benefits Of Hiring From {process.env.NEXT_PUBLIC_WEBSITE_NAME} </h2>
     <h3 className='text-center text-lg py-2 md:text-3xl font-bold dark:text-zinc-100 text-zinc-900'>Toefl At Home At Affordable Price </h3>
     <Swiper
       loop={true}

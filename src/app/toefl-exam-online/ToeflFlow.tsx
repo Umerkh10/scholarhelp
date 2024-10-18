@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-function HesiFlow() {
+function ToeflFlow() {
     const [activeTab, setActiveTab] = useState("1"); 
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function HesiFlow() {
     }, []);
   return (
     <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
-    <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'>How My Online Class Service Work?</h2>
+    <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'> How Does My Online Class Service Work?</h2>
     <h3 className='text-center text-lg md:text-2xl font-extrabold dark:text-zinc-100 text-violet-950'>
     Just One Click Away to Get Frictionless Online Classes
     </h3>
@@ -80,7 +80,7 @@ function HesiFlow() {
             Ace Your Exam</h4>
             </div>
             <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
-            You will be notified by email as an expert assigned to you relevant to your requirements.</p>
+            As an expert assigned to you relevant to your requirements, you will be notified by email.</p>
        
           </div>
         </div>
@@ -94,4 +94,4 @@ function HesiFlow() {
   )
 }
 
-export default HesiFlow
+export default ToeflFlow

@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import TGmatDivider from '../TakeGMATOnlineExam/TGmatDivider';
+import TGmatDivider from '../take-gmat-online-exam/TGmatDivider';
 
 function HesiLC2() {
     const [showMore, setShowMore] = useState(false);
@@ -59,7 +59,7 @@ function DynamicContent2() {
                     <h2 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Benefits Of Online Learning Service </h2>
 
-                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Online platforms have become a very prominent way of learning and developing skills. With many solutions to your problems, you can easily access any information in no time. However, Determining the perfect solution to your needs can be challenging but not with us. Join us now and get incredible service at an affordable price. Our service includes, “Take my class for me” and many more services  to help students in their educational life.  We also offer a money-back guarantee in case we fail to achieve the desired results. We safeguard your personal information and make sure that no third-party accesses your personal information.  </p>
+                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Online platforms have become a very prominent way of learning and developing skills. With many solutions to your problems, you can easily access any information in no time. However, Determining the perfect solution to your needs can be challenging but not with us. Join us now and get incredible service at an affordable price. Our service includes, “Take my class for me” and many more services  to help students in their educational life. We also guarantee that the money will be returned in case our efforts do not bring the desired outcomes. Although, your information is safe with us, so that no third party gains access to personal information.  </p>
 
                 </div>
             </div>
@@ -84,7 +84,7 @@ function DynamicContent1() {
 
                 <h3 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Preparation For HESI Admission Assessment Exam (A2)</h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>The HESI Admission Assessment Exam (A2) is an important step for prospective nursing students in determining their preparedness for a nursing school. Takingmyclassesonline.com is known for their commendable commitment to pass every student who knocks the doors for help. We aim to provide the best assistance through our expert instructors to help them achieve their goal in life. However, Our instructors make HESI test taking strategies to help the students who are looking to pass the HESI exams with exceptional marks.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>The HESI Admission Assessment Exam (A2) is an important step for future nursing students in determining their preparedness for a nursing school. Moreover, Takingmyclassesonline.com is known for their commendable commitment to pass every student who knocks the doors for help. We aim to provide the best assistance through our expert instructors to help them achieve their goal in life. However, Our instructors make HESI test taking strategies to help the students who are looking to pass the HESI exams with exceptional marks.</p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 What are the Strategies For Taking HESI Critical Thinking Exam</h3>

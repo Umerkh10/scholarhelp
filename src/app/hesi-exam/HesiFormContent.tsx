@@ -9,7 +9,7 @@ function HesiFormContent() {
         <div className=''>
             <div data-aos="flip-down" className="md:pt-6 pt-8 "  >
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
-                HESI A2 Nursing Entrance Exam: Your Pathway to Nursing School Success</h2>
+                Route to Nursing School Achievement with the HESI A2 Nursing Entrance Exam</h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                 The HESI exam is an essential step for nursing students seeking to get admission in their desired university. However, passing the exams is not a cup of tea. Furthermore, Our expert instructors not only help in HESI test preparation but also help students to pass the HESI critical thinking exam with desired marks. If youre asking, What is the HESI conversion score? Its a standardized number that measures a students performance on the HESI test.
                 </p>

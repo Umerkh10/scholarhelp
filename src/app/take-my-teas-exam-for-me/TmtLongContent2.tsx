@@ -1,6 +1,6 @@
 "use client"
 import React, { useState } from 'react'
-import TmGreExamDivider from '../TakeMyGREExam/TmGreExamDivider';
+import TmGreExamDivider from '../take-my-gre-exam/TmGreExamDivider';
 
 function TmtLongContent2() {
     const [showMore, setShowMore] = useState(false);

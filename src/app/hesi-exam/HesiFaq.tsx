@@ -1,27 +1,30 @@
 "use client"
 import { SwordsIcon } from 'lucide-react';
-import Image from 'next/image';
+import Image from 'next/image'
 import React, { useState } from 'react'
 
-function TmtFaq() {
+function HesiFaq() {
     const [openIndex, setOpenIndex] = useState(null);
     const [sOpen,setIsOpen] = useState(false)
 
     const questions = [
-        { question: `What is a passing TEAS test score?`,
-         answer: 'There is no such passing criteria for TEAS as each nursing schools requirements are different. However, competitive marks are from 70% 75% on an expert level of preparedness.' },
+        { question: `Do you have any experts who can give me preparation for the HESI A2 exam?`,
+         answer: 'Takingmyclassesonline.com is providing its prime service to every student to seek advice from experts and get better marks in their HESI exams.' },
 
-        { question: `What Happened after I failed the TEAS test?`,
-         answer: 'You can attempt the TEAS test 3 times in a year, allowing you to gain excessive marks to make a difference in your exam test. However, Your intended healthcare program or nursing school has the last word on how many tries you can make.' },
+        { question: `Is 10 days enough time to prepare for the HESI test?`,
+         answer: `In general, the preparation for any exams are determined by your concept of the subject. However, a general subject requires a minimum of 1 week of preparation for the exam.` },
 
-        { question: `Is the English TEAS test difficult?`,
-         answer: 'It depends on how prepared you are for your TEAS exams. However, If youre a non-native english speaker then you’d probably find some issues with it. Don’t worry! Our online podium is the best search to help you in your exam.' },
+        { question: `How many attempts have the HESI test?`,
+         answer: 'You can attempt the HESI exams 2 times in a period of two years. However, Some institutions allow up to three attempts for the HESI exam.' },
 
-        { question: `Is the Nursing teas exam easy or difficult?`,
-         answer: 'The TEAS exam isnt going to be the simplest test youve ever taken, but its also not the hardest either. Seek help from our experts and ACE in your exams.' },
+        { question: `Is the HESI exam tough for nurses?`,
+         answer: 'It depends on your knowledge and your learning skills as to how strong your concepts are. It can be challenging for some students as it determines your critical thinking and judges your nursing concept. ' },
 
-        { question: `What is the cost of appearing in the TEAS test?`,
-         answer: `The examination fees vary from location to location. However, Generally the price of the TEAS exams are ranging from 100$ - 120$.` },
+        { question: ` Is Calculator Allowed in HESI Test?`,
+         answer: `Absolutely! Calculators are allowed to be used while using any scientific calculator are prohibited to use during the HESI exam.` },
+
+        { question: `Do you receive scratch paper for the HESI?`,
+         answer: `You will be allowed with one pencil, scratch paper and a simple calculator to use in the HESI exams.` },
     ];
 
     
@@ -31,10 +34,10 @@ function TmtFaq() {
     };
   return (
     <div className='mx-auto max-w-screen-xl mt-20 mb-10'>
-    <h2 className='text-center text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950 '>Frequently Asked Questions
-    </h2>
-    <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>The list of questions that are frequently asked by Our Clients
-    </h3>
+    <h2 className='text-center text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950 '>
+    Frequently Asked Questions</h2>
+    <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>
+    The List of Frequently Asked Questions by Our Clients</h3>
 
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
     <div  data-aos="zoom-in-down" className=''>
@@ -66,4 +69,4 @@ function TmtFaq() {
   )
 }
 
-export default TmtFaq
+export default HesiFaq

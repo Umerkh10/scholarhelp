@@ -8,7 +8,7 @@ function HesiExamLC() {
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5 mt-5'>
                 <div className=''>
                     <div data-aos="flip-down" className="md:pt-6 pt-8 "  >
-                        <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">How To Prepare for the HESI A2 Exam: A Step-by-Step Guide</h2>
+                        <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">How To Prepare for the HESI A2 Exam and Develop Learning Skills</h2>
 
                         <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                             Often, Many students struggle to find better guides for their learning subjects. However, some students manage to clear the exams. If you lie in the struggling category, Say no more. Takingmyclassesonline.com provides its prime service at an affordable price by helping every student to pass their exams with achievable marks.
@@ -17,7 +17,7 @@ function HesiExamLC() {
                         </p>
                         <h3 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">Impact Of Online Learning On The HESI Critical Thinking Exam</h3>
                         <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                        In today’s rapidly growing environment, Online learning is becoming a prominent solution for learning and developing skills. It helps many students to improve their research skills and allows them to get benefits of vast learning resources. However, many students struggle to get better marks in their exams. However, We arrange many practice exams including HESI practice tests, online PTE academic preparation by helping students to get experience of various exam formats. 
+                            In today’s rapidly growing environment, Online learning is becoming a prominent solution for learning and developing skills. It helps many students to improve their research skills and allows them to get benefits of vast learning resources. However, many students struggle to get better marks in their exams. However, We arrange many practice exams including HESI practice tests, online PTE academic preparation by helping students to get experience of various exam formats.
 
                         </p>
                     </div>

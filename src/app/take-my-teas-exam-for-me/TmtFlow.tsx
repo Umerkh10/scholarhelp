@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-function ToeflFlow() {
+function TmtFlow() {
     const [activeTab, setActiveTab] = useState("1"); 
 
     useEffect(() => {
@@ -22,7 +22,7 @@ function ToeflFlow() {
     }, []);
   return (
     <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
-    <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'>How My Online Class Service Work?</h2>
+    <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'>How Does My Online Class Service Work?</h2>
     <h3 className='text-center text-lg md:text-2xl font-extrabold dark:text-zinc-100 text-violet-950'>
     Just One Click Away to Get Frictionless Online Classes
     </h3>
@@ -39,7 +39,7 @@ function ToeflFlow() {
         <div className='grid lg:grid-cols-2 grid-cols-1 p-5'>
           <div   className=''>
             <div className='flex justify-center items-center'>
-              <Image src={"/imgs/workflow.webp"} loading='eager' width={600} height={400} alt='workflow'></Image>
+              <Image  src={"/imgs/workflow.webp"} loading='eager' width={600} height={400} alt='workflow'></Image>
             </div>
           </div>
           <div   className=''>
@@ -94,4 +94,4 @@ function ToeflFlow() {
   )
 }
 
-export default ToeflFlow
+export default TmtFlow

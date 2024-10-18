@@ -18,6 +18,11 @@ function PteLongContent() {
                 Online classes are gaining more popularity in the student community as it is reliable and a vast platform for guidance. You can find multiple answers and guidance for your questions. However, paying someone to teach you and support you to do your exam is legit service where a professional helps you in your academic queries and clear your doubts. If you’re looking for the best service to help you in your PTE academic online exam as well as for your academic needs, Takingmyclassesonline.com is one solution for all of your academic problems.
 
                 </p>
+                <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  "> Book Online for the PTE Academic Online Test</h2>
+                <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
+                Takingmyclassesonline.com is offering its prime service to the student community to support them in their studies and help them to achieve goals in their lives. Many struggle to get admission in the top universities. However, it requires a lot of effort and high exam marks to get admission in that university. Our Expert instructors use different strategies and use engaging lectures to help them to secure better marks in their exams. Join us and get assistance in your various exams including PTE academic online exam, GRE test from home and many more exam formats.
+
+                </p>
             </div>
         </div>
 
