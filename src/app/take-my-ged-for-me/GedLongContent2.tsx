@@ -76,7 +76,7 @@ function DynamicContent1() {
 
             <div >
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>  Why Do I Need Someone To Take My GED Exam For Me.</h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Wondering 'How can I take my GED and prepare for the exam?'. However, Hiring someone to do your exam not only gives the advantage of getting good marks in exams but also helps to develop various skills. Additionally, we offer services for 'LSAT exam prep' and other post-exam support. You may study with confidence with our tutoring, so you won't have to ask, "Can someone take my GED exam for me?"
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Wondering &apos;How can I take my GED and prepare for the exam?&apos;. However, Hiring someone to do your exam not only gives the advantage of getting good marks in exams but also helps to develop various skills. Additionally, we offer services for &apos;LSAT exam prep&apos; and other post-exam support. You may study with confidence with our tutoring, so you won&apos;t have to ask, &apos;Can someone take my GED exam for me?&apos;
                 </p>
 
                 <h3 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
