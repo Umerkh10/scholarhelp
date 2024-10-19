@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import TGmatDivider from '../take-gmat-online-exam/TGmatDivider';
+import Link from 'next/link';
 
 function PteLongContent2() {
     const [showMore, setShowMore] = useState(false);
@@ -25,7 +26,8 @@ function PteLongContent2() {
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 PTE Academic Online Mock Tests For Preparation</h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>The instructors used extra curricular activities to help students prepare for the exam. Our experts provide pte academic sample tests online and offer more sample tests to help you in preparation for exams. We prioritize our student&apos;s privacy and use it to make our service better for them. Whether it&apos;s Take my GED for me or any other service, we are here to assist you to get better results.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>The instructors used extra curricular activities to help students prepare for the exam. Our experts provide pte academic sample tests online and offer more sample tests to help you in preparation for exams. We prioritize our student&apos;s privacy and use it to make our service better for them. Whether it&apos;s 
+                <Link href={'/take-my-ged-for-me'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'>  Take my GED for me </Link>or any other service, we are here to assist you to get better results.</p>
 
                 {showMore ? <DynamicContent1 /> : null}
 

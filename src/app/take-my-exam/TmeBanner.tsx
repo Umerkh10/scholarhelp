@@ -13,7 +13,8 @@ function TmeBanner() {
         <div className='flex flex-col lg:flex-row items-center gap-4 mt-2'>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online PhD Instructor for Assistance </h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online Expert Support
+        </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>

@@ -12,7 +12,7 @@ function LSATFaq() {
          answer: 'The standard of the LSAT exam is approximately 3 hours. Dividing your time between these portions might help you handle your test more efficiently.' },
 
         { question: `How much does it cost to take the LSAT exam?`,
-         answer: `The cost of the LSAT exam varies depending on locations. Generally the cost of the LSAT exam ranges from 200$ to 250$. However, You can also vary it from the LSAT website. excluding any other additional requirements.` },
+         answer: `The LSAT exam costs between $200 and $250 and varies by region. You can also vary it from the LSAT website, excluding any other additional requirements.` },
 
         { question: `How do I apply for the LSAT exam?`,
          answer: 'Create your LSAT account. Fill out the form by selecting the dates and location according to your needs. However, Make sure to reserve your examination seat by paying the examination fees.' },
@@ -35,7 +35,7 @@ function LSATFaq() {
     <h2 className='text-center text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950 '>
     Frequently Asked Questions</h2>
     <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>
-    The List of Frequently Asked Questions by Our Clients</h3>
+    A list of frequently asked questions by our clients.</h3>
 
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
     <div  data-aos="zoom-in-down" className=''>

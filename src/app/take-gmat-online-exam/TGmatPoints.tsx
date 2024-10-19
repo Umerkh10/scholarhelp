@@ -15,7 +15,7 @@ const slideData = [
     },
     {
       id: 2,
-      title: 'Improved Learning Skills',
+      title: 'Commitment and Dedicated Instructors',
       description: `You don’t need to worry about how to take the GMAT online with excellent marks! Our experts are well-versed in diverse fields which can get you more benefits at a very reasonable price. Get your chance to hire one of our finest instructors to take your GMAT Online and make your result sheet more remarkable. `,
       image: '/imgs/gmat-points-2.png',
     },

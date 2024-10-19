@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function HesiExamLC() {
@@ -13,11 +14,12 @@ function HesiExamLC() {
                         <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                             Often, Many students struggle to find better guides for their learning subjects. However, some students manage to clear the exams. If you lie in the struggling category, Say no more. Takingmyclassesonline.com provides its prime service at an affordable price by helping every student to pass their exams with achievable marks.
 
-                            We understand the importance of achieving good marks in the admission test, as it plays a crucial role in getting admission in desired universities. However, Through our expert guidance you’re able to achieve good marks in your exams including toefl exam online, CAT exam for nursing and many more. Join Us Now and explore more benefits of paying someone to do my exam.
+                            We understand the importance of achieving good marks in the admission test, as it plays a crucial role in getting admission in desired universities. However, Through our expert guidance you’re able to achieve good marks in your exams including 
+                            <Link href={'/toefl-exam-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> toefl exam online</Link> , CAT exam for nursing and many more. Join Us Now and explore more benefits of <Link href={'/pay-someone-to-take-my-class'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'>  paying someone to do my exam.</Link>
                         </p>
                         <h3 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">Impact Of Online Learning On The HESI Critical Thinking Exam</h3>
                         <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                            In today’s rapidly growing environment, Online learning is becoming a prominent solution for learning and developing skills. It helps many students to improve their research skills and allows them to get benefits of vast learning resources. However, many students struggle to get better marks in their exams. However, We arrange many practice exams including HESI practice tests, online PTE academic preparation by helping students to get experience of various exam formats.
+                            In today’s rapidly growing environment, Online learning is becoming a prominent solution for learning and developing skills. It helps many students to improve their research skills and allows them to get benefits of vast learning resources. However, many students struggle to get better marks in their exams. However, We arrange many practice exams including HESI practice tests, <Link href={'/pte-academic-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> online PTE academic preparation</Link>  by helping students to get experience of various exam formats.
 
                         </p>
                     </div>

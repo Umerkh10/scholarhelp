@@ -1,6 +1,7 @@
 import { ArrowRightIcon } from 'lucide-react';
 import React, { useState } from 'react'
 import ServiceDivider from './ServiceDivider';
+import Link from 'next/link';
 
 function ServiceLC2() {
 
@@ -63,7 +64,7 @@ function DynamicContent2() {
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     I need to Pay Someone to Take My Class Affordable and Focus on Student Learning Objective </h3>
 
-                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>While teaching through online classes, our instructor set a goal of achieving students learning objectives. Actually, these objectives evaluate how much students skills are improved through this online lesson. </p>
+                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>While teaching through online classes, our instructor set a goal of achieving students&apos; learning objectives. Actually, these objectives evaluate how much students&apos; skills are improved through this online lesson. However, if you’re looking to pay someone for <Link href={'/take-my-ged-for-me'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> “Do my GED online”</Link>  or any other exam services, then this is the right learning platform for you. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Utilize Marking Scheme and Subject Exam Resources </h3>
@@ -120,7 +121,8 @@ function DynamicContent1() {
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Take My Online Course for Me </h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Pay someone to complete an online class is the best way to get online class services. Also, Improving and enhancing your learning skills through online classes by paying someone to take my online class is a flexible and frequent way. As well as, now you don’t need to pay someone to complete an online course after joining our online services. You just need to fill out an order form and utilize our online service. Furthermore, your search for cheap online service with ‘paying someone to take my online class’ ends now because we offer the best online cheap and affordable services. Save your money and develop your learning skills through our instructors.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Pay someone to complete an online class is the best way to get online class services. Also, Improving and enhancing your learning skills through online classes by paying someone to take my online class is a flexible and frequent way. As well as, now you don’t need to pay someone to complete an online course after joining our online services. You just need to fill out an order form and utilize our online service. Also, You can
+                <Link href={'/take-gmat-online-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> take your GMAT online</Link> with our expert support to help you to achieve the desired grades. Furthermore, your search for cheap online service with ‘paying someone to take my online class’ ends now because we offer the best online cheap and affordable services. Save your money and develop your learning skills through our instructors. </p>
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                What are the Strategies of Our Online Instructors </h2>

@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import TmGreExamDivider from './TmGreExamDivider';
+import Link from 'next/link';
 
 function TmGreExamLC2() {
     const [showMore, setShowMore] = useState(false);
@@ -18,7 +19,7 @@ function TmGreExamLC2() {
         <div className='mx-auto max-w-screen-xl mt-10'>
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='p-5'>
-                <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950   '>Looking For “How Do I Take The GRE Test Service </h2>
+                <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950   '>Looking For “How Do I Take The GRE Test Service” </h2>
                 <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>In this fast paced world, People choose flexible options for their studies. Some prioritize their work upon their education while some struggle to find time to educate themselves because of their prime commitment. We’ll help you in how to take the GRE test online. Learning Online is one of the prominent solutions to your needs where you find lots of people reaching to help you to clear your doubts. Where to take the GRE depends on your preference for testing centers or online options. We secure your data and provide you with the most secure payment system that no one can address your data from us. So paying someone to take my GRE test will definitely help you to achieve good results and you can seek guidance throughout your educational journey.</p>
 
 
@@ -64,13 +65,13 @@ function DynamicContent2() {
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Where Can I Take My GRE Exam Online? A Guide to Testing Locations and Options </h3>
 
-                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our services are not bound to a certain exam format. Our experts are well-versed in various exam formats, which not only help you to take your GMAT Online but also give free practice for the last exam which will be very beneficial for every student. So enroll and get advantage to its fullness.
+                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our services are not bound to a certain exam format. Our experts are well-versed in various exam formats, which not only help you to<Link href={'/take-gmat-online-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> take your GMAT Online</Link> but also give free practice for the last exam which will be very beneficial for every student. So enroll and get advantage to its fullness.
                     </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     What Guarantees I Will Get If I Pay Someone To Take My GRE Test For Me?</h3>
 
-                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our website are known for their loyalty to their customers and Special service to them. Our services are not only responsible for your academic success but also help you achieve good grades in your exams. So, avail our online exam help with our experts. In case if we fail to achieve desired results then we offer a money-back return so that you won’t feel bad for your loss.</p>
+                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our website are known for their loyalty to their customers and Special service to them. Our services are not only responsible for your academic success but also help you achieve good grades in your exams. So, avail our  online exam help  with our experts. In case if we fail to achieve desired results then we offer a money-back return so that you won’t feel bad for your loss.</p>
 
                     <h3 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Online GRE home Test Services</h3>
@@ -101,11 +102,11 @@ function DynamicContent1() {
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Where do you take the GRE exam at various testing centers? </h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Improving your skills and enhancing your learning capability through online lectures by paying someone to take my online classes. You don’t need to pay someone to take online classes unless you join our services. Complete the form to access our service, and rest assured that we use a secure payment method to protect your personal information.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Improving your skills and enhancing your learning capability through online lectures by paying someone to <Link href={'/'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> take my online classes.</Link>  You don’t need to <Link href={'/pay-someone-to-take-my-class'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> pay someone to take online classes</Link>  unless you join our services. Complete the form to access our service, and rest assured that we use a secure payment method to protect your personal information.</p>
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Should I Pay To Get Help of Gre Exam Online</h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>There are many students who are using this opportunity and getting benefits of this service. Our motto is to help every struggling student in their educational needs. Our services are not bound only to the students who are struggling to achieve better results in the GRE exam online but we also make sure to help those students too that are dedicated towards their goal and have no time to study or to attend the exam. So are you still wondering if paying someone to take online classes for me can be beneficial? Act now! And achieve higher results with us! </p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>There are many students who are using this opportunity and getting benefits of this service. Our motto is to help every struggling student in their educational needs. Our services are not bound only to the students who are struggling to achieve better results in the GRE exam online but we also make sure to help those students too that are dedicated towards their goal and have no time to study or to attend the exam. So are you still wondering if paying someone to <Link href={'/'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> take online classes for me</Link> can be beneficial? Act now! And achieve higher results with us! </p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Check out Where Do You Take the GRE Exam Support In Person And Design Lesson Planning For Preparing Engaging Content. </h3>

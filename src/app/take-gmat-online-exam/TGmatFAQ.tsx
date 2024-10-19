@@ -12,7 +12,7 @@ function TGmatFAQ() {
          answer: 'How many attempts am I allowed to take the GMAT? Your five (5) GMAT exam online test attempts within a rolling 12-month period and your eight (8) total lifetime restrictions will be determined by all of your efforts on the GMAT exam, across all editions, whether they are taken online or in person.' },
 
         { question: `What is the Focus Edition of the GMAT exam?`,
-         answer: `With a total test duration of 2 hours and 15 minutes as opposed to the previous version's 3 hours and 7 minutes, the GMAT Focus edition is noticeably shorter than the original GMAT. This is due to the fact that the new test has three 45-minute sections: Data Insights, Verbal Reasoning, and Quantitative Reasoning.` },
+         answer: `The GMAT Focus edition is shorter than the original GMAT. Furthermore, The new test format has three 45-minute sections: Data Insights, Verbal Reasoning and Quantitative Reasoning. Resulting the total of 2 hours and 15 minutes.` },
 
         { question: `Can I cancel my GMAT score, or have it not been reported earlier?`,
          answer: 'You cannot reverse your GMAT result while canceling your score can be a solution if you think that you’ve not done better in the test. Depending on your test center. You have 72 hours after the exam to change your score if you accept it. It could take up to 24 hours. If you do so after leaving the test place, you will be charged $25.' },

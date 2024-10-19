@@ -13,17 +13,17 @@ function TmGreExamBanner() {
         <div className='flex flex-col lg:flex-row items-center gap-4 mt-2'>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online PhD Tutor for Support </h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Expert Professor For Academic Support </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Authentic Legit Service</h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Authentic Educational Service</h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/affordable.png'} width={50} height={50} alt='phd'></Image>
-        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online Engaging Lectures</h3>
+        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Dynamic Learning Session</h3>
         <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
         </div>
         </div>

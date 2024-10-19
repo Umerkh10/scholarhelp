@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import TGmatDivider from './TGmatDivider';
+import Link from 'next/link';
 
 function TGmatLC2() {
     const [showMore, setShowMore] = useState(false);
@@ -19,12 +20,12 @@ function TGmatLC2() {
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='p-5'>
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950   '>Take My Classes Online : Ultimate Solution To Your Academic Success </h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Balancing personal life with academics is difficult and it will become more stressful if your institution is far away from your home or your office. Balancing both is a challenge but online learning platform makes it very convenient to learn from it anytime and anywhere they want. While there are many students who are struggling to find the best instructor and someone who can take their class and make good notes for them. Asking, Where can I take the GMAT? Youve found the right guide. Don’t wait any longer. We hold your back so that you don’t have to worry about “how to give GMAT test”.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Balancing personal life with academics is difficult and it will become more stressful if your institution is far away from your home or your office. Balancing both is a challenge but online learning platform makes it very convenient to learn from it anytime and anywhere they want. While there are many students who are struggling to find the best instructor and someone who can take their class and make good notes for them. Asking, &apos;Where can I take the GMAT?&apos; You&apos;ve found the right guide. Don’t wait any longer. We hold your back so that you don’t have to worry about “how to give GMAT test”.</p>
 
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Where Can I Take The GMAT Best Assistance?</h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>takemyclassesonline.com is one of the finest online platform, where every student deserves significant values from our highly certified instructors to help them in their preparation. Need to know where to take the GMAT? Youve come to the right spot. Our services are helping students for over a decade and giving them the ideal results so that they can continue to progress in their life.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>takemyclassesonline.com is one of the finest online platform, where every student deserves significant values from our highly certified instructors to help them in their preparation. Need to know where to take the GMAT? You&apos;ve come to the right spot. Our services are helping students for over a decade and giving them the ideal results so that they can continue to progress in their life.</p>
 
                 {showMore ? <DynamicContent1 /> : null}
 
@@ -75,12 +76,12 @@ function DynamicContent1() {
 
             <div >
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'> How Do You Take the GMAT Test? </h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>The most stressful question that has been asked the most by the student community is how to do the GMAT test. Every student has their own capability to learn, to perform and to exercise their skill, but mainly students struggle to find balance between their academic life and their work life. “Take my class for me” would be a better option for them to get higher exam marks. Wondering how to take the GMAT? Heres what you need to know. Hiring someone to give your GMAT test will not only assist you with better marks but it will also help you in your academic journey.
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>The most stressful question that has been asked the most by the student community is how to do the GMAT test. Every student has their own capability to learn, to perform and to exercise their skill, but mainly students struggle to find balance between their academic life and their work life. “Take my class for me” would be a better option for them to get higher exam marks. Wondering how to take the GMAT? Here&apos;s what you need to know. Similarly, Hiring someone to give your GMAT test will access better results in your academic exams as well as to provide essential support in your academic journey.
                 </p>
 
                 <h3 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Where Do I Take the GMAT at a Cost-Effective Price? </h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Not sure how to take the GMAT? Weve got you covered. Hiring someone to take a test will help you in your academic success. Hiring the best services and expert instructors could be difficult to find. TakeMyClassesOnline is a top platform that offers exceptional service and experienced instructors at a reasonable price. Our services include “do my exam for me” , “help me to score more in exam” and many more to help students in their academic life. </p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Not sure how to take the GMAT? We&apos;ve got you covered. Hiring someone to take a test will help you in your academic success. Hiring the best services and expert instructors could be difficult to find. TakeMyClassesOnline is a top platform that offers exceptional service and experienced instructors at a reasonable price. Our services include “do my exam for me” , “help me to score more in exam” and many more to help students in their academic life </p>
 
                 <h3 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Utilize Marking Scheme and Subject Exam Resources : How To Give GMAT Test </h3>
@@ -93,7 +94,8 @@ function DynamicContent1() {
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Where Can I Take The GMAT Help: Tips and Resources</h3>
                 <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>
-                By hiring our experts, you’re accessible to get support from our instructor 24/7, that can help you to reach new levels in your academic career. Our services provide the best tips and resources to elevate your learning experience and to help you to achieve better marks in your exams including toefl exam online or LSAT practice exam, We make sure that our students ace their exams. We secure your data only with us so that your privacy will not be extended to other sources. So make your move now and join us Today!
+                By hiring our experts, you’re accessible to get support from our instructor 24/7, that can help you to reach new levels in your academic career. Our services provide the best tips and resources to elevate your learning experience and to help you to achieve better marks in your exams including
+                 <Link href={'/toefl-exam-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> toefl exam online</Link> or <Link href={'/lsat-exam-prep'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> LSAT practice exam</Link> , We make sure that our students ace their exams. We secure your data only with us so that your privacy will not be extended to other sources. So make your move now and join us Today!
                 </p>
 
 

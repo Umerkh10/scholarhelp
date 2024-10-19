@@ -15,10 +15,10 @@ function ToeFlFAQ() {
          answer: 'No, You can also take the exam in the test centers. While submitting the form make sure to choose the flexible time and date that meets your needs.' },
 
         { question: `What is the Fee Structure of TOEFL exam`,
-         answer: 'The TOEFl examination fee can vary from location to location. Generally ranging from $100 - $120, you can vary it from the official TOEFL website. There are various payment methods to allow you to pay the examination fee to reserve your examination seat.' },
+         answer: 'The TOEFl examination fee can vary from location to location. Generally ranging from $100 - $120, you can vary it from the official TOEFL website. Also, there are various payment methods to allow you to pay the examination fee in order to reserve your examination seat.' },
 
         { question: `How many times can you take the TOEFL exam?`,
-         answer: 'With TOEFL, there is no cap as such that the student can take multiple attempts on the exams because he wants to. But rest assured, you will pass in your first attempt itself. If not, we give you a money refund, and you wouldnt be losing your money for it.' },
+         answer: `With TOEFL, there is no cap as such that the student can take multiple attempts on the exams because he wants to. But rest assured, you will pass in your first attempt itself. If not, we give you a money refund, and you wouldn't be losing your money for it.` },
 
         { question: `Do you provide any assistance for the TOEFL exam?`,
          answer: `Yes! We are known for our commitment and for our services. Our past performance records reflect the outcomes we promise. So join us now and get the best assistance for your academic success.` },

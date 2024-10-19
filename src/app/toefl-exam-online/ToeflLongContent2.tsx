@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import TmGreExamDivider from '../take-my-gre-exam/TmGreExamDivider';
+import Link from 'next/link';
 
 function ToeflLongContent2() {
     const [showMore, setShowMore] = useState(false);
@@ -19,12 +20,12 @@ function ToeflLongContent2() {
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='p-5'>
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950   '>How To Take TOEFL Test Online : A Complete Guide </h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>The initial step required for the toefl test is to register yourself for the toefl exam. However, if you’re struggling to do the preparation for the Toefl exam you can hire someone to do your exam. Online platform is a vast learning platform where you can hire someone to teach or help you to prepare for any kind of exam, For example TOEFl practice exam, LSAT practice exam and many more. We have highly educated instructors which not only help you in preparing for exams but also help you throughout your academic journey.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>The initial step required for the toefl test is to register yourself for the toefl exam. However, if you’re struggling to do the preparation for the Toefl exam you can hire someone to do your exam. Online platform is a vast learning platform where you can hire someone to teach or help you to prepare for any kind of exam, For example TOEFl practice exam, <Link href={'/lsat-exam-prep'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> LSAT practice exam </Link>  and many more. We have highly educated instructors which not only help you in preparing for exams but also help you throughout your academic journey.</p>
 
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 How Our TOEFL Score Guarantee Works</h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Takingmyclassesonline.com provides support to the students who are looking for help in exams. We aim to help every student in their academic progress, empowering them to accomplish their goals in life. Our instructors provide engaging lectures and with great guidance which helps students for many exam preparation. Including Entrance exam for LPN, the GRE test from home and many more. Hire our experts and get the assistance for your academic growth.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4 '>Takingmyclassesonline.com provides support to the students who are looking for help in exams. We aim to help every student in their academic progress, empowering them to accomplish their goals in life. Our instructors provide engaging lectures and with great guidance which helps students for many exam preparation. Including Entrance exam for LPN, the <Link href={'/take-my-gre-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> GRE test from home</Link>  and many more. Hire our experts and get the assistance for your academic growth.</p>
 
                 {showMore ? <DynamicContent1 /> : null}
 
@@ -81,11 +82,11 @@ function DynamicContent1() {
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 How Can I Take The TOEFL Exam Online </h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Improving your skills and There are two editions of the TOEFL iBT test, one of which requires you to sit in an examination hall to take the test, and the other allows you to take the test sitting at your own home in front of a human proctor supervising you at all times on the test. After giving your TOEFL test, you can check your TOEFL iBT home edition result via their official website.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>There are two kinds of the TOEFL iBT test, one that requires you to sit in an examination hall and administer the test and another which permits you to take the test sitting at your home in front of a human proctor supervising you at all times on the test. Once you have given your TOEFL test, you can check your TOEFL iBT home edition result via their official website.</p>
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 What are the Strategies of Our Online Instructors</h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our instructors are well-versed in every exam format. They are specialized in their respective fields which helps our students to get benefits from their service. Utilize the Take my class for me service and fulfill your all academic needs
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our instructors are well-versed in every exam format. They are specialized in their respective fields which helps our students to get benefits from their service. Utilize the &quot;Take my class for me&quot; service and fulfill your all academic needs
                 </p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>

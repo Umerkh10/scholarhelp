@@ -11,12 +11,12 @@ function TmeLc() {
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  "> Looking for Online Exam Help Services? </h2>
 
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Online education transforms how we learn, making education accessible to most people at a nominal cost. With diverse learning options, Online education is one of the most easy and accessible learning platforms. Taking my online class will be beneficial while if you’re looking to pay someone to take my online test, then should take a look to the takemyclassesonline.com. It has an experienced team to help you to do your assignment in no time.
+                Online education transforms how we learn, making education accessible to most people at a nominal cost. With diverse learning options, Online education is one of the most easy and accessible learning platforms. Taking my online class will be beneficial while if you’re looking to pay someone to take my online test, then you should take a look at the takemyclassesonline.com. It has an experienced team to help you to do your assignment in no time.
                 Online platforms are an essential place to help students throughout the world to unleash their potential to its fullness. So hire someone to take my online exam and make your time into what matters the most. 
                 </p>
                 <h3 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">Secure Good grades with our Online Exam help</h3>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Getting good grades is the most important consideration for every student. However, preparing for examinations can be difficult. You can pay someone to do my online exam with us! Not only you’ll be able to get expert advice but we also help you to attain higher grades.  So If youre searching for “Pay someone to take my  online classes then you’re on the right track. Our Experts ensure that you pass the examinations and also help you to achieve exceptional results.
+                Getting good grades is the most important consideration for every student. However, preparing for examinations can be difficult. You can pay someone to do my online exam with us! Not only you’ll be able to get expert advice but we also help you to attain higher grades.  So If you&apos;re searching for “Pay someone to take my  online classes&apos; then you&apos;re on the right track. Our Experts ensure that you pass the examinations and also help you to achieve exceptional results.
 
                 </p>
             </div>

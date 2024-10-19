@@ -22,7 +22,7 @@ function TGmatFlow() {
     }, []);
   return (
     <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
-    <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'>How My Online Class Service Work?</h2>
+    <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'>How Does My Online Class Service Work?</h2>
     <h3 className='text-center text-lg md:text-2xl font-extrabold dark:text-zinc-100 text-violet-950'>
     Just One Click Away to Get Frictionless Online Classes
     </h3>
@@ -77,7 +77,7 @@ function TGmatFlow() {
           <div className=''>
             <div className='flex justify-start items-center mt-5 lg:mt-20'>
             <h4 className='text-lg md:text-2xl font-bold dark:text-zinc-100 text-indigo-900 '>
-            Ace Your Exam</h4>
+            Your Exam</h4>
             </div>
             <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
             You will be notified by email as an expert assigned to you relevant to your requirements.</p>

@@ -15,7 +15,7 @@ function TmGreExamFc() {
                 </p>
 
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
-                Looking For “where to get the gre test affordable services?</h2>
+                Looking For “where to get the gre test affordable services?”</h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                 Searching for where I can pay someone to take my exam in person? No worries! Our online expert instructors are known for their teaching methodology, where they assist every student and help them and to clear their doubts and help them to know how do i take the GRE test. Our online podium is always available in your service, either you need any advice or need any assistance in your exam. We are here to help you with everything. So hire the experts from our website and unlock your full potential in your desired field.
                 </p>

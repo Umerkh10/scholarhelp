@@ -21,7 +21,7 @@ function TmGreExamFAQ() {
          answer: 'The Cost may vary subject to subject, Averaging around 150$ to 220$ you can check it from the GRE website.So, by availing our services you’ll be able to get the GRE exam test help and with much more assistance. So, hire someone to take my exam will definitely get you some profits in earning good grades and better marks.' },
 
         { question: `Are there any disability accommodations in the GRE Exam?`,
-         answer: `Candidates can choose between a refreshable braille device or JAWS in order to take the GRE General Test. The test centers of the US and other countries provide this assistance for such candidates on their websites as well` },
+         answer: `Candidates can choose between a refreshable braille device or JAWS in order to take the GRE General Test. The test centers of the US and other countries provide this assistance for such candidates on their websites as well.` },
 
         { question: `Is there any chance of Retaking the GRE General Test?`,
          answer: `You can retake if you don't like your scores! ETS permits retaking the test every 21 days, but up to five times a year. So this really provides you with an excellent opportunity to improve your scores, so make sure that you are fully prepared for each retake.` },
