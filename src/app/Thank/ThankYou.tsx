@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import { HelpDesk } from '../(Home)/HomeBanner'
 import { Package2 } from 'lucide-react'
 
 function ThankYou() {
@@ -22,7 +21,7 @@ function ThankYou() {
       </h1>
       <p className="mt-4 text-zinc-100 lg:w-[610px] mx-auto">
         Thank you for your recent purchase. We hope you enjoy your new product. If you have any questions or concerns,
-        please don't hesitate to contact us.
+        please don&apos;t hesitate to contact us.
       </p>
       <div className="mt-6 flex flex-col items-center md:flex-row justify-center gap-4">
         <Link
@@ -32,7 +31,6 @@ function ThankYou() {
         >
            <Package2 className='mr-2'/> Order Now
         </Link>
-        <HelpDesk/>
       </div>
     </div>
   </div>
