@@ -25,7 +25,7 @@ function WorkFlow() {
   return (
     <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
       <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'> How Does Take My Online Class Service Work?</h2>
-      <h3 className='text-center text-lg md:text-2xl font-extrabold dark:text-zinc-100 text-violet-950'>
+      <h3 className='text-center text-lg md:text-2xl mt-2 font-extrabold dark:text-zinc-100 text-violet-950'>
       Just One Click Away to Get Frictionless Online Classes
       </h3>
 

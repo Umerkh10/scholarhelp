@@ -29,8 +29,8 @@ const Faq = () => {
 
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
                 <div data-aos="zoom-in-down" className=''>
-                    <div className='flex items-center justify-center sm:pb-8'>
-                        <Image loading='eager' className='mt-20 rounded-2xl' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg' />
+                    <div className='flex items-center justify-center sm:pb-8 sticky top-0 '>
+                        <Image loading='eager' className='mt-20 rounded-2xl ' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg' />
                     </div>
                 </div>
 
@@ -38,14 +38,14 @@ const Faq = () => {
                     {questions.map((item, index) => (
                         <div data-aos="flip-down" className="md:pt-6 pt-8" key={index}>
                             <h4
-                                className="cursor-pointer py-6 px-4 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-lg md:font-medium flex justify-between group bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800 transition ease-in duration-150 delay-100"
+                                className="cursor-pointer py-6 px-4  rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-lg md:font-medium flex justify-between group bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800 transition ease-in duration-150 delay-100"
                                 onClick={() => toggleAccordion(index)}
                             >
                                 {item.question}
                                 <SwordsIcon className='group-hover:rotate-180 group-hover:stroke-gray-700 transition ease-in duration-200 delay-100' />
                             </h4>
                             {openIndex === index && (
-                                <p className="py-4 px-4 rounded rounded-br-[10px] rounded-bl-[10px] text-base bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800">
+                                <p className="py-4 px-4  rounded-br-[10px] rounded-bl-[10px] text-base bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800">
                                     {item.answer}
                                 </p>
                             )}

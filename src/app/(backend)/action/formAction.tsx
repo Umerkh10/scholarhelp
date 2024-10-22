@@ -3,16 +3,15 @@ import { z } from "zod"
 import nodemailer from "nodemailer"
 
 const formSchema = z.object({
-    name: z.string().min(3).max(15),
     email: z.string().email().nonempty(),
     phone: z.string().min(9).max(15)
 });
 
-export default async function EmailAction(name: string, email: string, phone: string) {
+export default async function EmailAction( email: string, phone: string) {
     try {
 
 
-        const validatedField = formSchema.safeParse({ name, email, phone })
+        const validatedField = formSchema.safeParse({ email, phone })
 
         if (validatedField.error) {
             return { info: validatedField.error.flatten().fieldErrors }
@@ -28,7 +27,7 @@ export default async function EmailAction(name: string, email: string, phone: st
             });
 
             let mailOptions = {
-                from: `Eduresearcher® Alert - <${process.env.MAILFROM}>`,
+                from: `Taking My Classes Online® Alert - <${process.env.MAILFROM}>`,
                 to: validatedField.data.email,
                 subject: `New DLF Form Entry | ${process.env.NEXT_PUBLIC_NAME}`,
                 html: `
@@ -45,7 +44,7 @@ export default async function EmailAction(name: string, email: string, phone: st
 
 
   <p style="font-size: 22px; color: white; line-height: 1.5; text-align: center;">We Have Recieved Your Order
-     ${validatedField.data.name} ! <br></p>
+     ${validatedField.data.email} ! <br></p>
   <div style="padding: 10px 0; text-align: center;">
 <div style="margin: 10px 0;">
 <p style="font-size: x-large; color: whitesmoke; text-align: center; font-weight: 500;">Use this Discount Code To Get Started  </p>

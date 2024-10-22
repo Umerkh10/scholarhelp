@@ -1,17 +1,26 @@
 "use client"
+import EmailAction from '@/app/(backend)/action/formAction';
 import { DatePickerDemo } from '@/components/ui/datepicker';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
 
 
 function BannerForm() {
+  const [activeButton, setActiveButton] = useState<string | null>("writing");
+  const [wordCount, setWordCount] = useState<number>(250);
+  const [selectedService, setSelectedService] = useState<string>("");
+  const [showSubject, setShowSubject] = useState<boolean>(false);
+  const [showQuestions, setShowQuestions] = useState<boolean>(false);
+  const router = useRouter(); // Initialize the router
 
-  const [activeButton, setActiveButton] = useState<string | null>('writing');
+  // New state for form data
+  const [email, setEmail] = useState<string>("");
+  const [phone, setPhone] = useState<string>("");
+
   const handleClick = (buttonName: string) => {
     setActiveButton(buttonName);
   };
-
-  const [wordCount, setWordCount] = useState<number>(250); 
 
   const handleIncrement = () => {
     setWordCount((prevCount) => prevCount + 250);
@@ -23,29 +32,43 @@ function BannerForm() {
 
   const options: number[] = Array.from({ length: 50 }, (_, i) => i + 1);
 
-
-  const [selectedService, setSelectedService] = useState<string>('');
-  const [showSubject, setShowSubject] = useState<boolean>(false);
-  const [showQuestions, setShowQuestions] = useState<boolean>(false);
-
   const handleServiceChange = (e: any) => {
     const value = e.target.value;
     setSelectedService(value);
 
-    setShowSubject([
-      'Assignment/ Coursework',
-      'Essay',
-      'Dissertation / Thesis / Proposal',
-      'Editing / Proofreading',
-      'Resume / CV',
-      'Question And Answers'
-    ].includes(value));
+    setShowSubject(
+      [
+        "Assignment/ Coursework",
+        "Essay",
+        "Dissertation / Thesis / Proposal",
+        "Editing / Proofreading",
+        "Resume / CV",
+        "Question And Answers",
+      ].includes(value)
+    );
 
-    setShowQuestions(value === 'Question And Answers');
+    setShowQuestions(value === "Question And Answers");
+  };
+
+  // Form submit handler
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    try {
+      const response = await EmailAction(email, phone); // Add form values here
+      if (response?.success) {
+        // Redirect to the thank-you page on success
+        router.push("/thankyou");
+      } else {
+        alert("Error: " + response?.error);
+      }
+    } catch (error) {
+      console.error("Form submission failed", error);
+    }
   };
 
   return (
-    <div className="lg:ml-28 pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-purple-950 via-violet-950 to-zinc-950 ">
+    <form  onSubmit={handleSubmit}>
+    <div className="xl:ml-28 pb-16 bg-muted shadow-2xl rounded-xl lg:w-[480px] dark:bg-gradient-to-r from-purple-950 via-violet-950 to-zinc-950 ">
       <div className='flex justify-center items-center lg:-translate-y-4    -translate-y-4'>
         <div className=' w-1/2 shadow-2xl rounded rounded-tl-2xl rounded-br-2xl bg-indigo-600 py-3 '>
           <div className='text-center font-medium text-zinc-100 text-sm md:text-base  '>Upto 40%  Discount</div>
@@ -83,10 +106,26 @@ function BannerForm() {
       </div>
 
       <div className='pt-4 w-full px-3'>
-        <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base' type="email" name='email' placeholder='Enter Your Email' />
+      <input
+          className="rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base"
+          type="email"
+          name="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter Your Email"
+          required
+        />
       </div>
       <div className='pt-2 w-full px-3'>
-        <input className='rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base' type="tel" name='phone' placeholder='Enter Your Phone Number' />
+      <input
+          className="rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base"
+          type="tel"
+          name="phone"
+          value={phone}
+          onChange={(e) => setPhone(e.target.value)}
+          placeholder="Enter Your Phone Number"
+          required
+        />
       </div>
 
       <div className='grid grid-cols-2 gap-2 pt-2 px-3'>
@@ -189,12 +228,13 @@ function BannerForm() {
       </div>
 
       <div className='flex justify-center items-center mt-5'>
-        <button className='lg:text-base text-sm px-5 py-3 rounded-xl bg-indigo-600 text-white hover:shadow-xl hover:scale-105
+        <button type='submit' className='lg:text-base text-sm px-5 py-3 rounded-xl bg-indigo-600 text-white hover:shadow-xl hover:scale-105
             transition ease-in duration-200 delay-200'>Get A Free Quote</button>
       </div>
 
 
     </div>
+    </form>
   )
 }
 

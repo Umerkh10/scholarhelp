@@ -61,26 +61,26 @@ export default function Navbar() {
       <div className="container flex justify-center h-14 items-center">
         <div className="md:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
-            <span className="hidden font-bold lg:inline-block">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
-            <Image className="lg:hidden inline-block" src={'/imgs/scholarly-help-logo.png'} width={50} height={50} alt="logo"></Image>
+            <span className="hidden font-bold xl:inline-block">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
+            <Image className="xl:hidden inline-block" src={'/imgs/scholarly-help-logo.png'} width={50} height={50} alt="logo"></Image>
           </Link>
           <NavigationMenu>
             <NavigationMenuList >
               <NavigationMenuItem >
                 <Link href="/" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="hover:text-blue-600">Home</div>
+                    <div className="hover:text-violet-600 hover:font-semibold">Home</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
               <NavigationMenuItem>
-                <NavigationMenuTrigger><Link href='#' className="hover:text-blue-600">Services</Link></NavigationMenuTrigger>
+                <NavigationMenuTrigger><Link href='#' className="hover:text-violet-600 hover:font-semibold">Services</Link></NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {services.map((service) => (
-                      <ListItem  key={service.title}>
-                        <Link className="font-medium dark:text-zinc-200 text-zinc-800 hover:text-blue-500 dark:hover:text-blue-400" href={service.href}>{service.title}</Link>
-                      </ListItem>
+                        <Link className="font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href={service.href}>{service.title}
+           
+                        </Link>
                     ))}
                   </ul>
                 </NavigationMenuContent>
@@ -88,7 +88,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/contact" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="hover:text-blue-600">Contact Us</div>
+                    <div className="hover:text-violet-600 hover:font-semibold">Contact Us</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -96,7 +96,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/about" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="hover:text-blue-600">About Us</div>
+                    <div className="hover:text-violet-600 hover:font-semibold">About Us</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -104,7 +104,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/Reviews" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="hover:text-blue-600">Reviews</div>
+                    <div className="hover:text-violet-600 hover:font-semibold">Reviews</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
@@ -112,7 +112,7 @@ export default function Navbar() {
               <NavigationMenuItem>
                 <Link href="/Order" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                    <div className="hover:text-blue-600">Order Now</div>
+                    <div className="hover:text-violet-600 hover:font-semibold">Order Now</div>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>

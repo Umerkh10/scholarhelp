@@ -38,7 +38,7 @@ function LongContent() {
         
         <div className='flex justify-center items-center mt-3'>
         <button
-          className='px-5 py-2 rounded-xl bg-orange-500 font-medium text-zinc-100'
+          className='px-5 py-2 rounded-xl bg-violet-500 font-medium text-zinc-100'
           onClick={handleButtonClick}
         >
           {showMore ? 'Read less' : 'Read More'}

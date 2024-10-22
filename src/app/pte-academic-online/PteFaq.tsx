@@ -41,7 +41,7 @@ function PteFaq() {
 
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
     <div  data-aos="zoom-in-down" className=''>
-            <div  className='flex items-center justify-center sm:pb-8'>
+            <div  className='flex items-center justify-center sm:pb-8 sticky top-0'>
                 <Image loading='eager' className='mt-20 rounded-2xl' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg'></Image>
             </div>
         </div>
