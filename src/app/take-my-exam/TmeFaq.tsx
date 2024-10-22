@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 function TmeFaq() {
 
      
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState(0);
     const [sOpen,setIsOpen] = useState(false)
 
     const questions = [

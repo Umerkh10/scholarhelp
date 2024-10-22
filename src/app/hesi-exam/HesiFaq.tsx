@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 function HesiFaq() {
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState(0);
     const [sOpen,setIsOpen] = useState(false)
 
     const questions = [

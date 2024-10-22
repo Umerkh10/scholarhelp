@@ -60,19 +60,19 @@ function DynamicContent2() {
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Utilize Marking Scheme and Subject Exam Resources</h3>
 
-                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>The main reason why every student <Link href={'/pay-someone-to-take-my-class'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> hire someone to take a test</Link> is for better marks, as grades often determine the direction of their future academic and career paths. We provide every help to our students to get them their desired marks so that they can get admission to their desired institute. </p>
+                    <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>The main reason why every student <Link href={'/pay-someone-to-take-my-class'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> hire someone to take a test</Link> is for better marks, as grades often determine the direction of their future academic and career paths. We provide every help to our students to get them their desired marks so that they can get admission to their desired institute. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Can the Instructor Arrange Activities?</h3>
 
                     <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Online lectures can be boring sometimes. However, Our experts use different methodologies to help the students to be engaged in some activities regarding their subject so that they feel refreshed every day. Utilize 
-                    <Link href={'/take-my-teas-exam-for-me'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> “take my teas for me” </Link> services and get desired results. </p>
+                    <Link href={'/take-my-teas-exam-for-me'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> “take my teas for me” </Link> services and get desired results. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Priorities Lesson Tasks while Delivering According to the Students&apos; Approach</h3>
 
                     <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>All of our experts use different methodologies for teaching to make lectures interesting while ensuring that each student has grasped what is being taught. Care is taken for students who cannot find solutions to their learning problems. Join us, as we support all our students by providing them with exceptional lectures that lead to success and let us help you 
-                    <Link href={'/hesi-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> take your HESI exam </Link> with confidence. </p>
+                    <Link href={'/hesi-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> take your HESI exam </Link> with confidence. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Design Scheme of Work for Me</h3>
@@ -107,17 +107,17 @@ function DynamicContent1() {
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 What are the Strategies of Our Online Instructors</h2>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our expert instructors are highly certified and experienced in various exam formats which not only help you in LSAT exam format but also access you every exam. They are highly qualified and experienced which is one of the reasons why every student is successful in their academic journey. Join us! And get benefits from our services throughout your academic career .Enroll to <Link href={'/'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> ”take my class for me online”</Link>  and succeed with expert support. </p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>Our expert instructors are highly certified and experienced in various exam formats which not only help you in LSAT exam format but also access you every exam. They are highly qualified and experienced which is one of the reasons why every student is successful in their academic journey. Join us! And get benefits from our services throughout your academic career .Enroll to <Link href={'/'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> ”take my class for me online”</Link>  and succeed with expert support. </p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Try Free Practice Of LSAT Exam</h3>
-                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>The engaging lecture is one of the main components of the lesson plan. Our expert schedules engaging lectures to make you motivated throughout the journey and also help you in preparing for every exam format. Including  <Link href={'/toefl-exam-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> mock toefl exam online</Link> . We secure your data with us so that your data won’t get disclosed with any of the others. Get free practice for the LSAT exam with us.</p>
+                <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>The engaging lecture is one of the main components of the lesson plan. Our expert schedules engaging lectures to make you motivated throughout the journey and also help you in preparing for every exam format. Including  <Link href={'/toefl-exam-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> mock toefl exam online</Link> . We secure your data with us so that your data won’t get disclosed with any of the others. Get free practice for the LSAT exam with us.</p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Wondering For The LSAT Exam Date 2024? Here’s What You Need to Know!</h3>
                 <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>
                 There are various dates held throughout the year so that every student finds a suitable date for them. Each of these periods usually lasts a few days. The dates in this period are usually open for the candidates to apply for any date within this period. It is thus very essential that you get registered as early as possible before the deadlines to avail your preferred date and time and also checkout
-                <Link href={'/pte-academic-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> PTE test centers across the US</Link>  to conveniently schedule your exam.
+                <Link href={'/pte-academic-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> PTE test centers across the US</Link>  to conveniently schedule your exam.
                 </p>
 
 

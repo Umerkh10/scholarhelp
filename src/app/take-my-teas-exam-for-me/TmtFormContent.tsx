@@ -12,13 +12,13 @@ function TmtFormContent() {
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
                 How Our Expert Instructor Can Help in Your TEAS Exam  </h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Our Experts are specialized in all subjects, providing comprehensive support to maximize your performance. Takingmyclassesonline.com is the most convenient learning platform, with experienced and skillful teachers. We aim to provide you with the best services, ensuring that you won’t face hurdles in your exams. Join us and get <Link href={'/lsat-exam-prep'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> free practice for the LSAT exam</Link> with the assistance of 24/7 support. 
+                Our Experts are specialized in all subjects, providing comprehensive support to maximize your performance. Takingmyclassesonline.com is the most convenient learning platform, with experienced and skillful teachers. We aim to provide you with the best services, ensuring that you won’t face hurdles in your exams. Join us and get <Link href={'/lsat-exam-prep'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '> free practice for the LSAT exam</Link> with the assistance of 24/7 support. 
                 </p>
 
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">
                 Looking For An Affordable Service To Take Your TEAS Exam </h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Many students struggle to find a learning platform where they can get free education. Don’t worry! We assure you that every learner will get the same service whether going through a financial crisis or established. We believe in promoting equal rights. Take your chance and hire our instructors and get valuable guidance on the TEAS exam, <Link href={'/take-my-gre-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> GRE home test</Link>  and for many more exams.	
+                Many students struggle to find a learning platform where they can get free education. Don’t worry! We assure you that every learner will get the same service whether going through a financial crisis or established. We believe in promoting equal rights. Take your chance and hire our instructors and get valuable guidance on the TEAS exam, <Link href={'/take-my-gre-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150'> GRE home test</Link>  and for many more exams.	
                 </p>
 
                 <h2 className="cursor-pointer py-2 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-xl md:font-bold flex justify-between group  ">

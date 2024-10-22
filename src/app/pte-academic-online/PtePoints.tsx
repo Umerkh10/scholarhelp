@@ -51,7 +51,7 @@ const Slide = ({ title, description, image, index, ref }: any) => (
           {description.includes('take my online classes') ? (
             <span>
               Are you looking for online tutoring services to&nbsp;
-              <Link href="/" className="text-white font-bold hover:text-black transition ease-in duration-150 delay-150">
+              <Link href="/" className="text-foreground font-medium hover:text-black transition ease-in duration-150 delay-150">
                 take my online classes
               </Link>
               &nbsp;and still not satisfied with the result? You’re in the right spot to hire our experts.

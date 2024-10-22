@@ -51,7 +51,7 @@ const Slide = ({ title, description, image, index, ref }: any) => (
           {description.includes('take my ged exam for me') ? (
             <span>
               Are you seeking for better guidance and assistance to ace your exam? You’re in the right spot to hire our expert tutors to&nbsp;
-              <Link href="/take-my-ged-for-me" className="text-white font-bold hover:text-black transition ease-in duration-150 delay-150">
+              <Link href="/take-my-ged-for-me" className="text-foreground font-medium hover:text-black transition ease-in duration-150 delay-150">
                 take my ged exam for me
               </Link>.
             </span>
