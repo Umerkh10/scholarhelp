@@ -110,6 +110,14 @@ export default function Navbar() {
               </NavigationMenuItem>
 
               <NavigationMenuItem>
+                <Link href="/Order" legacyBehavior passHref>
+                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                    <div className="hover:text-blue-600">Order Now</div>
+                  </NavigationMenuLink>
+                </Link>
+              </NavigationMenuItem>
+
+              <NavigationMenuItem>
                 <Link href="#" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     <div className="flex items-center ">
