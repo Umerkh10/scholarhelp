@@ -284,7 +284,7 @@ console.log("orderData",orderData);
 
       <div style="text-align: center;">
         <p style="font-size: x-large;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/3197005034911" style="display: inline-block; color: whitesmoke; padding: 15px 30px; background-color: #359e2b;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 10px 0; text-align: center; vertical-align: middle;">
+        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; color: whitesmoke; padding: 15px 30px; background-color: #359e2b;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 10px 0; text-align: center; vertical-align: middle;">
           Whatsapp Now
         </a>
       </div>

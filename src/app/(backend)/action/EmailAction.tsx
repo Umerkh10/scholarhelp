@@ -443,9 +443,9 @@ async function sendEmailSupport(data: any) {
   
 
   const supportMailOptions = {
-    from: `New Order Form | ${process.env.NEXT_PUBLIC_NAME} <${process.env.MAILFROM}>`,
+    from: `New Order Form | Taking My Classes Online <${process.env.MAILFROM}>`,
     to: process.env.MAILTO, // send to support email
-    subject: `New Order Form | ${process.env.NEXT_PUBLIC_NAME}`,
+    subject: `New Order Form | Taking My Classes Online`,
     html: `
       <body>
         <h2>New Order Summary</h2>

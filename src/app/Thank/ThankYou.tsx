@@ -14,7 +14,7 @@ function ThankYou() {
         <span>Thank You!</span>
       </div>
       <h1 className="mt-6 text-xl font-medium tracking-tight text-zinc-100 sm:text-2xl">
-        Dear <span className=' font-bold'>{name || "User"} </span>.
+        Thank You For Submitting 
       </h1>
       <h1 className="mt-6 text-lg font-medium  text-zinc-100 sm:text-xl">
         Please Check your whatsapp <span className='font-bold'>{number}</span>  we have sent 40% discount offer
