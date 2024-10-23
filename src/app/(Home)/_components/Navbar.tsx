@@ -58,11 +58,12 @@ export default function Navbar() {
 
   return (
     <header className="fixed z-50  w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex justify-center h-14 items-center">
+      <div className="container flex justify-center py-2 items-center">
         <div className="md:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
+            {/* <Image className="block dark:hidden " src={'/imgs/taking-logo-2.png'} width={80} height={80} alt="logo"></Image>
+            <Image className="dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={80} height={80} alt="logo"></Image> */}
             <span className="hidden font-bold xl:inline-block">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
-            <Image className="xl:hidden inline-block" src={'/imgs/scholarly-help-logo.png'} width={50} height={50} alt="logo"></Image>
           </Link>
           <NavigationMenu>
             <NavigationMenuList >

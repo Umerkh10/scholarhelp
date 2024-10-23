@@ -10,6 +10,8 @@ const Footer = () => {
     <div className=''>
         <div  className='bg-gradient-to-b from-blue-200 via-violet-200 to-zinc-100 dark:bg-gradient-to-b dark:from-purple-900 dark:via-indigo-900 dark:to-zinc-950 grid lg:grid-cols-6 grid-cols-1 p-5 container  '>
           <div className=' col-span-2 p-4'>
+          {/* <Image className=" dark:hidden" src={'/imgs/taking-logo-2.png'} width={120} height={120} alt="logo"></Image>
+          <Image className="dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={120} height={120} alt="logo"></Image> */}
             <div className='font-bold md:text-xl text-lg  '>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
             <div className='font-medium mt-4  text-sm'>{process.env.NEXT_PUBLIC_WEBSITE_NAME} Help delivers academic writing services. Our team of qualified subject experts can help you with your challenging online classes, homework, assignments, quizzes, and exams</div>
 
