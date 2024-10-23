@@ -78,7 +78,7 @@ export default function Navbar() {
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
                     {services.map((service) => (
-                        <Link className="font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href={service.href}>{service.title}
+                        <Link key={service.title} className="font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground" href={service.href}>{service.title}
            
                         </Link>
                     ))}
@@ -117,14 +117,14 @@ export default function Navbar() {
                 </Link>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <Link href="#" legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                     <div className="flex items-center ">
                       <PhoneCall className="stroke-blue-500 fill-blue-500 mr-2" /> 1-716-708-1869 </div>
                   </NavigationMenuLink>
                 </Link>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
 
               <NavigationMenuItem>
                 <ThemeSwitch />
@@ -164,6 +164,9 @@ export default function Navbar() {
                 </MobileLink>
                 <MobileLink href="/Reviews" onOpenChange={setIsOpen}>
                   Reviews
+                </MobileLink>
+                <MobileLink href="/Order" onOpenChange={setIsOpen}>
+                  Order Now
                 </MobileLink>
                 <MobileLink href="#" >
                   <ThemeSwitch />

@@ -2,6 +2,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
+import { CtaButtons } from '../(Home)/_components/HeroSection';
 
 function TakeMyExamFlow() {
     const [activeTab, setActiveTab] = useState("1"); 
@@ -47,6 +48,7 @@ function TakeMyExamFlow() {
               <h4 className='text-lg md:text-2xl font-bold dark:text-zinc-100 text-indigo-900 '>Place Your Order</h4>
             </div>
             <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Provide complete details about your classes and specify your requirements by filling out the order form.</p>
+            <CtaButtons/>
           </div>
         </div>
       </TabsContent>
@@ -63,6 +65,7 @@ function TakeMyExamFlow() {
             <h4 className='text-lg md:text-2xl font-bold dark:text-zinc-100 text-indigo-900 '>Make a Prepayment</h4>
             </div>
             <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>Complete a payment procedure so that our online instructor can start working.</p>
+            <CtaButtons/>
           </div>
         </div>
         </TabsContent>
@@ -81,7 +84,7 @@ function TakeMyExamFlow() {
             </div>
             <p className='mt-2 md:mt-4 md:text-xl text-sm font-medium dark:text-zinc-100 text-indigo-900'>
             As an expert assigned to you relevant to your requirements, you will be notified by email.</p>
-       
+            <CtaButtons/>
           </div>
         </div>
         </TabsContent>

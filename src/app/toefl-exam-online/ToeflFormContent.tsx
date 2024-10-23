@@ -1,6 +1,6 @@
 import React from 'react'
 import { CtaButtons } from '../(Home)/_components/HeroSection'
-import BannerForm from '../(Home)/_components/BannerForm'
+import Image from 'next/image'
 
 function ToeflFormContent() {
   return (
@@ -34,7 +34,7 @@ function ToeflFormContent() {
 
         <div data-aos="zoom-in-down" className=''>
             <div className='flex items-center justify-center mt-5'>
-                <BannerForm/>
+            <Image src={'/imgs/form-content-img.png'} width={800} height={500} alt='content-img'></Image>
             </div>
         </div>
 

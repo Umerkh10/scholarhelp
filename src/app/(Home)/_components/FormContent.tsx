@@ -1,6 +1,6 @@
 import React from 'react'
-import BannerForm from './BannerForm';
 import { CtaButtons } from './HeroSection';
+import Image from 'next/image';
 
 
 function FormContent() {
@@ -28,12 +28,12 @@ function FormContent() {
 
                     </div>
 
-                    <CtaButtons />
+                    <CtaButtons/>
                 </div>
 
                 <div data-aos="zoom-in-down" className=''>
                     <div className='flex items-center justify-center mt-5'>
-                        <BannerForm />
+                        <Image src={'/imgs/form-content-img.png'} width={800} height={500} alt='content-img'></Image>
                     </div>
                 </div>
 

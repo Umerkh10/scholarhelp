@@ -9,7 +9,7 @@ function ThankYou() {
   return (
     <div style={{backgroundImage:"url('/imgs/bg-thank-order.webp')",backgroundSize:'cover',backgroundPosition:'center'}} className="flex  flex-col items-center justify-center h-screen bg-background px-4 pb-24 pt-32 md:pt-2 sm:px-6 lg:px-8">
     <div className="mx-auto max-w-screen-xl text-center scale-90 md:scale-100">
-      <div className="inline-flex items-center rounded-full bg-orange-500 px-4 py-2 text-primary-foreground">
+      <div className="inline-flex items-center rounded-full bg-violet-500 text-white px-4 py-2 text-primary-foreground">
         <CheckIcon className="mr-2 h-5 w-5" />
         <span>Thank You!</span>
       </div>
@@ -17,7 +17,7 @@ function ThankYou() {
         Dear <span className=' font-bold'>{name || "User"} </span>.
       </h1>
       <h1 className="mt-6 text-lg font-medium  text-zinc-100 sm:text-xl">
-        Please Check your whatsapp <span className='font-bold'>{number}</span>  we have sent 45% discount offer
+        Please Check your whatsapp <span className='font-bold'>{number}</span>  we have sent 40% discount offer
       </h1>
       <p className="mt-4 text-zinc-100 lg:w-[610px] mx-auto">
         Thank you for your recent purchase. We hope you enjoy your new product. If you have any questions or concerns,

@@ -6,7 +6,8 @@ import React from 'react'
 function AboutVision() {
 
   return (
-    <div className='mx-auto max-w-screen-xl'  data-aos="zoom-in">
+    <div className='mx-auto max-w-screen-xl my-10'  data-aos="zoom-in">
+         <div className='border-b-2 border-muted-foreground'></div>
         <div className='grid lg:grid-cols-2 grid-cols-1 py-7 px-5 gap-3'>
             <div className='' data-aos="flip-up">
                 <div className='text-2xl md:text-4xl font-extrabold mt-5 lg:mt-20 '>Our Vision for the Future</div>
@@ -19,7 +20,7 @@ function AboutVision() {
                 </div>
             </div>
         </div>
-        <div className='border-b-2 border-muted-foreground'></div>
+       
     </div>
   )
 }

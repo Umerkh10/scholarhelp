@@ -1,75 +1,10 @@
-import { NextRequest, NextResponse } from "next/server";
-import path from "path";
-import * as fsPromises from "fs/promises";
-import fs from "fs";
-import nodemailer from "nodemailer";
-import { transporter } from "../(backend)/action/Transporter";
-
-export async function GET(req: NextRequest, res: NextResponse) {
-  //**********Read Search params and set the value to variable  **********/
-  const searchParams = req.nextUrl.searchParams;
-  const afterPaymentToken = searchParams.get("after_payment_token") as string;
-  const paymentStatus = searchParams.get("xxxpayment_status") as string;
-  const OrderId = searchParams.get("payment_id") as string;
-
-  //**********Reading Json File based on afterPaymentToken and get the Data********* */
-  const filePath = path.join(
-    process.cwd(),
-    "order",
-    `${afterPaymentToken}.json`
-  );
-  const fileData = await fsPromises.readFile(filePath, "utf8");
-  const orderData = JSON.parse(fileData);
-console.log("orderData",orderData);
-
-  //**********Sending  Email to support ********* */
-  const supportMailOptions = {
-    from: process.env.MAILFROM,
-    to: process.env.MAILTO, // send to support email
-    subject: `Payment Notification`,
-    html: `
-  <body>
-    <h2>New Order Summary</h2>
-    <p><strong>OrderID:</strong> ${orderData.orderId}</p>
-    <p><strong>Name:</strong> ${orderData.name}</p>
-    <p><strong>Email:</strong> ${orderData.email}</p>
-    <p><strong>Phone:</strong> ${orderData.phone}</p>
-    <p><strong>Country:</strong> ${orderData.country}</p>
-    <h3>Order Details</h3>
-    <ul>
-      <li><strong>Topic:</strong> ${orderData.topic}</li>
-      <li><strong>Pages:</strong> ${orderData.selectedValue}</li>
-      <li><strong>Word Count:</strong> ${orderData.wordCount}</li>
-      <li><strong>Academic Level:</strong> ${orderData.level}</li>
-      <li><strong>Paper Quality:</strong> ${orderData.quality}</li>
-      <li><strong>Subject:</strong> ${orderData.subject}</li>
-      <li><strong>Language:</strong> ${orderData.language}</li>
-      <li><strong>Paper Format:</strong> ${orderData.format}</li>
-      <li><strong>Paper Type:</strong> ${orderData.paper}</li>
-      <li><strong>No Of Sources:</strong> ${orderData.source}</li>
-      <li><strong>Referencing:</strong> ${orderData.referencing}</li>
-      <li><strong>Deadline:</strong> ${orderData.deadline}</li>
-      <li><strong>Price Per Page:</strong> ${orderData.pricePerPage}</li>
-      <li><strong>Total Price:</strong> ${orderData.symbol}${orderData.totalPrice}</li>
-      <li><strong>Notes:</strong> ${orderData.notes}</li>
-    </ul>
-</body>
-    `,
-  };
-  transporter.sendMail(supportMailOptions, (error: any, info: any) => {
-    if (error) {
-      console.error("Email send error:", error);
-    } else {
-      console.log("Client Email sent: " + info.response);
-    }
-  });
-  //**********Sending  Email to client **********/
-
-  const clientPaymentMailOptions = {
-    from: `Order Confirmed | ${process.env.NEXT_PUBLIC_NAME} ${process.env.MAILFROM}`,
-    to: orderData.email,
-    subject: `Your Order # ${orderData.orderId} is Confirmed - Thank You For Your Order! | ${process.env.NEXT_PUBLIC_NAME}`,
-    html: `
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Payment</title>
+</head>
 <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; ">
     <div style="background-position: center;background-size: cover; width: 100%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
  max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #fffdfa; padding: 20px;">
@@ -295,30 +230,4 @@ console.log("orderData",orderData);
     
     </div>
     </body>
-    `,
-  };
-  transporter.sendMail(clientPaymentMailOptions, (error: any, info: any) => {
-    if (error) {
-      console.error("Email send error:", error);
-    } else {
-      console.log("Client Email sent: " + info.response);
-    }
-  });
-
-  //**********Delete the json **********//
-
-  fs.unlink(filePath, (err) => {
-    if (err) {
-      console.error("Error deleting the file:", err);
-    } else {
-      console.log("File deleted successfully");
-    }
-  });
-
-  //**********Redirect the user to thankyou page**********//
-  return NextResponse.redirect("http://localhost:3000/thank_you_order");
-}
-// http://localhost:3000/thank_you_order
-
-// https://eduresearchers.com/thank_you_order
-
+</html>

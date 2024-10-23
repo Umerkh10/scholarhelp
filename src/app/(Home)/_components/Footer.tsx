@@ -52,9 +52,7 @@ const Footer = () => {
           </div>
 
           <div className='p-4'>
-            <div className='font-bold md:text-xl text-lg'>Contact Info</div>
-            <div className="flex items-center md:mt-4 mt-2 text-indigo-7900"> 
-            <Phone className="stroke-indigo-700 fill-indigo-700 font-medium mr-2  mt-1  text-sm"/> 1-716-708-1869 </div>
+            <div className='font-bold md:text-xl text-lg'> Our Socials</div>
             <div className='flex items-center gap-3 mt-2 text-muted-foreground'>
               <Instagram className=' mt-1  text-sm dark:hover:text-white transition ease-in duration-200 delay-150' />
               <Facebook className=' mt-1  text-sm dark:hover:text-white transition ease-in duration-200 delay-150'/>

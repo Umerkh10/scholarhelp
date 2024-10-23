@@ -1,6 +1,7 @@
 import { Star } from 'lucide-react'
 import Image from 'next/image'
 import React from 'react'
+import { CtaButtons } from './HeroSection'
 
 const Rating = () => {
 
@@ -15,23 +16,26 @@ const Rating = () => {
                     </div>
 
                     <div className='flex flex-col md:flex-row items-center mt-4 space-y-3 md:space-y-0 md:space-x-4'>
-                    <Card image='/imgs/documents.png' title='Plagiarism Free Work' isStar={false} />
-                    <Card image='/imgs/money-back-guarantee.png' title='Money Back Guarantee' isStar={false} />
+                        <Card image='/imgs/documents.png' title='Plagiarism Free Work' isStar={false} />
+                        <Card image='/imgs/money-back-guarantee.png' title='Money Back Guarantee' isStar={false} />
                     </div>
                 </div>
 
                 <div data-aos="fade-up" className=' p-7'>
                     <div className='flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-4'>
-                    <Card image='/imgs/google.png' title='Google Reviews' isStar={true} />
-                    <Card image='/imgs/trust-pilot.png' title='Trust Pilot' isStar={true} />
+                        <Card image='/imgs/google.png' title='Google Reviews' isStar={true} />
+                        <Card image='/imgs/trust-pilot.png' title='Trust Pilot' isStar={true} />
                     </div>
 
-                    <div  className='flex flex-col md:flex-row items-center mt-4 space-y-3 md:space-y-0 md:space-x-4'>
-                    <Card image='/imgs/site-jabber.png' title='Site Jabber' isStar={true} />
-                    <Card image='/imgs/reviews.io.png' title='Reviews.io' isStar={true} />
+                    <div className='flex flex-col md:flex-row items-center mt-4 space-y-3 md:space-y-0 md:space-x-4'>
+                        <Card image='/imgs/site-jabber.png' title='Site Jabber' isStar={true} />
+                        <Card image='/imgs/reviews.io.png' title='Reviews.io' isStar={true} />
                     </div>
 
                 </div>
+            </div>
+            <div className="flex justify-center mt-2 items-center">
+                <CtaButtons />
             </div>
         </div>
     )
@@ -40,9 +44,9 @@ const Rating = () => {
 export default Rating
 
 
-const Card = ({image, title, isStar }: { image:string, title: string, isStar: boolean }) => {
+const Card = ({ image, title, isStar }: { image: string, title: string, isStar: boolean }) => {
     return (
-        <div   className="w-full sm:w-[380px] rounded-3xl bg-gradient-to-b p-1 from-blue-800 to-purple-800">
+        <div className="w-full sm:w-[380px] rounded-3xl bg-gradient-to-b p-1 from-blue-800 to-purple-800">
             <div className="rounded-[calc(1.5rem-5px)] bg-white p-3 dark:bg-gray-900">
                 <div className="flex items-center gap-4">
                     <Image className="rounded-full" src={image} width={50} height={50} alt="rating" />
@@ -50,11 +54,11 @@ const Card = ({image, title, isStar }: { image:string, title: string, isStar: bo
                         <div className="md:text-lg text-sm font-medium text-gray-700 dark:text-white">{title}</div>
 
                         {isStar ?
-                        <span className="flex text-sm tracking-wide text-gray-600 dark:text-gray-400"><Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' />
-                            <Star className='stroke-black fill-yellow-500' /></span>: ''}
+                            <span className="flex text-sm tracking-wide text-gray-600 dark:text-gray-400"><Star className='stroke-black fill-yellow-500' />
+                                <Star className='stroke-black fill-yellow-500' />
+                                <Star className='stroke-black fill-yellow-500' />
+                                <Star className='stroke-black fill-yellow-500' />
+                                <Star className='stroke-black fill-yellow-500' /></span> : ''}
                     </div>
                 </div>
             </div>

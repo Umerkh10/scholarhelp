@@ -13,13 +13,13 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 
-export function DatePickerDemo() {
-  const [date, setDate] = React.useState<Date>()
-
+export function DatePickerDemo({date,setDate}:{date:any,setDate:any}) {
+ 
   return (
     <Popover>
       <PopoverTrigger asChild>
         <Button
+        type="button"
           variant={"outline"}
           className={cn(
             "w-full rounded-lg h-12 outline-none   ",
@@ -36,6 +36,7 @@ export function DatePickerDemo() {
           selected={date}
           onSelect={setDate}
           initialFocus
+          disabled={{ before: new Date() }}
         />
       </PopoverContent>
     </Popover>

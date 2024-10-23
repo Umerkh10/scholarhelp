@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import BannerForm from './BannerForm';
+import Link from 'next/link';
 
 
 
@@ -50,16 +51,21 @@ export const HeroSection = () => {
 export function CtaButtons() {
   return (
     <div className='flex flex-col md:flex-row  items-center mt-5'>
+      <Link href={'/Order'}>
       <div className='flex justify-center items-center border-[2px] border-zinc-400 bg-zinc-100
     transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl  m-2'>
         <Image src={"/imgs/order.png"} width={35} height={35} alt='order' />
         <button className='font-medium ml-2 text-zinc-800 md:text-base text-sm '>Order Now</button>
       </div>
+      </Link>
+     
+      <Link href={'https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
       <div className='flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800
 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2'>
         <Image src={"/imgs/whatsapp.png"} width={25} height={25} alt='whatsapp' />
         <button className='font-medium ml-2 text-background md:text-base text-sm'>Chat On Whatsapp</button>
       </div>
+      </Link>
 
     </div>
   )
@@ -72,11 +78,14 @@ export function CtaChat() {
         <Image src={"/imgs/chat.png"} width={32} height={32} alt='chat' />
         <button className='font-medium ml-2 text-zinc-100 md:text-base text-sm '>Chat Now</button>
       </div>
+
+      <Link href={'https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
       <div className='flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800
 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2'>
         <Image src={"/imgs/whatsapp.png"} width={25} height={25} alt='whatsapp' />
         <button className='font-medium ml-2 text-background md:text-base text-sm'>Chat On Whatsapp</button>
       </div>
+      </Link>
 
     </div>
   )

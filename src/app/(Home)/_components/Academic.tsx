@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React  from "react";
+import { CtaButtons } from "./HeroSection";
 
 const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
   
@@ -66,7 +67,9 @@ function Academic() {
           <ServiceCard key={index} {...service} />
         ))}
       </div>
-
+     <div className="flex justify-center mt-4 items-center">
+      <CtaButtons/>
+      </div>
     </div>
   );
 }

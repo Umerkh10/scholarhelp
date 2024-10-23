@@ -195,24 +195,6 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
               </select>
             </div>
 
-            {/* <div className="space-y-1">
-              <label htmlFor="currencies">Select Currency</label>
-              <select
-                className="rounded-lg border-[2px] w-full py-3 px-3 outline-none text-sm md:text-base"
-                name="currency"
-                value={currency}
-                onChange={handleCurrency}
-                required
-                aria-label="currencies"
-              >
-                {currencySymbols.map((currencyItem, index) => (
-                  <option key={index} value={currencyItem.code}>
-                    {currencyItem.code}  
-                  </option>
-                ))}
-              </select>
-            </div> */}
-
             <div className="space-y-2 pt-2">
               <Label className="text-base" htmlFor="format">
                 Additional Notes (Instructions)
@@ -231,11 +213,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
               <button onClick={onPrevious} className='py-1 rounded-lg bg-purple-600 text-white text-center m-4 w-[120px] hover:scale-105 transition ease-in duration-200 font-medium'>
                 PREVIOUS
               </button>
-              <button
-                type="submit"
-                disabled={pending}
-                className="flex m-5 py-2 px-5 bg-purple-600 text-zinc-50 rounded-lg hover:scale-105 transition ease-in duration-200 delay-200 font-medium"
-              >
+              <button type="submit" disabled={pending} className="flex m-5 py-2 px-5 bg-purple-600 text-zinc-50 rounded-lg hover:scale-105 transition ease-in duration-200 delay-200 font-medium">
                 {pending ? (
                   <>
                     <Loader2 className="animate-spin mr-2 h-5 w-5" />{" "}

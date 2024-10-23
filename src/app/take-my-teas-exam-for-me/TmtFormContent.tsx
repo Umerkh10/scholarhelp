@@ -1,7 +1,7 @@
 import React from 'react'
 import { CtaButtons } from '../(Home)/_components/HeroSection'
-import BannerForm from '../(Home)/_components/BannerForm'
 import Link from 'next/link'
+import Image from 'next/image'
 
 function TmtFormContent() {
   return (
@@ -35,7 +35,7 @@ function TmtFormContent() {
 
         <div data-aos="zoom-in-down" className=''>
             <div className='flex items-center justify-center mt-5'>
-                <BannerForm />
+            <Image src={'/imgs/form-content-img.png'} width={800} height={500} alt='content-img'></Image>
             </div>
         </div>
 

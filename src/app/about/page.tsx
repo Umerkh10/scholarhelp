@@ -4,7 +4,6 @@ import AboutBanner from './AboutBanner'
 import AboutProcess from './AboutProcess'
 import AboutVision from './AboutVision'
 import AboutNumbers from './AboutNumbers'
-import AboutEmail from './AboutEmail'
 import { useInView } from 'react-intersection-observer'
 import Aos from 'aos'
 import 'aos/dist/aos.css';
@@ -27,9 +26,9 @@ function Page() {
     <div  ref={ref}>
     <AboutBanner/>
     <AboutProcess/>
-    <AboutVision/>
     <AboutNumbers/>
-    <AboutEmail/>
+    <AboutVision/>
+    {/* <AboutEmail/> */}
     </div>
   )
 }

@@ -119,7 +119,7 @@ export const AfterPayment = async (formData: FormData) => {
             <div style="display: inline-block; padding: 5px;">
            <img src="https://muhammadumer.sirv.com/edu-logo.png" alt="" style="display: inline-block; vertical-align: middle; height: 50px; width: auto;">
          <p style="display: inline-block; vertical-align: middle; margin: 0; font-size: x-large;  font-weight: 700; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
-                 Eduresearcher
+                 Taking My Classes Online
                 </p>
             </div>
         </div>
@@ -285,7 +285,7 @@ export const AfterPayment = async (formData: FormData) => {
       <div style="text-align: center;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
           <div style="float: left;">Discount:</div>
-          <div style="float: right;">45% OFF</div>
+          <div style="float: right;">40% OFF</div>
         </div>
         <div style="clear: both;"></div>
       </div>
@@ -323,7 +323,7 @@ export const AfterPayment = async (formData: FormData) => {
       </div>
     
       <div style="text-align: center; padding-top: 10px; font-size: 12px; ">
-        <p>Eduresearcher is a registered trademark of Eduresearcher, Inc. All rights reserved.</p>
+        <p>Taking my classes online is a registered trademark of Taking my classes online, Inc. All rights reserved.</p>
       </div>
     
     </div>

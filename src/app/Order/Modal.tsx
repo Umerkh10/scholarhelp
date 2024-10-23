@@ -31,7 +31,7 @@ export default function Modal() {
                 Congratulations
               </DialogTitle>
               <DialogDescription className="text-center py-4 font-semibold text-xl text-zinc-100">
-                45%-OFF Discount Applied
+                40%-OFF Discount Applied
               </DialogDescription>
             </DialogHeader>
           </DialogContent>
