@@ -117,7 +117,7 @@ export async function sendEmails(formData: FormData) {
         <div style="margin: 10px 0;">
         <p style="font-size: x-large;  text-align: center; font-weight: 500;">Use this Discount Code To Get Started  </p>
         <a href="https://scholarhelp.vercel.app/Order?coupon=off45">
-          <img style="border-radius: 10px;"  height="100" src="https://muhammadumer.sirv.com/coupon.png"  alt="">
+          <img style="border-radius: 10px;"  height="100" src="https://muhammadumer.sirv.com/coupon-2.png"  alt="">
         </a>
         </div>
         </div>
