@@ -74,7 +74,7 @@ export const TopicProvider: React.FC<{ children: ReactNode }> = ({ children }) =
   const [name,setName] = useState<string>('');
   const [email,setEmail] = useState<string>('');
   const [phone,setPhone] = useState<string>('');
-  const [country,setCountry] = useState<string>('');
+  const [country,setCountry] = useState<string>('United States');
   const [notes,setNotes] = useState<string>('');
   const [symbol, setSymbol] = useState<string>('');
   const [ppp, setPpp] = useState<number>(0);

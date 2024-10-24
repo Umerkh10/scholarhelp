@@ -25,7 +25,7 @@ function TmeFormContent() {
                 Hire Someone to do my online exam and Develop my learning Skills?
                 </h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                Our online instructors utilize effective teaching methods to improve your thinking ability and practical skills, better preparing you for success in the workplace. Our expert’s proficiency will also help you in getting good grades in the <Link href={'/take-gmat-online-exam'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 '>GMAT exam online test</Link> and guide you throughout your academic journey. So now you can balance your routine and workload and let your academic work be on us by hiring the expert from takemyonlineclasses.com. Use our cheap exam helper and ace in your every exam.
+                Our online instructors utilize effective teaching methods to improve your thinking ability and practical skills, better preparing you for success in the workplace. Our expert’s proficiency will also help you in getting good grades in the <Link href={'/take-gmat-online-exam'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>GMAT exam online test</Link> and guide you throughout your academic journey. So now you can balance your routine and workload and let your academic work be on us by hiring the expert from takemyonlineclasses.com. Use our cheap exam helper and ace in your every exam.
                 </p>
 
             </div>

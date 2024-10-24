@@ -26,7 +26,7 @@ function TGmatFormContent() {
                 </h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
                 Getting the best GMAT assistance will be very tough to find but don’t further, We provide every student with our special services so that they won’t feel any hurdles on their side.
-                <Link href={'/pay-someone-to-take-my-class'} className='hover:text-blue-400 transition ease-in duration-150 delay-150'> paying someone to take my class</Link>  will definitely help you to increase chances for better marks. Our services will help you stay up to date with the world and also help in their exams so that you don’t have to ask for “how many times can you take the GMAT test?”.
+                <Link href={'/pay-someone-to-take-my-class'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150'> paying someone to take my class</Link>  will definitely help you to increase chances for better marks. Our services will help you stay up to date with the world and also help in their exams so that you don’t have to ask for “how many times can you take the GMAT test?”.
                 </p>
 
             </div>

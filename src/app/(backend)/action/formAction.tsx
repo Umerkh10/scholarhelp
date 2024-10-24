@@ -27,112 +27,62 @@ export async function sendEmails(formData: FormData) {
 
         // Email options for the client
         const clientMailOptions = {
-            from: `${process.env.MAILFROM}`,
+            from: `TakingMyClassesOnline® Alert - DLF Recieved <${process.env.MAILFROM}>`,
             to: email,
             subject: 'Your Service Form Submission Confirmation',
             html: `
-  <body style="margin: 0; padding: 0; font-family: Arial, sans-serif;  color: black;">
-    <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #f4eefd; padding: 20px;">
+<body style="margin: 0; padding: 0;   color: black;">
+    <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #f4eefd;  font-family: system-ui;">
     
-       <div style="text-align: center;">
-        <p style="font-size: 24px;  font-weight: 700;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; ">Taking My Classes Online</p>
-       </div>
+       <div style="text-align: center; padding: 10px; background-color:#7f05f0c2; border-radius: 10px;">
+        <div style="display: inline-block; ">
+       <img src="https://muhammadumer.sirv.com/taking-logo-2-dark.png" alt="" style="display: inline-block; margin-right: 5px; vertical-align: middle; height: 80px; width: auto;">
+     <p style="display: inline-block; vertical-align: middle; margin: 0; font-size: x-large;  font-weight: 600; color: whitesmoke; ">
+             Taking My Classes Online
+            </p>
+        </div>
+    </div>
+
+          
+      <div style="padding: 10px 0; text-align: center;">
+        <div style="margin: 10px 0;">
+            <img style="border-radius: 10px;"  height="100" src="https://muhammadumer.sirv.com/dlf-form.png"  alt="">
+        </div>
+        </div>
     
-      <p style="font-size: 20px;  line-height: 1.5; text-align: center; font-weight: 600;">We Have Recieved Your Order! <br></p>
+      <p style="font-size: 20px;   text-align: center; font-weight: 600;">Thanks! We’re already working on it!<br></p>
    
-
-    <div style="text-align: start;">
-        <h2 style="font-size: 26px; font-weight: 600;">Order Summary</h2>
-      </div>
-
-      <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
-    
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Email:</div>
-          <div style="float: right;">${email}</div>
+      <div style=" text-align: center;">
+        <div style="margin: 5px 0;">
+          <p style="font-size: medium;  text-align: center; color: gray; font-weight: 600; padding-left: 10px; padding-right: 10px;">
+            When Taking My Classes Online gives you a deal,
+            Jump on the chance—make it real!
+            Grab your spot and give it a whirl,
+            Order now and watch your dreams swirl!  </p>
         </div>
-        <div style="clear: both;"></div>
-      </div>
+        </div>
 
-    
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Deadline:</div>
-          <div style="float: right;">${date}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-    
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Phone:</div>
-          <div style="float: right;">${phone}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Purpose:</div>
-          <div style="float: right;">${activeButton}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600; ">Word Count:</div>
-          <div style="float: right;">${wordCount}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Service:</div>
-          <div style="float: right;">${selectedService}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Subject:</div>
-          <div style="float: right;">${selectedSubject}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-
-      <div style="text-align: center;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left; font-weight: 600;">Questions:</div>
-          <div style="float: right;">${selectedQuestions}</div>
-        </div>
-        <div style="clear: both;"></div>
-      </div>
-    
 
       <div style="padding: 10px 0; text-align: center;">
         <div style="margin: 10px 0;">
-        <p style="font-size: x-large;  text-align: center; font-weight: 500;">Use this Discount Code To Get Started  </p>
+        <p style="font-size: 20px;  text-align: center; font-weight: 500;">Apply this discount code to begin your journey!</p>
         <a href="https://scholarhelp.vercel.app/Order?coupon=off45">
           <img style="border-radius: 10px;"  height="100" src="https://muhammadumer.sirv.com/coupon-2.png"  alt="">
         </a>
         </div>
         </div>
-    
-     
-    
-    
+
+
+
       <div style="text-align: center;">
-        <p style="font-size: x-large;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 15px 30px; background-color: #2ea710;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 10px 0; text-align: center; color: whitesmoke;">
+        <p style="font-size: 18px;  font-weight: 400;">You Can Contact Our Support Team 24/7.</p>
+        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 10px 20px; background-color: #07cc08;  text-decoration: none; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 5px; margin: 5px 0; text-align: center; color: whitesmoke;">
+          <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
         </a>
       </div>
     
-      <div style="text-align: center; padding-top: 10px; font-size: 12px; ">
+      <div style="text-align: center; padding: 10px; font-size: 12px; ">
         <p>Taking My Classes Online is a registered trademark of Taking My Classes Online, Inc. All rights reserved.</p>
       </div>
     </div>
@@ -146,9 +96,9 @@ export async function sendEmails(formData: FormData) {
 
         // Email options for the support team
         const supportMailOptions = {
-            from: `${process.env.MAILFROM}`,
+            from: `Taking My Classes Online® Alert - DLF Recieved <${process.env.MAILFROM}>`,
             to: `${process.env.MAILTO}`,
-            subject: 'New Service Form Submission',
+            subject: 'New DLF Form Submission',
             html: `
             <div style="font-family: Arial, sans-serif; line-height: 1.6;">
                 <p><b>New Submission Details:</b></p>

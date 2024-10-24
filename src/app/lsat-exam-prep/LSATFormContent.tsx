@@ -25,7 +25,7 @@ function LSATFormContent() {
                 Can Paying Someone Help Me With My Studies?
                 </h2>
                 <p className=" py-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-sm md:text-base  ">
-                GOnline platforms have made education easier and reliable, which helps millions of students to learn and excellence their skills in a matter of time. However, finding authentic instructors and assistance could be difficult.. We are popular among students with our prominent commitment and our best services to help to get better results in their <Link href={'/lsat-exam-prep'} className='hover:text-blue-400 transition ease-in duration-150 delay-150'> LSAT exam format</Link>  and provide them with free practice of the LSAT exam so that they feel they get the worth of their money. However, we offer a money-back guarantee if we fail to achieve the desired results.
+                GOnline platforms have made education easier and reliable, which helps millions of students to learn and excellence their skills in a matter of time. However, finding authentic instructors and assistance could be difficult.. We are popular among students with our prominent commitment and our best services to help to get better results in their <Link href={'/lsat-exam-prep'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150'> LSAT exam format</Link>  and provide them with free practice of the LSAT exam so that they feel they get the worth of their money. However, we offer a money-back guarantee if we fail to achieve the desired results.
                 </p>
 
             </div>

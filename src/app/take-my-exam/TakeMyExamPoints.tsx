@@ -57,7 +57,7 @@ const Slide = ({ title, descriptionStart,description, descriptionLinkText, descr
           {descriptionStart  && <span>{descriptionStart}   </span>}
           {description && <span>{description}</span>}
           {descriptionLinkText && link && (
-            <Link href={link} className="text-foreground font-medium hover:text-black transition ease-in duration-150 delay-150">{descriptionLinkText}</Link>
+            <Link href={link} className=" font-medium text-yellow-500 hover:underline transition ease-in duration-150 delay-150">{descriptionLinkText}</Link>
           )}
           {descriptionEnd && <span>{descriptionEnd}</span>}
         </div>

@@ -95,7 +95,7 @@ function DynamicContent1() {
                 Where Can I Take The GMAT Help: Tips and Resources</h3>
                 <p className='font-medium text-muted-foreground md:text-base text-sm pt-4'>
                 By hiring our experts, you’re accessible to get support from our instructor 24/7, that can help you to reach new levels in your academic career. Our services provide the best tips and resources to elevate your learning experience and to help you to achieve better marks in your exams including
-                 <Link href={'/toefl-exam-online'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> toefl exam online</Link> or <Link href={'/lsat-exam-prep'} className='hover:text-blue-400 transition ease-in duration-150 delay-150 font-bold'> LSAT practice exam</Link> , We make sure that our students ace their exams. We secure your data only with us so that your privacy will not be extended to other sources. So make your move now and join us Today!
+                 <Link href={'/toefl-exam-online'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150'> toefl exam online</Link> or <Link href={'/lsat-exam-prep'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150'> LSAT practice exam</Link> , We make sure that our students ace their exams. We secure your data only with us so that your privacy will not be extended to other sources. So make your move now and join us Today!
                 </p>
 
 

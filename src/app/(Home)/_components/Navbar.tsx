@@ -59,10 +59,10 @@ export default function Navbar() {
   return (
     <header className="fixed z-50  w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex justify-center py-2 items-center">
-        <div className="md:flex mr-4 hidden  ">
+        <div className="lg:flex mr-4 hidden  ">
           <Link href="/" className=" mr-6 flex  items-center space-x-2">
-            {/* <Image className="block dark:hidden " src={'/imgs/taking-logo-2.png'} width={80} height={80} alt="logo"></Image>
-            <Image className="dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={80} height={80} alt="logo"></Image> */}
+            <Image className="block dark:hidden " src={'/imgs/taking-logo-2.png'} width={80} height={80} alt="logo"></Image>
+            <Image className="dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={80} height={80} alt="logo"></Image>
             <span className="hidden font-bold xl:inline-block">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
           </Link>
           <NavigationMenu>
@@ -135,19 +135,25 @@ export default function Navbar() {
           </NavigationMenu>
         </div>
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-          <div className="text-center font-bold sm:hidden ">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
+
+        <Image className="lg:hidden block dark:hidden " src={'/imgs/taking-logo-2.png'} width={60} height={60} alt="logo"></Image>
+        <Image className="lg:dark:hidden dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={60} height={60} alt="logo"></Image>
+          <div className="text-center font-bold lg:hidden sm:ml-5 ml-2   ">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
+          
           <SheetTrigger asChild>
             <Button
               variant="ghost"
-              className=" ml-auto px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+              className=" ml-auto px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 lg:hidden"
             >
               <Menu className="h-5 w-5  " />
               <span className="sr-only">Toggle Menu </span>
             </Button>
           </SheetTrigger>
           <SheetContent side="left" className="pr-0">
-            <MobileLink href="/" className="flex items-center" onOpenChange={setIsOpen}>
-              <span className="font-bold">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
+            <MobileLink href="/" className="flex items-center" onOpenChange={setIsOpen}>  
+        <Image className="lg:hidden block dark:hidden " src={'/imgs/taking-logo-2.png'} width={50} height={50} alt="logo"></Image>
+        <Image className="lg:hidden dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={50} height={50} alt="logo"></Image>
+              <span className="font-bold ml-2">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
             </MobileLink>
             <div className="my-4 h-[calc(100vh-8rem)] pb-10 pl-3">
               <div className="flex flex-col space-y-3 overflow-scroll ">

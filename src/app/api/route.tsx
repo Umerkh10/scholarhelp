@@ -66,22 +66,23 @@ console.log("orderData",orderData);
   //**********Sending  Email to client **********/
 
   const clientPaymentMailOptions = {
-    from: `Order Confirmed | ${process.env.NEXT_PUBLIC_NAME} ${process.env.MAILFROM}`,
+    from: `Order Confirmed | Taking My Classes Online ${process.env.MAILFROM}`,
     to: orderData.email,
-    subject: `Your Order # ${orderData.orderId} is Confirmed - Thank You For Your Order! | ${process.env.NEXT_PUBLIC_NAME}`,
+    subject: `Your Order # ${orderData.orderId} is Confirmed - Thank You For Your Order! | Taking My Classes Online`,
     html: `
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; ">
+<body style="margin: 0; padding: 0;  background-color: #f0f0f0; ">
     <div style="background-position: center;background-size: cover; width: 100%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #fffdfa; padding: 20px;">
+ max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #fffdfa; ">
     
-        <div style="text-align: center;">
-            <div style="display: inline-block; padding: 5px;">
-           <img src="https://muhammadumer.sirv.com/edu-logo.png" alt="" style="display: inline-block; vertical-align: middle; height: 50px; width: auto;">
-         <p style="display: inline-block; vertical-align: middle; margin: 0; font-size: x-large;  font-weight: 700; ">
-                 Taking My Classes Online
-                </p>
-            </div>
-        </div>
+   
+    <div style="text-align: center; background-color: blueviolet; border-radius: 12px; ">
+      <div style="display: inline-block;  padding: 15px;">
+     <img src="https://muhammadumer.sirv.com/taking-logo-2-dark.png" alt="" style="display: inline-block; vertical-align: middle; height: 50px; width: auto; margin-right: 5px;">
+   <p style="display: inline-block; vertical-align: middle; margin: 5px; font-size: 22px; color: whitesmoke;  font-weight: 600;">
+           Taking My Classes Online
+          </p>
+      </div>
+  </div>
     
       <p style="font-size: 22px;  line-height: 1.5; text-align: center; font-weight: 600;">
         Thank You For Your Order ${orderData.name} <br></p>
@@ -93,13 +94,13 @@ console.log("orderData",orderData);
         </div>
     
       <div style="text-align: start;">
-        <h2 style="font-size: 26px; font-weight: 600;  ">Personal Details</h2>
+        <h2 style="font-size: 26px; font-weight: 600;  padding-left: 20px; padding-right: 20px; padding-top: 5px; ">Personal Details</h2>
       </div>
     
       <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
 
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Name:</div>
           <div style="float: right;">${orderData.name}</div>
@@ -107,7 +108,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Email:</div>
           <div style="text-decoration: none; float: right;">${orderData.email}</div>
@@ -115,7 +116,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Phone:</div>
           <div style="float: right;">${orderData.phone}</div>
@@ -123,7 +124,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Country:</div>
           <div style="float: right;">${orderData.country}</div>
@@ -131,7 +132,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Notes:</div>
           <div style="float: right;">${orderData.notes}</div>
@@ -140,13 +141,13 @@ console.log("orderData",orderData);
       </div>
     
  
-      <div style="text-align: start;">
+      <div style="text-align: start;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <h2 style="font-size: 26px; font-weight: 600;  ">Order Summary</h2>
       </div>
 
       <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Topic:</div>
           <div style="float: right;">${orderData.topic}</div>
@@ -155,7 +156,7 @@ console.log("orderData",orderData);
       </div>
 
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">No Of Pages:</div>
           <div style="float: right;">${orderData.selectedValue}</div>
@@ -163,7 +164,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
     
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Word Count:</div>
           <div style="float: right;">${orderData.wordCount}</div>
@@ -171,7 +172,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Academic Level:</div>
           <div style="float: right;">${orderData.level}</div>
@@ -179,7 +180,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Paper Type:</div>
           <div style="float: right;">${orderData.paper}</div>
@@ -187,7 +188,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Paper Quality:</div>
           <div style="float: right;">${orderData.quality}</div>
@@ -195,7 +196,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Deadline:</div>
           <div style="float: right;">${orderData.deadline}</div>
@@ -203,7 +204,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Subject:</div>
           <div style="float: right;">${orderData.subject}</div>
@@ -211,7 +212,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Language:</div>
           <div style="float: right;">${orderData.language}</div>
@@ -219,7 +220,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">No Of Sources:</div>
           <div style="float: right;">${orderData.source}</div>
@@ -227,7 +228,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Paper Format:</div>
           <div style="float: right;">${orderData.format}</div>
@@ -235,7 +236,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Referencing:</div>
           <div style="float: right;">${orderData.referencing}</div>
@@ -243,13 +244,13 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-        <div style="text-align: start;">
+        <div style="text-align: start;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <h2 style="font-size: 26px; font-weight: 600;  ">Order Pricing</h2>
       </div>
       
     <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Discount:</div>
           <div style="float: right;">40% OFF</div>
@@ -257,7 +258,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Turnitin Report:</div>
           <div style="float: right; background-color: blueviolet; border: 2px solid #4c00ff; border-radius: 15px; color: whitesmoke; width: 100px; padding: 2px;  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">Free</div>
@@ -265,7 +266,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Price Per Page:</div>
           <div style="float: right;">${orderData.symbol}${orderData.pricePerPage}</div>
@@ -273,7 +274,7 @@ console.log("orderData",orderData);
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center;">
+      <div style="text-align: center;  padding-left: 20px; padding-right: 20px; padding-top: 5px;">
         <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
           <div style="float: left;">Total Price:</div>
           <div style="float: right;">${orderData.symbol}${orderData.totalPrice}</div>
@@ -282,14 +283,15 @@ console.log("orderData",orderData);
       </div>
     
 
-      <div style="text-align: center;">
-        <p style="font-size: x-large;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; color: whitesmoke; padding: 15px 30px; background-color: #359e2b;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 10px 0; text-align: center; vertical-align: middle;">
+      <div style="text-align: center; ">
+        <p style="font-size: 20px;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
+        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block;color: #f0f0f0;  padding: 10px 30px; background-color: #3dad32;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 10px; margin: 10px 0; text-align: center; vertical-align: middle;">
+          <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
         </a>
       </div>
     
-      <div style="text-align: center; padding-top: 10px; font-size: 12px; ">
+      <div style="text-align: center; padding-top: 10px; font-size: 12px; padding-bottom: 20px; ">
         <p>Taking My Classes Online is a registered trademark of Taking My Classes Online, Inc. All rights reserved.</p>
       </div>
     

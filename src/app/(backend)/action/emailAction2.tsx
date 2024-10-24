@@ -23,42 +23,84 @@ export default async function EmailAction2(state: any, formData: FormData) {
       },
     });
 
-    let mailOptions = {
+    // Mail options for the client
+    const clientMailOptions = {
       from: `Taking My Classes Online® Alert - <${process.env.MAILFROM}>`,
       to: email,
-      subject: `New Email Form Entry | ${process.env.NEXT_PUBLIC_NAME}`,
+      subject: `New Contact Form Entry | Taking My Classes Online`,
       html: `
-        <body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #333; color: white;">
-          <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #222222; padding: 20px;">
-            <div style="text-align: center;">
-              <p style="font-size: x-large; color: whitesmoke; font-weight: 700;">Taking My Classes Online</p>
+<body style="margin: 0; padding: 0; color: black;">
+    <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #f4eefd; font-family: system-ui;">
+        <div style="text-align: center; padding: 10px; background-color:#7f05f0c2; border-radius: 10px;">
+            <div style="display: inline-block;">
+                <img src="https://muhammadumer.sirv.com/taking-logo-2-dark.png" alt="" style="display: inline-block; margin-right: 5px; vertical-align: middle; height: 80px; width: auto;">
+                <p style="display: inline-block; vertical-align: middle; margin: 0; font-size: x-large; font-weight: 600; color: whitesmoke;">Taking My Classes Online</p>
             </div>
-            <div style="text-align: center; padding-bottom: 10px;">
-              <img src="https://muhammadumer.sirv.com/banner-temp.png" width="300" height="300" alt="Feature Image" style="max-width: 100%; height: auto;" />
+        </div>
+        <div style="padding: 10px 0; text-align: center;">
+            <div style="margin: 10px 0;">
+                <img style="border-radius: 10px;" height="100" src="https://muhammadumer.sirv.com/dlf-form.png" alt="">
             </div>
-            <p style="font-size: 22px; color: white; line-height: 1.5; text-align: center;">
-              We Have Received Your Message, ${name}!
-              <br><br>
-              <strong>Subject:</strong> ${subject} <br>
-              <strong>Email:</strong> ${email} <br>
-              <strong>Message:</strong> ${message}
-            </p>
-            <div style="padding: 10px 0; text-align: center;">
-              <p style="font-size: x-large; color: whitesmoke; font-weight: 500;">You Can Contact Our Support Team 24/7</p>
-              <a href="https://wa.me/3197005034911" style="display: inline-block; padding: 15px 30px; background-color: #2ea710; color: whitesmoke; text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 5px; margin: 10px 0;">
+        </div>
+        <p style="font-size: 20px; text-align: center; font-weight: 600;">Thanks for reaching out! We're on it!<br></p>
+        <div style="text-align: center;">
+            <div style="margin: 5px 0;">
+                <p style="font-size: medium; text-align: center; color: gray; font-weight: 600; padding-left: 10px; padding-right: 10px;">
+                    When Taking My Classes Online gives you a deal,
+                    Jump on the chance—make it real!
+                    Grab your spot and give it a whirl,
+                    Order now and watch your dreams swirl!
+                </p>
+            </div>
+        </div>
+        <div style="padding: 10px 0; text-align: center;">
+            <div style="margin: 10px 0;">
+                <p style="font-size: 20px; text-align: center; font-weight: 500;">Apply this discount code to begin your journey!</p>
+                <a href="https://eduresearchers.com/Order?coupon=off45">
+                    <img style="border-radius: 10px;" height="100" src="https://muhammadumer.sirv.com/coupon-2.png" alt="">
+                </a>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <p style="font-size: 18px; font-weight: 400;">You Can Contact Our Support Team 24/7.</p>
+            <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 10px 20px; background-color: #07cc08; text-decoration: none; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 5px; margin: 5px 0; text-align: center; color: whitesmoke;">
+                <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
                 Whatsapp Now
-              </a>
-            </div>
-            <div style="text-align: center; padding-top: 10px; font-size: 12px; color: white;">
-              <p>Taking My Classes Online is a registered trademark of Taking My Classes Online, Inc. All rights reserved.</p>
-            </div>
-          </div>
-        </body>
+            </a>
+        </div>
+        <div style="text-align: center; padding: 10px; font-size: 12px;">
+            <p>Taking My Classes Online is a registered trademark of Taking My Classes Online, Inc. All rights reserved.</p>
+        </div>
+    </div>
+</body>
       `,
     };
 
-    const info = await transporter.sendMail(mailOptions);
-    console.log("Message sent: %s", info.messageId);
+    // Mail options for support
+    const supportMailOptions = {
+      from: `Taking My Classes Online® Alert - <${process.env.MAILFROM}>`,
+      to: process.env.MAILTO, // Replace with your support email
+      subject: `New Contact Form Submission from ${name}`,
+      html: `
+<body style="margin: 0; padding: 0; color: black;">
+    <div style="width: 100%; max-width: 600px; margin: 0 auto; font-family: system-ui;">
+        <h2 style="text-align: center;">New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Subject:</strong> ${subject}</p>
+        <p><strong>Message:</strong>${message} </p>
+        
+        <p style="text-align: center; color: gray; font-size: small;">This is an automated message. Please do not reply.</p>
+    </div>
+</body>
+      `,
+    };
+
+    // Send both emails
+    await transporter.sendMail(clientMailOptions);
+    await transporter.sendMail(supportMailOptions);
+
+    console.log("Emails sent successfully.");
     return { success: "Form Submitted Successfully" };
   } catch (error) {
     console.error("Error sending email:", error);
