@@ -30,26 +30,26 @@ function Academic() {
       imageSrc: "/imgs/webinar.png",
       title: "Take My Exam",
       description:
-        "Overwhelmed with the daily tasks of your online courses? Dont worry! We are here to help you ace your online classes and secure top grades effortlessly!",
+        "Wondering to get expert guidance to cover the whole syllabus? Say no more! We are here to help you in taking online classes as well as to support you in achieving desirable results",
       animation: "flip-left",
     },
     {
       imageSrc: "/imgs/online-exam.png",
       title: "Take My GRE Exam",
-      description:"Looking to excel in your GRE exam without the hassle? Our expert tutors are here to help, ensuring top results in your GRE exam",
+      description:"Are you having trouble preparing for the GRE exams? Take a look at our platform and get sufficient help from our experts to ace your GRE exam.",
       animation: "flip-right",
     },
     {
       imageSrc: "/imgs/online-homework.png",
       title: "Take GMAT Online Exam",
       description:
-        "Taking the GMAT online can be challenging and tiring, but our dependable and affordable service ensures a smooth and stress-free experience.",
+        "Passing the GMAT online exam could be challenging, but our service will help you to lead you to academic success.",
       animation: "flip-left",
     },
     {
       imageSrc: "/imgs/essay.png",
       title: "Take LSAT Online Exam",
-      description:"Looking for a reliable way to ace your LSAT online exam? Trust our expert tutors for top notch assistance and timely results",
+      description:"It is hard to prepare for LSAT exams without any guidelines. However, Our experts are here to help you get the LSAT exam with achievable results.",
       animation: "flip-right",
     },
 
@@ -59,9 +59,12 @@ function Academic() {
 
   return (
     <div className="mx-auto max-w-screen-xl mt-10">
-      <div className="text-xl md:text-5xl text-center dark:text-zinc-100 text-violet-950 font-extrabold">
+      <h2 className="text-2xl md:text-5xl text-center dark:text-zinc-100 text-violet-950 font-extrabold">
         We are your partners in Academic Success!
-      </div>
+      </h2>
+      <h3 className="py-3 px-4 text-xl md:text-3xl text-center dark:text-zinc-100 text-violet-950 font-bold">
+      Take our help and get reliable support in academic learning
+      </h3>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 mt-5 lg:mt-10 mx-auto">
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />

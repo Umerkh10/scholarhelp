@@ -60,7 +60,8 @@ const Sample = () => {
     <div className='mt-10'>
       <div  data-aos="zoom-in-up" className='py-56 ' style={{ backgroundImage: "url('/imgs/sample_bg.webp')",  backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className='mx-auto max-w-screen-xl'>
-          <div className='-translate-y-10 text-xl md:text-5xl text-center font-extrabold text-gray-100'>Our Samples</div>
+          <h2 className='md:-translate-y-10 -translate-y-3 text-xl md:text-5xl text-center font-extrabold text-gray-100'> Samples To Help You </h2>
+          <p className='text-center font-medium px-10 xl:px-52 md:text-lg text-sm text-gray-100'> Here are some of the few samples to show the high-quality content that we delivered. Each document highlights our commitment to academic excellence and our ability to meet your requirements. </p>
 
           <Swiper
             loop={true}

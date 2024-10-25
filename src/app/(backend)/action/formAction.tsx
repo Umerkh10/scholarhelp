@@ -27,7 +27,7 @@ export async function sendEmails(formData: FormData) {
 
         // Email options for the client
         const clientMailOptions = {
-            from: `TakingMyClassesOnline® Alert - DLF Recieved <${process.env.MAILFROM}>`,
+            from: `Taking My Classes Online® Alert - DLF Recieved <${process.env.MAILFROM}>`,
             to: email,
             subject: 'Your Service Form Submission Confirmation',
             html: `

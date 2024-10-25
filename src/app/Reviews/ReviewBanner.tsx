@@ -27,9 +27,8 @@ function ReviewBanner() {
         />
       </div>
       <div className="p-6 md:p-10 grid gap-4">
-        <h2 className="text-xl md:text-4xl font-bold  ">Our Client Reviews</h2>
-        <p className=' font-medium md:text-base text-sm '>See what our clients are saying about us – their satisfaction speaks for itself!
-        Read real reviews from those who have experienced our exceptional service.</p>
+        <h2 className="text-xl md:text-4xl font-bold  ">Client Reviews About Our Services</h2>
+        <p className=' font-medium md:text-base text-sm '>Check out what our clients are saying about our services. See how our services provide satisfaction to them and discover why we are the most trusted website across the USA.</p>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-0.5">
             <StarIcon className="w-5 h-5 fill-primary" />

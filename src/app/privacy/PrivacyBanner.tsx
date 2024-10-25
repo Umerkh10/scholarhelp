@@ -6,7 +6,7 @@ const PrivacyBanner = () => {
     <div className='mx-auto max-w-screen-xl'>
         <div className='py-20 px-5 md:py-44'>
     <div className='text-center font-extrabold text-2xl md:text-5xl'>Privacy Policy</div>
-    <div className='text-center pt-4 font-medium md:text-lg text-sm max-w-screen-md mx-auto'>We value your privacy and are committed to protecting your data. Learn more about our practices in our privacy policy.</div>
+    <div className='text-center pt-4 font-medium md:text-lg text-sm max-w-screen-md mx-auto'>We value your privacy and are committed to protecting your data. Carefully read the privacy policy for a better understanding of our services.</div>
     </div>
     </div>
 </div>

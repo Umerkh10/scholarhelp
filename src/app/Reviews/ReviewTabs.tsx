@@ -5,29 +5,26 @@ import Image from 'next/image';
 function ReviewTabs() {
   const reviews = [
     {
-      name: 'Liam',
-      text: `I was searching for online classes to get help for my BS studies. Thankfully, I explored this service. They delivered highly engaged lectures regarding my subjects, and they developed my learning skills. I greatly appreciated their tasks.`,
+      name: 'Alice',
+      text: `I was searching for expert guidance to get support for my studies until I found this website. The tutors are very supportive and efficient in guiding me throughout the course. Highly recommended for the newcomers.`,
     },
     {
-      name: 'James',
-      text: `Joining their online service was the best decision of mine. Really helpful service. They are customized and committed to their work. `,
+      name: 'John',
+      text: `This website is a miracle to me. They not only help me in academics but their 24/7 service gets me to clear my concepts anytime I want. Thank you.`,
     },
     {
-      name: 'Amelia',
-      text: `I have used taking my classes online service countless times. They made things so easy for me while I worked and took care of my other tasks. They are reliable and affordable for online learning development.`,
+      name: 'Jennifer',
+      text: `I have used their service countless times, and every time I have gotten the same amazing treatment from them. Reliable and affordable service in the town.`,
     },
     {
-      name: 'Charlotte',
-      text: `It is the best online tutoring service I have ever found, and I am so thankful that they are helping me with my classes. Really appreciate your efforts and your work.`,
+      name: 'Johnson',
+      text: `The staff is very accommodating and professional, and I really appreciate their efforts. Really satisfied with their services.`,
     },
     {
-      name: 'Oliver',
-      text: `I am really satisfied with their online classes and highly recommend them. The staff is very accommodating and professional, and I really appreciate their efforts.`,
+      name: 'Amanda',
+      text: `This platform is amazing. Taking my classes online is the only platform where I have received valuable information with expert insights. I'm very happy to be the one to avail their service`,
     },
-    {
-      name: 'Noah',
-      text: `${process.env.NEXT_PUBLIC_WEBSITE_NAME} is an amazing and exclusive online class service. They offer a very affordable package. I was struggling financially, but their cheap package helped me to utilize online writing services. I would highly recommend them`,
-    },
+
   
   ];
   const reviews2 = [
@@ -114,7 +111,7 @@ function ReviewTabs() {
 
   return (
     <div className='py-10 max-w-screen-xl mx-auto'>
-        <h2 className='text-center text-3xl font-extrabold my-4 '>Our Reviews</h2>
+        <h2 className='text-center text-3xl font-extrabold my-4 '>Our Client’s Review</h2>
         <div>
           <Tabs defaultValue='1'>
             <TabsList className='flex flex-col md:flex-row'>

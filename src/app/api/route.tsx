@@ -68,7 +68,7 @@ console.log("orderData",orderData);
   const clientPaymentMailOptions = {
     from: `Order Confirmed | Taking My Classes Online ${process.env.MAILFROM}`,
     to: orderData.email,
-    subject: `Your Order # ${orderData.orderId} is Confirmed - Thank You For Your Order! | Taking My Classes Online`,
+    subject: `Your Order #${orderData.orderId} is Confirmed - Thank You For Your Order! | Taking My Classes Online`,
     html: `
 <body style="margin: 0; padding: 0;  background-color: #f0f0f0; ">
     <div style="background-position: center;background-size: cover; width: 100%; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -318,7 +318,7 @@ console.log("orderData",orderData);
   });
 
   //**********Redirect the user to thankyou page**********//
-  return NextResponse.redirect("https://scholarhelp.vercel.app/thank_you_order");
+  return NextResponse.redirect("http://localhost:3000/thank_you_order");
 }
 // http://localhost:3000/thank_you_order
 
