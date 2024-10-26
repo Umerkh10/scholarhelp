@@ -20,7 +20,7 @@ function SmallDivider() {
                     </div>
                     <div className=''>
                     <div data-aos='fade-up' className='flex flex-col md:flex-row  items-center  '>
-                        <Image className='' src={'/imgs/small-divider-img.webp'} width={300} height={300} alt='small'></Image>
+                        <Image loading='eager' className='' src={'/imgs/small-divider-img.webp'} width={300} height={300} alt='small'></Image>
 
                     </div>
                     </div>

@@ -43,7 +43,7 @@ function FormContent() {
 
                 <div data-aos="zoom-in-down" className=''>
                     <div className='flex items-center justify-center mt-5'>
-                        <Image src={'/imgs/form-content-img.webp'} width={800} height={800} alt='content-img'></Image>
+                        <Image loading='eager' src={'/imgs/form-content-img.webp'} width={800} height={800} alt='content-img'></Image>
                     </div>
                 </div>
 

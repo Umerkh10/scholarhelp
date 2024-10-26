@@ -14,7 +14,7 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
       <div className='relative z-10'>
         <div className='flex items-center'>
           <div className='bg-slate-300 group-hover:bg-zinc-300 transition ease-in duration-200 delay-100 border rounded-full h-20 w-20 flex justify-center items-center'>
-            <Image src={imageSrc} width={50} height={50} alt='result' />
+            <Image loading='eager' src={imageSrc} width={50} height={50} alt='result' />
           </div>
           <div className='text-white font-extrabold text-lg lg:text-xl ml-5 transition ease-in duration-200 delay-100 group-hover:text-yellow-400'>
             {title}
