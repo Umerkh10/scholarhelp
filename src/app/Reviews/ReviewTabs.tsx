@@ -98,7 +98,7 @@ function ReviewTabs() {
         <div className='border-b-2 border-muted translate-y-2 w-full'></div>
         <div className="flex items-center p-2 mt-3">
           <div className="flex items-center bg-white rounded-full w-12 h-12 overflow-hidden">
-            <Image className="object-cover" src={'/imgs/scholarly-help-logo.png'} alt="rating" width={44} height={64} />
+            <Image className="object-cover" src={'/imgs/taking-logo-2.png'} alt="rating" width={44} height={64} />
           </div>
           <div className='flex-col ml-4'>
             <div className='text-[16px] font-bold'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
@@ -115,9 +115,9 @@ function ReviewTabs() {
         <div>
           <Tabs defaultValue='1'>
             <TabsList className='flex flex-col md:flex-row'>
-              <TabsTrigger value="1">Online Class</TabsTrigger>
-              <TabsTrigger value="2">Online Exam</TabsTrigger>
-              <TabsTrigger value="3">Online Homework</TabsTrigger>
+              <TabsTrigger value="1">Take My Exam</TabsTrigger>
+              <TabsTrigger value="2">Take My GRE Exam</TabsTrigger>
+              <TabsTrigger value="3">Take GMAT Online Exam</TabsTrigger>
             </TabsList>
             <TabsContent value='1'>
               <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5 '>

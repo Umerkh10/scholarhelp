@@ -13,8 +13,8 @@ export const HeroSection = () => {
       <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl py-10 '>
         <div className='py-20 px-5 md:pt-36'>
           <h1 className=' text-center py-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-4xl font-extrabold '>Take My Online Class for me in USA and Ace My Exam</h1>
-          <h2 className='text-center mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-medium'>Taking My Affordable Classes Online Guarantee You the Academic Distinction</h2>
-          <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 mt-2'>
+          <h2 className='text-center mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-lg sm:text-2xl font-medium'>Taking My Affordable Classes Online Guarantee You the Academic Distinction</h2>
+          <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 sm:mt-2 mt-6'>
             <div className='flex items-center gap-1'>
             <Image src={'/imgs/instructor.png'} width={64} height={64} alt='instructor'></Image>
           <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>950+ PhD Instructor</h3>
@@ -72,7 +72,7 @@ transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 p
 }
 export function CtaChat() {
   return (
-    <div className='flex flex-col md:flex-row  items-center mt-5'>
+    <div className='flex flex-col md:flex-row  items-center mt-5 scale-90 md:scale-100'>
       <div className='flex justify-center items-center border-[2px] border-zinc-400 bg-indigo-500
     transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl  m-2'>
         <Image src={"/imgs/chat.png"} width={32} height={32} alt='chat' />

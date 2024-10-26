@@ -15,7 +15,7 @@ const Footer = () => {
           <Image className="dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={80} height={80} alt="logo"></Image>
             <div className='font-bold md:text-xl text-lg  '>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
             </Link>
-            <div className='font-medium mt-4  text-sm'>{process.env.NEXT_PUBLIC_WEBSITE_NAME} Help delivers academic writing services. Our team of qualified subject experts can help you with your challenging online classes, homework, assignments, quizzes, and exams</div>
+            <div className='font-medium mt-4  text-sm'>Taking My Classes Online is one of the most trusted websites across the USA, essential to provide students with effective exam resources and guide them through academic success. Our expert teams are well-versed in various fields to help you in online classes, assignments, quizzes, and exams.</div>
 
           </div>
           <div className='p-4'>

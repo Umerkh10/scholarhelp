@@ -12,7 +12,7 @@ function SmallDivider() {
             <div className='mx-auto max-w-screen-xl'>
                 <div className='grid lg:grid-cols-2 grid-cols-1 p-5 lg:gap-0 gap-10'>
                     <div  className='xl:pt-14 '>
-                        <h2 className='font-extrabold text-center md:text-3xl text-2xl text-zinc-800 dark:text-zinc-200 pt-8'>  <FlipWords words={words} /></h2>
+                        <h2 className='font-extrabold text-center md:text-3xl text-xl text-zinc-800 dark:text-zinc-200 pt-8'>  <FlipWords words={words} /></h2>
                         <div className='flex flex-col md:flex-row justify-center items-center '>
                         <CtaChat/>
 
