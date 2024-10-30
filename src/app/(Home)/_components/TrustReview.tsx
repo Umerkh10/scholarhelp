@@ -6,28 +6,28 @@ import React from 'react';
 
 const reviews = [
   {
-    name: 'Liam',
-    text: `I was searching for online classes to get help for my BS studies. Thankfully, I explored this service. They delivered highly engaged lectures regarding my subjects, and they developed my learning skills. I greatly appreciated their tasks.`,
+    name: 'Alfred FRASER',
+    text: `Joining their services was the best decision of mine. The tutor really helped me to improve my learning skills and learning credibility which benefits me with every subject.`,
   },
   {
-    name: 'James',
-    text: `Joining their online service was the best decision of mine. Really helpful service. They are customized and committed to their work. `,
+    name: 'Charles MOORE',
+    text: `Thank You, You’re the best service I have ever used. The expert tutors, their support, and the exam resources for the LSAT exam are just truly amazing.`,
   },
   {
-    name: 'Amelia',
-    text: `I have used taking my classes online service countless times. They made things so easy for me while I worked and took care of my other tasks. They are reliable and affordable for online learning development.`,
+    name: 'Henry MACKENZIE',
+    text: `Taking My Classes Online is the best tutor service I have ever found on the web. Their work and potential to support me in the GRE exam is just phenomenal. Highly recommended.`,
   },
   {
-    name: 'Charlotte',
-    text: `It is the best online tutoring service I have ever found, and I am so thankful that they are helping me with my classes. Really appreciate your efforts and your work.`,
+    name: 'Elsie BELL',
+    text: `I have used their service for my GED exam. They have highly professional and knowledgeable tutors who support me 24/7, answer all the queries, and help to clear my concept. Truly inspiring and an amazing experience`,
   },
   {
-    name: 'Oliver',
-    text: `I am really satisfied with their online classes and highly recommend them. The staff is very accommodating and professional, and I really appreciate their efforts.`,
+    name: 'Scarlett GORDON',
+    text: `Words can’t express my emotions for them. I really struggled with the preparation for the HESI exam, then I took their service to figure out if it would be helpful or not. Their support shocked me. They really help me to improve my learning skills and lead me towards academic success.`,
   },
   {
-    name: 'Noah',
-    text: `${process.env.NEXT_PUBLIC_WEBSITE_NAME} is an amazing and exclusive online class service. They offer a very affordable package. I was struggling financially, but their cheap package helped me to utilize online writing services. I would highly recommend them`,
+    name: 'Ethan WRIGHT ',
+    text: `Such an amazing assistant in clearing up my concept. Highly qualified teachers that help me in my academic learning. I really appreciate their efforts that they’d put in to provide me some success in my learning.`,
   },
 
 ];

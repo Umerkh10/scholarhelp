@@ -34,7 +34,7 @@ const slideData = [
   {
     id: 5,
     title: 'Competitive Package',
-    description: `Enjoy our 50% off on your first order, as well as we announce seasonal offers for the leaners. However, our cheap service will save you money.`,
+    description: `Enjoy our 40% off on your first order, as well as we announce seasonal offers for the leaners. However, our cheap service will save you money.`,
     image: '/imgs/competitive.png',
   },
   {

@@ -24,7 +24,6 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
         <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Number Of Pages: {pages}</div>
         <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Academic Level: {level}</div>
         <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Document Type: {docType}</div>
-        <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Reference Style: {refStyle}</div>
         <div className='flex justify-center items-center mt-5'>
           <button className='bg-amber-400 w-full py-4 rounded-lg font-medium text-sm scale-90 md:scale-100 md:text-lg text-zinc-800 hover:bg-white hover:-translate-y-3 transition ease-in duration-200 delay-200 border-[3px] border-black'>
             View Sample
@@ -48,12 +47,11 @@ const Sample = () => {
 
 
   const slides = [
-    { imageSrc: '/imgs/pdf.png', title: 'Research Project', subject: 'Biology', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'APA', animation: 'flip-up' },
-    { imageSrc: '/imgs/excel.png', title: 'Numerical Project', subject: 'Business', pages: '5', level: 'Masters', docType: 'Excel', refStyle: 'None', animation: 'flip-down' },
-    { imageSrc: '/imgs/word.png', title: 'Case Study', subject: 'Economics', pages: '8', level: 'Masters', docType: 'Word', refStyle: 'MLA', animation: 'flip-up' },
-    { imageSrc: '/imgs/excel.png', title: 'Numerical Project', subject: 'Business', pages: '5', level: 'Masters', docType: 'Excel', refStyle: 'None', animation: 'flip-down' },
-    { imageSrc: '/imgs/pdf.png', title: 'Research Project', subject: 'Biology', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'APA', animation: 'flip-up' },
-    { imageSrc: '/imgs/word.png', title: 'Case Study', subject: 'Economics', pages: '8', level: 'Masters', docType: 'Word', refStyle: 'MLA', animation: 'flip-up' },
+    { imageSrc: '/imgs/pdf.png', title: 'GMAT Sample Papers', subject: 'GMAT', pages: '9', level: 'Masters', docType: 'PDF',  animation: 'flip-up' },
+    { imageSrc: '/imgs/pdf.png', title: 'LSAT Sample Papers', subject: 'LSAT', pages: '13', level: 'Masters', docType: 'PDF', animation: 'flip-down' },
+    { imageSrc: '/imgs/pdf.png', title: 'GRE Sample Papers', subject: 'GRE', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'MLA', animation: 'flip-up' },
+    { imageSrc: '/imgs/pdf.png', title: 'GED Sample Paper', subject: 'GMAT', pages: '11', level: 'Masters', docType: 'PDF', refStyle: 'None', animation: 'flip-down' },
+
   ];
 
   return (

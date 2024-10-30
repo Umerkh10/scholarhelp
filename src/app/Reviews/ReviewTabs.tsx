@@ -5,24 +5,52 @@ import Image from 'next/image';
 function ReviewTabs() {
   const reviews = [
     {
-      name: 'Alice',
-      text: `I was searching for expert guidance to get support for my studies until I found this website. The tutors are very supportive and efficient in guiding me throughout the course. Highly recommended for the newcomers.`,
+      name: 'Alice Ruth',
+      text: `I was searching for expert guidance to get support for my GRE exam until I found this website. The tutors are very supportive and efficient in guiding me throughout the course. Highly recommended for the newcomers.`,
     },
     {
-      name: 'John',
-      text: `This website is a miracle to me. They not only help me in academics but their 24/7 service gets me to clear my concepts anytime I want. Thank you.`,
+      name: 'John Gary',
+      text: `This website is a miracle to me. They not only help me in preparation for the LSAT exams but their 24/7 service gets me to clear my concepts anytime I want. Thank you.`,
     },
     {
-      name: 'Jennifer',
-      text: `I have used their service countless times, and every time I have gotten the same amazing treatment from them. Reliable and affordable service in the town.`,
+      name: 'Jennifer Smith',
+      text: `I have used their exam services countless times, and every time I have gotten the same amazing treatment from them. Reliable and affordable service in the town.`,
     },
     {
-      name: 'Johnson',
-      text: `The staff is very accommodating and professional, and I really appreciate their efforts. Really satisfied with their services.`,
+      name: 'Oliver Stewart',
+      text: `The experts are amazing; their resources for GMAT exams help me to achieve desirable results in the exams. I can’t thank them enough for their support and help.`,
     },
     {
-      name: 'Amanda',
-      text: `This platform is amazing. Taking my classes online is the only platform where I have received valuable information with expert insights. I'm very happy to be the one to avail their service`,
+      name: 'Johnson Taylor',
+      text: `The staff is very accommodating and professional, and I really appreciate their efforts. Really satisfied with their services`,
+    },
+    {
+      name: 'Amanda Clark',
+      text: `This platform is amazing. Taking my classes online is the only platform where I have received valuable information for the TOEFL with expert insights. I'm very happy to be the one to avail their service.`,
+    },
+    {
+      name: 'Andrew WALLACE',
+      text: `I was really struggling with my HESI exam preparation but then my friend recommended this website. Truly inspiring, the amount of effort that the experts put in to help me is just phenomenal.`,
+    },
+    {
+      name: 'Joshua GIBSON',
+      text: `I was overwhelmed with my online classes and couldn’t understand better if the experts hadn’t helped me out.`,
+    },
+    {
+      name: 'Willie Robert',
+      text: `I have failed multiple times in GED exams, but this service made all the difference. Informative, Supportive, and truly inspiring lead me to success`,
+    },
+    {
+      name: ' Bruce Kennedy',
+      text: `Very frustrated with my assignments and exams. Thankfully, the writers did a great job in the remaining time-frame. Highly recommendable! `,
+    },
+    {
+      name: ' Sophia Walter',
+      text: `I’d almost given up on passing the TEAS until I found this service. The support here made a huge difference that brought the confidence in me to do the TEAS exams, and I have passed the exam with desirable marks.  `,
+    },
+    {
+      name: ' Ruby Murray',
+      text: `I was searching for online classes to get help for my PTE exam. Thankfully, I explored this website. The tutors help me with engaging content, supportive guidelines, and exam resources to help me pass the exam. I truly appreciate their efforts. `,
     },
 
   

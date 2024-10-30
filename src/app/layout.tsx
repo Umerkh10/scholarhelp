@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Montserrat} from "next/font/google";
 import "./globals.css";
-import Navbar from "./(Home)/_components/Navbar";
 import Footer from "./(Home)/_components/Footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import Navbar2 from "./(Home)/_components/Navbar2";
 
 
 const inter = Montserrat({
@@ -47,7 +47,8 @@ export default function RootLayout({
             enableSystem={false}
             disableTransitionOnChange
           >
-        <Navbar/>
+        <Navbar2/>
+        {/* <Navbar/> */}
         {children}
         <Footer/>
         </ThemeProvider>

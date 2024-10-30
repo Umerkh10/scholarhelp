@@ -1,8 +1,10 @@
 import Image from "next/image";
 import React  from "react";
 import { CtaButtons } from "./HeroSection";
+import Link from "next/link";
+import link from "next/link";
 
-const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
+const ServiceCard = ({ imageSrc, title, description,link, animation }:any) => {
   
 
   return (
@@ -16,6 +18,9 @@ const ServiceCard = ({ imageSrc, title, description, animation }:any) => {
         <div className="flex flex-col mt-4">
           <div className="text-base sm:text-xl text-white font-semibold">{title}</div>
           <div className="text-zinc-200 font-medium lg:text-base text-xs ">{description}</div>
+          <div className="rounded-lg px-4 py-2 text-center font-medium bg-yellow-600 hover:bg-gradient-to-r from-purple-700 to to-violet-900 transition ease-in duration-200 delay-200 text-zinc-200 mt-2">
+            <Link href={link}>Explore More</Link>
+          </div>
         </div>
       </div>
     </div>
@@ -28,15 +33,17 @@ function Academic() {
   const services = [
     {
       imageSrc: "/imgs/webinar.png",
-      title: "Take My Exam",
+      title: "Take My GED  Exam",
       description:
-        "Wondering to get expert guidance to cover the whole syllabus? Say no more! We are here to help you in taking online classes as well as to support you in achieving desirable results",
+        "Wondering about getting expert guidance to pass your GED exam? Say no more! Our team of experts is here to support you every step of the way that leads you to achieve desirable GED exam marks.",
+      link:'/take-my-ged-for-me',
       animation: "flip-left",
     },
     {
       imageSrc: "/imgs/online-exam.png",
       title: "Take My GRE Exam",
       description:"Are you having trouble preparing for the GRE exams? Take a look at our platform and get sufficient help from our experts to ace your GRE exam.",
+      link:'/take-my-gre-exam',
       animation: "flip-right",
     },
     {
@@ -44,12 +51,14 @@ function Academic() {
       title: "Take GMAT Online Exam",
       description:
         "Passing the GMAT online exam could be challenging, but our service will help you to lead you to academic success.",
+        link:'/take-gmat-online-exam',
       animation: "flip-left",
     },
     {
       imageSrc: "/imgs/essay.png",
       title: "Take LSAT Online Exam",
       description:"It is hard to prepare for LSAT exams without any guidelines. However, Our experts are here to help you get the LSAT exam with achievable results.",
+      link:'/lsat-exam-prep',
       animation: "flip-right",
     },
 
