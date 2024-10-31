@@ -86,10 +86,10 @@ export default function Navbar2() {
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/about">About Us</Link>
                         </Button>
                         <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/reviews">Reviews</Link>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/Reviews">Reviews</Link>
                         </Button>
                         <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/order">Order Now</Link>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/Order">Order Now</Link>
                         </Button>
                         <DropdownMenu open={samplesOpen} onOpenChange={setSamplesOpen}>
                             <div
@@ -172,10 +172,10 @@ export default function Navbar2() {
                             <Link href="/about" className="block">About Us</Link>
                         </Button>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Link href="/reviews" className="block">Reviews</Link>
+                            <Link href="/Reviews" className="block">Reviews</Link>
                         </Button>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Link href="/order" className="block">Order Now</Link>
+                            <Link href="/Order" className="block">Order Now</Link>
                         </Button>
                         <div>
                             <Button

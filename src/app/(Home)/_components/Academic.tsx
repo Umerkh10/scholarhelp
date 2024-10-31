@@ -16,11 +16,13 @@ const ServiceCard = ({ imageSrc, title, description,link, animation }:any) => {
           <Image src={imageSrc} width={60} height={60} alt={title} />
         </div>
         <div className="flex flex-col mt-4">
-          <div className="text-base sm:text-xl text-white font-semibold">{title}</div>
+          <h3 className="text-base sm:text-lg text-white font-semibold">{title}</h3>
           <div className="text-zinc-200 font-medium lg:text-base text-xs ">{description}</div>
-          <div className="rounded-lg px-4 py-2 text-center font-medium bg-yellow-600 hover:bg-gradient-to-r from-purple-700 to to-violet-900 transition ease-in duration-200 delay-200 text-zinc-200 mt-2">
-            <Link href={link}>Explore More</Link>
+          <Link href={link}>
+           <div className="rounded-lg px-4 py-2 text-center font-medium bg-amber-400  text-zinc-800 hover:bg-white hover:scale-105 transition ease-in duration-200 delay-200 border-black mt-2">
+            Explore More
           </div>
+          </Link>
         </div>
       </div>
     </div>

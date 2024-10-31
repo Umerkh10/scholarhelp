@@ -24,6 +24,8 @@ const Footer = () => {
               <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100  hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/"} >Home</Link> </li>
               <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"about"} >About Us</Link> </li>
               <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/contact"} >Contact Us </Link> </li>            
+              <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/Reviews"} >Reviews </Link> </li>            
+              <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/Order"} >Order Now </Link> </li>            
             </ul>
           </div>
 
