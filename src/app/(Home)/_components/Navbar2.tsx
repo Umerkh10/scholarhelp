@@ -57,12 +57,12 @@ export default function Navbar2() {
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/">Home</Link>
                         </Button>
                         <DropdownMenu open={servicesOpen} onOpenChange={setServicesOpen}>
-                            <div
+                            <div className='group'
                                 onMouseEnter={() => setServicesOpen(true)}
                                 onMouseLeave={() => setServicesOpen(false)}
                             >
                                 <DropdownMenuTrigger asChild>
-                                    <Button variant="ghost" className="inline-flex items-center hover:text-violet-500 hover:font-semibold">
+                                    <Button variant="ghost" className="inline-flex items-center group-hover:text-violet-500 group-hover:font-semibold">
                                         Services
                                         <ChevronDown className="ml-1 h-4 w-4" />
                                     </Button>

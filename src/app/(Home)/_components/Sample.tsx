@@ -5,9 +5,10 @@ import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Star } from 'lucide-react';
+import Link from 'next/link';
 
 
-const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyle, animation }:any) => (
+const SlideContent = ({ imageSrc, title, subject, pages, level, docType, link, animation }:any) => (
   <div className='group mt-5' data-aos={animation}>
     <div className='relative  md:scale-95 scale-90 group-hover:-translate-y-5 group-hover:border-yellow-400 border-[5px] bg-gradient-to-t from-violet-400 to-indigo-400
        dark:bg-gradient-to-b dark:from-indigo-800 dark:via-zinc-800 dark:to-violet-800 transition ease-in duration-200 delay-100 border-indigo-600 lg:h-[450px] w-full rounded-xl p-4 overflow-hidden'>
@@ -25,9 +26,9 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, refStyl
         <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Academic Level: {level}</div>
         <div className='text-gray-200 text-sm md:text-xl font-medium pt-2'>Document Type: {docType}</div>
         <div className='flex justify-center items-center mt-5'>
-          <button className='bg-amber-400 w-full py-4 rounded-lg font-medium text-sm scale-90 md:scale-100 md:text-lg text-zinc-800 hover:bg-white hover:-translate-y-3 transition ease-in duration-200 delay-200 border-[3px] border-black'>
+          <Link href={link} className='bg-amber-400 text-center w-full py-4 rounded-lg font-medium text-sm scale-90 md:scale-100 md:text-lg text-zinc-800 hover:bg-white hover:-translate-y-3 transition ease-in duration-200 delay-200 border-[3px] border-black'>
             View Sample
-          </button>
+          </Link>
         </div>
         <div className='flex items-center justify-center mt-5'>
           <div className='md:text-lg font-medium text-white'>Rating</div>
@@ -47,10 +48,11 @@ const Sample = () => {
 
 
   const slides = [
-    { imageSrc: '/imgs/pdf.png', title: 'GMAT Sample Papers', subject: 'GMAT', pages: '9', level: 'Masters', docType: 'PDF',  animation: 'flip-up' },
-    { imageSrc: '/imgs/pdf.png', title: 'LSAT Sample Papers', subject: 'LSAT', pages: '13', level: 'Masters', docType: 'PDF', animation: 'flip-down' },
-    { imageSrc: '/imgs/pdf.png', title: 'GRE Sample Papers', subject: 'GRE', pages: '10', level: 'Masters', docType: 'PDF', refStyle: 'MLA', animation: 'flip-up' },
-    { imageSrc: '/imgs/pdf.png', title: 'GED Sample Paper', subject: 'GMAT', pages: '11', level: 'Masters', docType: 'PDF', refStyle: 'None', animation: 'flip-down' },
+    { imageSrc: '/imgs/pdf.png', title: 'GMAT Sample Papers', subject: 'GMAT', pages: '9', level: 'Masters', 
+      docType: 'PDF', link: '/gmat-sample-papers' , animation: 'flip-up' },
+    { imageSrc: '/imgs/pdf.png', title: 'LSAT Sample Papers', subject: 'LSAT', pages: '13', level: 'Masters', docType: 'PDF', link: '/lsat-sample-papers' , animation: 'flip-down' },
+    { imageSrc: '/imgs/pdf.png', title: 'GRE Sample Papers', subject: 'GRE', pages: '10', level: 'Masters', docType: 'PDF', link: '/gre-sample-papers' , animation: 'flip-up' },
+    { imageSrc: '/imgs/pdf.png', title: 'GED Sample Paper', subject: 'GMAT', pages: '11', level: 'Masters', docType: 'PDF', link: '/ged-sample-papers' , animation: 'flip-down' },
 
   ];
 

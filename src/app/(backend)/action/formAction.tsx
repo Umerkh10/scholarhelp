@@ -66,7 +66,7 @@ export async function sendEmails(formData: FormData) {
       <div style="padding: 10px 0; text-align: center;">
         <div style="margin: 10px 0;">
         <p style="font-size: 20px;  text-align: center; font-weight: 500;">Apply this discount code to begin your journey!</p>
-        <a href="https://scholarhelp.vercel.app/Order?coupon=off45">
+        <a href="https://takingmyclassesonline.com/Order?coupon=off45">
           <img style="border-radius: 10px;"  height="100" src="https://muhammadumer.sirv.com/coupon-2.png"  alt="">
         </a>
         </div>
@@ -76,7 +76,7 @@ export async function sendEmails(formData: FormData) {
 
       <div style="text-align: center;">
         <p style="font-size: 18px;  font-weight: 400;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 10px 20px; background-color: #07cc08;  text-decoration: none; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 5px; margin: 5px 0; text-align: center; color: whitesmoke;">
+        <a href="https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 10px 20px; background-color: #07cc08;  text-decoration: none; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 5px; margin: 5px 0; text-align: center; color: whitesmoke;">
           <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
         </a>

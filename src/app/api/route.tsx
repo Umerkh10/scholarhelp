@@ -285,7 +285,7 @@ console.log("orderData",orderData);
 
       <div style="text-align: center; ">
         <p style="font-size: 20px;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block;color: #f0f0f0;  padding: 10px 30px; background-color: #3dad32;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 10px; margin: 10px 0; text-align: center; vertical-align: middle;">
+        <a href="https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block;color: #f0f0f0;  padding: 10px 30px; background-color: #3dad32;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 10px; margin: 10px 0; text-align: center; vertical-align: middle;">
           <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
         </a>
@@ -318,8 +318,11 @@ console.log("orderData",orderData);
   });
 
   //**********Redirect the user to thankyou page**********//
-  return NextResponse.redirect("https://scholarhelp.vercel.app/thank_you_order");
+  return NextResponse.redirect("https://takingmyclassesonline.com/thank_you_order");
 }
 // http://localhost:3000/thank_you_order
 
 //https://scholarhelp.vercel.app/thank_you_order
+
+
+//https://takingmyclassesonline.com/thank_you_order

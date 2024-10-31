@@ -58,7 +58,7 @@ export function CtaButtons() {
       </div>
       </Link>
      
-      <Link href={'https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
+      <Link href={'https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
       <div className='flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800
 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2'>
         <Image src={"/imgs/whatsapp.png"} width={25} height={25} alt='whatsapp' />
@@ -78,7 +78,7 @@ export function CtaChat() {
         <button className='font-medium ml-2 text-zinc-100 md:text-base text-sm '>Chat Now</button>
       </div>
 
-      <Link href={'https://wa.me/3197005034911?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
+      <Link href={'https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
       <div className='flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800
 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2'>
         <Image src={"/imgs/whatsapp.png"} width={25} height={25} alt='whatsapp' />
