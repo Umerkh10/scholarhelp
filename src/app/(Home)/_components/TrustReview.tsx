@@ -1,7 +1,10 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 
 const reviews = [
@@ -53,7 +56,7 @@ const ReviewCard = ({ name, text }:{name:string,text:string}) => (
         <div className='flex-col ml-4'>
           <div className='text-[16px] font-bold'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
           <Link href={'/'}>
-          <div className='text-gray-500 font-medium text-sm'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}.com</div>
+          <div className='text-gray-500 font-medium text-sm hover:underline hover:text-blue-500'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}.com</div>
           </Link>
         </div>
       </div>
@@ -62,10 +65,21 @@ const ReviewCard = ({ name, text }:{name:string,text:string}) => (
 );
 
 const TrustReview = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
 
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      disable: "mobile",
+      offset: 100,
+    });
+  }, [inView]);
 
   return (
-    <div className='mx-auto max-w-screen-xl p-4 md:p-0 mt-10'  data-aos="zoom-in">
+    <div ref={ref} className='mx-auto max-w-screen-xl p-4 md:p-0 mt-10'  data-aos="zoom-in">
       <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 text-center'>
       What Our Satisfied Customers Say About Us
       </h2>
@@ -78,7 +92,8 @@ const TrustReview = () => {
       </div>
 
       <div className='flex justify-center items-center'>
-         <div className='py-3 px-5 bg-gradient-to-r from-violet-600 to bg-indigo-600 text-zinc-100 hover:scale-105 transition ease-in duration-200 delay-200 rounded-lg shadow-xl'><Link href='/Reviews'>More Reviews </Link></div>
+         <div className='py-3 px-5 bg-gradient-to-r from-violet-600 to bg-indigo-600 text-zinc-100 hover:scale-105 transition ease-in duration-200 delay-200 rounded-lg shadow-xl'><Link href='/reviews'>More Reviews </Link>
+         </div>
       </div>
 
     </div>

@@ -7,6 +7,12 @@ import TmtFormContent from './TmtFormContent'
 import TmtCoreFeatures from './TmtCoreFeatures'
 import TmtLongContent2 from './TmtLongContent2'
 import TmtFaq from './TmtFaq'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Hire to Take My TEAS Test for Me | 100% Great Results Surety ',
+  description: `Are you still struggling on your Teas exams? don't you worry  because we offers take my TEAS exams online. Get a free quote at takingmyclassesonline.com!`,
+};
 
 function page() {
   return (

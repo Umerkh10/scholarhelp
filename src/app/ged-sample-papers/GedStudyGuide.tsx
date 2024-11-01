@@ -7,7 +7,7 @@ function GedStudyGuide() {
   return (
     <div className='max-w-screen-xl mx-auto py-10 px-5 '>
     <div className='grid lg:grid-cols-3 grid-cols-1  rounded-xl bg-gray-200 dark:bg-zinc-800'>
-        <div className=' px-5 col-span-2 pt-10 '>
+        <div className=' px-5 col-span-2 pt-6 '>
             <h2 className='py-4 font-bold md:text-3xl text-xl '>Explore the Effective Guide Tips For GED exam</h2>
             <h3 className='font-semibold md:text-2xl text-lg'>Take Valuable Help from the GED sample paper and achieve the desirable result</h3>
 
@@ -30,7 +30,7 @@ function GedStudyGuide() {
         </div>
         <div className=' px-3 py-4 col-span-1 '>
             <div>
-                <Image className='rounded-lg' src={'/imgs/ged-exam.jpg'} width={200} height={200} alt='ged'></Image>
+                <Image className='rounded-lg' src={'/imgs/ged-study-guide.jpg'} width={200} height={200} alt='ged'></Image>
             </div>
         </div>
     </div>

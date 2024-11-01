@@ -7,6 +7,12 @@ import TmeFormContent from './TmeFormContent'
 import TakeMyExamCF from './TakeMyExamCF'
 import TakeMyExamLC2 from './TakeMyExamLC2'
 import TmeFaq from './TmeFaq'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: ' Hire #1 Take My Online Exam Help | Do My Online Exam Helper ',
+  description: 'There is a higher success rate in your academic path to hire “take my online exam for me” service who provide exams support. We have difference variety of tutors.',
+};
 
 function page() {
   return (

@@ -1,11 +1,14 @@
+"use client"
 import Image from "next/image";
-import React  from "react";
+import React, { useEffect }  from "react";
 import { CtaButtons } from "./HeroSection";
 import Link from "next/link";
-import link from "next/link";
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const ServiceCard = ({ imageSrc, title, description,link, animation }:any) => {
-  
+
 
   return (
     <div  data-aos={animation} className="group p-4">
@@ -31,7 +34,19 @@ const ServiceCard = ({ imageSrc, title, description,link, animation }:any) => {
 
 function Academic() {
 
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
 
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      disable: "mobile",
+      offset: 100,
+    });
+  }, [inView]);
+  
   const services = [
     {
       imageSrc: "/imgs/webinar.png",
@@ -69,7 +84,7 @@ function Academic() {
   ];
 
   return (
-    <div className="mx-auto max-w-screen-xl mt-10">
+    <div ref={ref} className="mx-auto max-w-screen-xl mt-10">
       <h2 className="text-2xl md:text-5xl text-center dark:text-zinc-100 text-violet-950 font-extrabold">
         We are your partners in Academic Success!
       </h2>

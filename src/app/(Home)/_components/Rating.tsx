@@ -1,12 +1,27 @@
+"use client"
 import { Star } from 'lucide-react'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { CtaButtons } from './HeroSection'
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const Rating = () => {
-
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
     return (
-        <div className='pt-10'>
+        <div ref={ref} className='pt-10'>
             <div className='text-2xl md:text-5xl font-extrabold text-center dark:text-zinc-100 text-violet-950'>Our Excellence</div>
             <p className='text-center pt-4 font-medium md:text-lg  max-w-screen-md mx-auto px-4 text-sm'>We’d love to hear from you! Whether you need assistance or have inquiries about our services, We’ll respond to your queries at your earliest convenience. Fill out the form below and get a quick response. We’re just a click away.</p>
             <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl'>

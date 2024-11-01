@@ -7,6 +7,12 @@ import HesiFormContent from './HesiFormContent'
 import HesiCoreFeatures from './HesiCoreFeatures'
 import HesiLC2 from './HesiLC2'
 import HesiFaq from './HesiFaq'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Hire Expert for HESI A2 Exam | Take My HESI Test for Me Online ',
+  description: `Are you seeking for a reliable and trustworthy way to take my HESI exam OR A2 online! From takingmyclassesonline.com with experts with tailored study plans.`,
+};
 
 function page() {
   return (

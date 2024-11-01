@@ -7,6 +7,12 @@ import GedFormContent from './GedFormContent'
 import GedCoreFeatures from './GedCoreFeatures'
 import GedLongContent2 from './GedLongContent2'
 import GedFaq from './GedFaq'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Hire GED Test Help Online, Take My GED Exam | Get A+ Score',
+  description: `We can make it possible by providing you take the GED test online in many areas covered. GED exam has been going to online administration, get the best tutor.`,
+};
 
 function page() {
   return (

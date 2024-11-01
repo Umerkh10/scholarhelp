@@ -1,9 +1,24 @@
+"use client"
 import { SwordsIcon } from 'lucide-react';
 import Image from 'next/image'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function ServiceFaq() {
-
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
     
     const [openIndex, setOpenIndex] = useState(0);
     const [sOpen,setIsOpen] = useState(false)
@@ -35,7 +50,7 @@ function ServiceFaq() {
     };
 
   return (
-    <div className='mx-auto max-w-screen-xl mt-20 mb-10'>
+    <div ref={ref}  className='mx-auto max-w-screen-xl mt-20 mb-10'>
     <h2 className='text-center text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950 '>Frequently Asked Questions
     </h2>
     <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>The list of questions that are frequently asked by Our Clients

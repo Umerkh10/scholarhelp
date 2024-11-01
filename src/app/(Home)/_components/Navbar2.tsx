@@ -46,8 +46,8 @@ export default function Navbar2() {
             <div className="flex justify-between py-2">
                 <div className="flex items-center">
                     <Link href="/" className="mr-6 flex items-center space-x-2">
-                        <Image className="block dark:hidden" src={'/imgs/taking-logo-2.png'} width={80} height={80} alt="logo" />
-                        <Image className="dark:block hidden" src={'/imgs/taking-logo-2-dark.png'} width={80} height={80} alt="logo" />
+                        <img className="block dark:hidden" src={'/assets/weblogo.png'} width={80} height={80} alt="logo" />
+                        <Image className="dark:block hidden" src={'/assets/weblogodark.png'} width={80} height={80} alt="logo" />
                         <span className="hidden font-bold xl:inline-block">{process.env.NEXT_PUBLIC_WEBSITE_NAME}</span>
                     </Link>
                 </div>
@@ -86,10 +86,10 @@ export default function Navbar2() {
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/about">About Us</Link>
                         </Button>
                         <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/Reviews">Reviews</Link>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/reviews">Reviews</Link>
                         </Button>
                         <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/Order">Order Now</Link>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/order-now">Order Now</Link>
                         </Button>
                         <DropdownMenu open={samplesOpen} onOpenChange={setSamplesOpen}>
                             <div
@@ -172,10 +172,10 @@ export default function Navbar2() {
                             <Link href="/about" className="block">About Us</Link>
                         </Button>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Link href="/Reviews" className="block">Reviews</Link>
+                            <Link href="/reviews" className="block">Reviews</Link>
                         </Button>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Link href="/Order" className="block">Order Now</Link>
+                            <Link href="/order-now" className="block">Order Now</Link>
                         </Button>
                         <div>
                             <Button

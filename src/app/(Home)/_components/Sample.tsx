@@ -1,11 +1,14 @@
 "use client"
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import Image from 'next/image';
 import { Autoplay, Navigation } from 'swiper/modules';
 import { Star } from 'lucide-react';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 
 const SlideContent = ({ imageSrc, title, subject, pages, level, docType, link, animation }:any) => (
@@ -45,7 +48,18 @@ const SlideContent = ({ imageSrc, title, subject, pages, level, docType, link, a
 );
 
 const Sample = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
 
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      disable: "mobile",
+      offset: 100,
+    });
+  }, [inView]);
 
   const slides = [
     { imageSrc: '/imgs/pdf.png', title: 'GMAT Sample Papers', subject: 'GMAT', pages: '9', level: 'Masters', 
@@ -58,7 +72,7 @@ const Sample = () => {
 
   return (
     <div className='mt-10'>
-      <div  data-aos="zoom-in-up" className='py-56 ' style={{ backgroundImage: "url('/imgs/sample_bg.webp')",  backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div ref={ref}  data-aos="zoom-in-up" className='py-56 ' style={{ backgroundImage: "url('/imgs/sample_bg.webp')",  backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className='mx-auto max-w-screen-xl'>
           <h2 className='md:-translate-y-10 -translate-y-3 text-xl md:text-5xl text-center font-extrabold text-gray-100'> Samples To Help You </h2>
           <p className='text-center font-medium px-10 xl:px-52 md:text-lg text-sm text-gray-100'> Here are some of the few samples to show the high-quality content that we delivered. Each document highlights our commitment to academic excellence and our ability to meet your requirements. </p>

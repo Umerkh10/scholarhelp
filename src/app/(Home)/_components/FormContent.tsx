@@ -1,13 +1,30 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import { CtaButtons } from './HeroSection';
 import Image from 'next/image';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+
 
 
 function FormContent() {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
 
     return (
-        <div className='mx-auto max-w-screen-xl mt-10'>
+        <div  ref={ref}  className='mx-auto max-w-screen-xl mt-10'>
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5 mt-5'>
                 <div className=''>

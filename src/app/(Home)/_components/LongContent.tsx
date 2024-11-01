@@ -1,10 +1,25 @@
 "use client"
 import { ArrowRightIcon } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Divider from './Divider'
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function LongContent() {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
     const [showMore, setShowMore] = useState(false);
 
     const handleButtonClick = () => {
@@ -17,7 +32,7 @@ function LongContent() {
 
     return (
         <>
-        <div data-aos='fade-up'>
+        <div ref={ref}  data-aos='fade-up'>
             <div className='mx-auto max-w-screen-xl mt-10'>
                 <div className='h-[2px] w-full bg-zinc-800'></div>
                 <div className='p-5'>

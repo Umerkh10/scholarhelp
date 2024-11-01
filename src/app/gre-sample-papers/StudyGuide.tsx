@@ -7,7 +7,7 @@ function StudyGuide() {
   return (
     <div className='max-w-screen-xl mx-auto py-10 px-5 '>
         <div className='grid lg:grid-cols-3 grid-cols-1  rounded-xl bg-gray-200 dark:bg-zinc-800'>
-            <div className=' px-5 col-span-2 pt-10 '>
+            <div className=' px-5 col-span-2 pt-6 '>
                 <h2 className='py-4 font-bold md:text-3xl text-xl '>Check Out Gre Sample Paper</h2>
                 <h3 className='font-semibold md:text-2xl text-lg'>Get detailed paper to help you out in preparation for the GRE exam</h3>
                 <div className='pt-5  '>
@@ -16,7 +16,7 @@ function StudyGuide() {
             </div>
             <div className=' px-3 py-4 col-span-1 '>
                 <div>
-                    <Image className='rounded-lg' src={'/imgs/gre-exam.jpg'} width={200} height={200} alt='gre'></Image>
+                    <Image className='rounded-lg' src={'/imgs/GRE-study-guide.jpg'} width={200} height={200} alt='gre'></Image>
                 </div>
             </div>
         </div>

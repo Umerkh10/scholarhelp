@@ -1,14 +1,30 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
 import Image from 'next/image';
 import BannerForm from './BannerForm';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 
 
 export const HeroSection = () => {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      disable: "mobile",
+      offset: 100,
+    });
+  }, [inView]);
   return (
 
-    <div className='m-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:-z-10 dark:m-h-[500px] dark:w-full dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
+    <div ref={ref} className='m-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:-z-10 dark:m-h-[500px] dark:w-full dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
       <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl py-10 '>
         <div className='py-20 px-5 md:pt-36'>
           <h1 className=' text-center py-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-lg sm:text-4xl font-extrabold '>Take My Online Class for me in USA and Ace My Exam</h1>
@@ -50,7 +66,7 @@ export const HeroSection = () => {
 export function CtaButtons() {
   return (
     <div className='flex flex-col md:flex-row  items-center mt-5 scale-90 md:scale-100'>
-      <Link href={'/Order'}>
+      <Link href={'/order-now'}>
       <div className='flex justify-center items-center border-[2px] border-zinc-400 bg-zinc-100
     transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl  m-2'>
         <Image src={"/imgs/order.png"} width={35} height={35} alt='order' />

@@ -3,8 +3,23 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { CtaButtons } from '../(Home)/_components/HeroSection';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function ServiceFlow() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      disable: "mobile",
+      offset: 100,
+    });
+  }, [inView]);
     const [activeTab, setActiveTab] = useState("1"); 
 
     useEffect(() => {
@@ -22,7 +37,7 @@ function ServiceFlow() {
       return () => clearInterval(timer);
     }, []);
   return (
-    <div data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
+    <div ref={ref} data-aos="zoom-in"  className='mx-auto max-w-screen-xl mt-10'>
       <h2 className='text-center text-xl md:text-4xl font-extrabold dark:text-zinc-100 text-violet-950'> How Does Take My Online Class Service Work?</h2>
       <h3 className='text-center text-lg md:text-2xl font-extrabold dark:text-zinc-100 text-violet-950'>
       Just One Click Away to Get Frictionless Online Classes

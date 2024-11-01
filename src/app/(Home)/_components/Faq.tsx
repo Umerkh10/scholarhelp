@@ -1,9 +1,25 @@
 "use client"
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { SwordsIcon } from 'lucide-react';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const Faq = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
+
     const [openIndex, setOpenIndex] = useState(0); // Set the first question to be active by default
     const [sOpen, setIsOpen] = useState(false);
 
@@ -23,7 +39,7 @@ const Faq = () => {
     };
 
     return (
-        <div className='mx-auto max-w-screen-xl mt-10'>
+        <div ref={ref} className='mx-auto max-w-screen-xl mt-10'>
             <h2 className='text-center px-4 text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950'>Frequently Asked Questions</h2>
             <h3 className='text-center px-4 text-lg  lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950'>The list of questions that are frequently asked by Our Clients</h3>
 

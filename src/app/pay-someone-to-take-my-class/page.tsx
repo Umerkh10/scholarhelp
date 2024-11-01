@@ -1,31 +1,23 @@
-"use client"
-import React, { useEffect } from 'react'
+import React from 'react'
 import ServiceBanner from './ServiceBanner'
 import ServiceLC from './ServiceLC'
-import { useInView } from 'react-intersection-observer';
-import Aos from 'aos';
 import ServiceFlow from './ServiceFlow';
 import ServicePoints from './ServicePoints';
 import ServiceFormContent from './ServiceFormContent';
 import ServiceCF from './ServiceCF';
 import ServiceLC2 from './ServiceLC2';
 import ServiceFaq from './ServiceFaq';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: ' Get Pay Someone to Take My Online Class: High Grade Surety ',
+  description: 'Get Pay someone to take your online class from takingmyclassesonline.com and get 50% off on the first order, stress-free experiences with expert writers.',
+};
+
 
 function Page() {
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.1,
-      });
-    
-      useEffect(() => {
-        Aos.init({
-          duration: 800,
-          disable: "mobile",
-          offset: 100,
-        });
-      }, [inView]);
   return (
-    <div ref={ref}>
+    <div>
         <ServiceBanner/>
         <ServiceLC/>
         <ServiceFlow/>

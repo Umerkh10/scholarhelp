@@ -1,4 +1,3 @@
-"use client"
 import React, { useEffect } from 'react'
 import {HeroSection} from './_components/HeroSection'
 import Rating from './_components/Rating'
@@ -15,24 +14,20 @@ import AboutContent from './_components/AboutContent'
 import FormContent from './_components/FormContent'
 import LongContent from './_components/LongContent'
 import SmallDivider from './_components/SmallDivider'
+import { Metadata } from 'next'
 
 
+
+export const metadata: Metadata = {
+  title: ' Take My Online Class for me ',
+  description: 'Pay Someone to Taking My Classes Online for Me in USA! Having a dedicated team who can assist you in every single step for online class takers and A+ Grade Guaranteed!',
+};
 
 const Page = () => {
-  const { ref, inView } = useInView({
-    triggerOnce: false,
-    threshold: 0.1,
-  });
 
-  useEffect(() => {
-    Aos.init({
-      duration: 800,
-      disable: "mobile",
-      offset: 100,
-    });
-  }, [inView]);
+  
   return (
-    <div ref={ref}>
+    <div >
       <HeroSection />
       <WorkFlow/>
       <AboutContent/>
