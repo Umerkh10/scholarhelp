@@ -56,7 +56,7 @@ function Order() {
           const { ip } = await response.json();
   
           // Fetch location data using the IP
-          const locationResponse = await fetch(`https://ipapi.co/${ip}/json/`);
+          const locationResponse = await fetch(`https:// ipapi.co/${ip}/json/`);
           if (!locationResponse.ok) {
             throw new Error('Failed to fetch location data');
           }
