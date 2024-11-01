@@ -318,11 +318,10 @@ console.log("orderData",orderData);
   });
 
   //**********Redirect the user to thankyou page**********//
-  return NextResponse.redirect("https://takingmyclassesonline.com/thank_you_order");
+  return NextResponse.redirect("https://scholarhelp.vercel.app/thank_you_order");
 }
 // http://localhost:3000/thank_you_order
 
 //https://scholarhelp.vercel.app/thank_you_order
-
 
 //https://takingmyclassesonline.com/thank_you_order

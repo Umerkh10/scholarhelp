@@ -494,10 +494,13 @@ function generateStripeLink(unit: string, orderId: string, totalPrice: string) {
 
   const finalUrl = Buffer.from(
     // `http://localhost:3000/api` // for dev environment
-    `https://takingmyclassesonline.com/api` // for prod environment
+    `https://scholarhelp.vercel.app/api` // for prod environment
   ).toString("base64");
 
   // const paymentLinkStripe = `https://eduresearchers.com/test-payment/secure-pay-external-2.php?cevpr_havg=${finalPaymentUnit}&cevpr_nzbhag=${finalTotalAmount}&cebqhpg_anzr=${finalProductName}&gbxra_rkgreany=${orderToken}&url=${finalUrl}`;
   const paymentLinkStripe = `https://mastermindsenterprises.com/stripe-version-2/secure-pay-external-2.php?cevpr_havg=${finalPaymentUnit}&cevpr_nzbhag=${finalTotalAmount}&cebqhpg_anzr=${finalProductName}&gbxra_rkgreany=${orderToken}&url=${finalUrl}`;
   return paymentLinkStripe
 }
+
+//https://scholarhelp.vercel.app
+//https://takingmyclassesonline.com
