@@ -1,3 +1,4 @@
+
 import type { Metadata } from "next";
 import { Montserrat} from "next/font/google";
 import "./globals.css";
@@ -5,7 +6,23 @@ import Footer from "./(Home)/_components/Footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar2 from "./(Home)/_components/Navbar2";
 import Head from "next/head";
+import { headers } from "next/headers";
 
+
+
+  
+  // Get the headers from the incoming request
+  const headersList = headers();
+  
+  // Get protocol and host from headers or fallback
+  const protocol = headersList.get('x-forwarded-proto') || 'http';
+  const host = headersList.get('host') || process.env.NEXT_PUBLIC_SITE_URL ;
+
+  // Construct the full canonical URL
+  const canonicalUrl = `${protocol}://${host}`;
+  console.log('Protocol:', protocol);
+  console.log('Host:', host);
+  console.log('Canonical URL:', canonicalUrl);
 
 const inter = Montserrat({
   subsets: ["latin"],
@@ -13,6 +30,7 @@ const inter = Montserrat({
 });
 
 <Head>
+<link rel="canonical" href={canonicalUrl} />
 <meta name="google-site-verification" content="[YOUR_VERIFICATION_CODE]" />
 <meta property="og:site" content="https://takingmyclassesonline.com/" />
 <meta name="author" content="https://takingmyclassesonline.com/" />
@@ -41,9 +59,10 @@ const inter = Montserrat({
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="apple-mobile-web-app-title" content="Taking My Classes Online" />
-<link rel="canonical" href="https://www.takingmyclassesonline.com/" />
 <link rel="alternate" hrefLang="x-default" href="https://www.takingmyclassesonline.com/" />
+
 </Head>
+
 
 export const metadata: Metadata = {
   title: {
@@ -51,6 +70,8 @@ export const metadata: Metadata = {
     default: 'A+ Grade Guaranteed: Taking My Classes Online For Me in USA',
   },
   description: "Pay Someone to Taking My Classes Online for Me in USA! Having a dedicated team who can assist you in every single step for online class takers and A+ Grade Guaranteed!",
+  
+  
   robots: {
     index: false,
     follow: false,

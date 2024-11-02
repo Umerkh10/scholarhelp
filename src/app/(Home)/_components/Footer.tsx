@@ -65,10 +65,13 @@ const Footer = () => {
               <LinkedinIcon className=' mt-1  text-sm dark:hover:text-white transition ease-in duration-200 delay-150'/>
             </div>
             <div className='flex items-center mt-2'>
-              <Image className='m-1' src={'/imgs/americanExpressIcon.webp'} width={30} height={30} alt='american'></Image>
-              <Image className='m-1' src={'/imgs/masterCardIcon.webp'} width={30} height={30} alt='master'></Image>
-              <Image className='m-1' src={'/imgs/payPal.webp'} width={30} height={30} alt='paypal'></Image>
-              <Image className='m-1' src={'/imgs/visa.webp'} width={30} height={30} alt='visa'></Image>
+              <Image className='m-1' src={'/imgs/americanExpressIcon.webp'} width={40} height={40} alt='american'></Image>
+              <Image className='m-1' src={'/imgs/masterCardIcon.webp'} width={40} height={40} alt='master'></Image>
+              <Image className='m-1' src={'/imgs/payPal.webp'} width={40} height={40} alt='paypal'></Image>
+              <Image className='m-1' src={'/imgs/visa.webp'} width={40} height={40} alt='visa'></Image>
+            </div>
+            <div className='mt-3'>
+              <Image className='rounded-lg' src={'/imgs/dmca-protected.png'} width={170} height={170} alt='dmca'></Image>
             </div>
           </div>
 
