@@ -93,25 +93,24 @@ transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 p
 
 export function CtaChat() {
 
-  // Function to open the Tawk.to chat
   const openChat = () => {
     if (window.Tawk_API) {
-      window.Tawk_API.maximize(); // This will open the chat window
+      window.Tawk_API.maximize(); 
     }
   };
 
   return (
     <div className="flex flex-col md:flex-row items-center mt-5 scale-90 md:scale-100">
-    {/* Chat Now Button */}
+ 
     <div
       className="flex justify-center items-center border-[2px] border-zinc-400 bg-indigo-500 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl m-2 cursor-pointer"
-      onClick={openChat} // Attach openChat function to onClick
+      onClick={openChat}
     >
       <Image src="/imgs/chat.png" width={32} height={32} alt="chat" />
       <button className="font-medium ml-2 text-zinc-100 md:text-base text-sm">Chat Now</button>
     </div>
 
-    {/* WhatsApp Link */}
+
     <Link href="https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" target="_blank" rel="noopener noreferrer">
       <div className="flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2">
         <Image src="/imgs/whatsapp.png" width={25} height={25} alt="whatsapp" />
