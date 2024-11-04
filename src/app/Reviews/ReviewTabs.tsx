@@ -7,22 +7,22 @@ function ReviewTabs() {
   const reviews = [
     {
       name: 'Rebecca Steve',
-      text: `GRE exams are one of the toughest and can change the course of one’s education journey. I was struggling to grasp the concepts but then I came across these tutors. They made the whole learning journey fun and exciting. I didn't just manage to clear my exam but I did so with flying colours.`,
+      text: `Exams are one of the toughest and can change the course of one’s education journey. I was struggling to grasp the concepts but then I came across these tutors. They made the whole learning journey fun and exciting. I didn't just manage to clear my exam but I did so with flying colours. `,
       rating: 4.5,
     },
     {
       name: 'Robert Harry',
-      text: `I usually study late at night as I have a day job. The problem for me is that I couldn't clear my queries late at night so I needed someone who would be there 24/7. This website solved my problems as their tutors are available round the clock. Now, with my concepts clear, I am ready for my LSAT exams.`,
+      text: `I usually study late at night as I have a day job. The problem for me is that I couldn't clear my queries late at night so I needed someone who would be there 24/7. This website solved my problems as their tutors are available round the clock. Now, with my concepts clear, I am ready for my exams.`,
       rating: 4.5,
     },
     {
       name: 'Noah Solomon',
-      text: `Not only are they efficient, they are affordable too. I prepared for my exams within a tight budget and there was no compromise on quality at all. Highly recommended.`,
+      text: `Not only are they efficient, they are affordable too. I prepared for my exams within a tight budget and there was no compromise on quality at all. Highly recommended`,
       rating: 4.5,
     },
     {
       name: 'Sarah Gough',
-      text: `I passed my GMAT exams with exceptional grades. This was not a possibility before but when I availed the services of this website, I knew I was in safe hands. Thanks a ton!`,
+      text: `I passed my exams with exceptional grades. This was not a possibility before but when I availed the services of this website, I knew I was in safe hands. Thanks a ton!`,
       rating: 4,
     },
     {
@@ -73,33 +73,33 @@ function ReviewTabs() {
   ];
   const reviews3 = [
     {
-      name: 'Tyron',
-      text: `I found this service while searching for online classes to support my BS studies, and it turned out to be a great find. Their engaging lectures and tailored focus on my specific subjects significantly improved my understanding and enhanced my learning skills.`,
+      name: 'Lyla peter',
+      text: `I was feeling very nervous and anxious because my LSAT test was looming. However, somehow, I landed on their website and ordered their LSAT services. Trust me, They exceeded my expectations. They handled my exam well and completed it on time, making me very happy.`,
+      rating: 5,
+    },
+    {
+      name: 'Jemma Maizie',
+      text: `This is the first time that I have had online LSAT exam help. I didn't have much faith in online services before, but these guys completed my LSAT exam and organized the online exam very well. They completed the task ahead of schedule. I would suggest you all try their services too. `,
       rating: 4.5,
     },
     {
-      name: 'Colby',
-      text: `Opting for their online homework service was one of the best decisions I’ve made. They offer a highly personalized and dedicated approach that’s incredibly helpful. `,
+      name: 'Harper Jack',
+      text: `I had an online logical reasoning test, which was quite difficult; I understood some things, and Takingmyclassesonline.com helped everything else. My experience is amazing; their LSAT exam service is very good.`,
+      rating: 5,
+    },
+    {
+      name: 'Jaxon Parker',
+      text: `Their support is truly amazing. They listened to me carefully, understood all my requirements in detail and implemented them. They finished my LSAT exam 10 minutes before the scheduled time. If you are a student and want to get into a good school, I would recommend that you take their LSAT exam help services. Their team is very professional, and because of them, I have got good marks.`,
       rating: 4.5,
     },
     {
-      name: 'Matt',
-      text: `I've relied on Taking My Classes Online service numerous times. They made juggling work and other responsibilities much easier for me. Their service is both reliable and cost-effective for online learning development.`,
+      name: 'Cooper Easton',
+      text: `I wanted to get admission to law school but wasn’t Prepared for the LSAT test. When I found out about Takingmyclassesonline.com. I immediately placed an order. Their LSAT exam helper gave me a lot of confidence that I would pass the test, and indeed, I did. With their help, I got excellent grades on the LSAT test.`,
       rating: 4.5,
     },
     {
-      name: 'Trevor',
-      text: `I've used the Taking My Classes Online service several times, and it has consistently simplified the process for me, allowing me to juggle my work and other responsibilities effortlessly. They're reliable and provide affordable options for online exam support.`,
-      rating: 4.5,
-    },
-    {
-      name: 'Francis',
-      text: `I'm extremely satisfied with their online homework services and wholeheartedly recommend them. The team is exceptionally accommodating and professional, and I deeply appreciate their commitment and effort.`,
-      rating: 4.5,
-    },
-    {
-      name: 'Curtis',
-      text: ` An exceptional online homework service! Their budget-friendly packages were a real lifesaver during a financially tough time. Thanks to their affordable options, I had access to the support I needed without breaking the bank. `,
+      name: 'Hailee Jenny',
+      text: ` I was not sure I would ever pass the LSAT exam. I was very worried, but when I ordered their LSAT test help service and got full marks, I was very satisfied with their excellent service. Their team is truly amazing, and I would recommend that everyone hire them. `,
       rating: 4.5,
     },
   
@@ -159,7 +159,7 @@ function ReviewTabs() {
             <TabsList className='flex flex-col md:flex-row'>
               <TabsTrigger value="1">Take My Exam</TabsTrigger>
               <TabsTrigger value="2">Take My GRE Exam</TabsTrigger>
-              <TabsTrigger value="3">Take GMAT Online Exam</TabsTrigger>
+              <TabsTrigger value="3">Take LSAT Exam Online</TabsTrigger>
             </TabsList>
             <TabsContent value='1'>
               <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5 '>

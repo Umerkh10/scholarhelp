@@ -3,7 +3,10 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function GET(req: NextRequest): Promise<NextResponse> {
   if (process.env.NODE_ENV === "development") {
     // Hardcoded IP for local development
-    const clientIp = "39.51.106.66";
+    const forwardedFor = req.headers.get('x-forwarded-for');
+    const clientIp = forwardedFor ? forwardedFor.split(',')[0] : req.ip || 'Unknown IP';
+     console.log("ip",req.ip);
+    // const clientIp = "39.51.106.66";
     console.log("Development mode: IP successfully retrieved:", clientIp);
     return NextResponse.json({ ip: clientIp });
   } else if (process.env.NODE_ENV === "production") {
@@ -15,6 +18,7 @@ export async function GET(req: NextRequest): Promise<NextResponse> {
       // Log successful IP retrieval
       console.log("Production mode: x-forwarded-for header:", forwardedFor);
       console.log("Production mode: Final IP resolved:", clientIp);
+      console.log("ip",req.ip);
 
       return NextResponse.json({ ip: clientIp });
     } catch (error) {
