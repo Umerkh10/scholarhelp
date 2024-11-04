@@ -20,8 +20,7 @@ function ThankYou() {
         Please Check your whatsapp <span className='font-bold'>{number}</span>  we have sent 40% discount offer
       </h1>
       <p className="mt-4 text-zinc-100 lg:w-[610px] mx-auto">
-        Thank you for your recent purchase. We hope you enjoy your new product. If you have any questions or concerns,
-        please don&apos;t hesitate to contact us.
+      Thank you for being here! We’re thrilled to have you as part of our journey and appreciate your interest and support. Your visit means a lot to us, and we&apos;re dedicated to providing you with the best experience possible. Whether you&apos;re here to explore, learn, or shop, we’re always here to help and answer any questions you may have. Stay connected with us for the latest updates, special offers, and more. Once again, thank you for being a valued part of our community. We can’t wait to share exciting things with you in the future!
       </p>
       <div className="mt-6 flex flex-col items-center md:flex-row justify-center gap-4">
         <Link

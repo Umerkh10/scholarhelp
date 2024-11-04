@@ -22,8 +22,8 @@ const Footer = () => {
             <div className='font-bold text-lg md:text-xl'>Explore</div>
             <ul className='md:mt-3 mt-1  '>
               <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100  hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/"} >Home</Link> </li>
-              <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"about"} >About Us</Link> </li>
-              <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/contact"} >Contact Us </Link> </li>            
+              <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/about-us"} >About Us</Link> </li>
+              <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/contact-us"} >Contact Us </Link> </li>            
               <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/reviews"} >Reviews </Link> </li>            
               <li className='font-medium  mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/order-now"} >Order Now </Link> </li>            
             </ul>
@@ -50,8 +50,8 @@ const Footer = () => {
           <div className='p-4'>
             <div className='font-bold text-lg md:text-xl+'>Legal Info</div>
             <ul className='md:mt-3 mt-1 '>
-              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/terms"} >Terms & Conditions</Link> </li>
-              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/privacy"} >Privacy Policy</Link> </li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/terms-and-conditions"} >Terms & Conditions</Link> </li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/privacy-policy"} >Privacy Policy</Link> </li>
           
             
             </ul>

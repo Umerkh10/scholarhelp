@@ -90,7 +90,7 @@ function BannerForm() {
       const formData = convertToFormData(data)
       const response = await sendEmails(formData); // Assume sendEmails is a server action
       if (response?.success) {
-        router.push("/Thank");
+        router.push("/thanks");
       } else {
         console.log("Error: " + response?.error);
       }

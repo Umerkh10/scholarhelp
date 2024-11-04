@@ -12,6 +12,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: ' Hire Someone to take my LSAT Exam for Me: High Grade Result  ',
   description: 'Most of the schools required applicants to take the LSAT exam, for the fall admission. We offers the preparation of the same LSAT test at affordable prices.',
+  alternates: {
+    canonical: "https://www.takingmyclassesonline.com/lsat-exam-prep",
+  },
 };
 
 function page() {

@@ -12,6 +12,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Hire to Take My TEAS Test for Me | 100% Great Results Surety ',
   description: `Are you still struggling on your Teas exams? don't you worry  because we offers take my TEAS exams online. Get a free quote at takingmyclassesonline.com!`,
+  alternates: {
+    canonical: "https://www.takingmyclassesonline.com/take-my-teas-exam-for-me",
+  },
 };
 
 function page() {

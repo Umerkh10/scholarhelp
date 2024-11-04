@@ -12,6 +12,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: ' Take My TOEFL Exam Online Service | Hire Expert TOEFL Tutor  ',
   description: 'Hire the expert to take your TOEFL exam online, whether it’s iBT, Essentials, ITP, Junior or a primary. Get success on your TOEFL exams and get 100% results.',
+  alternates: {
+    canonical: "https://www.takingmyclassesonline.com/toefl-exam-online",
+  },
 };
 
 function page() {

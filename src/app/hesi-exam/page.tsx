@@ -12,6 +12,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Hire Expert for HESI A2 Exam | Take My HESI Test for Me Online ',
   description: `Are you seeking for a reliable and trustworthy way to take my HESI exam OR A2 online! From takingmyclassesonline.com with experts with tailored study plans.`,
+  alternates: {
+    canonical: "https://www.takingmyclassesonline.com/hesi-exam",
+  },
 };
 
 function page() {

@@ -13,6 +13,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: ' Hire an Expert to Take My GMAT Exam for Me | Surety A+ Result ',
   description: 'Takingmyclassesonline.com offers take my GMAT exam for me with Installment fees option, Location must be mention of your area for taking the online exam.',
+  alternates: {
+    canonical: "https://www.takingmyclassesonline.com/take-gmat-online-exam",
+  },
 };
 
 function page() {

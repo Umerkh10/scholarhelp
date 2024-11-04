@@ -12,6 +12,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: ' Get Pay Someone to Take My Online Class: High Grade Surety ',
   description: 'Get Pay someone to take your online class from takingmyclassesonline.com and get 50% off on the first order, stress-free experiences with expert writers.',
+  alternates: {
+    canonical: "https://www.takingmyclassesonline.com/pay-someone-to-take-my-class",
+  },
 };
 
 

@@ -80,10 +80,10 @@ export default function Navbar2() {
                             </div>
                         </DropdownMenu>
                         <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/contact">Contact Us</Link>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/contact-us">Contact Us</Link>
                         </Button>
                         <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/about">About Us</Link>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/about-us">About Us</Link>
                         </Button>
                         <Button variant="ghost" asChild>
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/reviews">Reviews</Link>
@@ -166,10 +166,10 @@ export default function Navbar2() {
                             )}
                         </div>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Link href="/contact" className="block">Contact Us</Link>
+                            <Link href="/contact-us/" className="block">Contact Us</Link>
                         </Button>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
-                            <Link href="/about" className="block">About Us</Link>
+                            <Link href="/about-us" className="block">About Us</Link>
                         </Button>
                         <Button variant="ghost" className="block w-full text-left hover:scale-105 hover:bg-violet-500 rounded-lg transition ease-in duration-200" onClick={() => setIsMobileMenuOpen(false)}>
                             <Link href="/reviews" className="block">Reviews</Link>
