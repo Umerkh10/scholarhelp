@@ -7,6 +7,8 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar2 from "./(Home)/_components/Navbar2";
 import Head from "next/head";
 import { headers } from "next/headers";
+import Tawkto from "@/lib/Tawto";
+import ScrollToTop from "./ScrollToTop";
 
 
 
@@ -53,7 +55,7 @@ const inter = Montserrat({
 <meta name="apple-mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 <meta name="p:domain_verify" content="[DOMAIN_VERIFICATION_CODE]" />
-<link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <meta name="theme-color" content="#4947ea" />
 <meta name="mobile-web-app-capable" content="yes" />
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -130,6 +132,8 @@ export default function RootLayout({
             enableSystem={false}
             disableTransitionOnChange
           >
+            <Tawkto/>
+            <ScrollToTop/>
         <Navbar2/>
         {children}
         <Footer/>

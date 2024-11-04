@@ -7,8 +7,6 @@ import WorkFlow from './_components/WorkFlow'
 import Sample from './_components/Sample'
 import TrustReview from './_components/TrustReview'
 import Faq from './_components/Faq'
-import { useInView } from 'react-intersection-observer'
-import Aos from 'aos'
 import 'aos/dist/aos.css';
 import AboutContent from './_components/AboutContent'
 import FormContent from './_components/FormContent'

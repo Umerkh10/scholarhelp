@@ -140,7 +140,7 @@ function ReviewTabs() {
         <div className='border-b-2 border-muted translate-y-2 w-full'></div>
         <div className="flex items-center p-2 mt-3">
           <div className="flex items-center bg-white rounded-full w-12 h-12 overflow-hidden">
-            <Image className="object-cover" src={'/imgs/taking-logo-2.png'} alt="rating" width={44} height={64} />
+            <Image className="object-cover" src={'/assets/weblogo.png'} alt="rating" width={44} height={64} />
           </div>
           <div className='flex-col ml-4'>
             <div className='text-[16px] font-bold'>{process.env.NEXT_PUBLIC_WEBSITE_NAME}</div>
