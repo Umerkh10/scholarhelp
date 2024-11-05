@@ -45,14 +45,14 @@ const Faq = () => {
 
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
                 <div data-aos="zoom-in-down" className=''>
-                    <div className='flex items-center justify-center sm:pb-8 sticky top-0 '>
-                        <Image loading='eager' className='md:mt-20  rounded-2xl ' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg' />
+                    <div className='flex items-center justify-center lg:pb-8 sticky top-0 '>
+                        <Image loading='eager' className='lg:mt-20 mt-5  rounded-2xl ' src="/imgs/faq_section_1.webp" width={600} height={600} alt='about-faq-bg' />
                     </div>
                 </div>
 
                 <div className=''>
                     {questions.map((item, index) => (
-                        <div data-aos="flip-down" className="md:pt-6 pt-8" key={index}>
+                        <div data-aos="flip-down" className="md:pt-5 pt-3" key={index}>
                             <h4
                                 className="cursor-pointer py-6 px-4  rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-lg md:font-bold text-base  flex justify-between group bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800 transition ease-in duration-150 delay-100"
                                 onClick={() => toggleAccordion(index)}

@@ -33,8 +33,8 @@ function SmallDivider() {
 
                     </div>
                     </div>
-                    <div className=''>
-                    <div data-aos='fade-up' className='flex flex-col md:flex-row  items-center  '>
+                    <div className='hidden lg:block '>
+                    <div data-aos='fade-up' className='flex flex-col md:flex-row justify-center items-center  '>
                         <Image loading='eager' className='' src={'/imgs/small-divider-img.webp'} width={300} height={300} alt='small'></Image>
 
                     </div>
