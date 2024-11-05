@@ -14,18 +14,18 @@ export default async function EmailAction2(state: any, formData: FormData) {
     }
 
     const transporter = nodemailer.createTransport({
-      host: process.env.HOST as string,
-      port: process.env.PORTS as unknown as number,
+      host: process.env.NEXT_PUBLIC_HOST as string,
+      port: process.env.NEXT_PUBLIC_PORTS as unknown as number,
       secure: false, // true for 465, false for other ports
       auth: {
-        user: process.env.USER, // your SMTP username
-        pass: process.env.PASSWORD, // your SMTP password
+        user: process.env.NEXT_PUBLIC_USER, // your SMTP username
+        pass: process.env.NEXT_PUBLIC_PASSWORD, // your SMTP password
       },
     });
 
     // Mail options for the client
     const clientMailOptions = {
-      from: `Taking My Classes Online® Alert - <${process.env.MAILFROM}>`,
+      from: `Taking My Classes Online® Alert - <${process.env.NEXT_PUBLIC_MAILFROM}>`,
       to: email,
       subject: `New Contact Form Entry | Taking My Classes Online`,
       html: `
@@ -78,8 +78,8 @@ export default async function EmailAction2(state: any, formData: FormData) {
 
     // Mail options for support
     const supportMailOptions = {
-      from: `Taking My Classes Online® Alert - <${process.env.MAILFROM}>`,
-      to: process.env.MAILTO, // Replace with your support email
+      from: `Taking My Classes Online® Alert - <${process.env.NEXT_PUBLIC_MAILFROM}>`,
+      to: process.env.NEXT_PUBLIC_MAILTO, // Replace with your support email
       subject: `New Contact Form Submission from ${name}`,
       html: `
 <body style="margin: 0; padding: 0; color: black;">

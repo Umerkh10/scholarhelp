@@ -160,7 +160,7 @@ async function sendEmailClient(data: any) {
     file
   } = data
   const clientMailOptions = {
-    from: `TakingMyClassesOnline® Alert - Order Recieved <${process.env.MAILFROM}>`,
+    from: `TakingMyClassesOnline® Alert - Order Recieved <${process.env.NEXT_PUBLIC_MAILFROM}>`,
     to: email,
     subject: `We Have Recieved Your Order - Complete Your Payment Now | Taking My Classes Online`,
     html: `
@@ -444,8 +444,8 @@ async function sendEmailSupport(data: any) {
   
 
   const supportMailOptions = {
-    from: `New Order Form | Taking My Classes Online <${process.env.MAILFROM}>`,
-    to: process.env.MAILTO, // send to support email
+    from: `New Order Form | Taking My Classes Online <${process.env.NEXT_PUBLIC_MAILFROM}>`,
+    to: process.env.NEXT_PUBLIC_MAILTO, // send to support email
     subject: `New Order Form | Taking My Classes Online`,
     html: `
       <body>

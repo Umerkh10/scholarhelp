@@ -24,8 +24,8 @@ console.log("orderData",orderData);
 
   //**********Sending  Email to support ********* */
   const supportMailOptions = {
-    from: process.env.MAILFROM,
-    to: process.env.MAILTO, // send to support email
+    from: process.env.NEXT_PUBLIC_MAILFROM,
+    to: process.env.NEXT_PUBLIC_MAILTO, // send to support email
     subject: `Payment Notification`,
     html: `
   <body>
@@ -66,7 +66,7 @@ console.log("orderData",orderData);
   //**********Sending  Email to client **********/
 
   const clientPaymentMailOptions = {
-    from: `Order Confirmed | Taking My Classes Online ${process.env.MAILFROM}`,
+    from: `Order Confirmed | Taking My Classes Online ${process.env.NEXT_PUBLIC_MAILFROM}`,
     to: orderData.email,
     subject: `Your Order #${orderData.orderId} is Confirmed - Thank You For Your Order! | Taking My Classes Online`,
     html: `

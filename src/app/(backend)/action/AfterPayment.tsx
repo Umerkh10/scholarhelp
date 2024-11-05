@@ -97,18 +97,18 @@ export const AfterPayment = async (formData: FormData) => {
 
 
   const transporter = nodemailer.createTransport({
-    host: process.env.HOST as string,
-    port: process.env.PORTS as unknown as number,
+    host: process.env.NEXT_PUBLIC_HOST as string,
+    port: process.env.NEXT_PUBLIC_PORTS as unknown as number,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: process.env.USER, // your SMTP username
-        pass: process.env.PASSWORD // your SMTP password
+        user: process.env.NEXT_PUBLIC_USER, // your SMTP username
+        pass: process.env.NEXT_PUBLIC_PASSWORD // your SMTP password
     }
   });
 
   const clientPaymentMailOptions = {
-    from: process.env.MAILFROM,
-    to: process.env.MAILTO,
+    from: process.env.NEXT_PUBLIC_MAILFROM,
+    to: process.env.NEXT_PUBLIC_MAILTO,
     subject: `New Order from ${process.env.NEXT_PUBLIC_NAME}`,
     text: 'Thank You For Order',
     html: `

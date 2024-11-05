@@ -6,6 +6,7 @@ import { ThemeProvider } from "@/components/ui/theme-provider";
 import Navbar2 from "./(Home)/_components/Navbar2";
 import Tawkto from "@/lib/Tawto";
 import ScrollToTop from "./ScrollToTop";
+import Head from "next/head";
 
 const canonicalUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
@@ -67,6 +68,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <meta name="google-site-verification" content="JSoGrXYc6cuAT5yG11GFtwN763nYU2uwlFBMya7pI98" />
         <link rel="canonical" href={canonicalUrl} />
         <meta name="google-site-verification" content="[YOUR_VERIFICATION_CODE]" />
         <meta property="og:site" content="https://takingmyclassesonline.com/" />
@@ -96,6 +98,17 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="apple-mobile-web-app-title" content="Taking My Classes Online" />
         <link rel="alternate" hrefLang="x-default" href="https://www.takingmyclassesonline.com/" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CN4F3PYZJW"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CN4F3PYZJW');
+            `,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -117,7 +130,9 @@ export default function RootLayout({
             }),
           }}
         />
+ 
       </head>
+  
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <Tawkto />

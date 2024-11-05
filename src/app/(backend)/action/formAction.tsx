@@ -4,33 +4,33 @@ import nodemailer from "nodemailer";
 
 export async function sendEmails(formData: FormData) {
 
-    try {
-        const email = formData.get("email") as string;
-        const date = formData.get("date") as string;
-        const phone = formData.get("phone");
-        const activeButton = formData.get("activeButton");
-        const wordCount = formData.get("wordCount")   // Ensure it's a number
-        const selectedService = formData.get("selectedService");
-        const selectedSubject = formData.get("selectedSubject");
-        const selectedQuestions = formData.get("selectedQuestions");
+  try {
+    const email = formData.get("email") as string;
+    const date = formData.get("date") as string;
+    const phone = formData.get("phone");
+    const activeButton = formData.get("activeButton");
+    const wordCount = formData.get("wordCount")   // Ensure it's a number
+    const selectedService = formData.get("selectedService");
+    const selectedSubject = formData.get("selectedSubject");
+    const selectedQuestions = formData.get("selectedQuestions");
 
-        // Transporter configuration
-        const transporter = nodemailer.createTransport({
-          host: process.env.HOST as string,
-          port: process.env.PORTS as unknown as number,
-          secure: false, // true for 465, false for other ports
-          auth: {
-            user: process.env.USER, // your SMTP username
-            pass: process.env.PASSWORD, // your SMTP password
-          },
-        });
+    // Transporter configuration
+    const transporter = nodemailer.createTransport({
+      host: process.env.NEXT_PUBLIC_HOST as string,
+      port: process.env.NEXT_PUBLIC_PORTS as unknown as number,
+      secure: false, // true for 465, false for other ports
+      auth: {
+        user: process.env.NEXT_PUBLIC_USER, // your SMTP username
+        pass: process.env.NEXT_PUBLIC_PASSWORD, // your SMTP password
+      },
+    });
 
-        // Email options for the client
-        const clientMailOptions = {
-            from: `Taking My Classes Online® Alert - DLF Recieved <${process.env.MAILFROM}>`,
-            to: email,
-            subject: 'Your Service Form Submission Confirmation',
-            html: `
+    // Email options for the client
+    const clientMailOptions = {
+      from: `Taking My Classes Online® Alert - DLF Recieved <${process.env.NEXT_PUBLIC_MAILFROM}>`,
+      to: email,
+      subject: 'Your Service Form Submission Confirmation',
+      html: `
 <body style="margin: 0; padding: 0;   color: black;">
     <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #f4eefd;  font-family: system-ui;">
     
@@ -88,18 +88,18 @@ export async function sendEmails(formData: FormData) {
     </div>
     </body>
             `
-        };
+    };
 
-        // Send the client email
-        await transporter.sendMail(clientMailOptions);
-        console.log('Client confirmation email sent successfully');
+    // Send the client email
+    await transporter.sendMail(clientMailOptions);
+    console.log('Client confirmation email sent successfully');
 
-        // Email options for the support team
-        const supportMailOptions = {
-            from: `Taking My Classes Online® Alert - DLF Recieved <${process.env.MAILFROM}>`,
-            to: `${process.env.MAILTO}`,
-            subject: 'New DLF Form Submission',
-            html: `
+    // Email options for the support team
+    const supportMailOptions = {
+      from: `Taking My Classes Online® Alert - DLF Recieved <${process.env.NEXT_PUBLIC_MAILFROM}>`,
+      to: `${process.env.NEXT_PUBLIC_MAILTO}`,
+      subject: 'New DLF Form Submission',
+      html: `
             <div style="font-family: Arial, sans-serif; line-height: 1.6;">
                 <p><b>New Submission Details:</b></p>
                 <ul>
@@ -115,16 +115,16 @@ export async function sendEmails(formData: FormData) {
                 <p>Please take the necessary actions.</p>
             </div>
             `
-        };
+    };
 
-        // Send the support email
-        await transporter.sendMail(supportMailOptions);
-        console.log('Support notification email sent successfully');
+    // Send the support email
+    await transporter.sendMail(supportMailOptions);
+    console.log('Support notification email sent successfully');
 
-        return { success: "Confirmation and notification emails sent successfully." };
-        
-    } catch (error) {
-        console.error('Error sending emails:', error);
-        return { error: "Failed to send emails." };
-    }
+    return { success: "Confirmation and notification emails sent successfully." };
+
+  } catch (error) {
+    console.error('Error sending emails:', error);
+    return { error: "Failed to send emails." };
+  }
 }

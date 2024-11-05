@@ -40,34 +40,34 @@ function ReviewTabs() {
   ];
   const reviews2 = [
     {
-      name: 'Damien',
-      text: `I was looking for online classes to help with my BS studies and luckily came across this service. Their engaging lectures and focus on my specific subjects greatly enhanced my understanding and boosted my learning skills.`,
+      name: 'Emily Johnson',
+      text: `I couldn’t have asked for a better GRE prep experience than the one I had with taking my classes online. They offered a great mix of live classes, recorded lectures, and interactive quizzes. The instructors really took their time to break down complex topics in quant and verbal reasoning, making them easy to understand. I found the vocabulary flashcards and personalized practice plans super helpful, especially for staying on track. The practice exams were also really close to the actual GRE format, which made test day feel a lot less intimidating. I ended up with a score I’m really proud of—highly recommend this service!`,
       rating: 4.5,
     },
     {
-      name: 'Conor',
-      text: `Choosing their online exam service was one of the best decisions I've made. They provide a highly helpful, customized, and dedicated service. `,
+      name: 'Noah Davis',
+      text: `The GRE prep at taking my classes online was exactly what I needed to boost my score! I was assigned a personal coach who created a customized study schedule just for me, which really helped me stay organized. The adaptive practice questions were amazing because they focused on my weak areas and helped me improve faster. They also have an extensive library of practice exams and an essay grading service, which was perfect for AWA prep. With all the support and feedback, my score improved by over 10 points in just two months. I’d recommend this service to anyone serious about achieving their target GRE score! `,
       rating: 4.5,
     },
     {
-      name: 'Robbie',
-      text: `I have used taking my classes online service countless times. They made things so easy for me while I worked and took care of my other tasks. They are reliable and affordable for online learning development.`,
+      name: 'Amelia Moore',
+      text: `Taking my classes online provided everything I needed to succeed. The live classes were in-depth, and the instructors used an interactive whiteboard, so I could ask questions and get answers in real time. They also had detailed study guides, strategy sessions, and daily practice questions, which kept me constantly improving. The diagnostic test at the beginning helped pinpoint my weak areas, and the weekly progress tracking kept me motivated. Their app was a lifesaver too—I could study on the go! I’ve tried other prep courses, but taking my classes online made the biggest difference. So worth it!`,
       rating: 4.5,
     },
     {
-      name: 'Rory',
-      text: `I have used the Taking My Classes Online service numerous times, and they made the process so simple for me while I managed my work and other responsibilities. They are dependable and offer affordable options for online exam assistance.`,
+      name: 'Michael Anderson',
+      text: `With my hectic work schedule, I needed a GRE service that offered flexibility without sacrificing quality, and takingmyclassesonline.com delivered. They had evening and weekend classes, as well as self-paced video lectures I could watch anytime. The adaptive practice sets were perfect for targeting my weak areas, and I loved the test-taking strategy sessions—they really helped me manage time on the actual exam. Plus, their on-demand Q&A with tutors was super useful when I got stuck. Thanks to their guidance, I raised my score significantly.`,
       rating: 4.5,
     },
     {
-      name: 'Carlos',
-      text: `I'm very pleased with their online exam services and highly recommend them. The staff is incredibly accommodating and professional, and I truly value their dedication and hard work.`,
+      name: 'Scarlett Harris',
+      text: `I was really anxious about the GRE, especially the verbal section, but taking my classes online changed everything for me. They provided expert-led classes, and flashcards that made learning new words easy and fun. The essay feedback was spot-on and helped me improve my AWA score too. I really liked the GRE test simulator because it felt just like the real test. It helped me feel confident on the day of the exam. Thanks to the clear lessons and personal coaching, I improved my score by 12 points. I highly recommend taking my classes online for anyone looking to get a top score!`,
       rating: 4.5,
     },
     {
-      name: 'George',
-      text: ` An outstanding and unique online exam service! Their affordable packages were a lifesaver for me when I was struggling financially. Thanks to their budget-friendly option, I could easily access the support I needed. `,
-      rating: 4.5,
+      name: 'Joseph Clark',
+      text: `I had a fantastic experience with taking my classes online! The instructors were really helpful and made tough topics easy to understand. They offered great study materials, like practice exams and flashcards, which helped me feel prepared. I felt confident on test day, and I ended up scoring much higher than I expected. I highly recommend this service! `,
+      rating: 5,
     },
   
   ];

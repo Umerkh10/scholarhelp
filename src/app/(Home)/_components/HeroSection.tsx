@@ -65,7 +65,7 @@ export const HeroSection = () => {
 
 export function CtaButtons() {
   return (
-    <div className='flex flex-col md:flex-row  items-center mt-5 scale-90 md:scale-100'>
+    <div className='flex flex-col md:flex-row md:justify-center items-center mt-5 scale-90 md:scale-100'>
       <Link href={'/order-now'}>
       <div className='flex justify-center items-center border-[2px] border-zinc-400 bg-zinc-100
     transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-2 px-4 rounded-xl  m-2'>
