@@ -30,9 +30,9 @@ function AboutContent() {
     </div>
     <div className='' data-aos='flip-left'>
       <div className='flex justify-start items-center mt-5 lg:mt-20'>
-        <h2 className='text-xl md:text-3xl font-bold text-center dark:text-zinc-100 text-indigo-900 '>Take My Online Classes and Secure High Grades - Pay Someone to Take My Class</h2>
+        <h2 className='text-xl md:text-3xl font-bold lg:text-left text-center dark:text-zinc-100 text-indigo-900 '>Take My Online Classes and Secure High Grades - Pay Someone to Take My Class</h2>
       </div>
-      <p className='mt-2 md:mt-4 md:text-base text-sm font-medium text-muted-foreground'>
+      <p className='mt-2 md:mt-4 md:text-base text-sm font-medium '>
         Overall, securing high grades at the academic level is a dream of every passionate learner. However, this achievement requires high effort and qualified instructors, and also you have to search with ‘pay someone to take my class.’ Here, at takingmyclassesonline.com, we offer you highly expert mentors’ online assistance for the enhancement of your academic skills. Furthermore, our service is user-friendly, and it is really customized to provide you with a complete solution. Hence, utilizing our unique and quality service benefits you in accelerating your learning. Significantly, engaging with our online expert will give you peace of mind and satisfy you regarding your learning approach as well as they will guide you about your entire course, syllabus, assignment and exams.  Lastly, joining us leads you to secure your dream grades.</p>
         <CtaChat/>
     </div>

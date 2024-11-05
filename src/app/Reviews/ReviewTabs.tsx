@@ -41,32 +41,32 @@ function ReviewTabs() {
   const reviews2 = [
     {
       name: 'Emily Johnson',
-      text: `I couldn’t have asked for a better GRE prep experience than the one I had with taking my classes online. They offered a great mix of live classes, recorded lectures, and interactive quizzes. The instructors really took their time to break down complex topics in quant and verbal reasoning, making them easy to understand. I found the vocabulary flashcards and personalized practice plans super helpful, especially for staying on track. The practice exams were also really close to the actual GRE format, which made test day feel a lot less intimidating. I ended up with a score I’m really proud of—highly recommend this service!`,
+      text: `I had an excellent GRE prep experience online, with live classes, recorded lectures, and interactive quizzes. The instructors simplified complex topics, and tools like vocab flashcards and tailored practice plans kept me on track. The realistic practice exams made test day much less intimidating—I highly recommend this service!`,
       rating: 4.5,
     },
     {
       name: 'Noah Davis',
-      text: `The GRE prep at taking my classes online was exactly what I needed to boost my score! I was assigned a personal coach who created a customized study schedule just for me, which really helped me stay organized. The adaptive practice questions were amazing because they focused on my weak areas and helped me improve faster. They also have an extensive library of practice exams and an essay grading service, which was perfect for AWA prep. With all the support and feedback, my score improved by over 10 points in just two months. I’d recommend this service to anyone serious about achieving their target GRE score! `,
+      text: `The GRE prep at Taking My Classes Online was exactly what I needed! My personal coach’s custom study plan kept me organized, while adaptive questions focused on my weak areas, helping me improve fast. With practice exams, essay grading, and ongoing feedback, I boosted my score by over 10 points in just two months—highly recommended! `,
       rating: 4.5,
     },
     {
       name: 'Amelia Moore',
-      text: `Taking my classes online provided everything I needed to succeed. The live classes were in-depth, and the instructors used an interactive whiteboard, so I could ask questions and get answers in real time. They also had detailed study guides, strategy sessions, and daily practice questions, which kept me constantly improving. The diagnostic test at the beginning helped pinpoint my weak areas, and the weekly progress tracking kept me motivated. Their app was a lifesaver too—I could study on the go! I’ve tried other prep courses, but taking my classes online made the biggest difference. So worth it!`,
+      text: `Taking My Classes Online had everything I needed for GRE success—live, interactive classes, strategy sessions, and daily practice questions kept me progressing steadily. The initial diagnostic test targeted my weak areas, and weekly tracking kept me motivated. With a handy app for studying on the go, this course made all the difference!`,
       rating: 4.5,
     },
     {
       name: 'Michael Anderson',
-      text: `With my hectic work schedule, I needed a GRE service that offered flexibility without sacrificing quality, and takingmyclassesonline.com delivered. They had evening and weekend classes, as well as self-paced video lectures I could watch anytime. The adaptive practice sets were perfect for targeting my weak areas, and I loved the test-taking strategy sessions—they really helped me manage time on the actual exam. Plus, their on-demand Q&A with tutors was super useful when I got stuck. Thanks to their guidance, I raised my score significantly.`,
+      text: `With my busy work schedule, TakingMyClassesOnline.com was perfect—they offered flexible evening and weekend classes, plus self-paced videos. Adaptive practice targeted my weak areas, and test-taking strategy sessions helped with time management. The on-demand Q&A with tutors was a huge help, and I significantly raised my score!`,
       rating: 4.5,
     },
     {
       name: 'Scarlett Harris',
-      text: `I was really anxious about the GRE, especially the verbal section, but taking my classes online changed everything for me. They provided expert-led classes, and flashcards that made learning new words easy and fun. The essay feedback was spot-on and helped me improve my AWA score too. I really liked the GRE test simulator because it felt just like the real test. It helped me feel confident on the day of the exam. Thanks to the clear lessons and personal coaching, I improved my score by 12 points. I highly recommend taking my classes online for anyone looking to get a top score!`,
+      text: `I was nervous about the GRE, especially verbal, but Taking My Classes Online was a game-changer. Expert-led classes, flashcards, and realistic test simulators helped me feel confident on exam day, and personalized coaching boosted my score by 12 points. Highly recommended for anyone aiming for a top score!`,
       rating: 4.5,
     },
     {
       name: 'Joseph Clark',
-      text: `I had a fantastic experience with taking my classes online! The instructors were really helpful and made tough topics easy to understand. They offered great study materials, like practice exams and flashcards, which helped me feel prepared. I felt confident on test day, and I ended up scoring much higher than I expected. I highly recommend this service! `,
+      text: `Taking My Classes Online was fantastic! The instructors simplified tough topics, and the practice exams and flashcards made me feel fully prepared. I went into test day confident and scored higher than expected—highly recommended! `,
       rating: 5,
     },
   
@@ -102,6 +102,36 @@ function ReviewTabs() {
       text: ` I was not sure I would ever pass the LSAT exam. I was very worried, but when I ordered their LSAT test help service and got full marks, I was very satisfied with their excellent service. Their team is truly amazing, and I would recommend that everyone hire them. `,
       rating: 4.5,
     },
+  
+  ];
+
+  const reviews4 = [
+    {
+      name: 'Scott Ryan',
+      text: `I used Takingmyclassesonline.com for the GED Test. I had taken all 4 courses which were covered on the test. Intensively for 14 days and I finished the course by the help of Taking my classes online and I got a successful score on my GED test.`,
+      rating: 4.5,
+    },
+    {
+      name: 'Walton Carle',
+      text: `We greatly appreciate the preparation of the GED exam, such high-quality professionals available in Taking My Classes Online, All staff members have shown a strong sense of responsibilites.`,
+      rating: 4.5,
+    },
+    {
+      name: 'Nick Alvin',
+      text: `Awesome experience and very supportive representatives of Taking My Classes Online. Made a stressful situation much easier for GED test preparation.`,
+      rating: 5,
+    },
+    {
+      name: 'Clara Oliver',
+      text: `I wanted to say many thanks to Taking My Classes Online for the preparation of the GED Exam and Finally, I succeeded in the GED exam. Followed every course which was offered, Truly recommend it for the future perspective.`,
+      rating: 4.5,
+    },
+    {
+      name: 'Josh McMillan',
+      text: `I was stuck on my GED exam, I tried 5 times and looked for the best GED exam helper website. Unfortunately, I found Taking My Classes Online which looked best among all of the websites in Google. Right now I have got 4.7 CPGA in my GED exam, all thanks to Taking My Classes Online.`,
+      rating: 5,
+    },
+  
   
   ];
 
@@ -160,6 +190,7 @@ function ReviewTabs() {
               <TabsTrigger value="1">Take My Exam</TabsTrigger>
               <TabsTrigger value="2">Take My GRE Exam</TabsTrigger>
               <TabsTrigger value="3">Take LSAT Exam Online</TabsTrigger>
+              <TabsTrigger value="4">Take GED Exam Online</TabsTrigger>
             </TabsList>
             <TabsContent value='1'>
               <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5 '>
@@ -180,6 +211,14 @@ function ReviewTabs() {
             <TabsContent value='3'>
             <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5'>
               {reviews3.map((review, index) => (
+          <ReviewCard key={index} name={review.name} text={review.text} rating={review.rating} />
+        ))}
+              </div>
+
+            </TabsContent>
+            <TabsContent value='4'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5'>
+              {reviews4.map((review, index) => (
           <ReviewCard key={index} name={review.name} text={review.text} rating={review.rating} />
         ))}
               </div>
