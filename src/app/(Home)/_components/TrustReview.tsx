@@ -13,31 +13,37 @@ const reviews = [
     name: 'Alfred FRASER',
     text: `Joining their services was the best decision of mine. The tutor really helped me to improve my learning skills and learning credibility which benefits me with every subject.`,
     rating: 4.5,
+    image: '/homepage-reviews/Alfred FRASER.webp'
   },
   {
     name: 'Charles MOORE',
     text: `Thank You, You’re the best service I have ever used. The expert tutors, their support, and the exam resources for the LSAT exam are just truly amazing.`,
     rating: 5,
+    image: '/homepage-reviews/Charles MOORE.webp'
   },
   {
     name: 'Henry MACKENZIE',
     text: `Taking My Classes Online is the best tutor service I have ever found on the web. Their work and potential to support me in the GRE exam is just phenomenal. Highly recommended.`,
     rating: 5,
+     image: '/homepage-reviews/Henry MACKENZIE.webp'
   },
   {
     name: 'Elsie BELL',
     text: `I have used their service for my GED exam. They have highly professional and knowledgeable tutors who support me 24/7, answer all the queries, and help to clear my concept. Truly inspiring and an amazing experience`,
     rating: 4.5,
+     image: '/homepage-reviews/Elsie BELL.webp'
   },
   {
     name: 'Scarlett GORDON',
     text: `Words can’t express my emotions for them. I really struggled with the preparation for the HESI exam, then I took their service to figure out if it would be helpful or not. Their support shocked me. They really help me to improve my learning skills and lead me towards academic success.`,
     rating: 4.5,
+     image: '/homepage-reviews/Scarlett GORDON.webp'
   },
   {
     name: 'Ethan WRIGHT ',
     text: `Such an amazing assistant in clearing up my concept. Highly qualified teachers that help me in my academic learning. I really appreciate their efforts that they’d put in to provide me some success in my learning.`,
     rating: 5,
+     image: '/homepage-reviews/Ethan WRIGHT.webp'
   },
 
 ];
@@ -62,12 +68,12 @@ const renderStars = (rating: number) => {
 };
 
 
-const ReviewCard = ({name,text,rating}:{name:string,text:string,rating:number}) => (
+const ReviewCard = ({name,text,rating,image}:{name:string,text:string,rating:number,image:string}) => (
   <div className='group'>
     <div className='w-full bg-muted/50  rounded-xl border-[2px] scale-95 group-hover:scale-100 group-hover:shadow-xl transition ease-in duration-200 delay-200 '>
       <div className="flex items-center p-2 mt-3">
         <div className="flex items-center bg-white rounded-full w-12 h-12 overflow-hidden">
-          <Image className="object-cover blur-sm" src={'/imgs/tp-rating-1.png'} alt="rating" width={44} height={64} />
+          <Image className="object-cover  " src={image} alt="rating" width={48} height={64} />
         </div>
         <div className='flex-col ml-4'>
           <div className='text-[16px] font-bold'>{name}</div>
@@ -115,7 +121,7 @@ const TrustReview = () => {
 
       <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 p-5'>
         {reviews.map((review, index) => (
-          <ReviewCard key={index} name={review.name}  text={review.text} rating={review.rating} />
+          <ReviewCard key={index} name={review.name} image={review.image}  text={review.text}  rating={review.rating} />
         ))}
       </div>
 

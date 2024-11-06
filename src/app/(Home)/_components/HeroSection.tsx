@@ -30,19 +30,19 @@ export const HeroSection = () => {
           <h1 className=' text-center py-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-lg sm:text-4xl font-extrabold '>Take My Online Class for me in USA and Ace My Exam</h1>
           <h2 className='text-center mt-2 lg:text-left dark:text-zinc-100 text-zinc-900  sm:text-2xl font-medium'>Taking My Affordable Classes Online Guarantee You the Academic Distinction</h2>
           <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 sm:mt-2 mt-6'>
-            <div className='flex items-center gap-1'>
+            <div className='flex items-center gap-4'>
             <Image src={'/imgs/instructor.png'} width={64} height={64} alt='instructor'></Image>
-          <h3 className='text-center dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>950+ PhD Instructor</h3>
+          <h3 className='text-center dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>950+ PhD <br /> Instructor</h3>
           <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
           </div>
-            <div className='flex items-center gap-1'>
+            <div className='flex items-center gap-4'>
             <Image src={'/imgs/record.png'} width={64} height={64} alt='record'></Image>
-          <h3 className='text-center dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>Proven Track Record</h3>
+          <h3 className='text-center dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>Proven Track <br /> Record</h3>
           <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
           </div>
             <div className='flex items-center gap-1'>
             <Image src={'/imgs/affordable.png'} width={64} height={64} alt='phd'></Image>
-          <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>Affordable Packages</h3>
+          <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>Affordable <br />Packages</h3>
           <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
           </div>
           </div>

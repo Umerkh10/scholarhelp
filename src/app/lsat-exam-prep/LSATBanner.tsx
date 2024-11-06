@@ -10,19 +10,19 @@ function LSATBanner() {
         <h1 className=' text-center py-2 leading-none lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-[35px] font-extrabold '>Take LSAT Exam Online</h1>
         <h2 className='text-center py-1 mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-semibold'> Master Your LSAT Exam With Our Expertly Design Mock LSAT Exam</h2>
         <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 mt-2'>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-3'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Virtual Expert Guidance </h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Virtual Expert <br /> Guidance </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-3'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Easy-to-use services</h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Easy-to-use <br /> services</h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/affordable.png'} width={50} height={50} alt='phd'></Image>
-        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Interactive Online Classes
+        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Interactive Online <br /> Classes
         </h3>
         <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
         </div>

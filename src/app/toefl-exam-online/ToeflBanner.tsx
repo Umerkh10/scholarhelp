@@ -11,19 +11,20 @@ function ToeflBanner() {
         <h1 className=' text-center py-2 leading-none lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-[35px] font-extrabold '>Take Practice Toefl Exam Online And Achieve Excellence In Your Exam</h1>
         <h2 className='text-center mt-2 py-1 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-semibold'>How Can I Take the TOEFL Test in the USA: A Step-by-Step Guide</h2>
         <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 mt-2'>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-3'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Authentic And Reliable Service  </h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Authentic And 
+         <br /> Reliable Service  </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-3'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Personal Guidance</h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Personal <br /> Guidance</h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/affordable.png'} width={50} height={50} alt='phd'></Image>
-        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Dynamic Curricular Activities 
+        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Dynamic Curricular <br /> Activities 
         </h3>
         <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
         </div>

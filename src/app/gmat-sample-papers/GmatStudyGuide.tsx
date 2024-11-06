@@ -11,7 +11,7 @@ function GmatStudyGuide() {
             <h2 className='py-4 font-bold md:text-3xl text-xl '>Discover the Latest GMAT Sample Paper</h2>
             <h3 className='font-semibold md:text-2xl text-lg'>Take Valuable Guidelines In Preparation For the GMAT Exam</h3>
             <div className='pt-5  '>
-                <Link target='_blank' rel='noopener noreferrer' href={'/Sample Papers & Study Guides/Study Guides/GMAT/gmat-study-guide.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide</Link >
+                <Link target='_blank' rel='noopener noreferrer' href={'/samples/study-guides/GMAT/gmat-study-guide.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide</Link >
             </div>
         </div>
         <div className=' px-3 py-4 col-span-1 '>
@@ -26,31 +26,31 @@ function GmatStudyGuide() {
     <ul className='pt-5 font-medium text-sm md:text-base'>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GMAT/gmat-sample-paper 1.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GMAT/gmat-sample-paper-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
           gmat-sample-paper 1.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GMAT/gmat-sample-paper 2.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GMAT/gmat-sample-paper-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
           gmat-sample-paper 2.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GMAT/gmat-sample-paper 3.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GMAT/gmat-sample-paper-3.pdf' passHref target='_blank' rel='noopener noreferrer'>
           gmat-sample-paper 3.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GMAT/gmat-sample-paper 4.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GMAT/gmat-sample-paper-4.pdf' passHref target='_blank' rel='noopener noreferrer'>
           gmat-sample-paper 4.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GMAT/gmat-sample-paper 5.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GMAT/gmat-sample-paper-5.pdf' passHref target='_blank' rel='noopener noreferrer'>
           gmat-sample-paper 5.pdf
           </Link>
         </li>

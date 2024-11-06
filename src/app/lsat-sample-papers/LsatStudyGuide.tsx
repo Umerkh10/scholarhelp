@@ -11,7 +11,7 @@ function LsatStudyGuide() {
             <h2 className='py-4 font-bold md:text-3xl text-xl '>Check out the LSAT Exam Paper Guide</h2>
             <h3 className='font-semibold md:text-2xl text-lg'>Get Detailed study guide from the latest LSAT sample paper</h3>
             <div className='pt-5  '>
-            <Link target='_blank' rel='noopener noreferrer' href={'/Sample Papers & Study Guides/Study Guides/LSAT/LSAT Self-Study Plan 2024-2025.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide</Link>
+            <Link target='_blank' rel='noopener noreferrer' href={'/samples/study-guides/LSAT/LSAT-Self-Study-Plan-2024-2025.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide</Link>
             </div>
         </div>
         <div className=' px-3 py-4 col-span-1 '>
@@ -33,31 +33,31 @@ function LsatStudyGuide() {
     <ul className='pt-5 font-medium text-sm md:text-base'>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/LSAT/LSAT-Sample-Paper-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/LSAT/LSAT-Sample-Paper-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
           LSAT-Sample-Paper-1
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/LSAT/LSAT-Sample-Paper-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/LSAT/LSAT-Sample-Paper-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
           LSAT-Sample-Paper-2
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/LSAT/LSAT-Sample-Paper-3.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/LSAT/LSAT-Sample-Paper-3.pdf' passHref target='_blank' rel='noopener noreferrer'>
           LSAT-Sample-Paper-3
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/LSAT/LSAT-Sample-Paper-4.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/LSAT/LSAT-Sample-Paper-4.pdf' passHref target='_blank' rel='noopener noreferrer'>
           LSAT-Sample-Paper-4
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/LSAT/LSAT-Sample-Paper-5.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/LSAT/LSAT-Sample-Paper-5.pdf' passHref target='_blank' rel='noopener noreferrer'>
           LSAT-Sample-Paper-5
           </Link>
         </li>

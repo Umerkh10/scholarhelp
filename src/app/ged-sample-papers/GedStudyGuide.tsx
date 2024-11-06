@@ -13,16 +13,16 @@ function GedStudyGuide() {
 
             <div className='grid lg:grid-cols-2 grid-cols-1  '>
             <div className='pt-5  '>
-                <Link target='_blank' rel='noopener noreferrer' href={'/Sample Papers & Study Guides/Study Guides/GED/GED_Study-Guide_Math.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide for Math</Link>
+                <Link target='_blank' rel='noopener noreferrer' href={'/samples/study-guides/GED/GED-Study-Guide-Math.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide for Math</Link>
             </div>
             <div className='pt-5  '>
-                <Link target='_blank' rel='noopener noreferrer' href={'/Sample Papers & Study Guides/Study Guides/GED/GED_Study-Guide_RLA.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide for RLA</Link>
+                <Link target='_blank' rel='noopener noreferrer' href={'/samples/study-guides/GED/GED-Study-Guide-RLA.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide for RLA</Link>
             </div>
             <div className='pt-5  '>
-                <Link target='_blank' rel='noopener noreferrer' href={'/Sample Papers & Study Guides/Study Guides/GED/GED_Study-Guide_Science.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide for Science</Link>
+                <Link target='_blank' rel='noopener noreferrer' href={'/samples/study-guides/GED/GED-Study-Guide-Science.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>Download the Study Guide for Science</Link>
             </div>
             <div className='pt-5  '>
-                <Link target='_blank' rel='noopener noreferrer' href={'/Sample Papers & Study Guides/Study Guides/GED/GED_Study-Guide_Social-Studies.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>
+                <Link target='_blank' rel='noopener noreferrer' href={'/samples/study-guides/GED/GED-Study-Guide-Social-Studies.pdf'} className='rounded-lg px-4 py-2 bg-purple-600 text-zinc-200  hover:bg-gradient-to-r from-slate-900 to-violet-900 transition ease-in duration-500 delay-500 '>
                 Download the Study Guide for Social Studies</Link>
             </div>
             </div>
@@ -41,61 +41,61 @@ function GedStudyGuide() {
     <ul className='pt-5 font-medium text-sm md:text-base'>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/1001-GED-Practice-Questions-For-Dummies-by-Stuart-Donnelly.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/1001-GED-Practice-Questions-For-Dummies-by-Stuart-Donnelly.pdf' passHref target='_blank' rel='noopener noreferrer'>
             1001-GED-Practice-Questions-For-Dummies-by-Stuart-Donnelly.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/GED_OnlineTest_R2.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/GED-OnlineTest-R2.pdf' passHref target='_blank' rel='noopener noreferrer'>
           GED_OnlineTest_R2.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/ged_sample_practice_test.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/ged-sample-practice-test.pdf' passHref target='_blank' rel='noopener noreferrer'>
           ged_sample_practice_test.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/GED_Study-Guide_Science.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/GED-Study-Guide-Science.pdf' passHref target='_blank' rel='noopener noreferrer'>
           GED_Study-Guide_Science.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/GED-Mathematical-Reasoning-Practice-Test-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/GED-Mathematical-Reasoning-Practice-Test-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
           GED-Mathematical-Reasoning-Practice-Test-1.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/GED-Test-Preparation.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/GED-Test-Preparation.pdf' passHref target='_blank' rel='noopener noreferrer'>
           GED-Test-Preparation.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/practice-math-test-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/practice-math-test-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
           practice-math-test-1.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/practice-math-test-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/practice-math-test-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
           practice-math-test-2.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/practice-reading-test-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/practice-reading-test-2.pdf' passHref target='_blank' rel='noopener noreferrer'>
           practice-reading-test-2.pdf
           </Link>
         </li>
         <li className='flex items-center py-2'>
           <CircleChevronRight className='mr-3 w-5 h-5' />
-          <Link className='text-blue-500 hover:underline' href='/Sample Papers & Study Guides/GED/practice-social-studies-test-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
+          <Link className='text-blue-500 hover:underline' href='/samples/GED/practice-social-studies-test-1.pdf' passHref target='_blank' rel='noopener noreferrer'>
           practice-social-studies-test-1.pdf
           </Link>
         </li>

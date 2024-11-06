@@ -11,19 +11,19 @@ function GedBanner() {
         <h1 className=' text-center py-2 leading-none lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-[35px] font-extrabold '>How Can I Get Someone to Take My GED Exam for Me?</h1>
         <h2 className='text-center py-1 mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-semibold'>Explore How “Take My GED Test For Me” Service Help you to Master Your Exam</h2>
         <div className='flex flex-col lg:flex-row items-center xl:w-[55vw] gap-4 mt-2'>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-3'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Expert Mentorship   </h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Expert <br /> Mentorship   </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-3'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Trusted And User-friendly Solutions</h3>
+        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Trusted And <br /> User-friendly Solutions</h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/affordable.png'} width={50} height={50} alt='phd'></Image>
-        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'> Live And Engaging Online Classes
+        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'> Live And Engaging <br /> Online Classes
         </h3>
         <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
         </div>

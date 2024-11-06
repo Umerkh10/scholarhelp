@@ -26,12 +26,12 @@ export const metadata: Metadata = {
     canonical: canonicalUrl,
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     nocache: true,
     googleBot: {
-      index: false,
-      follow: false,
+      index: true,
+      follow: true,
       noimageindex: true,
       "max-video-preview": -1,
       "max-image-preview": "large",
@@ -70,7 +70,6 @@ export default function RootLayout({
       <head>
       <meta name="google-site-verification" content="JSoGrXYc6cuAT5yG11GFtwN763nYU2uwlFBMya7pI98" />
         <link rel="canonical" href={canonicalUrl} />
-        <meta name="google-site-verification" content="[YOUR_VERIFICATION_CODE]" />
         <meta property="og:site" content="https://takingmyclassesonline.com/" />
         <meta name="author" content="https://takingmyclassesonline.com/" />
         <meta name="language" content="English" />
@@ -86,12 +85,12 @@ export default function RootLayout({
         <meta name="twitter:image" content="https://www.takingmyclassesonline.com/images/og_TMCO.jpg?v=1" />
         <meta name="twitter:title" content="A+ Grade Guaranteed: Take My Online Class For Me in USA" />
         <meta name="twitter:site" content="[TWITTER_ACCOUNT]" />
-        <meta name="twitter:creator" content="[TWITTER_ACCOUNT]" />
+        <meta name="twitter:creator" content="[TWITTER_ACCOUNT]"/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-        <meta name="p:domain_verify" content="[DOMAIN_VERIFICATION_CODE]" />
+        <meta name="msvalidate.01" content="D56CF647A902FCA3278A894778A65D88" />
         <meta name="theme-color" content="#4947ea" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
