@@ -1,9 +1,25 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function TmtLongContent() {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
   return (
-    <div className='mx-auto max-w-screen-xl mt-10'>
+    <div ref={ref} className='mx-auto max-w-screen-xl mt-10'>
 
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5 mt-5'>
         <div className=''>

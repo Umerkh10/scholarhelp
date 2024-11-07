@@ -1,4 +1,4 @@
-import { Facebook, Instagram, LinkedinIcon, Phone } from 'lucide-react'
+import { Facebook, Instagram, LinkedinIcon, Phone, TwitterIcon } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -52,6 +52,8 @@ const Footer = () => {
             <ul className='md:mt-3 mt-1 '>
               <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/terms-and-conditions"} >Terms & Conditions</Link> </li>
               <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/privacy-policy"} >Privacy Policy</Link> </li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/refund-policy"} >Refund Policy</Link> </li>
+              <li className='font-medium   mt-1  text-sm dark:hover:text-gray-100 hover:scale-105 transition ease-in duration-150 delay-150'><Link href={"/sitemap.html"} >Sitemap</Link> </li> 
           
             
             </ul>
@@ -60,9 +62,23 @@ const Footer = () => {
           <div className='p-4'>
             <div className='font-bold md:text-xl text-lg'> Our Socials</div>
             <div className='flex items-center gap-3 mt-2 text-muted-foreground'>
-              <Instagram className=' mt-1  text-sm dark:hover:text-white transition ease-in duration-200 delay-150' />
-              <Facebook className=' mt-1  text-sm dark:hover:text-white transition ease-in duration-200 delay-150'/>
-              <LinkedinIcon className=' mt-1  text-sm dark:hover:text-white transition ease-in duration-200 delay-150'/>
+
+             <Link href={'https://www.instagram.com/takingmyclassesonline/'} target="_blank" rel="noopener noreferrer"> 
+             <Image src={'/imgs/instagram.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
+             </Link>
+
+             <Link href={'https://www.facebook.com/takingmyclassesonline/'} target="_blank" rel="noopener noreferrer"> 
+             <Image src={'/imgs/facebook.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
+             </Link>
+
+             <Link href={'https://www.pinterest.com/takingmyclassesonline/'} target="_blank" rel="noopener noreferrer"> 
+             <Image src={'/imgs/pinterest.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
+             </Link>
+
+             <Link href={'https://x.com/takemyclas19231'} target="_blank" rel="noopener noreferrer"> 
+             <Image src={'/imgs/twitter.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
+             </Link>
+             
             </div>
             <div className='flex items-center mt-2'>
               <Image className='m-1' src={'/imgs/americanExpressIcon.webp'} width={40} height={40} alt='american'></Image>

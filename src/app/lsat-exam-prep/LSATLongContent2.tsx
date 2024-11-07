@@ -1,7 +1,10 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import LSATDivider from './LSATDivider';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function LSATLongContent2() {
     const [showMore, setShowMore] = useState(false);
@@ -13,9 +16,21 @@ function LSATLongContent2() {
         }
         setShowMore(!showMore);
     };
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
   return (
     <>
-    <div data-aos='fade-up'>
+    <div ref={ref} data-aos='fade-up'>
         <div className='mx-auto max-w-screen-xl mt-10'>
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='p-5'>

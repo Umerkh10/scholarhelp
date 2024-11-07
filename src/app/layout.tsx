@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "Taking My Classes Online",
     images: [
       {
-        url: "[OG_IMAGE_URL]",
+        url: "",
       },
     ],
     locale: "en",
@@ -73,19 +73,20 @@ export default function RootLayout({
         <meta property="og:site" content="https://takingmyclassesonline.com/" />
         <meta name="author" content="https://takingmyclassesonline.com/" />
         <meta name="language" content="English" />
-        <meta name="expires" httpEquiv="Expires" content="[EXPIRATION_DATE]" />
         <meta name="copyright" content="Copyright 2024 @ Taking My Classes Online" />
-        <meta property="og:image" content="[OG_IMAGE_URL]" />
+        <meta property="og:image" content="https://takingmyclassesonline.com/assets/weblogo.png"/>
         <meta property="og:locale" content="en" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://www.takingmyclassesonline.com/" />
-        <meta property="article:publisher" content="https://www.facebook.com/pages/" />
+        <meta property="article:publisher" content="https://www.facebook.com/takingmyclassesonline/" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:description" content="Pay Someone to Take My Online Class for Me in USA! Having a dedicated team who can assist you in every single step for online class takers and A+ Grade Guaranteed!" />
+        <meta name="twitter:description" content="Concerned about your online classes? Get online class assistance from our professionals. Our lectures, quizzes, tests, midterms, and final examinations." />
         <meta name="twitter:image" content="https://www.takingmyclassesonline.com/images/og_TMCO.jpg?v=1" />
         <meta name="twitter:title" content="A+ Grade Guaranteed: Take My Online Class For Me in USA" />
-        <meta name="twitter:site" content="[TWITTER_ACCOUNT]" />
-        <meta name="twitter:creator" content="[TWITTER_ACCOUNT]"/>
+        <meta name="twitter:site" content="@takemyclas19231" />
+        <meta name="twitter:creator" content="@takemyclas19231"/>
+        <meta name="expires" http-equiv="Expires" content="" />
+        <meta property="og:image" content=""/>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2" />
         <meta name="apple-mobile-web-app-capable" content="yes" />

@@ -1,7 +1,10 @@
 "use client"
 import { SwordsIcon } from 'lucide-react';
 import Image from 'next/image';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function PteFaq() {
     const [openIndex, setOpenIndex] = useState(0);
@@ -27,13 +30,25 @@ function PteFaq() {
          answer: `Our aim is to provide high-quality services to our student community at reasonable pricing, ensuring that every student has access to the greatest assistance at a low cost.` },
     ];
 
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
     
 
     const toggleAccordion = (index:any) => {
         setOpenIndex(openIndex === index ? null : index);
     };
   return (
-    <div className='mx-auto max-w-screen-xl mt-20 mb-10'>
+    <div  ref={ref} className='mx-auto max-w-screen-xl mt-20 mb-10'>
     <h2 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>
     Frequently Asked Questions </h2>
     <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>

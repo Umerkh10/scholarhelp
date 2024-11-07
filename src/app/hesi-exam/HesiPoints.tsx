@@ -1,10 +1,13 @@
 "use client"
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay, Navigation } from 'swiper/modules';
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 const slideData = [
   {
@@ -65,8 +68,20 @@ const Slide = ({ title, description, image, index, ref }: any) => (
 );
 
 function HesiPoints() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
+  useEffect(() => {
+    Aos.init({
+      duration: 800,
+      disable: "mobile",
+      offset: 100,
+    });
+  }, [inView]);
   return (
-    <div className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
+    <div ref={ref} className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
       <h2 className='text-center text-xl md:text-[33px] font-extrabold dark:text-zinc-100 text-zinc-900'> Benefits Of Hiring From {process.env.NEXT_PUBLIC_WEBSITE_NAME}</h2>
       <h3 className='text-center text-lg py-2 md:text-3xl font-bold dark:text-zinc-100 text-zinc-900'>HESI Test Preparation: Tips And Strategy For Success </h3>
       <Swiper

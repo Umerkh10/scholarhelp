@@ -17,14 +17,14 @@ function ThankYou() {
         Thank You For Submitting 
       </h1>
       <h1 className="mt-6 text-lg font-medium  sm:text-xl">
-        Please Check your Mail  we have sent 40% discount offer
+        Please Check your Whatsapp {number}  we have sent you 40% discount offer
       </h1>
       <p className="mt-4  mx-auto">
       Thank you for being here! We’re thrilled to have you as part of our journey and appreciate your interest and support. Your visit means a lot to us, and we&apos;re dedicated to providing you with the best experience possible. Whether you&apos;re here to explore, learn, or shop, we’re always here to help and answer any questions you may have. Stay connected with us for the latest updates, special offers, and more. Once again, thank you for being a valued part of our community. We can’t wait to share exciting things with you in the future!
       </p>
       <div className="mt-6 flex flex-col items-center md:flex-row justify-center gap-4">
         <Link
-          href="/Order"
+          href="/order-now"
           className="flex items-center justify-center hover:scale-105 transition ease-in duration-200 delay-200 py-3 bg-zinc-200 dark:bg-zinc-900 w-[200px] text-black dark:text-zinc-100 border-[2px] border-black dark:border-white rounded-lg"
           prefetch={false}
         >

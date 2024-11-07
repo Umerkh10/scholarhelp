@@ -37,7 +37,7 @@ export const HeroSection = () => {
           </div>
             <div className='flex items-center gap-4'>
             <Image src={'/imgs/record.png'} width={64} height={64} alt='record'></Image>
-          <h3 className='text-center dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>Proven Track <br /> Record</h3>
+          <h3 className='text-left dark:text-zinc-100 text-zinc-900 text-sm md:text-base font-medium'>Proven Track <br /> Record</h3>
           <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
           </div>
             <div className='flex items-center gap-1'>
@@ -74,7 +74,7 @@ export function CtaButtons() {
       </div>
       </Link>
      
-      <Link href={'https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
+      <Link href={'https://wa.me/19179331132?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?'} target="_blank" rel="noopener noreferrer">
       <div className='flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800
 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2'>
         <Image src={"/imgs/whatsapp.png"} width={25} height={25} alt='whatsapp' />
@@ -111,7 +111,7 @@ export function CtaChat() {
     </div>
 
 
-    <Link href="https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" target="_blank" rel="noopener noreferrer">
+    <Link href="https://wa.me/19179331132?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" target="_blank" rel="noopener noreferrer">
       <div className="flex justify-center items-center border-[2px] dark:bg-zinc-100 bg-zinc-800 transition ease-in duration-200 delay-200 hover:scale-105 hover:shadow-lg py-3 px-4 rounded-xl m-2">
         <Image src="/imgs/whatsapp.png" width={25} height={25} alt="whatsapp" />
         <button className="font-medium ml-2 text-background md:text-base text-sm">Chat On Whatsapp</button>

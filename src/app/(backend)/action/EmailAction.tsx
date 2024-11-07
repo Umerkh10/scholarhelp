@@ -391,7 +391,7 @@ async function sendEmailClient(data: any) {
 
       <div style="text-align: center; ">
         <p style="font-size: 20px;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/447418374184?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block;color: #f0f0f0;  padding: 10px 30px; background-color: #3dad32;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 10px; margin: 10px 0; text-align: center; vertical-align: middle;">
+        <a href="https://wa.me/19179331132?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block;color: #f0f0f0;  padding: 10px 30px; background-color: #3dad32;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 10px; margin: 10px 0; text-align: center; vertical-align: middle;">
           <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
         </a>
@@ -493,12 +493,12 @@ function generateStripeLink(unit: string, orderId: string, totalPrice: string) {
   const orderToken = Buffer.from(orderId).toString("base64");
 
   const finalUrl = Buffer.from(
-    `http://localhost:3000/api` // for dev environment
-    // `https://takingmyclassesonline.com/api` // for prod environment
+    // `http://localhost:3000/api` // for dev environment
+    `https://takingmyclassesonline.com/api` // for prod environment
   ).toString("base64");
 
-  const paymentLinkStripe = `https://eduresearchers.com/test-payment/secure-pay-external-2.php?cevpr_havg=${finalPaymentUnit}&cevpr_nzbhag=${finalTotalAmount}&cebqhpg_anzr=${finalProductName}&gbxra_rkgreany=${orderToken}&url=${finalUrl}`;
-  // const paymentLinkStripe = `https://mastermindsenterprises.com/stripe-version-2/secure-pay-external-2.php?cevpr_havg=${finalPaymentUnit}&cevpr_nzbhag=${finalTotalAmount}&cebqhpg_anzr=${finalProductName}&gbxra_rkgreany=${orderToken}&url=${finalUrl}`;
+  // const paymentLinkStripe = `https://eduresearchers.com/test-payment/secure-pay-external-2.php?cevpr_havg=${finalPaymentUnit}&cevpr_nzbhag=${finalTotalAmount}&cebqhpg_anzr=${finalProductName}&gbxra_rkgreany=${orderToken}&url=${finalUrl}`;
+  const paymentLinkStripe = `https://mastermindsenterprises.com/stripe-version-2/secure-pay-external-2.php?cevpr_havg=${finalPaymentUnit}&cevpr_nzbhag=${finalTotalAmount}&cebqhpg_anzr=${finalProductName}&gbxra_rkgreany=${orderToken}&url=${finalUrl}`;
   return paymentLinkStripe
 }
 //https://mastermindsenterprises.com/stripe-version-2/secure-pay-external-2.php?cevpr_havg=$500&cevpr_nzbhag=500&cebqhpg_anzr=digital&gbxra_rkgreany=23443&url=https://scholarhelp.vercel.app/api

@@ -21,7 +21,9 @@ Disallow: /thank-you/
 Disallow: /order-now/
 Disallow: /privacy-policy/
 Disallow: /terms-and-conditions/
+Disallow: /refund-policy/
 Disallow: /contact-us/
+Disallow: /samples/
 
 Sitemap: https://takingmyclassesonline.com/sitemap.xml
 

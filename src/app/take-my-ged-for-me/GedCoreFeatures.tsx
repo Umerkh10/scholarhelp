@@ -1,8 +1,24 @@
-import React from 'react'
+"use client"
+import React, { useEffect } from 'react'
+import { useInView } from 'react-intersection-observer';
+import Aos from 'aos'
+import 'aos/dist/aos.css';
 
 function GedCoreFeatures() {
+    const { ref, inView } = useInView({
+        triggerOnce: false,
+        threshold: 0.1,
+      });
+    
+      useEffect(() => {
+        Aos.init({
+          duration: 800,
+          disable: "mobile",
+          offset: 100,
+        });
+      }, [inView]);
   return (
-    <div data-aos='zoom-in' className='mx-auto max-w-screen-xl mt-10'>
+    <div ref={ref} data-aos='zoom-in' className='mx-auto max-w-screen-xl mt-10'>
     <h2  className='text-center font-extrabold text-xl md:text-[33px]  '>Key Features</h2>
     <div className='grid lg:grid-cols-3 grid-cols-1 gap-3 py-5'>
         <div data-aos='flip-right' className='group'>
