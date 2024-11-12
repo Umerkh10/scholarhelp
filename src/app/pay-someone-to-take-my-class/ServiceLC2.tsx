@@ -80,7 +80,7 @@ function DynamicContent2() {
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     I need to Pay Someone to Take My Class Affordable and Focus on Student Learning Objective </h3>
 
-                    <p className='font-medium  md:text-base text-sm pt-4'>While teaching through online classes, our instructor set a goal of achieving students&apos; learning objectives. Actually, these objectives evaluate how much students&apos; skills are improved through this online lesson. However, if you’re looking to pay someone for <Link href={'/take-my-ged-for-me'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> “Do my GED online”</Link>  or any other exam services, then this is the right learning platform for you. </p>
+                    <p className='font-medium  md:text-base text-sm pt-4'>While teaching through online classes, our instructor set a goal of achieving students&apos; learning objectives. Actually, these objectives evaluate how much students&apos; skills are improved through this online lesson. However, if you’re looking to pay someone for “<Link href={'/take-my-ged-for-me'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>Do my GED online</Link>”  or any other exam services, then this is the right learning platform for you. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Utilize Marking Scheme and Subject Exam Resources </h3>

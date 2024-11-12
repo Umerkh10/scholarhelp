@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className=''>
         <div  className='bg-gradient-to-b from-blue-200 via-violet-200 to-zinc-100 dark:bg-gradient-to-b dark:from-purple-900 dark:via-indigo-900 dark:to-zinc-950 grid lg:grid-cols-6 grid-cols-1 p-5 container  '>
-          <div className=' col-span-2 p-4'>
+          <div className=' lg:col-span-2 p-4'>
           <Link href={'/'} className='flex items-center gap-2'>
           <img className="block dark:hidden" src={'/assets/weblogo.png'} width={80} height={80} alt="logo" />
           <Image className="dark:block hidden" src={'/assets/weblogodark.png'} width={80} height={80} alt="logo"></Image>
@@ -77,6 +77,14 @@ const Footer = () => {
 
              <Link href={'https://x.com/takemyclas19231'} target="_blank" rel="noopener noreferrer"> 
              <Image src={'/imgs/twitter.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
+             </Link>
+
+             <Link href={'https://www.linkedin.com/company/takingmyclassesonline/'} target="_blank" rel="noopener noreferrer"> 
+             <Image src={'/imgs/linkedin.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
+             </Link>
+
+             <Link href={'https://www.youtube.com/@takingmyclassesonline'} target="_blank" rel="noopener noreferrer"> 
+             <Image src={'/imgs/youtube.png'} width={32} height={32} className=' mt-1  ' alt='pintrest'></Image> 
              </Link>
              
             </div>

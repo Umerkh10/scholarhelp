@@ -41,7 +41,7 @@ export default function Navbar2() {
         }))
     }
     return (
-        <nav className="fixed z-50 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <nav className=" z-50 w-full border-b bg-background backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
             <div className="flex justify-between py-2">
                 <div className="flex items-center">
@@ -69,12 +69,14 @@ export default function Navbar2() {
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent className='grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]'>
                                     {services.map((service, index) => (
+                                        <Link key={index} href={service.href}>
                                         <DropdownMenuItem
-                                            key={index}
-                                            className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'
+                                            
+                                            className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-zinc-100 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition ease-in duration-150 delay-150 hover:scale-105 hover:bg-violet-500 focus:bg-violet-500 cursor-pointer '
                                         >
-                                            <Link href={service.href}>{service.title}</Link>
+                                            {service.title}
                                         </DropdownMenuItem>
+                                        </Link>
                                     ))}
                                 </DropdownMenuContent>
                             </div>
@@ -103,18 +105,28 @@ export default function Navbar2() {
                                     </Button>
                                 </DropdownMenuTrigger>
                                 <DropdownMenuContent className='grid gap-3 p-4 lg:grid-cols-2 lg:w-[400px]'>
-                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
-                                        <Link href="/gre-sample-papers">GRE Sample Papers</Link>
+                                <Link href="/gre-sample-papers">
+                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-zinc-100 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition ease-in duration-150 delay-150 hover:scale-105 hover:bg-violet-500 focus:bg-violet-500 cursor-pointer'>
+                                       GRE Sample Papers
                                     </DropdownMenuItem>
-                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
-                                        <Link href="/ged-sample-papers">GED Sample Paper</Link>
+                                    </Link>
+                                    <Link href="/ged-sample-papers">
+                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-zinc-100 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition ease-in duration-150 delay-150 hover:scale-105 hover:bg-violet-500 focus:bg-violet-500 cursor-pointer'>
+                                        GED Sample Paper
                                     </DropdownMenuItem>
-                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
-                                        <Link href="/gmat-sample-papers">GMAT Sample Paper</Link>
+                                    </Link>
+
+                                    <Link href="/gmat-sample-papers">
+                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-zinc-100 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition ease-in duration-150 delay-150 hover:scale-105 hover:bg-violet-500 focus:bg-violet-500 cursor-pointer'>
+                                        GMAT Sample Paper
                                     </DropdownMenuItem>
-                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-purple-500 dark:hover:text-purple-400 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground'>
-                                        <Link href="/lsat-sample-papers">LSAT Sample Paper</Link>
+                                    </Link>
+
+                                    <Link href="/lsat-sample-papers">
+                                    <DropdownMenuItem className='font-medium dark:text-zinc-200 text-zinc-800 hover:text-zinc-100 block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition ease-in duration-150 delay-150 hover:scale-105 hover:bg-violet-500 focus:bg-violet-500 cursor-pointer'>
+                                        LSAT Sample Paper
                                     </DropdownMenuItem>
+                                    </Link>
                                 </DropdownMenuContent>
                             </div>
                         </DropdownMenu>

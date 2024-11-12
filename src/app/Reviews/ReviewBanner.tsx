@@ -14,7 +14,7 @@ function ReviewBanner() {
       const totalReviews = reviews.reduce((acc, review) => acc + review.count, 0)
   return (
 
-    <div className='w-full py-10'>
+    <div className='w-full '>
     <div className='bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]  '>
     <div className=" overflow-hidden grid md:grid-cols-2 items-center mx-auto max-w-screen-xl py-10">
       <div className=" ">

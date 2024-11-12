@@ -3,7 +3,7 @@ import React from 'react'
 
 function GedSampleContent() {
   return (
-    <div className='max-w-screen-xl mx-auto pt-32 px-5'>
+    <div className='max-w-screen-xl mx-auto pt-20 px-5'>
     <h1 className='text-center font-extrabold md:text-4xl text-xl'>A Comprehensive Guide: How to prepare for GED exam</h1>
     <h2 className='font-bold md:text-2xl text-lg pt-5'>Necessary Guide To Help You In GED Preparation </h2>
     <p className='font-medium text-sm md:text-base pt-2'>The GED test is the alternative test for the high school diploma. However, this exam is mainly of  4 subjects that are important to pass the GED exam. These subjects need special attention and require lots of practice to be mastered in each of the subject topics. Schedule a plan and point out the certain topics that need your attention. Conducting research, thoroughly revising the content, and certain exercises could be essential to passing your exams with good grades.</p>

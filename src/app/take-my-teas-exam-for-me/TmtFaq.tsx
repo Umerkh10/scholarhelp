@@ -47,7 +47,7 @@ function TmtFaq() {
     <div ref={ref} className='mx-auto max-w-screen-xl mt-20 mb-10'>
     <h2 className='text-center text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950 '>Frequently Asked Questions
     </h2>
-    <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>The list of questions that are frequently asked by Our Clients
+    <h3 className='text-center pt-3 text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>The list of questions that are frequently asked by Our Clients
     </h3>
 
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
@@ -62,13 +62,13 @@ function TmtFaq() {
         {questions.map((item, index) => (
             <div  data-aos="flip-down" className="md:pt-6 pt-8 "  key={index}>
                 <h4 
-                    className="cursor-pointer py-6 px-4 rounded rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-lg md:font-medium flex justify-between group bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800 transition ease-in duration-150 delay-100 "
+                    className="cursor-pointer py-6 px-4 rounded-tr-[20px] rounded-tl-[20px] font-medium md:text-lg md:font-medium flex justify-between group bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800 transition ease-in duration-150 delay-100 "
                     onClick={() => toggleAccordion(index) }  >
                     {item.question}
                     <SwordsIcon className='  group-hover:rotate-180 group-hover:stroke-gray-700 transition ease-in duration-200 delay-100 '/>
                 </h4>
                 {openIndex === index && (
-                    <p className="  py-4 px-4 rounded  rounded-br-[10px] rounded-bl-[10px] text-base bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800">
+                    <p className="  py-4 px-4 rounded-br-[10px] rounded-bl-[10px] text-base bg-gradient-to-l from-sky-200 via-purple-200 to-zinc-300 text-zinc-800">
                         {item.answer}
                     </p>
                 )}

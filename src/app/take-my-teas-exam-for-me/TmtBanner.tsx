@@ -23,7 +23,7 @@ function TmtBanner() {
   return (
     <div ref={ref} className='m-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:-z-10 dark:m-h-[500px] dark:w-full dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
     <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl py-10 '>
-      <div className='py-20 px-5 md:pt-40'>
+      <div className='py-20 px-5 '>
         <h1 className=' text-center py-2 leading-none lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-[35px] font-extrabold '>Take My Teas Exam For Me : A Complete Guide For Success</h1>
         <h2 className='text-center py-1 mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-semibold'>Get Take My TEAS For Me Service For Academic Success.</h2>
         <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 mt-2'>
@@ -48,7 +48,7 @@ function TmtBanner() {
         <CtaButtons/>
       </div>
 
-      <div className='pb-5 px-5 md:pt-24'>
+      <div className='pb-5 px-5 md:pt-12'>
         <BannerForm/>
       </div>
 

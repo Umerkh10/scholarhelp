@@ -21,7 +21,7 @@ function RefundPolicy() {
   return (
     <div className='mx-auto max-w-screen-xl p-5' ref={ref} >
 
-  <h2 className='pt-24 font-bold md:text-2xl text-sm'data-aos='flip-down' >A client shall be eligible for refund under the following circumstances:</h2>
+  <h2 className='pt-14 font-bold md:text-2xl text-sm'data-aos='flip-down' >A client shall be eligible for refund under the following circumstances:</h2>
   
   <ul className='font-medium space-y-3 pt-4 ' data-aos='flip-down'>
     <li> 1.	In case all the requirements are shared by the client initially, which are not met even after 5 revisions.</li>

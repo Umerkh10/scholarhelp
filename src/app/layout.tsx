@@ -7,6 +7,7 @@ import Navbar2 from "./(Home)/_components/Navbar2";
 import Tawkto from "@/lib/Tawto";
 import ScrollToTop from "./ScrollToTop";
 import Head from "next/head";
+import TopBar from "./(Home)/TopBar";
 
 const canonicalUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
@@ -18,25 +19,12 @@ const inter = Montserrat({
 // Export metadata including the static canonical URL
 export const metadata: Metadata = {
   title: {
-    template: "%s | A+ Grade Guaranteed: Taking My Classes Online For Me in USA",
+    template: "%s",
     default: "A+ Grade Guaranteed: Taking My Classes Online For Me in USA",
   },
   description: "Pay Someone to Taking My Classes Online for Me in USA! Having a dedicated team who can assist you in every single step for online class takers and A+ Grade Guaranteed!",
   alternates: {
     canonical: canonicalUrl,
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
   },
   openGraph: {
     type: "article",
@@ -109,7 +97,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <script
+        {/* <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
@@ -129,7 +117,7 @@ export default function RootLayout({
               "logo": ""
             }),
           }}
-        />
+        /> */}
  
       </head>
   
@@ -137,6 +125,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} disableTransitionOnChange>
           <Tawkto />
           <ScrollToTop />
+          <TopBar/>
           <Navbar2 />
           {children}
           <Footer />

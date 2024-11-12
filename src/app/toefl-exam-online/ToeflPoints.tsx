@@ -13,7 +13,7 @@ const slideData = [
     {
       id: 1,
       title: 'Committed And Dedicated Instructors ',
-      description: `Takemyclassesonline are known for their prominent service to their students and helping them to achieve desired results in their exams. `,
+      description: `Take my classes online are known for their prominent service to their students and helping them to achieve desired results in their exams. `,
       image: '/imgs/gre-points-1.png',
     },
     {

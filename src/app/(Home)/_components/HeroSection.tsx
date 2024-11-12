@@ -21,12 +21,12 @@ export const HeroSection = () => {
       disable: "mobile",
       offset: 100,
     });
-  }, [inView]);
+  }, [inView]);2
   return (
 
     <div ref={ref} className='m-h-[500px] border-b-2 border-indigo-200 -z-10 h-full w-full bg-gradient-to-t from-sky-200 via-purple-200 to-zinc-100 dark:-z-10 dark:m-h-[500px] dark:w-full dark:[background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]'>
       <div className='grid lg:grid-cols-2 grid-cols-1 mx-auto max-w-screen-xl py-10 '>
-        <div className='py-20 px-5 md:pt-36'>
+        <div className='py-20 px-5 '>
           <h1 className=' text-center py-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-lg sm:text-4xl font-extrabold '>Take My Online Class for me in USA and Ace My Exam</h1>
           <h2 className='text-center mt-2 lg:text-left dark:text-zinc-100 text-zinc-900  sm:text-2xl font-medium'>Taking My Affordable Classes Online Guarantee You the Academic Distinction</h2>
           <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 sm:mt-2 mt-6'>
@@ -49,7 +49,7 @@ export const HeroSection = () => {
           <CtaButtons />
         </div>
 
-        <div className='pb-5 px-5 md:pt-24'>
+        <div className='pb-5 px-5 md:pt-12'>
           <BannerForm />
         </div>
 

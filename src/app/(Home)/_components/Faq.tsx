@@ -41,7 +41,7 @@ const Faq = () => {
     return (
         <div ref={ref} className='mx-auto max-w-screen-xl mt-10'>
             <h2 className='text-center px-4 text-xl lg:text-4xl font-extrabold dark:text-zinc-100 text-indigo-950'>Frequently Asked Questions</h2>
-            <h3 className='text-center px-4 text-lg  lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950'>The list of questions that are frequently asked by Our Clients</h3>
+            <h3 className='text-center px-4 text-lg py-2 lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950'>The list of questions that are frequently asked by Our Clients</h3>
 
             <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>
                 <div data-aos="zoom-in-down" className=''>

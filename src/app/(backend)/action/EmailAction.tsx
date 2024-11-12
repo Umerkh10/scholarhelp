@@ -478,6 +478,8 @@ async function sendEmailSupport(data: any) {
     attachments: file,
   };
 
+  console.log("file",file);
+
   try {
     const info = await transporter.sendMail(supportMailOptions);
     console.log("support Email sent:", info.messageId);

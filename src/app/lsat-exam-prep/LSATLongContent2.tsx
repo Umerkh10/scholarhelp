@@ -40,7 +40,7 @@ function LSATLongContent2() {
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Wondering How Long Is the LSAT Exam? A Necessary Guide</h3>
-                <p className='font-medium  md:text-base text-sm pt-4 '>The LSAT exam registration form provides complete details about the exam. The standard time to complete the LSAT is 3 hours. Dividing your time for each section strategically can help you finish the exam within the given timeframe.</p>
+                <p className='font-medium  md:text-base text-sm pt-4 '>The LSAT exam registration form provides complete details about the exam. The standard time to complete the LSAT is 3 hours. Dividing your time for each section strategically can help you finish the exam within the given time-frame.</p>
 
                 {showMore ? <DynamicContent1 /> : null}
 
@@ -75,13 +75,12 @@ function DynamicContent2() {
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Utilize Marking Scheme and Subject Exam Resources</h3>
 
-                    <p className='font-medium  md:text-base text-sm pt-4'>The main reason why every student <Link href={'/pay-someone-to-take-my-class'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> hire someone to take a test</Link> is for better marks, as grades often determine the direction of their future academic and career paths. We provide every help to our students to get them their desired marks so that they can get admission to their desired institute. </p>
+                    <p className='font-medium  md:text-base text-sm pt-4'>The main reason why every student <Link href={'/pay-someone-to-take-my-class'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>hire someone to take a test</Link> is for better marks, as grades often determine the direction of their future academic and career paths. We provide every help to our students to get them their desired marks so that they can get admission to their desired institute. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Can the Instructor Arrange Activities?</h3>
 
-                    <p className='font-medium  md:text-base text-sm pt-4'>Online lectures can be boring sometimes. However, Our experts use different methodologies to help the students to be engaged in some activities regarding their subject so that they feel refreshed every day. Utilize 
-                    <Link href={'/take-my-teas-exam-for-me'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> “take my teas for me” </Link> services and get desired results. </p>
+                    <p className='font-medium  md:text-base text-sm pt-4'>Online lectures can be boring sometimes. However, Our experts use different methodologies to help the students to be engaged in some activities regarding their subject so that they feel refreshed every day. Utilize “<Link href={'/take-my-teas-exam-for-me'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>take my teas for me</Link>” services and get desired results. </p>
 
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Priorities Lesson Tasks while Delivering According to the Students&apos; Approach</h3>
@@ -122,11 +121,11 @@ function DynamicContent1() {
 
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 What are the Strategies of Our Online Instructors</h2>
-                <p className='font-medium  md:text-base text-sm pt-4'>Our expert instructors are highly certified and experienced in various exam formats which not only help you in LSAT exam format but also access you every exam. They are highly qualified and experienced which is one of the reasons why every student is successful in their academic journey. Join us! And get benefits from our services throughout your academic career .Enroll to <Link href={'/'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> ”take my class for me online”</Link>  and succeed with expert support. </p>
+                <p className='font-medium  md:text-base text-sm pt-4'>Our expert instructors are highly certified and experienced in various exam formats which not only help you in LSAT exam format but also access you every exam. They are highly qualified and experienced which is one of the reasons why every student is successful in their academic journey. Join us! And get benefits from our services throughout your academic career. Enroll to &quot;<Link href={'/'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>take my class for me online</Link>&quot; and succeed with expert support. </p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Try Free Practice Of LSAT Exam</h3>
-                <p className='font-medium  md:text-base text-sm pt-4'>The engaging lecture is one of the main components of the lesson plan. Our expert schedules engaging lectures to make you motivated throughout the journey and also help you in preparing for every exam format. Including  <Link href={'/toefl-exam-online'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> mock toefl exam online</Link> . We secure your data with us so that your data won’t get disclosed with any of the others. Get free practice for the LSAT exam with us.</p>
+                <p className='font-medium  md:text-base text-sm pt-4'>The engaging lecture is one of the main components of the lesson plan. Our expert schedules engaging lectures to make you motivated throughout the journey and also help you in preparing for every exam format. Including  <Link href={'/toefl-exam-online'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> mock toefl exam online</Link>. We secure your data with us so that your data won’t get disclosed with any of the others. Get free practice for the LSAT exam with us.</p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Wondering For The LSAT Exam Date 2024? Here’s What You Need to Know!</h3>

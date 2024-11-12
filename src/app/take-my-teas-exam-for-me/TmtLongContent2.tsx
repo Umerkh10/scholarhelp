@@ -35,7 +35,7 @@ function TmtLongContent2() {
             <div className='h-[2px] w-full bg-zinc-800'></div>
             <div className='p-5'>
                 <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950   '>Take My Classes Online : A Step To Success </h2>
-                <p className='font-medium  md:text-base text-sm pt-4 '>Online education has become pivotal resources for students seeking flexibility and convenience. Takingmyclassesonline.com is offering a solution for every student to balance their academic and work life, allowing you to focus on studies without the constraint of a classroom setting.<Link href={'/'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>“Take my classes for me” </Link>  Service will assure you to achieve exceptional marks in your exams. We have hired experts to take online courses on students’ behalf. We maintain an effective schedule, ensuring that every student gets the support they need to succeed.  </p>
+                <p className='font-medium  md:text-base text-sm pt-4 '>Online education has become pivotal resources for students seeking flexibility and convenience. Takingmyclassesonline.com is offering a solution for every student to balance their academic and work life, allowing you to focus on studies without the constraint of a classroom setting. <Link href={'/'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>“Take my classes for me” </Link>  Service will assure you to achieve exceptional marks in your exams. We have hired experts to take online courses on students’ behalf. We maintain an effective schedule, ensuring that every student gets the support they need to succeed.  </p>
 
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
@@ -103,7 +103,7 @@ function DynamicContent1() {
 
                 <h3 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 What Are The Objectives Of Lesson Planning</h3>
-                <p className='font-medium  md:text-base text-sm pt-4'>Our aim is to provide every student with valuable education which helps them in sorting out their stress and queries. This platform has many services including <Link href={'/hesi-exam'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '> “take my HESI exam for me”</Link>  and many more to help you to achieve better results.</p>
+                <p className='font-medium  md:text-base text-sm pt-4'>Our aim is to provide every student with valuable education which helps them in sorting out their stress and queries. This platform has many services including “<Link href={'/hesi-exam'} className='text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150 '>take my HESI exam for me</Link>”  and many more to help you to achieve better results.</p>
 
                 <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                 Advantages Of Marking Scheme And Subject Exam Resources </h3>

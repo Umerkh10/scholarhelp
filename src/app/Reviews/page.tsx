@@ -9,6 +9,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.takingmyclassesonline.com/reviews",
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 function page() {

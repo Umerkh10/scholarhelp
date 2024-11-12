@@ -72,7 +72,7 @@ export default PteLongContent2
 function DynamicContent2() {
     return (
         <>
-            <div className='mx-auto max-w-screen-xl mt-5'>
+            <div className='mx-auto max-w-screen-xl '>
                 <div className='p-5'>
                     <h2 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     Benefits Of Online Learning Service</h2>

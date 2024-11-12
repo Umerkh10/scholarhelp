@@ -3,7 +3,7 @@ import React from 'react'
 
 function GreSampleContent() {
   return (
-    <div className='max-w-screen-xl mx-auto pt-32 px-5'>
+    <div className='max-w-screen-xl mx-auto pt-20 px-5'>
         <h1 className='text-center font-extrabold md:text-4xl text-xl'>How to Study For the GRE Exam</h1>
         <h2 className='font-bold md:text-2xl text-lg pt-5'>Tips and Techniques To Prepare For the GRE Exam</h2>
         <p className='font-medium text-sm md:text-base pt-2'>The GRE identifies your worth in taking the MBA program at a top university. However, passing this exam is not a cup of tea. Students struggle to find themselves with good grades, which ends their expectations of getting admission to the top university in dust. Therefore, we have compiled all the strategies to help you get prepared for the GREs.</p>

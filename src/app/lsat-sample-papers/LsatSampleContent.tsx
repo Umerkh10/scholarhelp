@@ -3,7 +3,7 @@ import React from 'react'
 
 function LsatSampleContent() {
   return (
-    <div className='max-w-screen-xl mx-auto pt-32 px-5'>
+    <div className='max-w-screen-xl mx-auto pt-20 px-5'>
     <h1 className='text-center font-extrabold md:text-4xl text-xl'>Significance Of the LSAT sample Paper</h1>
     <h2 className='font-bold md:text-2xl text-lg pt-5'>How to Prepare for the LSAT Exam: A Complete Study</h2>
     <p className='font-medium text-sm md:text-base pt-2'>The first step to admission to law school requires passing the LSAT exam. This shows the significant value of this exam. However, many students struggle to get admission to the top universities as they can’t attain desirable results in the LSAT exam. To prepare for the exam, one should prepare a schedule and write down all the topics according to the importance of the task. Analyze the content, take expert guides, and perform some of the topic exercises that could help in clearing doubts and improving learning capability. </p>

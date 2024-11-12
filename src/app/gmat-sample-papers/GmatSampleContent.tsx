@@ -3,7 +3,7 @@ import React from 'react'
 
 function GmatSampleContent() {
   return (
-    <div className='max-w-screen-xl mx-auto pt-32 px-5'>
+    <div className='max-w-screen-xl mx-auto pt-20 px-5'>
     <h1 className='text-center font-extrabold md:text-4xl text-xl'>Get Reliable Support In the GMAT Exam</h1>
     <h2 className='font-bold md:text-2xl text-lg pt-5'>Study Plan: A Complete Guide For the Preparation of the GMAT Exam </h2>
     <p className='font-medium text-sm md:text-base pt-2'>The GMAT is a standardized test that checks the student&apos;s capability to undertake graduate study in business school. Many students struggle to achieve desirable results in order to be admitted to top universities. Although they practice a lot but can’t flourish in the exam. Every exam needs the attention and focus of a student the most. Furthermore, preparing for the GMAT means to prepare all of the accounting subjects, including algebra, accounting, math, and more. Preparing for GMAT exams is challenging, especially due to the mathematical sections that many find difficult to master. </p>

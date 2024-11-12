@@ -71,7 +71,7 @@ function TmGreExamPoints() {
   return (
     <div ref={ref} className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
     <h2 className='text-center text-xl md:text-[33px] font-extrabold dark:text-zinc-100 text-zinc-900'>Check out How Much Is It To Take The GRE at Affordable Package </h2>
-    <h3 className='text-center text-lg py-2 md:text-3xl font-bold dark:text-zinc-100 text-zinc-900'>Where can i take my GRE Service Across the USA</h3>
+    <h3 className='text-center text-lg py-3 md:text-3xl font-bold dark:text-zinc-100 text-zinc-900'>Where can i take my GRE Service Across the USA</h3>
     <Swiper
       loop={true}
       spaceBetween={20}

@@ -51,7 +51,7 @@ function PteFaq() {
     <div  ref={ref} className='mx-auto max-w-screen-xl mt-20 mb-10'>
     <h2 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>
     Frequently Asked Questions </h2>
-    <h3 className='text-center text-lg lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>
+    <h3 className='text-center text-lg pt-3 lg:text-3xl font-bold dark:text-zinc-100 text-indigo-950 '>
     A list of frequently asked questions by our clients.</h3>
 
     <div className='grid lg:grid-cols-2 grid-cols-1 lg:gap-4 p-5'>

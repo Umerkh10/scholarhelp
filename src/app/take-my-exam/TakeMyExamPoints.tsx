@@ -84,7 +84,7 @@ function TakeMyExamPoints() {
   }, [inView]);
   return (
     <div ref={ref}  className='mx-auto max-w-screen-xl mt-10 p-3 lg:p-6'>
-      <h2 className='text-center text-xl md:text-[33px] font-extrabold dark:text-zinc-100 text-zinc-900'>
+      <h2 className='text-center leading-tight text-xl md:text-[33px] font-extrabold dark:text-zinc-100 text-zinc-900'>
         Need an Affordable exam helper? Get Reliable support and Achieve Your Desired Benefits
       </h2>
       <h3 className='text-center text-lg py-2 md:text-3xl font-bold dark:text-zinc-100 text-zinc-900'>
