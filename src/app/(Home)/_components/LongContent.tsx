@@ -134,8 +134,7 @@ function DynamicContent1() {
  
     <div > 
         <h2 className='font-extrabold text-xl md:text-4xl dark:text-zinc-100 text-indigo-950 mt-3'>The Evaluation of Online Classes System Over Education System </h2>
-    <p className='font-medium  md:text-base text-sm pt-4 '>Today’s world is moving towards virtual opportunities. With the advent of AI, technology, and better internet connections worldwide, taking online classes has become common. You can enrol in an online class anywhere. If you write on Google ‘<Link href={'/take-my-exam'} className=' text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150' >
-    do my exam online</Link>’ , you will find a number of services. You only need a laptop and an internet connection to access the classes. Moreover, we now witness virtual universities offering online courses instead of virtual classes. Lastly, this evaluation signifies the value of online classes.  </p>
+    <p className='font-medium  md:text-base text-sm pt-4 '>Today’s world is moving towards virtual opportunities. With the advent of AI, technology, and better internet connections worldwide, taking online classes has become common. You can enrol in an online class anywhere. If you write on Google ‘<Link href={'/take-my-exam'} className=' text-blue-500 hover:underline underline-offset-2 transition ease-in duration-150 delay-150' >do my exam online</Link>’, you will find a number of services. You only need a laptop and an internet connection to access the classes. Moreover, we now witness virtual universities offering online courses instead of virtual classes. Lastly, this evaluation signifies the value of online classes.  </p>
 
     <div className='flex items-center mt-3 '>
         <ArrowRightIcon />

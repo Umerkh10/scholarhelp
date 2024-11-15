@@ -27,19 +27,19 @@ function ServiceBanner() {
         <h1 className=' text-center py-2 leading-none lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-[35px] font-extrabold '>Pay someone to take my class and Develop My Learning Skills</h1>
         <h2 className='text-center py-1 mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-semibold'>Can I Pay Someone to Do My Online Class with a Cheap Package</h2>
         <div className='flex flex-col lg:flex-row items-center xl:w-[54vw] gap-4 mt-2'>
-          <div className='flex items-center gap-3'>
+          <div className='flex items-center gap-2'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online PhD Instructor  <br />for Assistance </h3>
+        <h3 className='text-left dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online PhD Instructor  <br />for Assistance </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
-          <div className='flex items-center gap-3'>
+          <div className='flex items-center gap-2'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>User-Friendly <br /> Legit Service</h3>
+        <h3 className='text-left dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>User-Friendly <br /> Legit Service</h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-1'>
           <Image src={'/imgs/affordable.png'} width={50} height={50} alt='phd'></Image>
-        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online Engaging Lectures</h3>
+        <h3 className='ml-1 dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online Engaging <br /> Lectures</h3>
         <div className='hidden lg:block w-[2px] h-16 bg-muted-foreground/0 '></div>
         </div>
         </div>

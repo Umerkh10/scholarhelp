@@ -8,7 +8,6 @@ import PteCoreFeatures from './PteCoreFeatures';
 import PteLongContent2 from './PteLongContent2';
 import PteFaq from './PteFaq';
 import { Metadata } from 'next';
-import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'PTE Academic English Test Online | Guaranteed Best Score',
@@ -31,13 +30,14 @@ export const metadata: Metadata = {
   },
 };
 
-function Page() {
+const Page: React.FC = () => {
   return (
     <div>
-      <Head>
-        <script type="application/ld+json">
-          {`
-          {
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Taking My Classes Online",
@@ -57,33 +57,33 @@ function Page() {
               "https://www.linkedin.com/company/takingmyclassesonline/",
               "https://www.youtube.com/@takingmyclassesonline"
             ]
-          }
-          `}
-        </script>
-
-        <script type="application/ld+json">
-          {`
-          {
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "Taking My Classes Online",
             "alternateName": "Takingmyclassesonline",
-            "url": "https://takingmyclassesonline.com/pte-academic-online",
+            "url": "https://www.takingmyclassesonline.com/pte-academic-online",
             "potentialAction": {
               "@type": "SearchAction",
               "target": "https://www.takingmyclassesonline.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
-          }
-          `}
-        </script>
-
-        <script type="application/ld+json">
-          {`
-          {
-            "@context": "https://schema.org/", 
-            "@type": "Product", 
-            "name": "takingmyclassesonline",
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Taking My Classes Online",
             "image": "https://takingmyclassesonline.com/assets/weblogo.png",
             "description": "Get the complete guide to the PTE Academic Test online from the industry professionals for the USA. Helping to pass with 100% A+ Score guaranteed results.",
             "brand": {
@@ -95,13 +95,13 @@ function Page() {
               "ratingValue": "4.8",
               "ratingCount": "36"
             }
-          }
-          `}
-        </script>
-
-        <script type="application/ld+json">
-          {`
-          {
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [{
@@ -147,11 +147,9 @@ function Page() {
                 "text": "Our aim is to provide high-quality services to our student community at reasonable pricing, ensuring that every student has access to the greatest assistance at a low cost."
               }
             }]
-          }
-          `}
-        </script>
-      </Head>
-      
+          })
+        }}
+      />
       <PteBanner />
       <PteLongContent />
       <PteFlow />

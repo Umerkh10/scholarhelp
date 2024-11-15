@@ -33,8 +33,7 @@ export const metadata: Metadata = {
 
 const Page: React.FC = () => {
   return (
-    <>
-      <Head>
+      <div>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
@@ -141,9 +140,9 @@ const Page: React.FC = () => {
             }
           ]
         })}} />
-      </Head>
 
-      <div>
+
+      
         <TmtBanner />
         <TmtLongContent />
         <TmtFlow />
@@ -153,7 +152,7 @@ const Page: React.FC = () => {
         <TmtLongContent2 />
         <TmtFaq />
       </div>
-    </>
+
   );
 };
 

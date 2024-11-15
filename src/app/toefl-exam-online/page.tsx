@@ -33,8 +33,8 @@ export const metadata: Metadata = {
 
 const Page: React.FC = () => {
   return (
-    <>
-      <Head>
+  
+      <div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -150,8 +150,7 @@ const Page: React.FC = () => {
             }),
           }}
         />
-      </Head>
-      <div>
+     
         <ToeflBanner />
         <ToeflLongContent />
         <ToeflFlow />
@@ -161,7 +160,7 @@ const Page: React.FC = () => {
         <ToeflLongContent2 />
         <ToeFlFAQ />
       </div>
-    </>
+    
   );
 };
 

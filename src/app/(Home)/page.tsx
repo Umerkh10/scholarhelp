@@ -17,6 +17,9 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Take My Online Class for me',
   description: 'Pay Someone to Taking My Classes Online for Me in USA! Having a dedicated team who can assist you in every single step for online class takers and A+ Grade Guaranteed!',
+  alternates: {
+    canonical: 'https://www.takingmyclassesonline.com/',
+  },
   robots: {
     index: true,
     follow: true,

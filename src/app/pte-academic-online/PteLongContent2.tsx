@@ -73,8 +73,8 @@ function DynamicContent2() {
     return (
         <>
             <div className='mx-auto max-w-screen-xl '>
-                <div className='p-5'>
-                    <h2 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
+                <div className='p-3'>
+                    <h2 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950'>
                     Benefits Of Online Learning Service</h2>
 
                     <p className='font-medium  md:text-base text-sm pt-4'>As a result, online learning services are extremely advantageous for students studying for the PTE Academic Test since they allow them to study from home in their own comfort. The individual has free access to practice online with the PTE Academic test and free PTE Academic speaking practice exam online, which helps him focus and remember skills better, increasing his confidence in answering questions more accurately and effectively.  </p>

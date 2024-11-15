@@ -29,12 +29,12 @@ function TmtBanner() {
         <div className='flex flex-col lg:flex-row items-center xl:w-[50vw] gap-4 mt-2'>
           <div className='flex items-center gap-3'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Expert <br /> Guidelines</h3>
+        <h3 className='text-left dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Expert <br /> Guidelines</h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
           <div className='flex items-center gap-3'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>User-friendly <br /> Support 
+        <h3 className='text-left dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>User-friendly <br /> Support 
         </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>

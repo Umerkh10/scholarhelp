@@ -28,10 +28,10 @@ export default function Modal() {
           >
             <DialogHeader>
               <DialogTitle className=" text-center font-bold text-2xl text-zinc-100 pt-8">
-                Congratulations
+              Congratulations! 🎉
               </DialogTitle>
-              <DialogDescription className=" text-center py-4 font-semibold text-xl text-zinc-100">
-                40%-OFF Discount Applied
+              <DialogDescription className=" text-center py-4 font-semibold text-sm text-zinc-100">
+              You’ve just unlocked an amazing 40% OFF discount on your order! We’re thrilled to offer you this special savings. Your discount has been successfully applied, so you can enjoy even more value from your purchase. Thank you for choosing us, and we hope you love what’s coming your way!
               </DialogDescription>
             </DialogHeader>
           </DialogContent>

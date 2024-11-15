@@ -35,11 +35,12 @@ export const metadata: Metadata = {
 function Page() {
   return (
     <div>
-      {/* Structured Data (JSON-LD) in the <head> */}
-      <Head>
-        <script type="application/ld+json">
-          {`
-            {
+  
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Taking My Classes Online",
@@ -59,30 +60,32 @@ function Page() {
                 "https://www.linkedin.com/company/takingmyclassesonline/",
                 "https://www.youtube.com/@takingmyclassesonline"
               ]
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "https://schema.org/",
               "@type": "WebSite",
               "name": "Taking My Classes Online",
-              "alternateName" : "Takingmyclassesonline",
+              "alternateName": "Takingmyclassesonline",
               "url": "https://takingmyclassesonline.com/pay-someone-to-take-my-class",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "https://www.takingmyclassesonline.com/search?q={search_term_string}",
                 "query-input": "required name=search_term_string"
               }
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org/", 
-              "@type": "Product", 
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org/",
+              "@type": "Product",
               "name": "takingmyclassesonline",
               "image": "https://takingmyclassesonline.com/assets/weblogo.png",
               "description": "Get Pay someone to take your online class from takingmyclassesonline.com and get 50% off on the first order, stress-free experiences with expert writers.",
@@ -95,61 +98,68 @@ function Page() {
                 "ratingValue": "4.8",
                 "ratingCount": "36"
               }
-            }
-          `}
-        </script>
-        <script type="application/ld+json">
-          {`
-            {
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "FAQPage",
-              "mainEntity": [{
-                "@type": "Question",
-                "name": "takingmyclassesonline.com is there any difference: take my online class?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "takingmyclassesonline.com is the most recommended and top-ranked service throughout the USA. Furthermore, their online lecturers are committed, highly qualified, and expert. Also, they offer affordable packages to their clients. Along with these things, they follow a study plan to build engaged learners."
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "takingmyclassesonline.com is there any difference: take my online class?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "takingmyclassesonline.com is the most recommended and top-ranked service throughout the USA. Furthermore, their online lecturers are committed, highly qualified, and expert. Also, they offer affordable packages to their clients. Along with these things, they follow a study plan to build engaged learners."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Do you deliver the guaranteed results to pay for someone to take my online classes service or your money back?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Absolutely, we guarantee you 100% outcomes. Otherwise, we also offer you a money-back guarantee if we fail to achieve the guaranteed result. However, our previous proven track records are witness of our guaranteed result. So, join us and feel peace of mind."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can I pay someone to take my class for me? is this safe?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, after encountering us, you don’t need to search ‘Can I pay someone to take my class for me?’ So, pay us and join our online instructor. Furthermore, we have a secure payment procedure. Also, engaging with our online classes platform makes you feel safe."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is there any kind of simple steps that I hire someone to take your online class?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, you need to join our online classes service at takingmyclassesonline.com. You just need to follow very simple steps to hire our online instructor to take your online classes."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Who should take online classes?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Our online instructor is qualified and experienced in the field related to your subject, and he has expertise in this field."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Can you help me with a tight schedule to take an online class?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, we do offer last-minute help to accommodate our learners’ tight schedules. You can utilize our online classes to deal with tight schedules."
+                  }
                 }
-              },{
-                "@type": "Question",
-                "name": "Do you deliver the guaranteed results to pay for someone to take my online classes service or your money back?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Absolutely, we guarantee you 100% outcomes. Otherwise, we also offer you a money-back guarantee if we fail to achieve the guaranteed result. However, our previous proven track records are witness of our guaranteed result. So, join us and feel peace of mind."
-                }
-              },{
-                "@type": "Question",
-                "name": "Can I pay someone to take my class for me? is this safe?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, after encountering us, you don’t need to search ‘Can I pay someone to take my class for me?’ So, pay us and join our online instructor. Furthermore, we have a secure payment procedure. Also, engaging with our online classes platform makes you feel safe."
-                }
-              },{
-                "@type": "Question",
-                "name": "Is there any kind of simple steps that I hire someone to take your online class?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, you need to join our online classes service at takingmyclassesonline.com. You just need to follow very simple steps to hire our online instructor to take your online classes."
-                }
-              },{
-                "@type": "Question",
-                "name": "Who should take online classes?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Our online instructor is qualified and experienced in the field related to your subject, and he has expertise in this field."
-                }
-              },{
-                "@type": "Question",
-                "name": "Can you help me with a tight schedule to take an online class?",
-                "acceptedAnswer": {
-                  "@type": "Answer",
-                  "text": "Yes, we do offer last-minute help to accommodate our learners’ tight schedules. You can utilize our online classes to deal with tight schedules."
-                }
-              }]
-            }
-          `}
-        </script>
-      </Head>
+              ]
+            }),
+          }}
+        />
 
       {/* Page Content */}
       <ServiceBanner />

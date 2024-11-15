@@ -27,15 +27,15 @@ function TmeBanner() {
         <h1 className=' text-center py-2 leading-none lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-[35px] font-extrabold '>Take My Exam Help Service and Improve your Learning Skills</h1>
         <h2 className='text-center py-1 mt-2 lg:text-left dark:text-zinc-100 text-zinc-900 text-xl sm:text-2xl font-semibold'>Should I Need to Pay Someone to Take My Exam at an affordable price?</h2>
         <div className='flex flex-col lg:flex-row items-center lg:w-[110%] gap-4 mt-2'>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-2'>
           <Image src={'/imgs/instructor.png'} width={50} height={50} alt='instructor'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online Expert Support
+        <h3 className='text-left dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Online Expert Support
         </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>
-          <div className='flex items-center gap-1'>
+          <div className='flex items-center gap-2'>
           <Image src={'/imgs/record.png'} width={50} height={50} alt='record'></Image>
-        <h3 className='text-center dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Authentic User-friendly Services 
+        <h3 className='text-left dark:text-zinc-100 text-zinc-900 md:text-base font-medium'>Authentic User-friendly Services 
         </h3>
         <div className='hidden lg:block w-[2px] h-20 bg-muted-foreground '></div>
         </div>

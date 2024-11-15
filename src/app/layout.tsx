@@ -9,7 +9,6 @@ import ScrollToTop from "./ScrollToTop";
 import Head from "next/head";
 import TopBar from "./(Home)/TopBar";
 
-const canonicalUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
 const inter = Montserrat({
   subsets: ["latin"],
@@ -24,11 +23,9 @@ export const metadata: Metadata = {
   },
   description: "Pay Someone to Taking My Classes Online for Me in USA! Having a dedicated team who can assist you in every single step for online class takers and A+ Grade Guaranteed!",
   alternates: {
-    canonical: canonicalUrl,
   },
   openGraph: {
     type: "article",
-    url: canonicalUrl,
     siteName: "Taking My Classes Online",
     images: [
       {
@@ -57,7 +54,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
       <meta name="google-site-verification" content="JSoGrXYc6cuAT5yG11GFtwN763nYU2uwlFBMya7pI98" />
-        <link rel="canonical" href={canonicalUrl} />
         <meta property="og:site" content="https://takingmyclassesonline.com/" />
         <meta name="author" content="https://takingmyclassesonline.com/" />
         <meta name="language" content="English" />

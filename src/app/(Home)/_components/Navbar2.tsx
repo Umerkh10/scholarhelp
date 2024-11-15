@@ -84,11 +84,12 @@ export default function Navbar2() {
                         <Button variant="ghost" asChild>
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/contact-us">Contact Us</Link>
                         </Button>
-                        <Button variant="ghost" asChild>
-                            <Link className='hover:text-violet-500 hover:font-semibold' href="/about-us">About Us</Link>
-                        </Button>
+
                         <Button variant="ghost" asChild>
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/reviews">Reviews</Link>
+                        </Button>
+                        <Button variant="ghost" asChild>
+                            <Link className='hover:text-violet-500 hover:font-semibold' href="/blog">Blog</Link>
                         </Button>
                         <Button variant="ghost" asChild>
                             <Link className='hover:text-violet-500 hover:font-semibold' href="/order-now">Order Now</Link>

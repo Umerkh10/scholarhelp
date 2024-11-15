@@ -75,7 +75,7 @@ export default ServiceLC2
 function DynamicContent2() {
     return (
         <>
-            <div className='mx-auto max-w-screen-xl mt-5'>
+            <div className='mx-auto max-w-screen-xl '>
                 <div className='p-5'>
                     <h3 className='font-extrabold text-lg md:text-3xl dark:text-zinc-100 text-indigo-950 mt-3'>
                     I need to Pay Someone to Take My Class Affordable and Focus on Student Learning Objective </h3>

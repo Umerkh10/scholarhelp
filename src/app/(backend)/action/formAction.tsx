@@ -32,12 +32,12 @@ export async function sendEmails(formData: FormData) {
       subject: 'Your Service Form Submission Confirmation',
       html: `
 <body style="margin: 0; padding: 0;   color: black;">
-    <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #f4eefd;  font-family: system-ui;">
+    <div style="width: 100%; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #f4eefd;  font-family: Google Sans;">
     
-       <div style="text-align: center; padding: 10px; background-color:#7f05f0c2; border-radius: 10px;">
+       <div style="text-align: center; padding: 10px; background-color:#4f46e5;; border-radius: 10px;">
         <div style="display: inline-block; ">
-       <img src="https://muhammadumer.sirv.com/taking-logo-2-dark.png" alt="" style="display: inline-block; margin-right: 5px; vertical-align: middle; height: 80px; width: auto;">
-     <p style="display: inline-block; vertical-align: middle; margin: 0; font-size: x-large;  font-weight: 600; color: whitesmoke; ">
+       <img src="https://muhammadumer.sirv.com/taking-logo-2-dark.png" alt="" style="display: inline-block; margin-right: 5px; vertical-align: middle; height: 60px; width: auto;">
+     <p style="display: inline-block; vertical-align: middle; margin: 0; font-size: larger;  font-weight: 600; color: whitesmoke; ">
              Taking My Classes Online
             </p>
         </div>
@@ -54,7 +54,7 @@ export async function sendEmails(formData: FormData) {
    
       <div style=" text-align: center;">
         <div style="margin: 5px 0;">
-          <p style="font-size: medium;  text-align: center; color: gray; font-weight: 600; padding-left: 10px; padding-right: 10px;">
+          <p style="font-size: medium;  text-align: center; color: gray; font-weight: 600; padding-left: 50px; padding-right: 50px;">
             When Taking My Classes Online gives you a deal,
             Jump on the chance—make it real!
             Grab your spot and give it a whirl,
@@ -62,6 +62,8 @@ export async function sendEmails(formData: FormData) {
         </div>
         </div>
 
+
+    
 
       <div style="padding: 10px 0; text-align: center;">
         <div style="margin: 10px 0;">
@@ -73,10 +75,13 @@ export async function sendEmails(formData: FormData) {
         </div>
 
 
-
+    
+     
+    
+    
       <div style="text-align: center;">
         <p style="font-size: 18px;  font-weight: 400;">You Can Contact Our Support Team 24/7.</p>
-        <a href="https://wa.me/19179331132?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 10px 20px; background-color: #07cc08;  text-decoration: none; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 5px; margin: 5px 0; text-align: center; color: whitesmoke;">
+        <a href="https://wa.me/19179331132?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block; padding: 10px 20px; background-color: #3dad32;  text-decoration: none; font-size: 16px; vertical-align: middle; font-weight: bold; border-radius: 5px; margin: 5px 0; text-align: center; color: whitesmoke;">
           <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
         </a>

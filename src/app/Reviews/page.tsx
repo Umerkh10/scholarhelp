@@ -1,6 +1,7 @@
-import React from 'react'
-import ReviewBanner from './ReviewBanner'
-import ReviewTabs from './ReviewTabs'
+import React from 'react';
+import Head from 'next/head';
+import ReviewBanner from './ReviewBanner';
+import ReviewTabs from './ReviewTabs';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -24,13 +25,29 @@ export const metadata: Metadata = {
   },
 };
 
-function page() {
+const Page: React.FC = () => {
   return (
-    <>
-    <ReviewBanner/>
-    <ReviewTabs/>
-    </>
-  )
-}
+    <div>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "http://schema.org/",
+              "@type": "Product",
+              "name": "takingmyclassesonline",
+              "image": "https://takingmyclassesonline.com/assets/weblogo.png",
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.8",
+                "ratingCount": "30"
+              }
+            }),
+          }}
+        />
+      <ReviewBanner />
+      <ReviewTabs />
+    </div>
+  );
+};
 
-export default page
+export default Page;

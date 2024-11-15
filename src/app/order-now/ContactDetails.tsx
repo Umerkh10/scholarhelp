@@ -66,7 +66,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
     setCountry(event.target.value);
   };
 
-  const handleNotesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleNotesChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setNotes(e.target.value);
   };
@@ -114,7 +114,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
         console.log(res.success);
         formRef.current?.reset();
         router.push(res?.success);
-        setPending(false);
+        setPending(true);
 
       } else if (res?.error) {
         toast.error(res.error);
@@ -141,7 +141,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
             <div className="space-y-1">
               <Label htmlFor="name">Your Name</Label>
               <Input
-                className="outline-orange-500"
+                className="outline-none"
                 value={name}
                 onChange={handleNameChange}
                 placeholder="Enter Your Name"
@@ -154,7 +154,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
             <div className="space-y-1">
               <Label htmlFor="email">Your Email</Label>
               <Input
-                className="outline-orange-500"
+                className="outline-none"
                 id="name"
                 value={email}
                 onChange={handleEmailChange}
@@ -167,7 +167,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
             <div className="space-y-1">
               <Label htmlFor="number">Your Phone Number</Label>
               <Input
-                className="outline-orange-500 [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                className="outline-none [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
                 id="number"
                 value={phone}
                 onChange={handlePhoneChange}
@@ -200,14 +200,13 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
               <Label className="text-base" htmlFor="format">
                 Additional Notes (Instructions)
               </Label>
-              <Input
-                className="outline-orange-500 pb-36 pt-4 rounded-lg border-[2px] w-full  px-3  text-sm md:text-base"
+              <textarea
+                className="outline-none pb-36 pt-4 rounded-lg border-[2px] w-full  px-3  text-sm md:text-base"
                 name="notes"
-                type="text"
                 value={notes}
                 onChange={handleNotesChange}
                 aria-label="notes"
-              ></Input>
+              ></textarea>
             </div>
 
             <div className="flex justify-between  ">
@@ -218,7 +217,7 @@ function ContactDetails({ onPrevious }: { onPrevious: () => void }) {
                 {pending ? (
                   <>
                     <Loader2 className="animate-spin mr-2 h-5 w-5" />{" "}
-                    <p>Submitting...</p>
+                    <p>Redirecting to Payment</p>
                   </>
                 ) : (
                   "Order Now"

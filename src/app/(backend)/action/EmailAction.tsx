@@ -38,9 +38,9 @@ export const EmailAction = async (formData: FormData) => {
   const unit = formData.get("unit") as string;
 
 
-file?.map((i: { name: any; })=>{
-  console.log(i.name);
-})
+  file?.map((i: { name: any; }) => {
+    console.log(i.name);
+  })
 
 
   const data: any = {
@@ -72,11 +72,11 @@ file?.map((i: { name: any; })=>{
 
   // ************** Redirect user to stripe*******************
 
-  const paymentLinkStripe = generateStripeLink(unit,orderId, totalPrice)
+  const paymentLinkStripe = generateStripeLink(unit, orderId, totalPrice)
 
   try {
     saveFormDataToJson(data);
-    if(file){
+    if (file) {
       await handleFileUpload(file)
     }
     data['paymentLinkStripe'] = paymentLinkStripe;
@@ -106,12 +106,12 @@ async function handleFileUpload(files: File[]) {
     const filePromises = files.map(async (file) => {
       // Log the file object directly to inspect its structure
       console.log('Inspecting file object:', file);
-      
+
       if (!file.name) {
         console.error('File object does not have a name:', JSON.stringify(file));
         return; // Skip this file
       }
-    
+
       const filePath = path.join(uploadDir, file.name);
       try {
         const buffer = Buffer.from(await file.arrayBuffer());
@@ -121,8 +121,8 @@ async function handleFileUpload(files: File[]) {
         console.error(`Error saving file ${file.name}:`, err);
       }
     });
-      
-  
+
+
     // Wait for all file uploads to complete
     await Promise.all(filePromises);
     console.log('All files uploaded successfully.');
@@ -164,10 +164,10 @@ async function sendEmailClient(data: any) {
     to: email,
     subject: `We Have Recieved Your Order - Complete Your Payment Now | Taking My Classes Online`,
     html: `
-<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f0f0f0; ">
-    <div style="background-position: center;background-size: cover; width: 100%; font-family: system-ui; max-width: 600px; border-radius: 20px; margin: 0 auto; background-color: #fffdfa; ">
+<body style="margin: 0; padding: 0; background-color: #f0f0f0; ">
+    <div style="background-position: center;background-size: cover; width: 100%; font-family: Google Sans; max-width: 550px; border-radius: 20px; margin: 0 auto; background-color: #fffdfa;">
     
-        <div style="text-align: center; background-color: blueviolet; border-radius: 12px; ">
+        <div style="text-align: center; background-color: #4f46e5; border-radius: 10px; ">
             <div style="display: inline-block;  padding: 15px;">
            <img src="https://muhammadumer.sirv.com/taking-logo-2-dark.png" alt="" style="display: inline-block; vertical-align: middle; height: 50px; width: auto; margin-right: 5px;">
          <p style="display: inline-block; vertical-align: middle; margin: 5px; font-size: 22px; color: whitesmoke;  font-weight: 600;">
@@ -176,38 +176,40 @@ async function sendEmailClient(data: any) {
             </div>
         </div>
     
-      <p style="font-size: 22px;  line-height: 1; text-align: center; font-weight: 600;">
+      <p style="font-size: 19px;  line-height: 1; text-align: center; font-weight: 600;">
         Thank You For Your Order ${name} <br></p>
 
-      <p style="font-size: 17px; text-align: center; font-weight: 600;padding-left: 20px;padding-right: 20px; color: grey;">
+      <p style="font-size: 15px; text-align: center; font-weight: 600; padding-left:  85px;
+      padding-right:  85px; color: grey; text-transform: capitalize;">
         Your order is being processed! Our team of experts will get in touch with you shortly.</p>
 
         
         <div style="text-align: center;">
-          <a href="${paymentLinkStripe}" style="display: inline-block; padding: 12px; background-color: #7d0bff; color: whitesmoke;  text-decoration: none; font-size: 16px; font-weight: 600; border-radius: 25px; margin: 2px 0; text-align: center; vertical-align: middle;">
+          <a href="${paymentLinkStripe}" style="display: inline-block; padding: 10px; background-color: #4f46e5; color: whitesmoke; width: 100px;  text-decoration: none; font-size: 16px; font-weight: 500; border-radius: 10px; margin: 2px 0; text-align: center; vertical-align: middle;">
             Pay Now
           </a>
         </div>
 
-        <p style="font-size: 17px; text-align: center; font-weight: 600;padding-left: 20px;padding-right: 20px; color: grey;">
+        <p style="font-size: 14px; text-transform: capitalize; text-align: center; font-weight: 600;padding-left: 50px;padding-right: 50px; color: gray;">
           Please click the "Pay Now" button to complete your payment. This will allow us to start processing your order immediately and keep you updated on its progress.</p>
     
       <div style="text-align: start;">
-        <h2 style="font-size: 26px; font-weight: 600; padding-left: 20px; padding-right: 20px; padding-top: 5px; ">Personal Details</h2>
+        <h2 style="font-size: 18px; font-weight: 600; padding-left: 20px; padding-right: 20px; padding-top: 15px; ">Personal Details</h2>
       </div>
 
-      <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
+      <div style="width:100%; height: 2px; background-color: #4f46e573; margin-bottom: 15px;"></div>
 
          <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left;">OrderId:</div>
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 15px; 
+         font-weight: 400; ">
+          <div style="float: left;">Order ID:</div>
           <div style="float: right;">${orderId}</div>
         </div>
         <div style="clear: both;"></div>
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Name:</div>
           <div style="float: right;">${name}</div>
         </div>
@@ -215,7 +217,7 @@ async function sendEmailClient(data: any) {
       </div>
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Email:</div>
           <div style="text-decoration: none; float: right;">${email}</div>
         </div>
@@ -223,7 +225,7 @@ async function sendEmailClient(data: any) {
       </div>
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Phone:</div>
           <div style="float: right;">${phone}</div>
         </div>
@@ -231,7 +233,7 @@ async function sendEmailClient(data: any) {
       </div>
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Country:</div>
           <div style="float: right;">${country}</div>
         </div>
@@ -239,7 +241,7 @@ async function sendEmailClient(data: any) {
       </div>
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Notes:</div>
           <div style="float: right;">${notes}</div>
         </div>
@@ -248,13 +250,13 @@ async function sendEmailClient(data: any) {
     
  
       <div style="text-align: start; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <h2 style="font-size: 26px; font-weight: 600;">Order Summary</h2>
+        <h2 style="font-size: 18px; font-weight: 600;">Order Summary</h2>
       </div>
 
-      <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
+      <div style="width:100%; height: 2px; background-color: #4f46e573; margin-bottom: 20px;"></div>
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Topic:</div>
           <div style="float: right;">${topic}</div>
         </div>
@@ -263,7 +265,7 @@ async function sendEmailClient(data: any) {
 
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">No Of Pages:</div>
           <div style="float: right;">${selectedValue}</div>
         </div>
@@ -271,7 +273,7 @@ async function sendEmailClient(data: any) {
       </div>
     
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Word Count:</div>
           <div style="float: right;">${wordCount}</div>
         </div>
@@ -279,7 +281,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Academic Level:</div>
           <div style="float: right;">${level}</div>
         </div>
@@ -287,7 +289,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Paper Type:</div>
           <div style="float: right;">${paper}</div>
         </div>
@@ -295,7 +297,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Paper Quality:</div>
           <div style="float: right;">${quality}</div>
         </div>
@@ -303,7 +305,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Deadline:</div>
           <div style="float: right;">${deadline}</div>
         </div>
@@ -311,7 +313,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Subject:</div>
           <div style="float: right;">${subject}</div>
         </div>
@@ -319,7 +321,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Language:</div>
           <div style="float: right;">${language}</div>
         </div>
@@ -327,7 +329,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">No Of Sources:</div>
           <div style="float: right;">${source}</div>
         </div>
@@ -335,7 +337,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Paper Format:</div>
           <div style="float: right;">${format}</div>
         </div>
@@ -343,7 +345,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Referencing:</div>
           <div style="float: right;">${referencing}</div>
         </div>
@@ -351,29 +353,29 @@ async function sendEmailClient(data: any) {
       </div>
 
         <div style="text-align: start;">
-        <h2 style="font-size: 26px; font-weight: 600; padding-left: 20px; padding-right: 20px; padding-top: 5px; ">Order Pricing</h2>
+        <h2 style="font-size: 18px; font-weight: 600; padding-left: 20px; padding-right: 20px; padding-top: 5px; ">Order Pricing</h2>
       </div>
       
-    <div style="width:100%; height: 3px; background-color: #7d0bff; margin-bottom: 20px;"></div>
+    <div style="width:100%; height: 2px; background-color: #4f46e573; margin-bottom: 20px;"></div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Discount:</div>
           <div style="float: right;">45% OFF</div>
         </div>
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
-          <div style="float: left;">Turnitin Report:</div>
-          <div style="float: right; background-color: blueviolet; border: 2px solid #7d0bff; border-radius: 15px; width: 100px; padding: 4px; color:white ;  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">Free</div>
+      <div style="text-align: center; padding-left: 20px; padding-right: 20px; ">
+        <div style="display: inline-block; width: 100%; vertical-align: bottom; padding: 5px; font-size: 14px; font-weight: 400; ">
+          <div style="float: left; ">Turnitin Report:</div>
+          <div style="float: right; background-color: #4f46e5; border: 2px solid #4f46e5; border-radius: 15px; width: 80px; padding: 2px; color:white ; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">Free</div>
         </div>
         <div style="clear: both;"></div>
       </div>
 
-      <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+      <div style="text-align: center; padding-left: 20px; padding-right: 20px; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Price Per Page:</div>
           <div style="float: right;">${symbol}${pricePerPage}</div>
         </div>
@@ -381,7 +383,7 @@ async function sendEmailClient(data: any) {
       </div>
 
       <div style="text-align: center; padding-left: 20px; padding-right: 20px; padding-top: 5px;">
-        <div style="display: inline-block; width: 100%; padding: 5px; font-size: large; font-weight: 500; ">
+        <div style="display: inline-block; width: 100%; padding: 5px; font-size: 14px; font-weight: 400; ">
           <div style="float: left;">Total Price:</div>
           <div style="float: right;">${symbol}${totalPrice}</div>
         </div>
@@ -390,7 +392,7 @@ async function sendEmailClient(data: any) {
     
 
       <div style="text-align: center; ">
-        <p style="font-size: 20px;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
+        <p style="font-size: 18px;  font-weight: 500;">You Can Contact Our Support Team 24/7.</p>
         <a href="https://wa.me/19179331132?text=Hi, I urgently need academic assistance. Could you help me submit my assignment before the deadline?" style="display: inline-block;color: #f0f0f0;  padding: 10px 30px; background-color: #3dad32;  text-decoration: none; font-size: 16px; font-weight: bold; border-radius: 10px; margin: 10px 0; text-align: center; vertical-align: middle;">
           <img style="vertical-align: middle;" width="30px" src="https://muhammadumer.sirv.com/icons8-whatsapp-48.png" alt="">
           Whatsapp Now
@@ -441,7 +443,11 @@ async function sendEmailSupport(data: any) {
     ppp,
     unit,
   } = data
-  
+
+  const attachments = file?.map((uploadedFile: any) => ({
+    filename: uploadedFile.name,
+    path: path.join(process.cwd(), 'Attachments', uploadedFile.name),
+  }));
 
   const supportMailOptions = {
     from: `New Order Form | Taking My Classes Online <${process.env.NEXT_PUBLIC_MAILFROM}>`,
@@ -475,10 +481,8 @@ async function sendEmailSupport(data: any) {
         </ul>
       </body>
     `,
-    attachments: file,
+    attachments,
   };
-
-  console.log("file",file);
 
   try {
     const info = await transporter.sendMail(supportMailOptions);

@@ -1,5 +1,4 @@
 import React from 'react';
-import Head from 'next/head';
 import GedBanner from './GedBanner';
 import GedLongContent from './GedLongContent';
 import GedFlow from './GedFlow';
@@ -31,15 +30,14 @@ export const metadata: Metadata = {
   },
 };
 
-function Page() {
+const Page: React.FC = () => {
   return (
     <div>
-      <Head>
-
-
-        {/* Organization Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
+      {/* JSON-LD Schema Markup */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "Taking My Classes Online",
@@ -59,31 +57,33 @@ function Page() {
               "https://www.linkedin.com/company/takingmyclassesonline/",
               "https://www.youtube.com/@takingmyclassesonline"
             ]
-          })}
-        </script>
-
-        {/* Website Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "WebSite",
             "name": "Taking My Classes Online",
             "alternateName": "Takingmyclassesonline",
-            "url": "https://takingmyclassesonline.com/take-my-ged-for-me",
+            "url": "https://www.takingmyclassesonline.com/take-my-ged-for-me",
             "potentialAction": {
               "@type": "SearchAction",
               "target": "https://www.takingmyclassesonline.com/search?q={search_term_string}",
               "query-input": "required name=search_term_string"
             }
-          })}
-        </script>
-
-        {/* Product Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org/",
             "@type": "Product",
-            "name": "takingmyclassesonline",
+            "name": "Taking My Classes Online",
             "image": "https://takingmyclassesonline.com/assets/weblogo.png",
             "description": "We can make it possible by providing you take the GED test online in many areas covered. GED exam has been going to online administration, get the best tutor.",
             "brand": {
@@ -95,12 +95,13 @@ function Page() {
               "ratingValue": "4.8",
               "ratingCount": "36"
             }
-          })}
-        </script>
-
-        {/* FAQ Page Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "FAQPage",
             "mainEntity": [
@@ -153,9 +154,9 @@ function Page() {
                 }
               }
             ]
-          })}
-        </script>
-      </Head>
+          })
+        }}
+      />
       
       <GedBanner />
       <GedLongContent />
@@ -167,6 +168,6 @@ function Page() {
       <GedFaq />
     </div>
   );
-}
+};
 
 export default Page;

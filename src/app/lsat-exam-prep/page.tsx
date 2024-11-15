@@ -31,10 +31,9 @@ export const metadata: Metadata = {
   },
 };
 
-const Page: React.FC = () => {
+function Page() {
   return (
-    <>
-      <Head>
+      <div>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -150,8 +149,8 @@ const Page: React.FC = () => {
             }),
           }}
         />
-      </Head>
-      <div>
+     
+      
         <LSATBanner />
         <LSATLongContent />
         <LSATFlow />
@@ -160,8 +159,8 @@ const Page: React.FC = () => {
         <LSATCoreFeature />
         <LSATLongContent2 />
         <LSATFaq />
-      </div>
-    </>
+        </div>
+    
   );
 };
 
